@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_MembersCard" targetNamespace="http://tempuri.org/DS_MembersCard.xsd" xmlns:mstns="http://tempuri.org/DS_MembersCard.xsd" xmlns="http://tempuri.org/DS_MembersCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_MembersCard" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_MembersCard" msprop:Generator_UserDSName="DS_MembersCard" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_MembersCard" msprop:Generator_UserTableName="DT_MembersCard" msprop:Generator_RowDeletedName="DT_MembersCardRowDeleted" msprop:Generator_TableClassName="DT_MembersCardDataTable" msprop:Generator_RowChangedName="DT_MembersCardRowChanged" msprop:Generator_RowClassName="DT_MembersCardRow" msprop:Generator_RowChangingName="DT_MembersCardRowChanging" msprop:Generator_RowEvArgName="DT_MembersCardRowChangeEvent" msprop:Generator_RowEvHandlerName="DT_MembersCardRowChangeEventHandler" msprop:Generator_TablePropName="DT_MembersCard" msprop:Generator_TableVarName="tableDT_MembersCard" msprop:Generator_RowDeletingName="DT_MembersCardRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Member_Code" msprop:Generator_UserColumnName="Member_Code" msprop:Generator_ColumnPropNameInRow="Member_Code" msprop:Generator_ColumnVarNameInTable="columnMember_Code" msprop:Generator_ColumnPropNameInTable="Member_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Member_Name" msprop:Generator_UserColumnName="Member_Name" msprop:Generator_ColumnPropNameInRow="Member_Name" msprop:Generator_ColumnVarNameInTable="columnMember_Name" msprop:Generator_ColumnPropNameInTable="Member_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picture" msprop:Generator_UserColumnName="Picture" msprop:Generator_ColumnPropNameInRow="Picture" msprop:Generator_ColumnVarNameInTable="columnPicture" msprop:Generator_ColumnPropNameInTable="PictureColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Member_BarCode" msprop:Generator_UserColumnName="Member_BarCode" msprop:Generator_ColumnPropNameInRow="Member_BarCode" msprop:Generator_ColumnVarNameInTable="columnMember_BarCode" msprop:Generator_ColumnPropNameInTable="Member_BarCodeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
