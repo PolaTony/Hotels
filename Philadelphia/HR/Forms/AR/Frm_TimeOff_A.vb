@@ -335,54 +335,89 @@ Public Class Frm_TimeOff_A
 
 #Region " Save                                                                                  "
     Private Function fValidateDetails() As Boolean
+
+        ' Update the data in the grid before validation
         GRD_Details.UpdateData()
 
-        Dim vRow As Infragistics.Win.UltraWinGrid.UltraGridRow
-        For Each vRow In GRD_Details.Rows
+        ' Loop through each row in the grid
+        For Each vRow As Infragistics.Win.UltraWinGrid.UltraGridRow In GRD_Details.Rows
 
-            If vRow.Cells("Emp_Desc").Text = "" Then
+            ' Read values from the current row
+            Dim vEmpDesc As String = vRow.Cells("Emp_Desc").Text
+            Dim vEmpCode As Object = vRow.Cells("Emp_Code").Value
+            Dim vFromDateObj As Object = vRow.Cells("FromDate").Value
+            Dim vToDateObj As Object = vRow.Cells("ToDate").Value
+            Dim vTimeOffType As Object = vRow.Cells("TimeOff_Type").Value
+
+            ' Check if employee name is empty
+            If vEmpDesc = "" Then
                 vcFrmLevel.vParentFrm.sForwardMessage("51", Me)
                 vRow.Cells("Emp_Code").Selected = True
                 Return False
             End If
 
-            If IsDBNull(vRow.Cells("FromDate").Value) Then
+            ' Check if FromDate or ToDate is missing
+            If IsDBNull(vFromDateObj) OrElse IsDBNull(vToDateObj) Then
                 vcFrmLevel.vParentFrm.sForwardMessage("53", Me)
-                vRow.Cells("FromDate").Selected = True
+                If IsDBNull(vFromDateObj) Then
+                    vRow.Cells("FromDate").Selected = True
+                Else
+                    vRow.Cells("ToDate").Selected = True
+                End If
                 Return False
             End If
 
-            If IsDBNull(vRow.Cells("ToDate").Value) Then
-                vcFrmLevel.vParentFrm.sForwardMessage("53", Me)
-                vRow.Cells("ToDate").Selected = True
-                Return False
-            End If
+            ' Convert to Date
+            Dim vFromDate As Date = CDate(vFromDateObj)
+            Dim vToDate As Date = CDate(vToDateObj)
 
-            If CDate(vRow.Cells("FromDate").Value) > CDate(vRow.Cells("ToDate").Value) Then
+            ' FromDate should not be after ToDate
+            If vFromDate > vToDate Then
                 vcFrmLevel.vParentFrm.sForwardMessage("172", Me)
                 vRow.Cells("FromDate").Selected = True
                 Return False
             End If
 
-            If Not fValidate_Insert_TimeOff(CDate(vRow.Cells("FromDate").Value), CDate(vRow.Cells("ToDate").Value), vRow.Cells("EMP_Code").Value) Then
+            ' Check if there is overlapping time off
+            If Not fValidate_Insert_TimeOff(vFromDate, vToDate, vEmpCode) Then
                 vcFrmLevel.vParentFrm.sForwardMessage("177", Me)
                 vRow.Cells("FromDate").Selected = True
                 Return False
             End If
 
-            If Not fValidate_Insert_PublicHoliday(CDate(vRow.Cells("FromDate").Value), CDate(vRow.Cells("ToDate").Value)) Then
+            ' Check for conflict with public holidays
+            If Not fValidate_Insert_PublicHoliday(vFromDate, vToDate) Then
                 vcFrmLevel.vParentFrm.sForwardMessage("178", Me)
                 vRow.Cells("FromDate").Selected = True
                 Return False
             End If
 
-            If IsDBNull(vRow.Cells("TimeOff_Type").Value) Then
+            ' Check if time off type is selected
+            If IsDBNull(vTimeOffType) Then
                 vcFrmLevel.vParentFrm.sForwardMessage("171", Me)
                 vRow.Cells("TimeOff_Type").Selected = True
                 Return False
             End If
+
+            ' If the time off is paid, check remaining annual balance
+            If vTimeOffType.ToString() = "P" Then
+                Dim vSqlString = $" SELECT dbo.fn_Get_Week_TimeOff_Days_In_Month('{Format(vFromDateObj, "MM-dd-yyyy")}', '{Format(vToDateObj, "MM-dd-yyyy")}', {vCompanyCode}) "
+                Dim vWeekTimeOffDays As Integer = cControls.fReturnValue(vSqlString, Me.Name)
+                Dim vDateDiffDays As Integer = DateDiff(DateInterval.Day, vFromDate, vToDate) + 1 - vWeekTimeOffDays
+                Dim vCurrentYear As Integer = vFromDate.Year
+
+                Dim vRemainingDays As Integer = fRemaining_Annual_TimeOff_Days(vCurrentYear, vEmpCode)
+
+                ' If not enough paid days left, show message and block the request
+                If Not (vRemainingDays - vDateDiffDays >= 0) Then
+                    vcFrmLevel.vParentFrm.sForwardMessage("179", Me)
+                    vRow.Cells("TimeOff_Type").Selected = True
+                    Return False
+                End If
+            End If
         Next
 
+        ' If all checks passed
         Return True
     End Function
     Private Sub sSaveDetails()
@@ -566,25 +601,26 @@ Public Class Frm_TimeOff_A
         Try
             Dim vSqlCommand As New SqlClient.SqlCommand
             vSqlCommand.CommandText =
-            " Select TimeOff.Code,                                                  " & vbCrLf &
-            "        Emp_Code,                                             " & vbCrLf &
-            "        Employees.DescA as Emp_Desc,                          " & vbCrLf &
-            "        FromDate,                                             " & vbCrLf &
-            "        ToDate,                                               " & vbCrLf &
-            "        TimeOff_Type as TimeOff_Type,                         " & vbCrLf &
-            "        TimeOff.Remarks,                                      " & vbCrLf &
-            "        Users.DescA as User_Desc,                             " & vbCrLf &
-            "        Entry_Date                                            " & vbCrLf &
-            "                                                              " & vbCrLf &
-            "        From TimeOff Left Join Employees                      " & vbCrLf &
-            "        On   TimeOff.Emp_Code     = Employees.code            " & vbCrLf &
-            "        And  TimeOff.Company_Code = Employees.Company_Code    " & vbCrLf &
-            "                                                              " & vbCrLf &
-            "       Left Join Users                                        " & vbCrLf &
-            "       On TimeOff.User_Code = Users.code                   " & vbCrLf &
-            "       And TimeOff.Company_Code = Users.Company_Code       " & vbCrLf &
-            "                                                              " & vbCrLf &
-            "        Where 1 = 1                                           " & vbCrLf &
+            " Select TimeOff.Code,                                               " & vbCrLf &
+            "        Emp_Code,                                                   " & vbCrLf &
+            "        Employees.DescA as Emp_Desc,                                " & vbCrLf &
+            "        FromDate,                                                   " & vbCrLf &
+            "        ToDate,                                                     " & vbCrLf &
+            "        TimeOff_Type as TimeOff_Type,                               " & vbCrLf &
+            "        TimeOff.Remarks,                                            " & vbCrLf &
+            "        Users.DescA as User_Desc,                                   " & vbCrLf &
+            "        Entry_Date,                                                 " & vbCrLf &
+            "        TimeOff.Real_DaysOff                                        " & vbCrLf &
+            "                                                                    " & vbCrLf &
+            "        From TimeOff Left Join Employees                            " & vbCrLf &
+            "        On   TimeOff.Emp_Code     = Employees.code                  " & vbCrLf &
+            "        And  TimeOff.Company_Code = Employees.Company_Code          " & vbCrLf &
+            "                                                                    " & vbCrLf &
+            "        Left Join Users                                             " & vbCrLf &
+            "        On TimeOff.User_Code = Users.code                           " & vbCrLf &
+            "        And TimeOff.Company_Code = Users.Company_Code               " & vbCrLf &
+            "                                                                    " & vbCrLf &
+            "        Where 1 = 1                                                 " & vbCrLf &
             " And   (FromDate >= " & vFromDate & " Or " & vFromDate & " Is NULL) " & vbCrLf &
             " And    ToDate < " & vToDate_PlusOneDay &
             " And    TimeOff.Company_Code = " & vCompanyCode
@@ -598,9 +634,6 @@ Public Class Frm_TimeOff_A
 
             Do While vSqlReader.Read
                 DTS_Summary.Rows.SetCount(vRowCounter + 1)
-
-                'vRow = Grd_Summary.Rows(vRowCounter)
-                'vRow.Activation = Activation.AllowEdit
 
                 'Code
                 DTS_Summary.Rows(vRowCounter)("Ser") = vSqlReader("Code")
@@ -661,6 +694,13 @@ Public Class Frm_TimeOff_A
                     DTS_Summary.Rows(vRowCounter)("Entry_Date") = Nothing
                 End If
 
+                'Real_DaysOff
+                If IsDBNull(vSqlReader("Real_DaysOff")) = False Then
+                    DTS_Summary.Rows(vRowCounter)("Real_DaysOff") = vSqlReader("Real_DaysOff")
+                Else
+                    DTS_Summary.Rows(vRowCounter)("Real_DaysOff") = Nothing
+                End If
+
                 'DML
                 DTS_Summary.Rows(vRowCounter)("DML") = "N"
 
@@ -712,6 +752,23 @@ Public Class Frm_TimeOff_A
                         vcFrmLevel.vParentFrm.sForwardMessage("178", Me)
                         vRow.Cells("FromDate").Selected = True
                         Exit Sub
+                    End If
+
+                    ' If the time off is paid, check remaining annual balance
+                    If vRow.Cells("TimeOff_Type").Value.ToString() = "P" Then
+                        vSqlString = $" SELECT dbo.fn_Get_Week_TimeOff_Days_In_Month({vFromDate}, {vToDate}, {vCompanyCode}) "
+                        Dim vWeekTimeOffDays As Integer = cControls.fReturnValue(vSqlString, Me.Name)
+                        Dim vDateDiffDays As Integer = vDateDiff - vWeekTimeOffDays
+                        Dim vCurrentYear As Integer = CDate(vRow.Cells("FromDate").Value).Year
+
+                        Dim vRemainingDays As Integer = fRemaining_Annual_TimeOff_Days(vCurrentYear, vRow.Cells("Emp_Code").Value, vRow.Cells("Ser").Text)
+
+                        ' If not enough paid days left, show message and block the request
+                        If Not (vRemainingDays - vDateDiffDays >= 0) Then
+                            vcFrmLevel.vParentFrm.sForwardMessage("179", Me)
+                            vRow.Cells("TimeOff_Type").Selected = True
+                            Exit Sub
+                        End If
                     End If
 
                     vSqlString = " Update TimeOff " &
@@ -995,6 +1052,15 @@ Public Class Frm_TimeOff_A
         End If
 
         Return True
+
+    End Function
+
+    Private Function fRemaining_Annual_TimeOff_Days(ByVal pYear As Integer, ByVal pEmpCode As Integer, Optional pCode As Integer = 0)
+
+        Dim vSqlString As String =
+        $" SELECT dbo.fn_Get_Remaining_Paid_TimeOff_For_Year({pYear}, {pEmpCode}, {vCompanyCode}, {pCode}) "
+
+        Return cControls.fReturnValue(vSqlString, Me.Name)
 
     End Function
 
