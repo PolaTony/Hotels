@@ -1,0 +1,858 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class MDIForm_L
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Dim Appearance54 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MDIForm_L))
+        Dim UltraExplorerBarGroup1 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup
+        Dim UltraExplorerBarItem1 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem
+        Dim UltraExplorerBarItem2 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem
+        Dim Appearance56 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim Appearance59 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim UltraStatusPanel1 As Infragistics.Win.UltraWinStatusBar.UltraStatusPanel = New Infragistics.Win.UltraWinStatusBar.UltraStatusPanel
+        Dim Appearance57 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim UltraStatusPanel2 As Infragistics.Win.UltraWinStatusBar.UltraStatusPanel = New Infragistics.Win.UltraWinStatusBar.UltraStatusPanel
+        Dim Appearance58 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim Appearance55 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool29 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CustomerDefinition")
+        Dim ButtonTool30 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesInvoice")
+        Dim ButtonTool31 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashReceipt")
+        Dim ButtonTool32 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Expenses")
+        Dim ButtonTool33 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashPayment")
+        Dim ButtonTool34 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesReports")
+        Dim RibbonTab1 As Infragistics.Win.UltraWinToolbars.RibbonTab = New Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon1")
+        Dim RibbonGroup1 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("DF")
+        Dim ButtonTool35 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CustomerDefinition")
+        Dim ButtonTool36 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_EmployeeDefinition")
+        Dim ButtonTool7 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_CustomerDefinition")
+        Dim ButtonTool8 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_Employees")
+        Dim ButtonTool9 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_ItemsDefinition")
+        Dim RibbonGroup2 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("GN")
+        Dim ButtonTool37 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("FRM_GeneralSettings")
+        Dim ButtonTool38 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("FRM_FinancialSetup")
+        Dim ButtonTool39 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Profiles")
+        Dim ButtonTool12 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_GeneralSettings")
+        Dim RibbonGroup3 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("SL")
+        Dim ButtonTool40 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesInvoice")
+        Dim ButtonTool41 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_POS")
+        Dim ButtonTool13 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_SalesInvoice")
+        Dim ButtonTool25 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesReturn")
+        Dim RibbonGroup4 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("FN")
+        Dim Appearance12 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool42 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Expenses")
+        Dim ButtonTool43 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashPayment")
+        Dim ButtonTool44 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashReceipt")
+        Dim ButtonTool14 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Installments_Information")
+        Dim ButtonTool17 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Due_Installments")
+        Dim ButtonTool19 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Due_Values")
+        Dim RibbonGroup5 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("RT")
+        Dim ButtonTool45 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesReports")
+        Dim ButtonTool22 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_FinancialReports")
+        Dim ButtonTool23 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_InvReports")
+        Dim ButtonTool55 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_New")
+        Dim ButtonTool54 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Save")
+        Dim ButtonTool53 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Delete")
+        Dim ButtonTool52 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Print")
+        Dim ButtonTool48 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_FirstRecord")
+        Dim ButtonTool49 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_PreviousRecord")
+        Dim TextBoxTool3 As Infragistics.Win.UltraWinToolbars.TextBoxTool = New Infragistics.Win.UltraWinToolbars.TextBoxTool("Btn_GotoRecord")
+        Dim ButtonTool50 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_NextRecord")
+        Dim ButtonTool51 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_LastRecord")
+        Dim ButtonTool47 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_CloseWindow")
+        Dim ButtonTool46 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ChangeUser")
+        Dim StateButtonTool2 As Infragistics.Win.UltraWinToolbars.StateButtonTool = New Infragistics.Win.UltraWinToolbars.StateButtonTool("Chk_Help", "")
+        Dim ComboBoxTool2 As Infragistics.Win.UltraWinToolbars.ComboBoxTool = New Infragistics.Win.UltraWinToolbars.ComboBoxTool("Themes")
+        Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
+        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
+        Dim ButtonTool56 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ScreenState")
+        Dim ButtonTool57 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ChangeUser")
+        Dim ButtonTool58 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_CloseApplication")
+        Dim ButtonTool59 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_CloseWindow")
+        Dim ButtonTool60 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_FirstRecord")
+        Dim ButtonTool61 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_PreviousRecord")
+        Dim TextBoxTool4 As Infragistics.Win.UltraWinToolbars.TextBoxTool = New Infragistics.Win.UltraWinToolbars.TextBoxTool("Btn_GotoRecord")
+        Dim ButtonTool62 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_NextRecord")
+        Dim ButtonTool63 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_LastRecord")
+        Dim ButtonTool64 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Print")
+        Dim ButtonTool65 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Save")
+        Dim ButtonTool66 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Delete")
+        Dim ButtonTool67 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Query")
+        Dim ButtonTool68 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_New")
+        Dim Appearance13 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool69 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_New")
+        Dim Appearance14 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim Appearance15 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool70 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Delete")
+        Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool71 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Query")
+        Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool72 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Save")
+        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool73 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_FirstRecord")
+        Dim Appearance19 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool74 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_PreviousRecord")
+        Dim Appearance20 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool75 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_NextRecord")
+        Dim Appearance21 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool76 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_LastRecord")
+        Dim Appearance22 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim TextBoxTool5 As Infragistics.Win.UltraWinToolbars.TextBoxTool = New Infragistics.Win.UltraWinToolbars.TextBoxTool("Btn_GotoRecord")
+        Dim Appearance23 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool77 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_CloseWindow")
+        Dim Appearance24 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool78 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_CloseApplication")
+        Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
+        Dim ButtonTool79 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_Print")
+        Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool80 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ChangeUser")
+        Dim Appearance27 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool81 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ScreenState")
+        Dim Appearance28 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool82 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Expenses")
+        Dim Appearance29 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool83 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashPayment")
+        Dim Appearance30 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool84 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CashReceipt")
+        Dim Appearance31 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool85 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("FRM_GeneralSettings")
+        Dim Appearance32 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool86 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("FRM_FinancialSetup")
+        Dim Appearance33 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool87 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CustomerDefinition")
+        Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool88 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesReports")
+        Dim Appearance35 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool89 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesInvoice")
+        Dim Appearance36 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool90 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Profiles")
+        Dim Appearance37 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool91 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_EmployeeDefinition")
+        Dim Appearance38 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool92 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_POS")
+        Dim Appearance39 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool1 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CheckPayment")
+        Dim Appearance40 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool2 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_CheckReceipt")
+        Dim Appearance41 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool4 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_CustomerDefinition")
+        Dim Appearance42 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool5 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_Employees")
+        Dim Appearance43 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool6 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_ItemsDefinition")
+        Dim Appearance44 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool3 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_GeneralSettings")
+        Dim Appearance45 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool10 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Prima_SalesInvoice")
+        Dim Appearance46 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool11 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Installments_Information")
+        Dim Appearance47 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool16 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Due_Installments")
+        Dim Appearance48 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool18 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_Due_Values")
+        Dim Appearance49 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool20 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_FinancialReports")
+        Dim Appearance50 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool21 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_InvReports")
+        Dim Appearance51 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ButtonTool24 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Frm_SalesReturn")
+        Dim Appearance52 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim StateButtonTool1 As Infragistics.Win.UltraWinToolbars.StateButtonTool = New Infragistics.Win.UltraWinToolbars.StateButtonTool("Chk_Help", "")
+        Dim Appearance53 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance
+        Dim ComboBoxTool1 As Infragistics.Win.UltraWinToolbars.ComboBoxTool = New Infragistics.Win.UltraWinToolbars.ComboBoxTool("Themes")
+        Dim ValueList1 As Infragistics.Win.ValueList = New Infragistics.Win.ValueList(0)
+        Dim ValueListItem30 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem1 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem2 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem3 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem4 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem5 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem6 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem7 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem8 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem9 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem10 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem12 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem11 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem13 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem14 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem15 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem16 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem17 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem18 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem19 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem20 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem21 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem22 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem23 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem24 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem25 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem26 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem27 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem28 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Dim ValueListItem29 As Infragistics.Win.ValueListItem = New Infragistics.Win.ValueListItem
+        Me.Chk_ScreenState = New Infragistics.Win.UltraWinEditors.UltraCheckEditor
+        Me.ImgLst = New System.Windows.Forms.ImageList(Me.components)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+        Me.Exp_Main = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar
+        Me.UltraDockManager1 = New Infragistics.Win.UltraWinDock.UltraDockManager(Me.components)
+        Me._MDIFormUnpinnedTabAreaLeft = New Infragistics.Win.UltraWinDock.UnpinnedTabArea
+        Me._MDIFormUnpinnedTabAreaRight = New Infragistics.Win.UltraWinDock.UnpinnedTabArea
+        Me._MDIFormUnpinnedTabAreaTop = New Infragistics.Win.UltraWinDock.UnpinnedTabArea
+        Me._MDIFormUnpinnedTabAreaBottom = New Infragistics.Win.UltraWinDock.UnpinnedTabArea
+        Me._MDIFormAutoHideControl = New Infragistics.Win.UltraWinDock.AutoHideControl
+        Me.UltraTabbedMdiManager1 = New Infragistics.Win.UltraWinTabbedMdi.UltraTabbedMdiManager(Me.components)
+        Me.Splitter1 = New System.Windows.Forms.Splitter
+        Me.StsBar_Main = New Infragistics.Win.UltraWinStatusBar.UltraStatusBar
+        Me.Msg_Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.Splitter2 = New System.Windows.Forms.Splitter
+        Me.Notification_Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.Txt_Message = New Infragistics.Win.Misc.UltraLabel
+        Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
+        CType(Me.Chk_ScreenState, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Exp_Main, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UltraDockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UltraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StsBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Chk_ScreenState
+        '
+        Appearance54.TextHAlignAsString = "Center"
+        Me.Chk_ScreenState.Appearance = Appearance54
+        Me.Chk_ScreenState.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
+        Me.Chk_ScreenState.Location = New System.Drawing.Point(580, 323)
+        Me.Chk_ScreenState.Name = "Chk_ScreenState"
+        Me.Chk_ScreenState.Size = New System.Drawing.Size(87, 20)
+        Me.Chk_ScreenState.Style = Infragistics.Win.EditCheckStyle.Button
+        Me.Chk_ScreenState.TabIndex = 43
+        Me.Chk_ScreenState.Text = "»ÕÀ"
+        Me.Chk_ScreenState.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
+        Me.Chk_ScreenState.Visible = False
+        '
+        'ImgLst
+        '
+        Me.ImgLst.ImageStream = CType(resources.GetObject("ImgLst.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImgLst.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImgLst.Images.SetKeyName(0, "")
+        Me.ImgLst.Images.SetKeyName(1, "")
+        Me.ImgLst.Images.SetKeyName(2, "")
+        Me.ImgLst.Images.SetKeyName(3, "")
+        Me.ImgLst.Images.SetKeyName(4, "")
+        Me.ImgLst.Images.SetKeyName(5, "")
+        Me.ImgLst.Images.SetKeyName(6, "")
+        Me.ImgLst.Images.SetKeyName(7, "")
+        Me.ImgLst.Images.SetKeyName(8, "")
+        Me.ImgLst.Images.SetKeyName(9, "")
+        Me.ImgLst.Images.SetKeyName(10, "")
+        Me.ImgLst.Images.SetKeyName(11, "")
+        Me.ImgLst.Images.SetKeyName(12, "")
+        Me.ImgLst.Images.SetKeyName(13, "")
+        Me.ImgLst.Images.SetKeyName(14, "")
+        Me.ImgLst.Images.SetKeyName(15, "")
+        Me.ImgLst.Images.SetKeyName(16, "")
+        Me.ImgLst.Images.SetKeyName(17, "")
+        Me.ImgLst.Images.SetKeyName(18, "")
+        Me.ImgLst.Images.SetKeyName(19, "")
+        Me.ImgLst.Images.SetKeyName(20, "")
+        Me.ImgLst.Images.SetKeyName(21, "")
+        Me.ImgLst.Images.SetKeyName(22, "")
+        Me.ImgLst.Images.SetKeyName(23, "")
+        Me.ImgLst.Images.SetKeyName(24, "")
+        Me.ImgLst.Images.SetKeyName(25, "")
+        Me.ImgLst.Images.SetKeyName(26, "")
+        Me.ImgLst.Images.SetKeyName(27, "")
+        Me.ImgLst.Images.SetKeyName(28, "")
+        Me.ImgLst.Images.SetKeyName(29, "")
+        Me.ImgLst.Images.SetKeyName(30, "")
+        Me.ImgLst.Images.SetKeyName(31, "")
+        Me.ImgLst.Images.SetKeyName(32, "")
+        Me.ImgLst.Images.SetKeyName(33, "")
+        Me.ImgLst.Images.SetKeyName(34, "")
+        Me.ImgLst.Images.SetKeyName(35, "")
+        Me.ImgLst.Images.SetKeyName(36, "")
+        Me.ImgLst.Images.SetKeyName(37, "")
+        Me.ImgLst.Images.SetKeyName(38, "")
+        Me.ImgLst.Images.SetKeyName(39, "")
+        Me.ImgLst.Images.SetKeyName(40, "")
+        Me.ImgLst.Images.SetKeyName(41, "")
+        Me.ImgLst.Images.SetKeyName(42, "")
+        Me.ImgLst.Images.SetKeyName(43, "")
+        Me.ImgLst.Images.SetKeyName(44, "")
+        Me.ImgLst.Images.SetKeyName(45, "")
+        Me.ImgLst.Images.SetKeyName(46, "")
+        Me.ImgLst.Images.SetKeyName(47, "")
+        Me.ImgLst.Images.SetKeyName(48, "")
+        Me.ImgLst.Images.SetKeyName(49, "")
+        Me.ImgLst.Images.SetKeyName(50, "")
+        Me.ImgLst.Images.SetKeyName(51, "")
+        Me.ImgLst.Images.SetKeyName(52, "")
+        Me.ImgLst.Images.SetKeyName(53, "")
+        Me.ImgLst.Images.SetKeyName(54, "")
+        Me.ImgLst.Images.SetKeyName(55, "vghtr.ico")
+        '
+        '_FRM_MDIForm_Toolbars_Dock_Area_Left
+        '
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 71)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.Name = "_FRM_MDIForm_Toolbars_Dock_Area_Left"
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 450)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
+        '
+        '_FRM_MDIForm_Toolbars_Dock_Area_Right
+        '
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1095, 71)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.Name = "_FRM_MDIForm_Toolbars_Dock_Area_Right"
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 450)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
+        '
+        '_FRM_MDIForm_Toolbars_Dock_Area_Top
+        '
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.Name = "_FRM_MDIForm_Toolbars_Dock_Area_Top"
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1095, 71)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
+        '
+        '_FRM_MDIForm_Toolbars_Dock_Area_Bottom
+        '
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 521)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.Name = "_FRM_MDIForm_Toolbars_Dock_Area_Bottom"
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1095, 0)
+        Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
+        '
+        'Exp_Main
+        '
+        Me.Exp_Main.ColumnSpacing = 7
+        Me.Exp_Main.Dock = System.Windows.Forms.DockStyle.Left
+        UltraExplorerBarItem1.Text = "New Item"
+        UltraExplorerBarItem2.Text = "New Item"
+        UltraExplorerBarGroup1.Items.AddRange(New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem() {UltraExplorerBarItem1, UltraExplorerBarItem2})
+        UltraExplorerBarGroup1.Text = "New Group"
+        Me.Exp_Main.Groups.AddRange(New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup() {UltraExplorerBarGroup1})
+        Me.Exp_Main.GroupSettings.BorderStyleItemArea = Infragistics.Win.UIElementBorderStyle.Dotted
+        Me.Exp_Main.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.SmallImages
+        Me.Exp_Main.ImageListSmall = Me.ImgLst
+        Me.Exp_Main.ImageSizeSmall = New System.Drawing.Size(20, 20)
+        Appearance56.Image = CType(resources.GetObject("Appearance56.Image"), Object)
+        Appearance56.ImageHAlign = Infragistics.Win.HAlign.Right
+        Appearance56.TextHAlignAsString = "Left"
+        Me.Exp_Main.ItemSettings.AppearancesSmall.Appearance = Appearance56
+        Me.Exp_Main.ItemSettings.HotTracking = Infragistics.Win.DefaultableBoolean.[True]
+        Me.Exp_Main.ItemSettings.HotTrackStyle = Infragistics.Win.UltraWinExplorerBar.ItemHotTrackStyle.HighlightEntireItem
+        Me.Exp_Main.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Label
+        Me.Exp_Main.Location = New System.Drawing.Point(0, 71)
+        Me.Exp_Main.Name = "Exp_Main"
+        Me.Exp_Main.Size = New System.Drawing.Size(225, 450)
+        Me.Exp_Main.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.Listbar
+        Me.Exp_Main.TabIndex = 4
+        Me.Exp_Main.ViewStyle = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarViewStyle.Office2003
+        '
+        'UltraDockManager1
+        '
+        Me.UltraDockManager1.HostControl = Me
+        '
+        '_MDIFormUnpinnedTabAreaLeft
+        '
+        Me._MDIFormUnpinnedTabAreaLeft.Dock = System.Windows.Forms.DockStyle.Left
+        Me._MDIFormUnpinnedTabAreaLeft.Font = New System.Drawing.Font("Tahoma", 8.0!)
+        Me._MDIFormUnpinnedTabAreaLeft.Location = New System.Drawing.Point(0, 71)
+        Me._MDIFormUnpinnedTabAreaLeft.Name = "_MDIFormUnpinnedTabAreaLeft"
+        Me._MDIFormUnpinnedTabAreaLeft.Owner = Me.UltraDockManager1
+        Me._MDIFormUnpinnedTabAreaLeft.Size = New System.Drawing.Size(0, 450)
+        Me._MDIFormUnpinnedTabAreaLeft.TabIndex = 19
+        '
+        '_MDIFormUnpinnedTabAreaRight
+        '
+        Me._MDIFormUnpinnedTabAreaRight.Dock = System.Windows.Forms.DockStyle.Right
+        Me._MDIFormUnpinnedTabAreaRight.Font = New System.Drawing.Font("Tahoma", 8.0!)
+        Me._MDIFormUnpinnedTabAreaRight.Location = New System.Drawing.Point(1095, 71)
+        Me._MDIFormUnpinnedTabAreaRight.Name = "_MDIFormUnpinnedTabAreaRight"
+        Me._MDIFormUnpinnedTabAreaRight.Owner = Me.UltraDockManager1
+        Me._MDIFormUnpinnedTabAreaRight.Size = New System.Drawing.Size(0, 450)
+        Me._MDIFormUnpinnedTabAreaRight.TabIndex = 20
+        '
+        '_MDIFormUnpinnedTabAreaTop
+        '
+        Me._MDIFormUnpinnedTabAreaTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me._MDIFormUnpinnedTabAreaTop.Font = New System.Drawing.Font("Tahoma", 8.0!)
+        Me._MDIFormUnpinnedTabAreaTop.Location = New System.Drawing.Point(0, 71)
+        Me._MDIFormUnpinnedTabAreaTop.Name = "_MDIFormUnpinnedTabAreaTop"
+        Me._MDIFormUnpinnedTabAreaTop.Owner = Me.UltraDockManager1
+        Me._MDIFormUnpinnedTabAreaTop.Size = New System.Drawing.Size(1095, 0)
+        Me._MDIFormUnpinnedTabAreaTop.TabIndex = 21
+        '
+        '_MDIFormUnpinnedTabAreaBottom
+        '
+        Me._MDIFormUnpinnedTabAreaBottom.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me._MDIFormUnpinnedTabAreaBottom.Font = New System.Drawing.Font("Tahoma", 8.0!)
+        Me._MDIFormUnpinnedTabAreaBottom.Location = New System.Drawing.Point(0, 521)
+        Me._MDIFormUnpinnedTabAreaBottom.Name = "_MDIFormUnpinnedTabAreaBottom"
+        Me._MDIFormUnpinnedTabAreaBottom.Owner = Me.UltraDockManager1
+        Me._MDIFormUnpinnedTabAreaBottom.Size = New System.Drawing.Size(1095, 0)
+        Me._MDIFormUnpinnedTabAreaBottom.TabIndex = 22
+        '
+        '_MDIFormAutoHideControl
+        '
+        Me._MDIFormAutoHideControl.Font = New System.Drawing.Font("Tahoma", 8.0!)
+        Me._MDIFormAutoHideControl.Location = New System.Drawing.Point(0, 0)
+        Me._MDIFormAutoHideControl.Name = "_MDIFormAutoHideControl"
+        Me._MDIFormAutoHideControl.Owner = Me.UltraDockManager1
+        Me._MDIFormAutoHideControl.Size = New System.Drawing.Size(0, 0)
+        Me._MDIFormAutoHideControl.TabIndex = 23
+        '
+        'UltraTabbedMdiManager1
+        '
+        Me.UltraTabbedMdiManager1.MaxTabGroups = 2
+        Me.UltraTabbedMdiManager1.MdiParent = Me
+        Me.UltraTabbedMdiManager1.TabGroupSettings.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft
+        Me.UltraTabbedMdiManager1.TabSettings.DisplayFormIcon = Infragistics.Win.DefaultableBoolean.[True]
+        Appearance59.ImageHAlign = Infragistics.Win.HAlign.Right
+        Appearance59.TextHAlignAsString = "Right"
+        Me.UltraTabbedMdiManager1.TabSettings.TabAppearance = Appearance59
+        Me.UltraTabbedMdiManager1.ViewStyle = Infragistics.Win.UltraWinTabbedMdi.ViewStyle.VisualStudio2005
+        '
+        'Splitter1
+        '
+        Me.Splitter1.BackColor = System.Drawing.SystemColors.Window
+        Me.Splitter1.Location = New System.Drawing.Point(225, 71)
+        Me.Splitter1.Name = "Splitter1"
+        Me.Splitter1.Size = New System.Drawing.Size(3, 450)
+        Me.Splitter1.TabIndex = 29
+        Me.Splitter1.TabStop = False
+        '
+        'StsBar_Main
+        '
+        Me.StsBar_Main.Location = New System.Drawing.Point(0, 521)
+        Me.StsBar_Main.Name = "StsBar_Main"
+        Appearance57.FontData.BoldAsString = "True"
+        Appearance57.FontData.SizeInPoints = 10.0!
+        UltraStatusPanel1.Appearance = Appearance57
+        UltraStatusPanel1.Key = "ServerName"
+        UltraStatusPanel1.SizingMode = Infragistics.Win.UltraWinStatusBar.PanelSizingMode.Spring
+        Appearance58.FontData.BoldAsString = "True"
+        Appearance58.FontData.SizeInPoints = 10.0!
+        Appearance58.ForeColor = System.Drawing.Color.Blue
+        Appearance58.TextHAlignAsString = "Right"
+        UltraStatusPanel2.Appearance = Appearance58
+        UltraStatusPanel2.Key = "Msg_Text"
+        UltraStatusPanel2.SizingMode = Infragistics.Win.UltraWinStatusBar.PanelSizingMode.Automatic
+        Me.StsBar_Main.Panels.AddRange(New Infragistics.Win.UltraWinStatusBar.UltraStatusPanel() {UltraStatusPanel1, UltraStatusPanel2})
+        Me.StsBar_Main.Size = New System.Drawing.Size(1095, 25)
+        Me.StsBar_Main.TabIndex = 35
+        Me.StsBar_Main.Text = "UltraStatusBar1"
+        '
+        'Msg_Timer
+        '
+        Me.Msg_Timer.Interval = 1000
+        '
+        'Splitter2
+        '
+        Me.Splitter2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Splitter2.Location = New System.Drawing.Point(1092, 71)
+        Me.Splitter2.Name = "Splitter2"
+        Me.Splitter2.Size = New System.Drawing.Size(3, 450)
+        Me.Splitter2.TabIndex = 37
+        Me.Splitter2.TabStop = False
+        '
+        'Notification_Timer
+        '
+        '
+        'Txt_Message
+        '
+        Me.Txt_Message.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Appearance55.BackColor = System.Drawing.Color.AliceBlue
+        Appearance55.FontData.BoldAsString = "True"
+        Appearance55.FontData.Name = "Aparajita"
+        Appearance55.FontData.SizeInPoints = 18.0!
+        Appearance55.ForeColor = System.Drawing.Color.Blue
+        Appearance55.TextHAlignAsString = "Center"
+        Me.Txt_Message.Appearance = Appearance55
+        Me.Txt_Message.Location = New System.Drawing.Point(612, 454)
+        Me.Txt_Message.Name = "Txt_Message"
+        Me.Txt_Message.Size = New System.Drawing.Size(433, 31)
+        Me.Txt_Message.TabIndex = 262
+        Me.Txt_Message.Text = "UltraLabel1"
+        Me.Txt_Message.Visible = False
+        '
+        'ToolBar_Main
+        '
+        Appearance1.TextHAlignAsString = "Right"
+        Me.ToolBar_Main.Appearance = Appearance1
+        Me.ToolBar_Main.DesignerFlags = 1
+        Me.ToolBar_Main.DockWithinContainer = Me
+        Me.ToolBar_Main.DockWithinContainerBaseType = GetType(System.Windows.Forms.Form)
+        Me.ToolBar_Main.FormDisplayStyle = Infragistics.Win.UltraWinToolbars.FormDisplayStyle.Standard
+        Me.ToolBar_Main.ImageListSmall = Me.ImgLst
+        Me.ToolBar_Main.ImageSizeLarge = New System.Drawing.Size(100, 100)
+        Me.ToolBar_Main.ImageSizeSmall = New System.Drawing.Size(22, 22)
+        Me.ToolBar_Main.MenuSettings.UseLargeImages = Infragistics.Win.DefaultableBoolean.[False]
+        Me.ToolBar_Main.Office2007UICompatibility = False
+        Me.ToolBar_Main.Ribbon.ApplicationMenu.ToolAreaLeft.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool29, ButtonTool30, ButtonTool31, ButtonTool32, ButtonTool33, ButtonTool34})
+        Me.ToolBar_Main.Ribbon.IsMinimized = True
+        RibbonTab1.Caption = "Short Cuts"
+        RibbonGroup1.Caption = "«· ⁄—Ì›« "
+        ButtonTool35.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool36.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool7.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool8.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool9.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup1.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool35, ButtonTool36, ButtonTool7, ButtonTool8, ButtonTool9})
+        RibbonGroup2.Caption = "«⁄œ«œ« "
+        ButtonTool37.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool38.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool39.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool12.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup2.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool37, ButtonTool38, ButtonTool39, ButtonTool12})
+        RibbonGroup3.Caption = "«·»Ì⁄"
+        ButtonTool40.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool41.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool13.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool25.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup3.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool40, ButtonTool41, ButtonTool13, ButtonTool25})
+        RibbonGroup4.Caption = "«·„«·Ì« "
+        Appearance12.Image = CType(resources.GetObject("Appearance12.Image"), Object)
+        RibbonGroup4.Settings.Appearance = Appearance12
+        ButtonTool42.InstanceProps.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.TextOnlyAlways
+        ButtonTool42.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool43.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool44.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool14.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool17.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool19.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup4.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool42, ButtonTool43, ButtonTool44, ButtonTool14, ButtonTool17, ButtonTool19})
+        RibbonGroup5.Caption = "«· ﬁ«—Ì—"
+        ButtonTool45.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool22.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        ButtonTool23.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup5.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool45, ButtonTool22, ButtonTool23})
+        RibbonTab1.Groups.AddRange(New Infragistics.Win.UltraWinToolbars.RibbonGroup() {RibbonGroup1, RibbonGroup2, RibbonGroup3, RibbonGroup4, RibbonGroup5})
+        Me.ToolBar_Main.Ribbon.NonInheritedRibbonTabs.AddRange(New Infragistics.Win.UltraWinToolbars.RibbonTab() {RibbonTab1})
+        Me.ToolBar_Main.Ribbon.QuickAccessToolbar.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool55, ButtonTool54, ButtonTool53, ButtonTool52, ButtonTool48, ButtonTool49, TextBoxTool3, ButtonTool50, ButtonTool51, ButtonTool47, ButtonTool46, StateButtonTool2, ComboBoxTool2})
+        Me.ToolBar_Main.Ribbon.TabItemToolbar.Settings.UseLargeImages = Infragistics.Win.DefaultableBoolean.[True]
+        Me.ToolBar_Main.Ribbon.Visible = True
+        Me.ToolBar_Main.RuntimeCustomizationOptions = CType(((Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.AllowCustomizeDialog Or Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.AllowAltClickToolDragging) _
+                    Or Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.AllowToolbarLocking), Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions)
+        Me.ToolBar_Main.ShowFullMenusDelay = 500
+        Me.ToolBar_Main.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.Office2007
+        UltraToolbar1.DockedColumn = 0
+        UltraToolbar1.DockedRow = 0
+        LabelTool3.InstanceProps.IsFirstInGroup = True
+        ButtonTool58.InstanceProps.IsFirstInGroup = True
+        ButtonTool64.InstanceProps.IsFirstInGroup = True
+        ButtonTool65.InstanceProps.IsFirstInGroup = True
+        ButtonTool66.InstanceProps.IsFirstInGroup = True
+        ButtonTool67.InstanceProps.IsFirstInGroup = True
+        ButtonTool68.InstanceProps.IsFirstInGroup = True
+        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, ButtonTool56, ButtonTool57, ButtonTool58, ButtonTool59, ButtonTool60, ButtonTool61, TextBoxTool4, ButtonTool62, ButtonTool63, ButtonTool64, ButtonTool65, ButtonTool66, ButtonTool67, ButtonTool68})
+        Appearance13.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Appearance13.BackColor2 = System.Drawing.SystemColors.Control
+        Appearance13.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        UltraToolbar1.Settings.Appearance = Appearance13
+        UltraToolbar1.Settings.CaptionPlacement = Infragistics.Win.TextPlacement.LeftOfImage
+        UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
+        UltraToolbar1.Settings.PaddingBottom = 3
+        UltraToolbar1.Settings.PaddingTop = 1
+        UltraToolbar1.Settings.UseLargeImages = Infragistics.Win.DefaultableBoolean.[False]
+        UltraToolbar1.Text = "UltraToolbar1"
+        UltraToolbar1.Visible = False
+        Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
+        Me.ToolBar_Main.ToolbarSettings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
+        Me.ToolBar_Main.ToolbarSettings.ToolDisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText
+        Me.ToolBar_Main.ToolbarSettings.ToolOrientation = Infragistics.Win.UltraWinToolbars.ToolOrientation.Horizontal
+        Appearance14.Image = CType(resources.GetObject("Appearance14.Image"), Object)
+        ButtonTool69.SharedPropsInternal.AppearancesLarge.Appearance = Appearance14
+        Appearance15.Image = "vghtr.ico"
+        ButtonTool69.SharedPropsInternal.AppearancesSmall.Appearance = Appearance15
+        ButtonTool69.SharedPropsInternal.Caption = "New"
+        ButtonTool69.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlN
+        Appearance16.Image = 11
+        ButtonTool70.SharedPropsInternal.AppearancesSmall.Appearance = Appearance16
+        ButtonTool70.SharedPropsInternal.Caption = "Delete"
+        ButtonTool70.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlDel
+        Appearance17.Image = 29
+        ButtonTool71.SharedPropsInternal.AppearancesSmall.Appearance = Appearance17
+        ButtonTool71.SharedPropsInternal.Caption = "«” ⁄·«„"
+        ButtonTool71.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlQ
+        ButtonTool71.SharedPropsInternal.Visible = False
+        Appearance18.Image = 35
+        ButtonTool72.SharedPropsInternal.AppearancesSmall.Appearance = Appearance18
+        ButtonTool72.SharedPropsInternal.Caption = "Save"
+        ButtonTool72.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlS
+        Appearance19.Image = 40
+        ButtonTool73.SharedPropsInternal.AppearancesSmall.Appearance = Appearance19
+        ButtonTool73.SharedPropsInternal.Caption = "First Record"
+        Appearance20.Image = 43
+        ButtonTool74.SharedPropsInternal.AppearancesSmall.Appearance = Appearance20
+        ButtonTool74.SharedPropsInternal.Caption = "Previous Record"
+        Appearance21.Image = 42
+        ButtonTool75.SharedPropsInternal.AppearancesSmall.Appearance = Appearance21
+        ButtonTool75.SharedPropsInternal.Caption = "Next Record"
+        Appearance22.Image = 41
+        ButtonTool76.SharedPropsInternal.AppearancesSmall.Appearance = Appearance22
+        ButtonTool76.SharedPropsInternal.Caption = "Last Record"
+        Appearance23.TextHAlignAsString = "Center"
+        TextBoxTool5.EditAppearance = Appearance23
+        TextBoxTool5.SharedPropsInternal.Width = 60
+        Appearance24.Image = 22
+        ButtonTool77.SharedPropsInternal.AppearancesSmall.Appearance = Appearance24
+        ButtonTool77.SharedPropsInternal.Caption = "Close Current Screen"
+        ButtonTool77.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlW
+        Appearance25.Image = 3
+        ButtonTool78.SharedPropsInternal.AppearancesSmall.Appearance = Appearance25
+        ButtonTool78.SharedPropsInternal.Caption = "Close Application"
+        ButtonTool78.SharedPropsInternal.Visible = False
+        LabelTool4.SharedPropsInternal.Spring = True
+        Appearance26.Image = 37
+        ButtonTool79.SharedPropsInternal.AppearancesSmall.Appearance = Appearance26
+        ButtonTool79.SharedPropsInternal.Caption = "Print"
+        ButtonTool79.SharedPropsInternal.Shortcut = System.Windows.Forms.Shortcut.CtrlP
+        Appearance27.Image = 18
+        ButtonTool80.SharedPropsInternal.AppearancesSmall.Appearance = Appearance27
+        ButtonTool80.SharedPropsInternal.Caption = "Change User"
+        Appearance28.Image = 30
+        ButtonTool81.SharedPropsInternal.AppearancesSmall.Appearance = Appearance28
+        ButtonTool81.SharedPropsInternal.Caption = "»ÕÀ"
+        Appearance29.Image = CType(resources.GetObject("Appearance29.Image"), Object)
+        ButtonTool82.SharedPropsInternal.AppearancesSmall.Appearance = Appearance29
+        ButtonTool82.SharedPropsInternal.Caption = "«·„’—Ê›« "
+        Appearance30.Image = CType(resources.GetObject("Appearance30.Image"), Object)
+        ButtonTool83.SharedPropsInternal.AppearancesSmall.Appearance = Appearance30
+        ButtonTool83.SharedPropsInternal.Caption = "œ›⁄ ‰ﬁœÌ…"
+        Appearance31.Image = CType(resources.GetObject("Appearance31.Image"), Object)
+        ButtonTool84.SharedPropsInternal.AppearancesSmall.Appearance = Appearance31
+        ButtonTool84.SharedPropsInternal.Caption = "«” ·«„ ‰ﬁœÌ…"
+        Appearance32.Image = CType(resources.GetObject("Appearance32.Image"), Object)
+        ButtonTool85.SharedPropsInternal.AppearancesSmall.Appearance = Appearance32
+        ButtonTool85.SharedPropsInternal.Caption = "«⁄œ«œ«  ⁄«„…"
+        Appearance33.Image = CType(resources.GetObject("Appearance33.Image"), Object)
+        ButtonTool86.SharedPropsInternal.AppearancesSmall.Appearance = Appearance33
+        ButtonTool86.SharedPropsInternal.Caption = "«⁄œ«œ«  „«·Ì…"
+        Appearance34.Image = CType(resources.GetObject("Appearance34.Image"), Object)
+        ButtonTool87.SharedPropsInternal.AppearancesSmall.Appearance = Appearance34
+        ButtonTool87.SharedPropsInternal.Caption = " ⁄—Ì› «·⁄„·«¡"
+        Appearance35.Image = CType(resources.GetObject("Appearance35.Image"), Object)
+        ButtonTool88.SharedPropsInternal.AppearancesSmall.Appearance = Appearance35
+        ButtonTool88.SharedPropsInternal.Caption = " ﬁ«—Ì— «·»Ì⁄"
+        Appearance36.Image = CType(resources.GetObject("Appearance36.Image"), Object)
+        ButtonTool89.SharedPropsInternal.AppearancesSmall.Appearance = Appearance36
+        ButtonTool89.SharedPropsInternal.Caption = "›« Ê—… »Ì⁄"
+        Appearance37.Image = CType(resources.GetObject("Appearance37.Image"), Object)
+        ButtonTool90.SharedPropsInternal.AppearancesSmall.Appearance = Appearance37
+        ButtonTool90.SharedPropsInternal.Caption = "√‰Ÿ„… «·œŒÊ·"
+        Appearance38.Image = CType(resources.GetObject("Appearance38.Image"), Object)
+        ButtonTool91.SharedPropsInternal.AppearancesSmall.Appearance = Appearance38
+        ButtonTool91.SharedPropsInternal.Caption = " ⁄—Ì› «·„ÊŸ›Ì‰"
+        Appearance39.Image = CType(resources.GetObject("Appearance39.Image"), Object)
+        ButtonTool92.SharedPropsInternal.AppearancesSmall.Appearance = Appearance39
+        ButtonTool92.SharedPropsInternal.Caption = "«·»Ì⁄ «·„»«‘—"
+        Appearance40.Image = CType(resources.GetObject("Appearance40.Image"), Object)
+        ButtonTool1.SharedPropsInternal.AppearancesSmall.Appearance = Appearance40
+        ButtonTool1.SharedPropsInternal.Caption = "œ›⁄ ‘Ìﬂ« "
+        Appearance41.Image = CType(resources.GetObject("Appearance41.Image"), Object)
+        ButtonTool2.SharedPropsInternal.AppearancesSmall.Appearance = Appearance41
+        ButtonTool2.SharedPropsInternal.Caption = "«” ·«„ ‘Ìﬂ« "
+        Appearance42.Image = CType(resources.GetObject("Appearance42.Image"), Object)
+        ButtonTool4.SharedPropsInternal.AppearancesSmall.Appearance = Appearance42
+        ButtonTool4.SharedPropsInternal.Caption = " ⁄—Ì› «·⁄„·«¡ - »—Ì„«"
+        ButtonTool4.SharedPropsInternal.Visible = False
+        Appearance43.Image = CType(resources.GetObject("Appearance43.Image"), Object)
+        ButtonTool5.SharedPropsInternal.AppearancesSmall.Appearance = Appearance43
+        ButtonTool5.SharedPropsInternal.Caption = " ⁄—Ì› «·„ÊŸ›Ì‰ - »—Ì„«"
+        ButtonTool5.SharedPropsInternal.Visible = False
+        Appearance44.Image = CType(resources.GetObject("Appearance44.Image"), Object)
+        ButtonTool6.SharedPropsInternal.AppearancesSmall.Appearance = Appearance44
+        ButtonTool6.SharedPropsInternal.Caption = " ⁄—Ì› «·√’‰«› - »—Ì„«"
+        ButtonTool6.SharedPropsInternal.Visible = False
+        Appearance45.Image = CType(resources.GetObject("Appearance45.Image"), Object)
+        ButtonTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance45
+        ButtonTool3.SharedPropsInternal.Caption = "«⁄œ«œ«  ⁄«„… - »—Ì„«"
+        ButtonTool3.SharedPropsInternal.Visible = False
+        Appearance46.Image = CType(resources.GetObject("Appearance46.Image"), Object)
+        ButtonTool10.SharedPropsInternal.AppearancesSmall.Appearance = Appearance46
+        ButtonTool10.SharedPropsInternal.Caption = "›« Ê—… »Ì⁄ - »—Ì„«"
+        ButtonTool10.SharedPropsInternal.Visible = False
+        Appearance47.Image = CType(resources.GetObject("Appearance47.Image"), Object)
+        ButtonTool11.SharedPropsInternal.AppearancesSmall.Appearance = Appearance47
+        ButtonTool11.SharedPropsInternal.Caption = "«· Õ’Ì·« "
+        ButtonTool11.SharedPropsInternal.Visible = False
+        Appearance48.Image = CType(resources.GetObject("Appearance48.Image"), Object)
+        ButtonTool16.SharedPropsInternal.AppearancesSmall.Appearance = Appearance48
+        ButtonTool16.SharedPropsInternal.Caption = "«·√ﬁ”«ÿ «·„” Õﬁ…"
+        ButtonTool16.SharedPropsInternal.Visible = False
+        Appearance49.Image = CType(resources.GetObject("Appearance49.Image"), Object)
+        ButtonTool18.SharedPropsInternal.AppearancesSmall.Appearance = Appearance49
+        ButtonTool18.SharedPropsInternal.Caption = "«·„»«·€ «·„” Õﬁ…"
+        ButtonTool18.SharedPropsInternal.Visible = False
+        Appearance50.Image = CType(resources.GetObject("Appearance50.Image"), Object)
+        ButtonTool20.SharedPropsInternal.AppearancesSmall.Appearance = Appearance50
+        ButtonTool20.SharedPropsInternal.Caption = " ﬁ«—Ì— «·„«·Ì« "
+        Appearance51.Image = CType(resources.GetObject("Appearance51.Image"), Object)
+        ButtonTool21.SharedPropsInternal.AppearancesSmall.Appearance = Appearance51
+        ButtonTool21.SharedPropsInternal.Caption = " ﬁ«—Ì— «·„Œ“Ê‰"
+        Appearance52.Image = CType(resources.GetObject("Appearance52.Image"), Object)
+        ButtonTool24.SharedPropsInternal.AppearancesSmall.Appearance = Appearance52
+        ButtonTool24.SharedPropsInternal.Caption = "„— Ã⁄«  «·»Ì⁄"
+        Appearance53.Image = CType(resources.GetObject("Appearance53.Image"), Object)
+        StateButtonTool1.SharedPropsInternal.AppearancesSmall.Appearance = Appearance53
+        StateButtonTool1.SharedPropsInternal.Caption = "Help"
+        ComboBoxTool1.SharedPropsInternal.Caption = "Themes"
+        ValueList1.PreferredDropDownSize = New System.Drawing.Size(0, 0)
+        ValueListItem30.DataValue = "None"
+        ValueListItem30.DisplayText = "(None)"
+        ValueListItem1.DataValue = "Aero.isl"
+        ValueListItem1.DisplayText = "Aero"
+        ValueListItem2.DataValue = "Chameleon.isl"
+        ValueListItem2.DisplayText = "Chameleon"
+        ValueListItem3.DataValue = "Claymation.isl"
+        ValueListItem3.DisplayText = "Claymation"
+        ValueListItem4.DataValue = "GrapeTomato.isl"
+        ValueListItem4.DisplayText = "GrapeTomato"
+        ValueListItem5.DataValue = "IG.isl"
+        ValueListItem5.DisplayText = "IG"
+        ValueListItem6.DataValue = "LucidDream.isl"
+        ValueListItem6.DisplayText = "LucidDream"
+        ValueListItem7.DataValue = "Metro.isl"
+        ValueListItem7.DisplayText = "Metro"
+        ValueListItem8.DataValue = "ModClay.isl"
+        ValueListItem8.DisplayText = "ModClay"
+        ValueListItem9.DataValue = "Nautilus.isl"
+        ValueListItem9.DisplayText = "Nautilus"
+        ValueListItem10.DataValue = "NoirModerne.isl"
+        ValueListItem10.DisplayText = "NoirModerne"
+        ValueListItem12.DataValue = "Office2007Black.isl"
+        ValueListItem12.DisplayText = "Office2007Black"
+        ValueListItem11.DataValue = "Office2007Blue.isl"
+        ValueListItem11.DisplayText = "Office2007Blue"
+        ValueListItem13.DataValue = "Office2007Silver.isl"
+        ValueListItem13.DisplayText = "Office2007Silver"
+        ValueListItem14.DataValue = "Office2010Black.isl"
+        ValueListItem14.DisplayText = "Office2010Black"
+        ValueListItem15.DataValue = "Office2010Blue.isl"
+        ValueListItem15.DisplayText = "Office2010Blue"
+        ValueListItem16.DataValue = "Office2010Silver.isl"
+        ValueListItem16.DisplayText = "Office2010Silver"
+        ValueListItem17.DataValue = "Pear.isl"
+        ValueListItem17.DisplayText = "Pear"
+        ValueListItem18.DataValue = "RedPlanet.isl"
+        ValueListItem18.DisplayText = "RedPlanet"
+        ValueListItem19.DataValue = "RubberBlack.isl"
+        ValueListItem19.DisplayText = "RubberBlack"
+        ValueListItem20.DataValue = "Trendy.isl"
+        ValueListItem20.DisplayText = "Trendy"
+        ValueListItem21.DataValue = "VS2008.isl"
+        ValueListItem21.DisplayText = "VS2008"
+        ValueListItem22.DataValue = "VS2010.isl"
+        ValueListItem22.DisplayText = "VS2010"
+        ValueListItem23.DataValue = "VS2013 - Dark.isl"
+        ValueListItem23.DisplayText = "VS2013 - Dark"
+        ValueListItem24.DataValue = "VS2013 - Light.isl"
+        ValueListItem24.DisplayText = "VS2013 - Light"
+        ValueListItem25.DataValue = "Windows7.isl"
+        ValueListItem25.DisplayText = "Windows7"
+        ValueListItem26.DataValue = "Windows8-DarkGray-Blue.isl"
+        ValueListItem26.DisplayText = "Windows8-DarkGray-Blue"
+        ValueListItem27.DataValue = "Windows8-DarkGray-Green.isl"
+        ValueListItem27.DisplayText = "Windows8-DarkGray-Green"
+        ValueListItem28.DataValue = "Windows8-DarkGray-Pink.isl"
+        ValueListItem28.DisplayText = "Windows8-DarkGray-Pink"
+        ValueListItem29.DataValue = "Windows8-DarkGray-Yellow.isl"
+        ValueListItem29.DisplayText = "Windows8-DarkGray-Yellow"
+        ValueList1.ValueListItems.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem30, ValueListItem1, ValueListItem2, ValueListItem3, ValueListItem4, ValueListItem5, ValueListItem6, ValueListItem7, ValueListItem8, ValueListItem9, ValueListItem10, ValueListItem12, ValueListItem11, ValueListItem13, ValueListItem14, ValueListItem15, ValueListItem16, ValueListItem17, ValueListItem18, ValueListItem19, ValueListItem20, ValueListItem21, ValueListItem22, ValueListItem23, ValueListItem24, ValueListItem25, ValueListItem26, ValueListItem27, ValueListItem28, ValueListItem29})
+        ComboBoxTool1.ValueList = ValueList1
+        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool69, ButtonTool70, ButtonTool71, ButtonTool72, ButtonTool73, ButtonTool74, ButtonTool75, ButtonTool76, TextBoxTool5, ButtonTool77, ButtonTool78, LabelTool4, ButtonTool79, ButtonTool80, ButtonTool81, ButtonTool82, ButtonTool83, ButtonTool84, ButtonTool85, ButtonTool86, ButtonTool87, ButtonTool88, ButtonTool89, ButtonTool90, ButtonTool91, ButtonTool92, ButtonTool1, ButtonTool2, ButtonTool4, ButtonTool5, ButtonTool6, ButtonTool3, ButtonTool10, ButtonTool11, ButtonTool16, ButtonTool18, ButtonTool20, ButtonTool21, ButtonTool24, StateButtonTool1, ComboBoxTool1})
+        '
+        'MDIForm_L
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(1095, 546)
+        Me.Controls.Add(Me._MDIFormAutoHideControl)
+        Me.Controls.Add(Me.Txt_Message)
+        Me.Controls.Add(Me.Chk_ScreenState)
+        Me.Controls.Add(Me.Splitter2)
+        Me.Controls.Add(Me.Splitter1)
+        Me.Controls.Add(Me.Exp_Main)
+        Me.Controls.Add(Me._MDIFormUnpinnedTabAreaTop)
+        Me.Controls.Add(Me._MDIFormUnpinnedTabAreaBottom)
+        Me.Controls.Add(Me._MDIFormUnpinnedTabAreaLeft)
+        Me.Controls.Add(Me._MDIFormUnpinnedTabAreaRight)
+        Me.Controls.Add(Me._FRM_MDIForm_Toolbars_Dock_Area_Left)
+        Me.Controls.Add(Me._FRM_MDIForm_Toolbars_Dock_Area_Right)
+        Me.Controls.Add(Me._FRM_MDIForm_Toolbars_Dock_Area_Top)
+        Me.Controls.Add(Me._FRM_MDIForm_Toolbars_Dock_Area_Bottom)
+        Me.Controls.Add(Me.StsBar_Main)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.IsMdiContainer = True
+        Me.Name = "MDIForm_L"
+        Me.Text = "ERP"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.Chk_ScreenState, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Exp_Main, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UltraDockManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UltraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StsBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents ToolBar_Main As Infragistics.Win.UltraWinToolbars.UltraToolbarsManager
+    Friend WithEvents _FRM_MDIForm_Toolbars_Dock_Area_Left As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+    Friend WithEvents _FRM_MDIForm_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+    Friend WithEvents _FRM_MDIForm_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+    Friend WithEvents _FRM_MDIForm_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
+    Friend WithEvents ImgLst As System.Windows.Forms.ImageList
+    Friend WithEvents Exp_Main As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar
+    Friend WithEvents _MDIFormAutoHideControl As Infragistics.Win.UltraWinDock.AutoHideControl
+    Friend WithEvents UltraDockManager1 As Infragistics.Win.UltraWinDock.UltraDockManager
+    Friend WithEvents _MDIFormUnpinnedTabAreaTop As Infragistics.Win.UltraWinDock.UnpinnedTabArea
+    Friend WithEvents _MDIFormUnpinnedTabAreaBottom As Infragistics.Win.UltraWinDock.UnpinnedTabArea
+    Friend WithEvents _MDIFormUnpinnedTabAreaLeft As Infragistics.Win.UltraWinDock.UnpinnedTabArea
+    Friend WithEvents _MDIFormUnpinnedTabAreaRight As Infragistics.Win.UltraWinDock.UnpinnedTabArea
+    Friend WithEvents UltraTabbedMdiManager1 As Infragistics.Win.UltraWinTabbedMdi.UltraTabbedMdiManager
+    Friend WithEvents Splitter1 As System.Windows.Forms.Splitter
+    Friend WithEvents StsBar_Main As Infragistics.Win.UltraWinStatusBar.UltraStatusBar
+    Friend WithEvents Msg_Timer As System.Windows.Forms.Timer
+    Friend WithEvents Splitter2 As System.Windows.Forms.Splitter
+    Friend WithEvents Chk_ScreenState As Infragistics.Win.UltraWinEditors.UltraCheckEditor
+    Friend WithEvents Notification_Timer As System.Windows.Forms.Timer
+    Friend WithEvents Txt_Message As Infragistics.Win.Misc.UltraLabel
+End Class

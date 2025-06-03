@@ -1264,6 +1264,7 @@ Public Class Frm_Employees_A
         Else
             sNewRecord()
         End If
+
         Tab_Main.Tabs("Tab_Details").Selected = True
     End Sub
 
