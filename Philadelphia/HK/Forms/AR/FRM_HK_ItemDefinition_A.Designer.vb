@@ -432,9 +432,9 @@ Partial Class FRM_HK_ItemDefinition_A
         Me.DTS_Stores = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
         Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Btn_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Txt_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Tab_Main = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
         Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
@@ -2682,9 +2682,9 @@ Partial Class FRM_HK_ItemDefinition_A
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Btn_Back)
         Me.Panel1.Controls.Add(Me.Btn_Close)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Txt_Back)
         Me.Panel1.Controls.Add(Me.Tab_Main)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Left)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Right)
@@ -2697,46 +2697,59 @@ Partial Class FRM_HK_ItemDefinition_A
         Me.Panel1.Size = New System.Drawing.Size(1279, 593)
         Me.Panel1.TabIndex = 488
         '
+        'Btn_Back
+        '
+        Appearance10.BackColor = System.Drawing.Color.Transparent
+        Appearance10.BorderColor = System.Drawing.Color.Transparent
+        Appearance10.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance10.Image = CType(resources.GetObject("Appearance10.Image"), Object)
+        Me.Btn_Back.Appearance = Appearance10
+        Me.Btn_Back.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Back.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Back.Location = New System.Drawing.Point(12, 31)
+        Me.Btn_Back.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Btn_Back.Name = "Btn_Back"
+        Me.Btn_Back.ShowFocusRect = False
+        Me.Btn_Back.ShowOutline = False
+        Me.Btn_Back.Size = New System.Drawing.Size(76, 71)
+        Me.Btn_Back.TabIndex = 720
+        Me.Btn_Back.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
+        '
         'Btn_Close
         '
         Me.Btn_Close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance10.BackColor = System.Drawing.Color.White
-        Appearance10.Image = CType(resources.GetObject("Appearance10.Image"), Object)
-        Appearance10.ImageHAlign = Infragistics.Win.HAlign.Center
-        Me.Btn_Close.Appearance = Appearance10
-        Me.Btn_Close.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Btn_Close.Location = New System.Drawing.Point(1159, 31)
+        Appearance11.BackColor = System.Drawing.Color.Transparent
+        Appearance11.BorderColor = System.Drawing.Color.Transparent
+        Appearance11.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance11.Image = CType(resources.GetObject("Appearance11.Image"), Object)
+        Appearance11.ImageHAlign = Infragistics.Win.HAlign.Center
+        Me.Btn_Close.Appearance = Appearance11
+        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Close.ImageSize = New System.Drawing.Size(80, 80)
+        Me.Btn_Close.Location = New System.Drawing.Point(1177, 22)
         Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.Size = New System.Drawing.Size(83, 87)
-        Me.Btn_Close.TabIndex = 710
+        Me.Btn_Close.ShowFocusRect = False
+        Me.Btn_Close.ShowOutline = False
+        Me.Btn_Close.Size = New System.Drawing.Size(85, 88)
+        Me.Btn_Close.TabIndex = 715
         Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Label5
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(75, Byte), Integer))
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label5.Font = New System.Drawing.Font("Droid Arabic Kufi", 21.0!)
-        Me.Label5.Location = New System.Drawing.Point(287, 31)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(369, 23)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(638, 90)
+        Me.Label5.Size = New System.Drawing.Size(541, 86)
         Me.Label5.TabIndex = 709
         Me.Label5.Text = " ⁄—Ì› «·√’‰«›"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Txt_Back
-        '
-        Me.Txt_Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance11.Image = CType(resources.GetObject("Appearance11.Image"), Object)
-        Me.Txt_Back.Appearance = Appearance11
-        Me.Txt_Back.ImageSize = New System.Drawing.Size(70, 70)
-        Me.Txt_Back.Location = New System.Drawing.Point(12, 31)
-        Me.Txt_Back.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Txt_Back.Name = "Txt_Back"
-        Me.Txt_Back.Size = New System.Drawing.Size(91, 90)
-        Me.Txt_Back.TabIndex = 708
         '
         'Tab_Main
         '
@@ -2995,7 +3008,7 @@ Partial Class FRM_HK_ItemDefinition_A
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label22 As Label
     Friend WithEvents Txt_Categories_Search As Infragistics.Win.UltraWinEditors.UltraComboEditor
-    Friend WithEvents Txt_Back As Infragistics.Win.Misc.UltraButton
     Friend WithEvents Label5 As Label
     Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Btn_Back As Infragistics.Win.Misc.UltraButton
 End Class

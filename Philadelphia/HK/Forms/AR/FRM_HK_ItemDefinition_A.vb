@@ -806,10 +806,10 @@ Public Class FRM_HK_ItemDefinition_A
                 'sQuerySummaryMain(Trim(Txt_FndByCode.Text), Trim(Txt_FndByDesc.Text))
 
                 'ToolBar_Main.Tools("Btn_CopyItems").SharedProps.Visible = False
-                Txt_Back.Visible = False
+                Btn_Back.Visible = False
             Else
                 vcFrmLevel.vParentFrm.sEnableTools(True, True, True, True, True, True, True, True, "", False, False, "ÈÍË")
-                Txt_Back.Visible = True
+                Btn_Back.Visible = True
 
                 'If Grd_Summary.Selected.Rows.Count > 0 Then
                 '    If Not Grd_Summary.ActiveRow.ParentRow Is Nothing Then
@@ -2970,7 +2970,7 @@ Public Class FRM_HK_ItemDefinition_A
         Me.Close()
     End Sub
 
-    Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Txt_Back.Click
+    Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Btn_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
     End Sub
 End Class
