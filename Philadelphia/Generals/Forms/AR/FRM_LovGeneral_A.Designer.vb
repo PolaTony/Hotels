@@ -54,12 +54,9 @@ Partial Class FRM_LovGeneral_A
         Dim UltraDataColumn2 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DescA")
         Dim UltraDataColumn3 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Type")
         Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
-        Dim LabelTool1 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim LabelTool2 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
+        Dim LabelTool5 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
         Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
+        Dim LabelTool8 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Btn_Cancel = New Infragistics.Win.Misc.UltraButton()
         Me.Btn_Ok = New Infragistics.Win.Misc.UltraButton()
@@ -70,8 +67,8 @@ Partial Class FRM_LovGeneral_A
         Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
         Me._Panel1_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._Panel1_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
+        Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me.Panel1.SuspendLayout()
         CType(Me.Txt_FndByDesc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_FndByCode, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,29 +90,40 @@ Partial Class FRM_LovGeneral_A
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Top)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(536, 368)
+        Me.Panel1.Size = New System.Drawing.Size(625, 453)
         Me.Panel1.TabIndex = 2
         '
         'Btn_Cancel
         '
         Appearance1.Image = CType(resources.GetObject("Appearance1.Image"), Object)
-        Appearance1.TextHAlignAsString = "Right"
+        Appearance1.ImageHAlign = Infragistics.Win.HAlign.Right
+        Appearance1.TextHAlignAsString = "Left"
         Me.Btn_Cancel.Appearance = Appearance1
-        Me.Btn_Cancel.Location = New System.Drawing.Point(326, 331)
+        Me.Btn_Cancel.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!)
+        Me.Btn_Cancel.ImageSize = New System.Drawing.Size(24, 24)
+        Me.Btn_Cancel.Location = New System.Drawing.Point(202, 408)
+        Me.Btn_Cancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Btn_Cancel.Name = "Btn_Cancel"
-        Me.Btn_Cancel.Size = New System.Drawing.Size(75, 29)
+        Me.Btn_Cancel.Padding = New System.Drawing.Size(5, 0)
+        Me.Btn_Cancel.Size = New System.Drawing.Size(103, 36)
         Me.Btn_Cancel.TabIndex = 492
         Me.Btn_Cancel.Text = "«·€«¡"
         '
         'Btn_Ok
         '
         Appearance2.Image = CType(resources.GetObject("Appearance2.Image"), Object)
-        Appearance2.TextHAlignAsString = "Right"
+        Appearance2.ImageHAlign = Infragistics.Win.HAlign.Right
+        Appearance2.TextHAlignAsString = "Left"
         Me.Btn_Ok.Appearance = Appearance2
-        Me.Btn_Ok.Location = New System.Drawing.Point(422, 331)
+        Me.Btn_Ok.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!)
+        Me.Btn_Ok.ImageSize = New System.Drawing.Size(24, 24)
+        Me.Btn_Ok.Location = New System.Drawing.Point(320, 408)
+        Me.Btn_Ok.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Btn_Ok.Name = "Btn_Ok"
-        Me.Btn_Ok.Size = New System.Drawing.Size(75, 29)
+        Me.Btn_Ok.Padding = New System.Drawing.Size(5, 0)
+        Me.Btn_Ok.Size = New System.Drawing.Size(103, 36)
         Me.Btn_Ok.TabIndex = 491
         Me.Btn_Ok.Text = "„Ê«›ﬁ"
         '
@@ -128,12 +136,14 @@ Partial Class FRM_LovGeneral_A
         Appearance3.TextHAlignAsString = "Right"
         Me.Txt_FndByDesc.Appearance = Appearance3
         Me.Txt_FndByDesc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_FndByDesc.Location = New System.Drawing.Point(25, 29)
+        Me.Txt_FndByDesc.Location = New System.Drawing.Point(224, 221)
+        Me.Txt_FndByDesc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Txt_FndByDesc.Name = "Txt_FndByDesc"
         Me.Txt_FndByDesc.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_FndByDesc.Size = New System.Drawing.Size(338, 20)
+        Me.Txt_FndByDesc.Size = New System.Drawing.Size(248, 23)
         Me.Txt_FndByDesc.TabIndex = 490
         Me.Txt_FndByDesc.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
+        Me.Txt_FndByDesc.Visible = False
         '
         'Txt_FndByCode
         '
@@ -143,12 +153,14 @@ Partial Class FRM_LovGeneral_A
         Appearance4.TextHAlignAsString = "Right"
         Me.Txt_FndByCode.Appearance = Appearance4
         Me.Txt_FndByCode.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_FndByCode.Location = New System.Drawing.Point(369, 30)
+        Me.Txt_FndByCode.Location = New System.Drawing.Point(478, 221)
+        Me.Txt_FndByCode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Txt_FndByCode.Name = "Txt_FndByCode"
         Me.Txt_FndByCode.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_FndByCode.Size = New System.Drawing.Size(164, 20)
+        Me.Txt_FndByCode.Size = New System.Drawing.Size(124, 23)
         Me.Txt_FndByCode.TabIndex = 489
         Me.Txt_FndByCode.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
+        Me.Txt_FndByCode.Visible = False
         '
         'Grd_Main
         '
@@ -165,32 +177,24 @@ Partial Class FRM_LovGeneral_A
         Me.Grd_Main.DisplayLayout.Appearance = Appearance5
         Me.Grd_Main.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns
         UltraGridColumn1.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit
-        Appearance6.FontData.BoldAsString = "True"
-        Appearance6.FontData.Name = "Tahoma"
-        Appearance6.FontData.SizeInPoints = 8.0!
         Appearance6.TextHAlignAsString = "Right"
         UltraGridColumn1.CellAppearance = Appearance6
         UltraGridColumn1.Format = ""
-        Appearance7.FontData.Name = "Tahoma"
-        Appearance7.FontData.SizeInPoints = 8.25!
         Appearance7.TextHAlignAsString = "Right"
         UltraGridColumn1.Header.Appearance = Appearance7
         UltraGridColumn1.Header.Caption = "«·ﬂÊœ"
         UltraGridColumn1.Header.VisiblePosition = 1
         UltraGridColumn1.MaskInput = ""
         UltraGridColumn1.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
-        UltraGridColumn1.Width = 171
+        UltraGridColumn1.Width = 199
         UltraGridColumn2.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit
-        Appearance8.FontData.BoldAsString = "True"
         Appearance8.TextHAlignAsString = "Right"
         UltraGridColumn2.CellAppearance = Appearance8
-        Appearance9.FontData.Name = "Tahoma"
-        Appearance9.FontData.SizeInPoints = 8.25!
         Appearance9.TextHAlignAsString = "Right"
         UltraGridColumn2.Header.Appearance = Appearance9
         UltraGridColumn2.Header.Caption = "«·Ê’›"
         UltraGridColumn2.Header.VisiblePosition = 0
-        UltraGridColumn2.Width = 338
+        UltraGridColumn2.Width = 398
         UltraGridColumn3.Header.VisiblePosition = 2
         UltraGridColumn3.Hidden = True
         UltraGridColumn3.Width = 81
@@ -211,6 +215,8 @@ Partial Class FRM_LovGeneral_A
         Appearance13.Cursor = System.Windows.Forms.Cursors.Hand
         Appearance13.Image = CType(resources.GetObject("Appearance13.Image"), Object)
         Me.Grd_Main.DisplayLayout.Override.CellButtonAppearance = Appearance13
+        Me.Grd_Main.DisplayLayout.Override.FilterOperatorDefaultValue = Infragistics.Win.UltraWinGrid.FilterOperatorDefaultValue.Contains
+        Me.Grd_Main.DisplayLayout.Override.FilterUIType = Infragistics.Win.UltraWinGrid.FilterUIType.FilterRow
         Appearance14.BackColor = System.Drawing.SystemColors.ControlLightLight
         Appearance14.BackColor2 = System.Drawing.SystemColors.Control
         Appearance14.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
@@ -262,10 +268,12 @@ Partial Class FRM_LovGeneral_A
         Appearance24.BorderColor = System.Drawing.SystemColors.Control
         Appearance24.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_Main.DisplayLayout.SplitterBarVerticalAppearance = Appearance24
-        Me.Grd_Main.Location = New System.Drawing.Point(3, 55)
+        Me.Grd_Main.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!)
+        Me.Grd_Main.Location = New System.Drawing.Point(3, 31)
+        Me.Grd_Main.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Grd_Main.Name = "Grd_Main"
         Me.Grd_Main.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_Main.Size = New System.Drawing.Size(530, 270)
+        Me.Grd_Main.Size = New System.Drawing.Size(618, 369)
         Me.Grd_Main.TabIndex = 484
         Me.Grd_Main.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
@@ -280,20 +288,23 @@ Partial Class FRM_LovGeneral_A
         Me._Panel1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
         Me._Panel1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
         Me._Panel1_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 23)
+        Me._Panel1_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me._Panel1_Toolbars_Dock_Area_Left.Name = "_Panel1_Toolbars_Dock_Area_Left"
-        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 345)
+        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 430)
         Me._Panel1_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
         '
         'ToolBar_Main
         '
         Me.ToolBar_Main.DesignerFlags = 1
         Me.ToolBar_Main.DockWithinContainer = Me.Panel1
+        Me.ToolBar_Main.MultiMonitorDropDownBehavior = Infragistics.Win.UltraWinToolbars.MultiMonitorDropDownBehavior.ShiftToMonitorWithExclusionRect
         Me.ToolBar_Main.RightAlignedMenus = Infragistics.Win.DefaultableBoolean.[False]
         Me.ToolBar_Main.RuntimeCustomizationOptions = Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.None
         Me.ToolBar_Main.ShowFullMenusDelay = 500
+        Me.ToolBar_Main.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.OfficeXP
         UltraToolbar1.DockedColumn = 0
         UltraToolbar1.DockedRow = 0
-        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool1, LabelTool2})
+        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool5})
         Appearance25.BackColor = System.Drawing.SystemColors.ControlLightLight
         Appearance25.BackColor2 = System.Drawing.SystemColors.Control
         Appearance25.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
@@ -301,13 +312,8 @@ Partial Class FRM_LovGeneral_A
         UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
         UltraToolbar1.Text = "ToolBar1"
         Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
-        Appearance26.FontData.BoldAsString = "True"
-        Appearance26.FontData.Name = "Tahoma"
-        Appearance26.TextHAlignAsString = "Right"
-        LabelTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance26
-        LabelTool3.SharedPropsInternal.Caption = "«·⁄„·«¡"
-        LabelTool4.SharedPropsInternal.Spring = True
-        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, LabelTool4})
+        LabelTool8.SharedPropsInternal.Spring = True
+        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool8})
         '
         '_Panel1_Toolbars_Dock_Area_Right
         '
@@ -315,10 +321,23 @@ Partial Class FRM_LovGeneral_A
         Me._Panel1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
         Me._Panel1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
         Me._Panel1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(536, 23)
+        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(625, 23)
+        Me._Panel1_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me._Panel1_Toolbars_Dock_Area_Right.Name = "_Panel1_Toolbars_Dock_Area_Right"
-        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 345)
+        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 430)
         Me._Panel1_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
+        '
+        '_Panel1_Toolbars_Dock_Area_Bottom
+        '
+        Me._Panel1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
+        Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
+        Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 453)
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(625, 0)
+        Me._Panel1_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
         '
         '_Panel1_Toolbars_Dock_Area_Top
         '
@@ -327,27 +346,18 @@ Partial Class FRM_LovGeneral_A
         Me._Panel1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
         Me._Panel1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
         Me._Panel1_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
+        Me._Panel1_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me._Panel1_Toolbars_Dock_Area_Top.Name = "_Panel1_Toolbars_Dock_Area_Top"
-        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(536, 23)
+        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(625, 23)
         Me._Panel1_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Bottom
-        '
-        Me._Panel1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 368)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(536, 0)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
         '
         'FRM_LovGeneral_A
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(536, 368)
+        Me.ClientSize = New System.Drawing.Size(625, 453)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FRM_LovGeneral_A"

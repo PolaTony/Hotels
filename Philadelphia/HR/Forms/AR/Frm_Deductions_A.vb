@@ -408,7 +408,7 @@ Public Class Frm_Deductions_A
                 vDate = " '" & Format(vRow.Cells("TDate").Value, "MM-dd-yyyy") & "' "
 
                 If vRow.Cells("DML").Value = "I" Then
-                    vSqlString = " Insert Into Deductions (      Company_Code,                     Emp_Code,                  TDate,                     TValue,                               Ded_Type,                                 Remarks,                   User_Code ) " &
+                    vSqlString = " Insert Into HR_Deductions (      Company_Code,                     Emp_Code,                  TDate,                     TValue,                               Ded_Type,                                 Remarks,                   User_Code ) " &
                                  "              Values    ( " & vCompanyCode & ", '" & vRow.Cells("Emp_Code").Value & "', " & vDate & ", " & vRow.Cells("TValue").Value & " ," & vRow.Cells("Deduction_Type").Value & ", '" & vRow.Cells("Remarks").Text & "' , " & vUsrCode & " )"
 
                     sFillSqlStatmentArray(vSqlString)
@@ -492,7 +492,6 @@ Public Class Frm_Deductions_A
                             " Where Code = '" & GRD_Details.ActiveRow.Cells("Emp_Code").Value & "' " &
                             " And   Company_Code = " & vCompanyCode) = 0 Then
 
-                                'Grd_Details.ActiveRow.Cells("Item_Code").SelectAll()
                                 vcFrmLevel.vParentFrm.sForwardMessage("8", Me)
                                 GRD_Details.ActiveRow.Cells("Emp_Desc").Value = DBNull.Value
                                 GRD_Details.ActiveRow.Cells("Salary").Value = DBNull.Value
@@ -538,55 +537,28 @@ Public Class Frm_Deductions_A
     Private Sub GRD_Additions_ClickCellButton(ByVal sender As Object, ByVal e As Infragistics.Win.UltraWinGrid.CellEventArgs) _
         Handles GRD_Details.ClickCellButton, Grd_Summary.ClickCellButton
 
-        'If Txt_Status.Text = "مقفل" Then
-        '    Return
-        'End If
-
         If sender.ActiveRow.Cells("Delete").Activated Then
+
             If sender.ActiveRow.Cells("DML").Value = "I" Or sender.ActiveRow.Cells("DML").Value = "NI" Then
+
                 sender.ActiveRow.Delete(False)
-                'sSumQuantity()
 
             ElseIf sender.ActiveRow.Cells("DML").Value = "N" Or sender.ActiveRow.Cells("DML").Value = "U" Then
-                'First I Check if this Invoice is Submitted by another user then exist Immediatly
-                'If cControls.fReturnValue(" Select Status From Job_Order " &
-                '                          " Where Code = '" & Trim(Txt_Code.Text) & "' " &
-                '                          " And   Company_Code = " & vCompanyCode, Me.Name) = "P" Then
-
-                '    vcFrmLevel.vParentFrm.sForwardMessage("134", Me)
-                '    Return
-                'End If
 
                 If vcFrmLevel.vParentFrm.sForwardMessage("133", Me) = MsgBoxResult.Yes Then
+
                     Dim vSqlstring As String =
-                    " Delete From Deductions " &
+                    " Delete From HR_Deductions " &
                     " Where  1 = 1 " &
                     " And    Company_Code = " & vCompanyCode &
                     " And    Ser        = '" & sender.ActiveRow.Cells("Ser").Value & "'"
 
                     If cControls.fSendData(vSqlstring, Me.Name) > 0 Then
-                        'Here I Create the Log Data
-                        'sEmptySqlStatmentArray()
-
-                        'vSqlstring = " Select IsNull(Max(Code), 0) + 1 From  Employees_AllActions_Log "
-                        'vLog_Code = cControls.fReturnValue(vSqlstring, Me.Name)
-
-                        'vSqlstring = " Insert Into Employees_AllActions_Log (      Code,             Emp_Code,          TDate,              Action_Desc,          Action_Type,      Invoice_Type,          Invoice_Code,                  Main_Object_Code,                       Main_Object_Desc,                          Remarks,                    ComputerName )" &
-                        '                 "                             Values   (" & vLog_Code & ", '" & vUsrCode & "', GetDate(),      'الغاء صنف من عرض سعر',   'D',               'JO',     '" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_CustomerCode.Text) & "', '" & Trim(Txt_CustomerDesc.Text) & "', '" & Trim(Txt_Remarks.Text) & "', '" & My.Computer.Name & "') "
-
-                        'sFillSqlStatmentArray(vSqlstring)
-
-                        'vSqlstring = " Insert Into Employees_AllActions_Log_Details (     Log_Code,       Ser,                                      Item_Code,             Action_Type )  " &
-                        '             "                                      Values  (" & vLog_Code & ",     1, '" & Trim(Grd_Items.ActiveRow.Cells("Item_Code").Text) & "',  'الغاء' )"
-
-                        'sFillSqlStatmentArray(vSqlstring)
-
-                        'cControls.fSendData(vSQlStatment, Me.Name)
-                        '-------------------------------------------
 
                         sender.ActiveRow.Delete(False)
-                        'sSumQuantity()
+
                     End If
+
                 End If
             End If
         End If
@@ -637,22 +609,22 @@ Public Class Frm_Deductions_A
             "        TDate,                                                " & vbCrLf &
             "        TValue,                                               " & vbCrLf &
             "        Ded_Type,                                             " & vbCrLf &
-            "        Deductions.Remarks,                                   " & vbCrLf &
+            "        HR_Deductions.Remarks,                                   " & vbCrLf &
             "        Users.DescA as User_Desc,                             " & vbCrLf &
             "        Entry_Date                                            " & vbCrLf &
             "                                                              " & vbCrLf &
-            "        From Deductions Left Join Employees                   " & vbCrLf &
-            "        On   Deductions.Emp_Code = Employees.code             " & vbCrLf &
-            "        And  Deductions.Company_Code = Employees.Company_Code " & vbCrLf &
+            "        From HR_Deductions Left Join Employees                   " & vbCrLf &
+            "        On   HR_Deductions.Emp_Code = Employees.code             " & vbCrLf &
+            "        And  HR_Deductions.Company_Code = Employees.Company_Code " & vbCrLf &
             "                                                              " & vbCrLf &
             "       Left Join Users                                        " & vbCrLf &
-            "       On Deductions.User_Code = Users.code                   " & vbCrLf &
-            "       And Deductions.Company_Code = Users.Company_Code       " & vbCrLf &
+            "       On HR_Deductions.User_Code = Users.code                   " & vbCrLf &
+            "       And HR_Deductions.Company_Code = Users.Company_Code       " & vbCrLf &
             "                                                              " & vbCrLf &
             "        Where 1 = 1                                           " & vbCrLf &
             " And   (TDate >= " & vFromDate & " Or " & vFromDate & " Is NULL) " & vbCrLf &
             " And    TDate < " & vToDate_PlusOneDay &
-            " And    Deductions.Company_Code = " & vCompanyCode
+            " And    HR_Deductions.Company_Code = " & vCompanyCode
 
             Dim vRowCounter As Integer = 0
 
@@ -761,7 +733,7 @@ Public Class Frm_Deductions_A
                 If vRow.Cells("DML").Value = "U" Then
                     vDate = " '" & Format(vRow.Cells("TDate_Day").Value, "MM-dd-yyyy") & "' "
 
-                    vSqlString = " Update Deductions " &
+                    vSqlString = " Update HR_Deductions " &
                                  " Set Remarks  = '" & vRow.Cells("Remarks").Text & "', " &
                                  "     TValue   =  " & vRow.Cells("TValue").Value & ", " &
                                  "     Ded_Type =  " & vRow.Cells("Ded_Type").Value & ", " &
@@ -818,7 +790,6 @@ Public Class Frm_Deductions_A
                     Else
                         Grd_Summary.PerformAction(UltraGridAction.PrevCell)
                         Grd_Summary.PerformAction(UltraGridAction.EnterEditMode)
-                        'SendKeys.Send("{Tab}")
                     End If
                 End If
             End If

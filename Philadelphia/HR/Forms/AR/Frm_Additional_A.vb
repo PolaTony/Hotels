@@ -486,7 +486,7 @@ Public Class Frm_Additional_A
                 vDate = " '" & Format(vRow.Cells("TDate").Value, "MM-dd-yyyy") & "' "
 
                 If vRow.Cells("DML").Value = "I" Then
-                    vSqlString = " Insert Into Additions (      Company_Code,                     Emp_Code,                  TDate,                     TValue,                 User_Code,                      Remarks ) " &
+                    vSqlString = " Insert Into HR_Additions (      Company_Code,                     Emp_Code,                  TDate,                     TValue,                 User_Code,                      Remarks ) " &
                                  "             Values    ( " & vCompanyCode & ", '" & vRow.Cells("Emp_Code").Value & "', " & vDate & ", " & vRow.Cells("TValue").Value & " , " & vUsrCode & ", '" & vRow.Cells("Remarks").Text & "' )"
 
                     sFillSqlStatmentArray(vSqlString)
@@ -637,7 +637,7 @@ Public Class Frm_Additional_A
 
                 If vcFrmLevel.vParentFrm.sForwardMessage("133", Me) = MsgBoxResult.Yes Then
                     Dim vSqlstring As String =
-                    " Delete From Additions " &
+                    " Delete From HR_Additions " &
                     " Where  1 = 1 " &
                     " And    Company_Code = " & vCompanyCode &
                     " And    Ser        = '" & sender.ActiveRow.Cells("Ser").Value & "'"
@@ -717,20 +717,20 @@ Public Class Frm_Additional_A
             "        TValue,                                         " & vbCrLf &
             "        Users.DescA as User_Desc,                       " & vbCrLf &
             "        Entry_Date,                                     " & vbCrLf &
-            "        Additions.Remarks                               " & vbCrLf &
+            "        HR_Additions.Remarks                               " & vbCrLf &
             "                                                        " & vbCrLf &
-            "        From Additions Left Join Employees     " & vbCrLf &
-            "        On   Additions.Emp_Code = Employees.code   " & vbCrLf &
-            "        And  Additions.Company_Code = Employees.Company_Code " &
+            "        From HR_Additions Left Join Employees     " & vbCrLf &
+            "        On   HR_Additions.Emp_Code = Employees.code   " & vbCrLf &
+            "        And  HR_Additions.Company_Code = Employees.Company_Code " &
             "                                                        " & vbCrLf &
             "        LEFT JOIN Users                                 " & vbCrLf &
-            "        ON Users.Code = Additions.User_Code             " & vbCrLf &
-            "        And Users.Company_Code = Additions.Company_Code " & vbCrLf &
+            "        ON Users.Code = HR_Additions.User_Code             " & vbCrLf &
+            "        And Users.Company_Code = HR_Additions.Company_Code " & vbCrLf &
             "                                                        " & vbCrLf &
             "        Where 1 = 1                                     " & vbCrLf &
             " And   (TDate >= " & vFromDate & " Or " & vFromDate & " Is NULL) " & vbCrLf &
             " And    TDate < " & vToDate_PlusOneDay &
-            " And    Additions.Company_Code = " & vCompanyCode
+            " And    HR_Additions.Company_Code = " & vCompanyCode
 
             Dim vRowCounter As Integer = 0
 
@@ -832,7 +832,7 @@ Public Class Frm_Additional_A
                 vDate = " '" & Format(vRow.Cells("TDate").Value, "MM-dd-yyyy") & "' "
 
                 If vRow.Cells("DML").Value = "U" Then
-                    vSqlString = " Update Additions " &
+                    vSqlString = " Update HR_Additions " &
                                  " Set Remarks  = '" & vRow.Cells("Remarks").Text & "', " &
                                  "     TValue   = " & vRow.Cells("TValue").Value & ", " &
                                  "     TDate    = " & vDate & ", " &

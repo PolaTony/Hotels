@@ -40,10 +40,13 @@ Partial Class Frm_GeneralTiles_A
         Dim Appearance14 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraExplorerBarGroup2 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup()
         Dim UltraExplorerBarItem2 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem()
-        Dim UltraExplorerBarItem3 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem()
         Dim Appearance15 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraExplorerBarItem3 As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem = New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem()
         Dim Appearance16 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance17 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance18 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance19 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance20 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim TileItemElement1 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Me.UltraTilePanel1 = New Infragistics.Win.Misc.UltraTilePanel()
         Me.OC = New Infragistics.Win.Misc.UltraTile()
@@ -74,12 +77,10 @@ Partial Class Frm_GeneralTiles_A
         '
         'UltraTilePanel1
         '
-        Me.UltraTilePanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UltraTilePanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.UltraTilePanel1.Font = New System.Drawing.Font("Droid Arabic Kufi", 8.0!)
         Me.UltraTilePanel1.LargeTileOrientation = Infragistics.Win.Misc.TileOrientation.Vertical
-        Me.UltraTilePanel1.Location = New System.Drawing.Point(291, 0)
+        Me.UltraTilePanel1.Location = New System.Drawing.Point(0, 0)
         Me.UltraTilePanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraTilePanel1.MaximumColumns = 5
         Me.UltraTilePanel1.MaximumRows = 6
@@ -89,7 +90,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraTilePanel1.NormalModeDimensions = New System.Drawing.Size(3, 2)
         ScrollBarLook1.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2007
         Me.UltraTilePanel1.ScrollBarLook = ScrollBarLook1
-        Me.UltraTilePanel1.Size = New System.Drawing.Size(1206, 922)
+        Me.UltraTilePanel1.Size = New System.Drawing.Size(1498, 922)
         Me.UltraTilePanel1.TabIndex = 0
         Me.UltraTilePanel1.Tiles.Add(Me.OC)
         Me.UltraTilePanel1.Tiles.Add(Me.QU)
@@ -110,7 +111,7 @@ Partial Class Frm_GeneralTiles_A
         Me.OC.Caption = "الإشغال<br/>Occupancy<br/>"
         Me.OC.Control = Me.Button
         Me.OC.Controls.Add(Me.Button)
-        Me.OC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.OC.Cursor = System.Windows.Forms.Cursors.Default
         Me.OC.Name = "OC"
         Me.OC.PositionInNormalMode = New System.Drawing.Point(0, 0)
         Appearance2.BorderColor = System.Drawing.Color.Transparent
@@ -135,7 +136,7 @@ Partial Class Frm_GeneralTiles_A
         Me.Button.Location = New System.Drawing.Point(0, 78)
         Me.Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button.Name = "Button"
-        Me.Button.Size = New System.Drawing.Size(388, 322)
+        Me.Button.Size = New System.Drawing.Size(486, 322)
         Me.Button.TabIndex = 6
         '
         'QU
@@ -168,7 +169,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraButton3.Location = New System.Drawing.Point(0, 78)
         Me.UltraButton3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraButton3.Name = "UltraButton3"
-        Me.UltraButton3.Size = New System.Drawing.Size(388, 322)
+        Me.UltraButton3.Size = New System.Drawing.Size(486, 322)
         Me.UltraButton3.TabIndex = 2
         '
         'INC
@@ -199,7 +200,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraButton10.Location = New System.Drawing.Point(0, 78)
         Me.UltraButton10.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraButton10.Name = "UltraButton10"
-        Me.UltraButton10.Size = New System.Drawing.Size(388, 322)
+        Me.UltraButton10.Size = New System.Drawing.Size(486, 322)
         Me.UltraButton10.TabIndex = 3
         '
         'HR
@@ -229,7 +230,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraButton25.ImageSize = New System.Drawing.Size(170, 200)
         Me.UltraButton25.Location = New System.Drawing.Point(0, 78)
         Me.UltraButton25.Name = "UltraButton25"
-        Me.UltraButton25.Size = New System.Drawing.Size(388, 322)
+        Me.UltraButton25.Size = New System.Drawing.Size(486, 322)
         Me.UltraButton25.TabIndex = 10
         '
         'HK
@@ -260,7 +261,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraButton34.Location = New System.Drawing.Point(0, 78)
         Me.UltraButton34.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraButton34.Name = "UltraButton34"
-        Me.UltraButton34.Size = New System.Drawing.Size(388, 322)
+        Me.UltraButton34.Size = New System.Drawing.Size(486, 322)
         Me.UltraButton34.TabIndex = 11
         '
         'CS
@@ -291,7 +292,7 @@ Partial Class Frm_GeneralTiles_A
         Me.UltraButton35.Location = New System.Drawing.Point(0, 78)
         Me.UltraButton35.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraButton35.Name = "UltraButton35"
-        Me.UltraButton35.Size = New System.Drawing.Size(388, 322)
+        Me.UltraButton35.Size = New System.Drawing.Size(486, 322)
         Me.UltraButton35.TabIndex = 12
         '
         'UltraTile1
@@ -301,36 +302,52 @@ Partial Class Frm_GeneralTiles_A
         '
         'Exp_MostUsed
         '
-        Me.Exp_MostUsed.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Appearance14.FontData.Name = "Droid Arabic Kufi"
+        Appearance14.FontData.SizeInPoints = 8.0!
         Appearance14.TextHAlignAsString = "Right"
         Me.Exp_MostUsed.Appearance = Appearance14
+        Me.Exp_MostUsed.BorderStyle = Infragistics.Win.UIElementBorderStyle.None
         Me.Exp_MostUsed.ColumnSpacing = 7
         Me.Exp_MostUsed.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Appearance15.BackColor = System.Drawing.Color.White
+        Appearance15.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(160, Byte), Integer))
+        Appearance15.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        UltraExplorerBarItem2.Settings.AppearancesSmall.Appearance = Appearance15
         UltraExplorerBarItem2.Text = "New Item"
+        Appearance16.BackColor = System.Drawing.Color.White
+        Appearance16.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(160, Byte), Integer))
+        Appearance16.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance16.Image = CType(resources.GetObject("Appearance16.Image"), Object)
+        UltraExplorerBarItem3.Settings.AppearancesSmall.Appearance = Appearance16
         UltraExplorerBarItem3.Text = "New Item"
         UltraExplorerBarGroup2.Items.AddRange(New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem() {UltraExplorerBarItem2, UltraExplorerBarItem3})
-        Appearance15.Image = CType(resources.GetObject("Appearance15.Image"), Object)
-        UltraExplorerBarGroup2.ItemSettings.AppearancesSmall.Appearance = Appearance15
-        Appearance16.Image = CType(resources.GetObject("Appearance16.Image"), Object)
-        UltraExplorerBarGroup2.Settings.AppearancesSmall.Appearance = Appearance16
+        Appearance17.Image = CType(resources.GetObject("Appearance17.Image"), Object)
+        UltraExplorerBarGroup2.ItemSettings.AppearancesSmall.Appearance = Appearance17
+        Appearance18.Image = CType(resources.GetObject("Appearance18.Image"), Object)
+        UltraExplorerBarGroup2.Settings.AppearancesSmall.Appearance = Appearance18
         UltraExplorerBarGroup2.Text = "الأكثر أستخداما"
         Me.Exp_MostUsed.Groups.AddRange(New Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup() {UltraExplorerBarGroup2})
+        Appearance19.BackColor = System.Drawing.Color.White
+        Appearance19.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(57, Byte), Integer))
+        Appearance19.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance19.BorderColor = System.Drawing.Color.Transparent
+        Me.Exp_MostUsed.GroupSettings.AppearancesSmall.HeaderAppearance = Appearance19
         Me.Exp_MostUsed.GroupSettings.BorderStyleItemArea = Infragistics.Win.UIElementBorderStyle.Dotted
         Me.Exp_MostUsed.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.SmallImages
         Me.Exp_MostUsed.ImageSizeSmall = New System.Drawing.Size(42, 53)
-        Appearance17.Image = 31
-        Me.Exp_MostUsed.ItemSettings.AppearancesSmall.Appearance = Appearance17
+        Appearance20.Image = 31
+        Me.Exp_MostUsed.ItemSettings.AppearancesSmall.Appearance = Appearance20
         Me.Exp_MostUsed.ItemSettings.HotTracking = Infragistics.Win.DefaultableBoolean.[True]
         Me.Exp_MostUsed.ItemSettings.HotTrackStyle = Infragistics.Win.UltraWinExplorerBar.ItemHotTrackStyle.HighlightEntireItem
         Me.Exp_MostUsed.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Label
-        Me.Exp_MostUsed.Location = New System.Drawing.Point(5, 0)
+        Me.Exp_MostUsed.Location = New System.Drawing.Point(85, 219)
         Me.Exp_MostUsed.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Exp_MostUsed.Name = "Exp_MostUsed"
-        Me.Exp_MostUsed.Size = New System.Drawing.Size(280, 922)
+        Me.Exp_MostUsed.Size = New System.Drawing.Size(133, 255)
         Me.Exp_MostUsed.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.Listbar
         Me.Exp_MostUsed.TabIndex = 5
         Me.Exp_MostUsed.ViewStyle = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarViewStyle.Office2007
+        Me.Exp_MostUsed.Visible = False
         '
         'TileItem2
         '

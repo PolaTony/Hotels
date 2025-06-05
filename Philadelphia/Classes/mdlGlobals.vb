@@ -10,6 +10,7 @@ Module mdlGlobals
     Public vLovReturn1 As String                    'Global Variable for LOV Return 
     Public VLovReturn2 As String                    'Global Variable for LOV Return
     Public vLovReturn3 As String                    'Global Variable for LOV Return
+    Public vLovReturn4 As String                    'Global Variable for LOV Return
     Public vZeroBasedLevel As Integer = 3           'To detect the zero based level in financial tree
 
     Public vDTS_AllInvoices As New UltraDataSource
@@ -302,5 +303,12 @@ Module mdlGlobals
             End If
         End If
     End Function
+    Public Sub sGet_First_AllowEdit_Cell(ByVal pGrd As UltraGrid)
+        Do
+            pGrd.PerformAction(UltraGridAction.NextCell)
+        Loop Until pGrd.DisplayLayout.Bands(0).Columns(pGrd.ActiveCell.Column.Index).CellActivation = Activation.AllowEdit
+
+        pGrd.PerformAction(UltraGridAction.EnterEditMode)
+    End Sub
 #End Region
 End Module

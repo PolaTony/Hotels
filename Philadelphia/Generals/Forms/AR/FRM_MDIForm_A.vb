@@ -635,9 +635,19 @@ Public Class MDIForm
                     End If
                 End If
             End While
+
+            ' Styling Items In Sidebar Groups
+            For Each group As UltraExplorerBarGroup In Exp_Main.Groups
+                For Each item As UltraExplorerBarItem In group.Items
+                    item.Settings.AppearancesSmall.Appearance.BackColor = Color.White
+                    item.Settings.AppearancesSmall.Appearance.BackColor2 = Color.FromArgb(242, 200, 160)
+                    item.Settings.AppearancesSmall.Appearance.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+                    item.Settings.AppearancesSmall.Appearance.Cursor = Cursors.Hand
+                Next
+            Next
+
             cControls.vSqlConn.Close()
             vReader.Close()
-            Dim vItem As Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

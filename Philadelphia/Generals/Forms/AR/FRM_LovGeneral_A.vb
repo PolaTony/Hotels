@@ -15,20 +15,17 @@ Public Class FRM_LovGeneral_A
         vSqlString = pSqlString
         Me.Text = pTitle
         vTitle = pTitle
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool
-        LabelTool3 = ToolBar_Main.Tools("LabelTool1")
-        LabelTool3.SharedProps.Caption = pTitle
         vTableName = pTableName
         vAdditionalString = pAdditionalString
     End Sub
     Private Sub FRM_LovTreeL_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If ToolBar_Main.Tools("LabelTool1").SharedProps.Caption = "«·√÷«›«  Ê«·Œ’Ê„« " Then
-            sLoadAddDed()
-            'ElseIf UltraToolbarsManager1.Tools("LabelTool1").SharedProps.Caption = "«·√÷«›« " Then
-            '    sLoadAddDed()
-        Else
-            sLoadMainNodes()
-        End If
+        'If ToolBar_Main.Tools("LabelTool1").SharedProps.Caption = "«·√÷«›«  Ê«·Œ’Ê„« " Then
+        '    sLoadAddDed()
+        '    'ElseIf UltraToolbarsManager1.Tools("LabelTool1").SharedProps.Caption = "«·√÷«›« " Then
+        '    '    sLoadAddDed()
+        'Else
+        'End If
+        sLoadMainNodes()
 
     End Sub
 
@@ -49,9 +46,9 @@ Public Class FRM_LovGeneral_A
 
             Dim vSqlCommand As New SqlCommand
             vSqlCommand.Connection = cControls.vSqlConn
-            vSqlCommand.CommandText = _
-            vSqlString & _
-            vCodeFilter & _
+            vSqlCommand.CommandText =
+            vSqlString &
+            vCodeFilter &
             vDescFilter
 
             cControls.vSqlConn.Open()
@@ -72,17 +69,6 @@ Public Class FRM_LovGeneral_A
             MessageBox.Show(ex.Message)
             cControls.vSqlConn.Close()
         End Try
-
-
-        'If vAdditionalString <> "" Then
-        '    For Each vTreeNode In Tre_Adjust.Nodes
-        '        If cBase.fCount_Rec(" From " & vTableName & _
-        '           " Where Parent_Code = '" & vTreeNode.Name & "'") > 0 Then
-
-        '            vTreeNode = sLoadChildNodes(vTreeNode)
-        '        End If
-        '    Next
-        'End If
 
     End Sub
 
@@ -238,10 +224,7 @@ Public Class FRM_LovGeneral_A
     End Sub
 
     Private Sub Txt_FndByCode_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txt_FndByCode.ValueChanged, Txt_FndByDesc.ValueChanged
-        If ToolBar_Main.Tools("LabelTool1").SharedProps.Caption = "«·√÷«›«  Ê«·Œ’Ê„« " Then
-            sLoadAddDed(Trim(Txt_FndByCode.Text), Trim(Txt_FndByDesc.Text))
-        Else
-            sLoadMainNodes(Trim(Txt_FndByCode.Text), Trim(Txt_FndByDesc.Text))
-        End If
+        sLoadMainNodes(Trim(Txt_FndByCode.Text), Trim(Txt_FndByDesc.Text))
     End Sub
+
 End Class

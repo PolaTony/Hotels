@@ -1,8 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
 Imports System.Text.RegularExpressions
 Imports Infragistics.Win.UltraWinGrid
 
 Public Class Frm_TimeOff_A
+    Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    Private osk As String = "C:\Windows\System32\osk.exe"
 
 #Region " Declaration                                                                           "
 
@@ -15,8 +19,7 @@ Public Class Frm_TimeOff_A
 #End Region
 
 #Region " Form Level                                                                            "
-
-#Region "My Form                                                                         "
+#Region " My Form                                                                         "
     Private Sub sFillSqlStatmentArray(ByVal pSqlstring As String)
         If vSQlStatment(UBound(vSQlStatment)) = "" Then
             vSQlStatment(UBound(vSQlStatment)) = pSqlstring
@@ -43,9 +46,7 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
-#Region "DataBase"
-
+#Region " DataBase        "
 #Region "Save                                                                         "
     Private Function fIsSaveNeeded() As Boolean
         Dim vRow As Infragistics.Win.UltraWinGrid.UltraGridRow
@@ -56,9 +57,21 @@ Public Class Frm_TimeOff_A
                     Return True
                 End If
             Next
+
+            For Each vRow In GRD_Details.Rows
+                If vRow.Cells("DML_Attach").Value = "I" Or vRow.Cells("DML_Attach").Value = "U" Then
+                    Return True
+                End If
+            Next
         Else
             For Each vRow In Grd_Summary.Rows
                 If vRow.Cells("DML").Value = "U" Then
+                    Return True
+                End If
+            Next
+
+            For Each vRow In Grd_Summary.Rows
+                If vRow.Cells("DML_Attach").Value = "I" Or vRow.Cells("DML_Attach").Value = "U" Then
                     Return True
                 End If
             Next
@@ -73,6 +86,7 @@ Public Class Frm_TimeOff_A
 
         sEmptySqlStatmentArray()
 
+        vGrd = Nothing
         If Tab_Main.Tabs("Tab_Details").Selected = True Then
             If pASkMe Then
                 If vcFrmLevel.vParentFrm.sForwardMessage("6", Me) = MsgBoxResult.Yes Then
@@ -92,12 +106,61 @@ Public Class Frm_TimeOff_A
                     Return False
                 End If
             End If
+            vGrd = GRD_Details
         Else
             sSaveSummary()
+            vGrd = Grd_Summary
         End If
 
-        If cControls.fSendData(vSQlStatment, Me.Name) > 0 Then
-            vcFrmLevel.vParentFrm.sForwardMessage("7", Me)
+        Dim vSaveDone As Boolean = False 'to insure not duplicate the message "Save Done Successfully"
+
+        Dim vRowCounter As Integer = cControls.fSendData(vSQlStatment, Me.Name)
+
+        If vRowCounter > 0 Then
+            'After Save Succedded.. I save any attachment if exist
+            Dim vRow As UltraGridRow
+            For Each vRow In vGrd.Rows
+                If vRow.Cells("FileName").Text <> "" Then
+                    If vRow.Cells("DML_Attach").Text = "I" Or vRow.Cells("DML_Attach").Text = "U" Then
+                        Try
+                            Dim FileData() As Byte
+                            Dim vSqlString As String
+
+                            If vRow.Cells("CompleteFileName").Text <> "" Then
+                                FileData = ReadFileData(vRow.Cells("CompleteFileName").Text)
+                            End If
+
+                            vSqlString = " Update TimeOff " &
+                                         " Set    FileData = (@FileData),                     " &
+                                         "        FileName = '" & vRow.Cells("FileName").Text & "' " &
+                                         "                                                 " &
+                                         " Where  Code      =  " & vRow.Cells("Ser").Text &
+                                         " And    Company_Code = " & vCompanyCode
+
+                            Dim vMyCommand As New SqlCommand(vSqlString, cControls.vSqlConn)
+                            vMyCommand.Parameters.AddWithValue("@FileData ", FileData)
+
+                            cControls.vSqlConn.Open()
+                            vMyCommand.ExecuteNonQuery()
+                            cControls.vSqlConn.Close()
+
+                            vRow.Cells("DML_Attach").Value = "N"
+
+                            vcFrmLevel.vParentFrm.sForwardMessage("7", Me)
+                            vSaveDone = True
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message)
+                        End Try
+
+                    End If
+                End If
+            Next
+
+            If vRowCounter > 0 Then
+                If vSaveDone = False Then
+                    vcFrmLevel.vParentFrm.sForwardMessage("7", Me)
+                End If
+            End If
 
             'vMasterBlock = "NI"
             If Tab_Main.Tabs("Tab_Details").Selected = True Then
@@ -112,7 +175,6 @@ Public Class Frm_TimeOff_A
     End Function
 
 #End Region
-
 #Region " Query                                                                                  "
     Public Sub sQuery(Optional ByVal pRecPos As Integer = Nothing, Optional ByVal pItemCode As String = Nothing, Optional ByVal pIsGoTo As Boolean = False)
         If fSaveAll(True) = False Then
@@ -126,7 +188,9 @@ Public Class Frm_TimeOff_A
                     vFetchRec = 1
                 Else
                     vFetchRec = vcFrmLevel.vRecPos + pRecPos
-                    If vFetchRec > cControls.fCount_Rec(" From Employees Where 1 = 1 And Company_Code = " & vCompanyCode) Then
+                    If vFetchRec > cControls.fCount_Rec(" From TimeOff " &
+                                                        " Where 1 = 1 " &
+                                                        " And  Company_Code = " & vCompanyCode) Then
                         vcFrmLevel.vParentFrm.sForwardMessage("33", Me)
                         Return
                     End If
@@ -139,7 +203,9 @@ Public Class Frm_TimeOff_A
             End If
         End If
         If pRecPos = -2 Then
-            vFetchRec = cControls.fCount_Rec(" From Employees Where 1 = 1 And Company_Code = " & vCompanyCode)
+            vFetchRec = cControls.fCount_Rec(" From  TimeOff " &
+                                             " Where 1 = 1 " &
+                                             " And   Company_Code = " & vCompanyCode)
         End If
 
         Dim vFetchCondition As String
@@ -149,7 +215,6 @@ Public Class Frm_TimeOff_A
             vFetchCondition = " And Code = '" & Trim(pItemCode) & "'"
         End If
         Try
-
             Dim vSQlcommand As New SqlCommand
             vSQlcommand.CommandText =
             " With MyAtt as (      " & vbCrLf &
@@ -192,9 +257,7 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
 #End Region
-
 #Region " sOpenLov                                                                              "
     Private Sub sOpenLov(ByVal pSqlStatment As String, ByVal pTitle As String)
         vLovReturn1 = ""
@@ -214,7 +277,6 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
 #Region " Tab Mangment                                                                           "
     Private Sub Tab_Main_SelectedTabChanging(ByVal sender As Object, ByVal e As Infragistics.Win.UltraWinTabControl.SelectedTabChangingEventArgs) Handles Tab_Main.SelectedTabChanging
         If Tab_Main.Tabs("Tab_Details").Selected = True Then
@@ -240,7 +302,6 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
 #Region " New Record                                                                            "
     Public Sub sNewRecord()
         Try
@@ -332,7 +393,6 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
 #Region " Save                                                                                  "
     Private Function fValidateDetails() As Boolean
 
@@ -446,6 +506,7 @@ Public Class Frm_TimeOff_A
                                  " Where  Company_Code  = " & vCompanyCode
 
                     vGetCode = cControls.fReturnValue(vSqlString, Me.Name) + vCounter
+                    vRow.Cells("Ser").Value = vGetCode
 
                     vSqlString = " Insert Into TimeOff   (      Code,          Company_Code,                     Emp_Code,                   FromDate,         ToDate,         User_Code,                      Remarks,                              TimeOff_Type,                               Real_DaysOff ) " &
                                  "             Values    ( " & vGetCode & ", " & vCompanyCode & ", '" & vRow.Cells("Emp_Code").Value & "', " & vFromDate & ", " & vToDate & ", " & vUsrCode & ", '" & vRow.Cells("Remarks").Text & "', '" & vRow.Cells("TimeOff_Type").Value & "', " & vDateDiff & " - dbo.fn_Get_Week_TimeOff_Days_In_Month(" & vFromDate & ", " & vToDate & ", " & vCompanyCode & ") )"
@@ -464,7 +525,6 @@ Public Class Frm_TimeOff_A
     End Sub
 
 #End Region
-
 #Region " Delete                                                                                "
     Public Sub sDelete()
         Try
@@ -570,6 +630,129 @@ Public Class Frm_TimeOff_A
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+    Private Sub Grd_Details_ClickCellButton(ByVal sender As Object, ByVal e As Infragistics.Win.UltraWinGrid.CellEventArgs) Handles GRD_Details.ClickCellButton
+
+        If GRD_Details.ActiveRow.Cells("Add_Attach").Activated Then
+            If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+                GRD_Details.ActiveRow.Cells("FileName").Value = OpenFileDialog1.SafeFileName
+                GRD_Details.ActiveRow.Cells("CompleteFileName").Value = OpenFileDialog1.FileName
+
+                If GRD_Details.ActiveRow.Cells("DML_Attach").Value = "NI" Then
+                    GRD_Details.ActiveRow.Cells("DML_Attach").Value = "I"
+                ElseIf GRD_Details.ActiveRow.Cells("DML_Attach").Value = "N" Then
+                    GRD_Details.ActiveRow.Cells("DML_Attach").Value = "U"
+                End If
+            End If
+        ElseIf GRD_Details.ActiveRow.Cells("Remove_Attach").Activated Then
+            If GRD_Details.ActiveRow.Cells("DML_Attach").Text = "I" Or GRD_Details.ActiveRow.Cells("DML_Attach").Text = "NI" Then
+                GRD_Details.ActiveRow.Cells("FileName").Value = ""
+                GRD_Details.ActiveRow.Cells("CompleteFileName").Value = ""
+
+                GRD_Details.ActiveRow.Cells("DML_Attach").Value = "NI"
+            Else
+                Dim vSqlString As String =
+                    " Update TimeOff " &
+                    " Set    FileName         = '',  " &
+                    "        CompleteFileName = '',  " &
+                    "        FileData         = NULL " &
+                    "                                " &
+                    " Where  Code     = " & GRD_Details.ActiveRow.Cells("Ser").Value &
+                    " And    Company_Code " & vCompanyCode
+
+                If cControls.fSendData(vSqlString, Me.Name) > 0 Then
+                    GRD_Details.ActiveRow.Cells("FileName").Value = ""
+                    GRD_Details.ActiveRow.Cells("CompleteFileName").Value = ""
+                    GRD_Details.ActiveRow.Cells("DML_Attach").Value = "NI"
+                End If
+            End If
+
+        ElseIf GRD_Details.ActiveRow.Cells("FileName").Activated Then
+            Try
+                'Temporary I Check if the File path is exist and open it Through Process Function..
+                If GRD_Details.ActiveRow.Cells("FileName").Text <> "" Then
+                    If GRD_Details.ActiveRow.Cells("DML_Attach").Text = "I" Or GRD_Details.ActiveRow.Cells("DML_Attach").Text = "NI" Then
+                        sOpenUnSavedFiles(GRD_Details.ActiveRow.Cells("CompleteFileName").Text)
+                        Exit Sub
+                    ElseIf GRD_Details.ActiveRow.Cells("DML_Attach").Text = "N" Or GRD_Details.ActiveRow.Cells("DML_Attach").Text = "U" Then
+                        If Not Directory.Exists("C:\DotNet_eg_Files") Then
+                            Directory.CreateDirectory("C:\DotNet_eg_Files")
+                        End If
+
+                        cControls.vSqlConn.Close()
+
+                        Dim cmd As New SqlCommand("", cControls.vSqlConn)
+
+                        cmd.CommandText = " Select FileData FROM TimeOff " &
+                                          " Where  Code   = " & GRD_Details.ActiveRow.Cells("Code").Value
+
+                        cControls.vSqlConn.Open()
+
+                        Dim rdr As SqlDataReader = cmd.ExecuteReader
+
+                        If rdr.Read Then
+                            WriteFileData(GRD_Details.ActiveRow.Cells("CompleteFileName").Text, GRD_Details.ActiveRow.Cells("FileName").Text, rdr("FileData"))
+                        Else
+                            MsgBox(GRD_Details.ActiveRow.Cells("FileName").Text & " not found")
+                        End If
+
+                        rdr.Close()
+                        cControls.vSqlConn.Close()
+
+                    End If
+                End If
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End If
+    End Sub
+    Private Sub sOpenUnSavedFiles(ByVal pFileName As String)
+
+        Dim vProcess As New Process
+        vProcess.StartInfo.FileName = pFileName
+        vProcess.StartInfo.CreateNoWindow = False
+        vProcess.Start()
+    End Sub
+    Private Sub WriteFileData(ByVal pCompleteFileName As String, ByVal pFilename As String, ByVal pData As Byte())
+
+        'Dim vFileName As String
+        'For Each vFileName In Directory.GetFiles("C:\DotNet_eg_Files")
+        '    If vFileName = pFilename Then
+        '        GoTo Done
+        '    End If
+        'Next
+
+        Dim fs As New System.IO.FileStream("C:\DotNet_eg_Files\" & pFilename, IO.FileMode.Create)
+        Dim bw As New System.IO.BinaryWriter(fs)
+
+        bw.Write(pData)
+
+        bw.Close()
+        fs.Close()
+
+        Dim vProcess As New Process
+        vProcess.StartInfo.FileName = "C:\DotNet_eg_Files\" & pFilename
+        vProcess.StartInfo.CreateNoWindow = False
+        vProcess.Start()
+
+
+    End Sub
+    Private Function ReadFileData(ByVal filename As String) As Byte()
+        Try
+            Dim fs As New System.IO.FileStream(filename, IO.FileMode.Open)
+            Dim br As New System.IO.BinaryReader(fs)
+
+
+            Dim data() As Byte = br.ReadBytes(fs.Length)
+
+            br.Close()
+            fs.Close()
+
+            Return (data)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+    End Function
     Private Sub sClear()
         DTS_Details.Rows.Clear()
     End Sub
@@ -610,7 +793,8 @@ Public Class Frm_TimeOff_A
             "        TimeOff.Remarks,                                            " & vbCrLf &
             "        Users.DescA as User_Desc,                                   " & vbCrLf &
             "        Entry_Date,                                                 " & vbCrLf &
-            "        TimeOff.Real_DaysOff                                        " & vbCrLf &
+            "        TimeOff.Real_DaysOff,                                       " & vbCrLf &
+            "        FileName                                                    " & vbCrLf &
             "                                                                    " & vbCrLf &
             "        From TimeOff Left Join Employees                            " & vbCrLf &
             "        On   TimeOff.Emp_Code     = Employees.code                  " & vbCrLf &
@@ -701,6 +885,19 @@ Public Class Frm_TimeOff_A
                     DTS_Summary.Rows(vRowCounter)("Real_DaysOff") = Nothing
                 End If
 
+                'File Name
+                If IsDBNull(vSqlReader("FileName")) = False Then
+                    DTS_Summary.Rows(vRowCounter)("FileName") = vSqlReader("FileName")
+                Else
+                    DTS_Summary.Rows(vRowCounter)("FileName") = ""
+                End If
+
+                If DTS_Summary.Rows(vRowCounter)("FileName") = "" Then
+                    DTS_Summary.Rows(vRowCounter)("DML_Attach") = "NI"
+                Else
+                    DTS_Summary.Rows(vRowCounter)("DML_Attach") = "N"
+                End If
+
                 'DML
                 DTS_Summary.Rows(vRowCounter)("DML") = "N"
 
@@ -785,6 +982,31 @@ Public Class Frm_TimeOff_A
                     sFillSqlStatmentArray(vSqlString)
                 End If
 
+                If vRow.Cells("DML_Attach").Value = "I" Or vRow.Cells("DML_Attach").Value = "U" Then
+                    Dim FileData() As Byte
+
+                    If vRow.Cells("CompleteFileName").Text <> "" Then
+                        FileData = ReadFileData(vRow.Cells("CompleteFileName").Text)
+                    End If
+
+                    vSqlString = " Update TimeOff " &
+                                 " Set    FileData = (@FileData),                     " &
+                                 "        FileName = '" & vRow.Cells("FileName").Text & "' " &
+                                 "                                                 " &
+                                 " Where  Code      =  " & vRow.Cells("Ser").Text &
+                                 " And    Company_Code = " & vCompanyCode
+
+                    Dim vMyCommand As New SqlCommand(vSqlString, cControls.vSqlConn)
+                    vMyCommand.Parameters.AddWithValue("@FileData ", FileData)
+
+                    cControls.vSqlConn.Open()
+                    vMyCommand.ExecuteNonQuery()
+                    cControls.vSqlConn.Close()
+
+                    vRow.Cells("DML_Attach").Value = "N"
+
+                    vcFrmLevel.vParentFrm.sForwardMessage("7", Me)
+                End If
             Next
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -895,6 +1117,77 @@ Public Class Frm_TimeOff_A
                     End If
                 End If
             End If
+        ElseIf Grd_Summary.ActiveRow.Cells("Add_Attach").Activated Then
+            If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+                Grd_Summary.ActiveRow.Cells("FileName").Value = OpenFileDialog1.SafeFileName
+                Grd_Summary.ActiveRow.Cells("CompleteFileName").Value = OpenFileDialog1.FileName
+
+                'If Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "NI" Then
+                Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "I"
+                'ElseIf Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "N" Then
+                '    Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "U"
+                'End If
+            End If
+        ElseIf Grd_Summary.ActiveRow.Cells("Remove_Attach").Activated Then
+            If Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "I" Or Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "NI" Then
+                Grd_Summary.ActiveRow.Cells("FileName").Value = ""
+                Grd_Summary.ActiveRow.Cells("CompleteFileName").Value = ""
+
+                Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "NI"
+            Else
+                Dim vSqlString As String =
+                    " Update TimeOff " &
+                    " Set    FileName         = '',  " &
+                    "        FileData         = NULL " &
+                    "                                " &
+                    " WHERE  Code = " & Grd_Summary.ActiveRow.Cells("Ser").Value &
+                    " AND    Company_Code = " & vCompanyCode
+
+                If cControls.fSendData(vSqlString, Me.Name) > 0 Then
+                    Grd_Summary.ActiveRow.Cells("FileName").Value = ""
+                    Grd_Summary.ActiveRow.Cells("CompleteFileName").Value = ""
+                    Grd_Summary.ActiveRow.Cells("DML_Attach").Value = "NI"
+                End If
+            End If
+
+        ElseIf Grd_Summary.ActiveRow.Cells("FileName").Activated Then
+            Try
+                'Temporary I Check if the File path is exist and open it Through Process Function..
+                If Grd_Summary.ActiveRow.Cells("FileName").Text <> "" Then
+                    If Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "I" Or Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "NI" Then
+                        sOpenUnSavedFiles(Grd_Summary.ActiveRow.Cells("CompleteFileName").Text)
+                        Exit Sub
+                    ElseIf Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "N" Or Grd_Summary.ActiveRow.Cells("DML_Attach").Text = "U" Then
+                        If Not Directory.Exists("C:\DotNet_eg_Files") Then
+                            Directory.CreateDirectory("C:\DotNet_eg_Files")
+                        End If
+
+                        cControls.vSqlConn.Close()
+
+                        Dim cmd As New SqlCommand("", cControls.vSqlConn)
+
+                        cmd.CommandText = " Select FileData FROM TimeOff " &
+                                          " WHERE Code = " & Grd_Summary.ActiveRow.Cells("Ser").Value &
+                                          " AND   Company_Code = " & vCompanyCode
+
+                        cControls.vSqlConn.Open()
+
+                        Dim rdr As SqlDataReader = cmd.ExecuteReader
+
+                        If rdr.Read Then
+                            WriteFileData(Grd_Summary.ActiveRow.Cells("CompleteFileName").Text, Grd_Summary.ActiveRow.Cells("FileName").Text, rdr("FileData"))
+                        Else
+                            MsgBox(Grd_Summary.ActiveRow.Cells("FileName").Text & " not found")
+                        End If
+
+                        rdr.Close()
+                        cControls.vSqlConn.Close()
+
+                    End If
+                End If
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
         End If
     End Sub
 #End Region
@@ -1013,10 +1306,6 @@ Public Class Frm_TimeOff_A
 
     Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Txt_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
-    End Sub
-
-    Private Sub GRD_Details_ClickCellButton(sender As Object, e As CellEventArgs) Handles GRD_Details.ClickCellButton
-        GRD_Details.ActiveRow.Delete(False)
     End Sub
 
     Private Function fValidate_Insert_PublicHoliday(ByVal pStartDate As String, ByVal pEndDate As String, Optional pDataKey As Int16 = 0)
