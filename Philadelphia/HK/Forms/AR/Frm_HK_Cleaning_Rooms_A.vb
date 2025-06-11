@@ -5,7 +5,7 @@ Imports Infragistics.Win
 Imports Infragistics.Win.UltraWinDataSource
 Imports System.Drawing.Printing
 
-Public Class Frm_RoomCleaning_A
+Public Class Frm_HK_Cleaning_Rooms_A
 
 #Region "Declaration"
     Dim vMasterBlock As String = "NI"

@@ -44,22 +44,22 @@ Partial Class Frm_Additional_A
         Dim Appearance5 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance6 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim SummarySettings1 As Infragistics.Win.UltraWinGrid.SummarySettings = New Infragistics.Win.UltraWinGrid.SummarySettings("", Infragistics.Win.UltraWinGrid.SummaryType.Sum, Nothing, "TValue", 4, True, "Band 0", 0, Infragistics.Win.UltraWinGrid.SummaryPosition.UseSummaryPositionColumn, "TValue", 4, True)
-        Dim ColScrollRegion1 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1446)
-        Dim ColScrollRegion2 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1446)
-        Dim ColScrollRegion3 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
-        Dim ColScrollRegion4 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
-        Dim ColScrollRegion5 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
+        Dim ColScrollRegion1 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(904)
+        Dim ColScrollRegion2 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1086)
+        Dim ColScrollRegion3 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1086)
+        Dim ColScrollRegion4 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1446)
+        Dim ColScrollRegion5 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1446)
         Dim ColScrollRegion6 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
-        Dim ColScrollRegion7 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1227)
-        Dim ColScrollRegion8 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
-        Dim ColScrollRegion9 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
-        Dim ColScrollRegion10 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
+        Dim ColScrollRegion7 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
+        Dim ColScrollRegion8 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
+        Dim ColScrollRegion9 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1239)
+        Dim ColScrollRegion10 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1227)
         Dim ColScrollRegion11 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
         Dim ColScrollRegion12 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
-        Dim ColScrollRegion13 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(898)
-        Dim ColScrollRegion14 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
-        Dim ColScrollRegion15 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
-        Dim ColScrollRegion16 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
+        Dim ColScrollRegion13 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
+        Dim ColScrollRegion14 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
+        Dim ColScrollRegion15 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(892)
+        Dim ColScrollRegion16 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(898)
         Dim ColScrollRegion17 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
         Dim ColScrollRegion18 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
         Dim ColScrollRegion19 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
@@ -69,20 +69,20 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion23 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
         Dim ColScrollRegion24 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
         Dim ColScrollRegion25 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
-        Dim ColScrollRegion26 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion27 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion28 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion26 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
+        Dim ColScrollRegion27 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
+        Dim ColScrollRegion28 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1236)
         Dim ColScrollRegion29 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion30 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion31 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion32 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion33 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion34 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion35 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion36 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion37 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion38 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion39 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion34 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion35 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion36 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion37 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
+        Dim ColScrollRegion38 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
+        Dim ColScrollRegion39 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
         Dim ColScrollRegion40 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion41 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion42 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
@@ -100,18 +100,18 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion54 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion55 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion56 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion57 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(997)
-        Dim ColScrollRegion58 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(869)
-        Dim ColScrollRegion59 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
-        Dim ColScrollRegion60 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
-        Dim ColScrollRegion61 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion62 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion63 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion57 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion58 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion59 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion60 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(997)
+        Dim ColScrollRegion61 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(869)
+        Dim ColScrollRegion62 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
+        Dim ColScrollRegion63 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
         Dim ColScrollRegion64 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
         Dim ColScrollRegion65 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion66 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion67 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion68 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion66 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion67 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion68 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
         Dim ColScrollRegion69 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion70 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion71 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
@@ -125,21 +125,21 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion79 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion80 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion81 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion82 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1189)
-        Dim ColScrollRegion83 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion84 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion85 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion82 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion83 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion84 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion85 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1189)
         Dim ColScrollRegion86 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
         Dim ColScrollRegion87 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
         Dim ColScrollRegion88 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
         Dim ColScrollRegion89 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion90 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion91 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion92 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion90 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion91 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion92 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
         Dim ColScrollRegion93 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion94 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion95 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion96 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion94 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion95 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion96 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
         Dim ColScrollRegion97 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion98 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion99 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
@@ -148,18 +148,21 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion102 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion103 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion104 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion105 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion106 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion107 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion108 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion109 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion110 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion105 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion106 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion107 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion108 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
+        Dim ColScrollRegion109 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
+        Dim ColScrollRegion110 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
         Dim ColScrollRegion111 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
         Dim ColScrollRegion112 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion113 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
-        Dim ColScrollRegion114 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
-        Dim ColScrollRegion115 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(820)
-        Dim ColScrollRegion116 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(730)
+        Dim ColScrollRegion113 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion114 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion115 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion116 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
+        Dim ColScrollRegion117 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
+        Dim ColScrollRegion118 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(820)
+        Dim ColScrollRegion119 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(730)
         Dim Appearance7 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance8 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance9 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -212,25 +215,22 @@ Partial Class Frm_Additional_A
         Dim UltraGridColumn4 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Department_Desc")
         Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance35 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim ColScrollRegion117 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1457)
-        Dim ColScrollRegion118 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1457)
-        Dim ColScrollRegion119 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
-        Dim ColScrollRegion120 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
-        Dim ColScrollRegion121 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
-        Dim ColScrollRegion122 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
-        Dim ColScrollRegion123 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion124 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion125 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion126 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion127 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion128 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
-        Dim ColScrollRegion129 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1161)
-        Dim ColScrollRegion130 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion131 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion132 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion133 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion134 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion135 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion120 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(912)
+        Dim ColScrollRegion121 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1096)
+        Dim ColScrollRegion122 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1096)
+        Dim ColScrollRegion123 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1457)
+        Dim ColScrollRegion124 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1457)
+        Dim ColScrollRegion125 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
+        Dim ColScrollRegion126 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
+        Dim ColScrollRegion127 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
+        Dim ColScrollRegion128 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1249)
+        Dim ColScrollRegion129 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion130 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion131 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion132 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion133 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion134 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(922)
+        Dim ColScrollRegion135 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1161)
         Dim ColScrollRegion136 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion137 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion138 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
@@ -244,15 +244,15 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion146 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion147 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
         Dim ColScrollRegion148 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
-        Dim ColScrollRegion149 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion150 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion151 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
-        Dim ColScrollRegion152 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion153 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion154 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion155 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion156 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion157 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion149 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion150 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion151 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion152 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion153 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion154 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1248)
+        Dim ColScrollRegion155 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
+        Dim ColScrollRegion156 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
+        Dim ColScrollRegion157 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1061)
         Dim ColScrollRegion158 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion159 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion160 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
@@ -267,21 +267,21 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion169 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion170 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
         Dim ColScrollRegion171 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
-        Dim ColScrollRegion172 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(997)
-        Dim ColScrollRegion173 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(869)
-        Dim ColScrollRegion174 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
-        Dim ColScrollRegion175 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
-        Dim ColScrollRegion176 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion177 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion178 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion179 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion180 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
-        Dim ColScrollRegion181 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion182 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion183 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion184 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion185 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion186 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion172 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion173 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion174 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion175 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion176 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion177 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1002)
+        Dim ColScrollRegion178 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(997)
+        Dim ColScrollRegion179 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(869)
+        Dim ColScrollRegion180 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
+        Dim ColScrollRegion181 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1351)
+        Dim ColScrollRegion182 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion183 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion184 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion185 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
+        Dim ColScrollRegion186 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1361)
         Dim ColScrollRegion187 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion188 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion189 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
@@ -292,41 +292,47 @@ Partial Class Frm_Additional_A
         Dim ColScrollRegion194 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion195 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
         Dim ColScrollRegion196 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
-        Dim ColScrollRegion197 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1189)
-        Dim ColScrollRegion198 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion199 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion200 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion201 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion202 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion203 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion197 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion198 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion199 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion200 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion201 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion202 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1234)
+        Dim ColScrollRegion203 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1189)
         Dim ColScrollRegion204 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
-        Dim ColScrollRegion205 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion206 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion207 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion208 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
-        Dim ColScrollRegion209 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion210 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion211 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion212 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion213 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion214 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion205 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion206 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion207 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion208 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion209 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion210 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1197)
+        Dim ColScrollRegion211 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion212 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion213 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
+        Dim ColScrollRegion214 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(1188)
         Dim ColScrollRegion215 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion216 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion217 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion218 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
         Dim ColScrollRegion219 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
-        Dim ColScrollRegion220 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion221 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion222 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
-        Dim ColScrollRegion223 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion224 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion225 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion226 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion227 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
-        Dim ColScrollRegion228 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
-        Dim ColScrollRegion229 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
-        Dim ColScrollRegion230 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(820)
-        Dim ColScrollRegion231 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(730)
+        Dim ColScrollRegion220 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion221 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion222 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion223 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion224 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion225 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(973)
+        Dim ColScrollRegion226 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
+        Dim ColScrollRegion227 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
+        Dim ColScrollRegion228 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(992)
+        Dim ColScrollRegion229 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion230 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion231 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion232 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion233 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(959)
+        Dim ColScrollRegion234 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
+        Dim ColScrollRegion235 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(926)
+        Dim ColScrollRegion236 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(820)
+        Dim ColScrollRegion237 As Infragistics.Win.UltraWinGrid.ColScrollRegion = New Infragistics.Win.UltraWinGrid.ColScrollRegion(730)
         Dim Appearance36 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance37 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance38 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -354,13 +360,6 @@ Partial Class Frm_Additional_A
         Dim UltraDataColumn21 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Department_Desc")
         Dim Appearance50 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance51 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
-        Dim LabelTool1 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim LabelTool2 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance53 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance54 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
         Dim Appearance52 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraTab1 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab2 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
@@ -375,18 +374,14 @@ Partial Class Frm_Additional_A
         Me.UltraTabPageControl2 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
         Me.GRD_Additions = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.DTS_Addition = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
-        Me.Txt_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Txt_Code = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Btn_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Tab_Main = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         CType(Me.Txt_Employees, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabPageControl1.SuspendLayout()
         CType(Me.Grd_Summary, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -397,8 +392,8 @@ Partial Class Frm_Additional_A
         CType(Me.GRD_Additions, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTS_Addition, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_Code, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_Main.SuspendLayout()
         Me.SuspendLayout()
@@ -416,10 +411,10 @@ Partial Class Frm_Additional_A
         EditorButton1.Appearance = Appearance2
         EditorButton1.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Txt_Employees.ButtonsLeft.Add(EditorButton1)
-        Me.Txt_Employees.Location = New System.Drawing.Point(817, 302)
-        Me.Txt_Employees.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Employees.Location = New System.Drawing.Point(455, 245)
+        Me.Txt_Employees.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Employees.Name = "Txt_Employees"
-        Me.Txt_Employees.Size = New System.Drawing.Size(115, 23)
+        Me.Txt_Employees.Size = New System.Drawing.Size(82, 20)
         Me.Txt_Employees.TabIndex = 559
         Me.Txt_Employees.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Employees.Visible = False
@@ -432,9 +427,9 @@ Partial Class Frm_Additional_A
         Me.UltraTabPageControl1.Controls.Add(Me.Txt_ToSummaryDate)
         Me.UltraTabPageControl1.Controls.Add(Me.Label17)
         Me.UltraTabPageControl1.Location = New System.Drawing.Point(1, 1)
-        Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl1.Name = "UltraTabPageControl1"
-        Me.UltraTabPageControl1.Size = New System.Drawing.Size(1468, 533)
+        Me.UltraTabPageControl1.Size = New System.Drawing.Size(920, 430)
         '
         'Grd_Summary
         '
@@ -496,7 +491,7 @@ Partial Class Frm_Additional_A
         UltraGridColumn2.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always
         Appearance4.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Appearance4.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        Appearance4.FontData.SizeInPoints = 0.1!
+        Appearance4.FontData.SizeInPoints = 0.09999999!
         Appearance4.Image = CType(resources.GetObject("Appearance4.Image"), Object)
         Appearance4.ImageHAlign = Infragistics.Win.HAlign.Center
         Appearance4.ImageVAlign = Infragistics.Win.VAlign.Middle
@@ -656,6 +651,9 @@ Partial Class Frm_Additional_A
         Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion114)
         Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion115)
         Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion116)
+        Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion117)
+        Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion118)
+        Me.Grd_Summary.DisplayLayout.ColScrollRegions.Add(ColScrollRegion119)
         Appearance7.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Grd_Summary.DisplayLayout.Override.AddRowAppearance = Appearance7
         Appearance8.BorderColor = System.Drawing.SystemColors.Control
@@ -719,11 +717,11 @@ Partial Class Frm_Additional_A
         Me.Grd_Summary.DisplayLayout.SplitterBarVerticalAppearance = Appearance20
         Me.Grd_Summary.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy
         Me.Grd_Summary.Font = New System.Drawing.Font("Tahoma", 8.0!)
-        Me.Grd_Summary.Location = New System.Drawing.Point(10, 85)
-        Me.Grd_Summary.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_Summary.Location = New System.Drawing.Point(7, 69)
+        Me.Grd_Summary.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Grd_Summary.Name = "Grd_Summary"
         Me.Grd_Summary.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Grd_Summary.Size = New System.Drawing.Size(1448, 446)
+        Me.Grd_Summary.Size = New System.Drawing.Size(906, 357)
         Me.Grd_Summary.TabIndex = 558
         Me.Grd_Summary.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
@@ -739,6 +737,7 @@ Partial Class Frm_Additional_A
         '
         'TXT_FromSummaryDate
         '
+        Me.TXT_FromSummaryDate.Anchor = System.Windows.Forms.AnchorStyles.None
         Appearance21.BorderColor = System.Drawing.SystemColors.ControlDark
         Appearance21.Cursor = System.Windows.Forms.Cursors.Hand
         Appearance21.TextHAlignAsString = "Right"
@@ -754,12 +753,12 @@ Partial Class Frm_Additional_A
         Me.TXT_FromSummaryDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.TXT_FromSummaryDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.TXT_FromSummaryDate.FormatString = "dd-MM-yyyy"
-        Me.TXT_FromSummaryDate.Location = New System.Drawing.Point(356, 22)
-        Me.TXT_FromSummaryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TXT_FromSummaryDate.Location = New System.Drawing.Point(472, 18)
+        Me.TXT_FromSummaryDate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TXT_FromSummaryDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.TXT_FromSummaryDate.Name = "TXT_FromSummaryDate"
         Me.TXT_FromSummaryDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TXT_FromSummaryDate.Size = New System.Drawing.Size(229, 39)
+        Me.TXT_FromSummaryDate.Size = New System.Drawing.Size(163, 33)
         Me.TXT_FromSummaryDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.TXT_FromSummaryDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.TXT_FromSummaryDate.TabIndex = 554
@@ -769,19 +768,22 @@ Partial Class Frm_Additional_A
         '
         'Label16
         '
+        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label16.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(591, 26)
+        Me.Label16.Location = New System.Drawing.Point(640, 21)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(76, 32)
+        Me.Label16.Size = New System.Drawing.Size(63, 27)
         Me.Label16.TabIndex = 555
         Me.Label16.Text = "من تاريخ"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Txt_ToSummaryDate
         '
+        Me.Txt_ToSummaryDate.Anchor = System.Windows.Forms.AnchorStyles.None
         Appearance24.BorderColor = System.Drawing.SystemColors.ControlDark
         Appearance24.Cursor = System.Windows.Forms.Cursors.Hand
         Appearance24.TextHAlignAsString = "Right"
@@ -797,12 +799,12 @@ Partial Class Frm_Additional_A
         Me.Txt_ToSummaryDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.Txt_ToSummaryDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Txt_ToSummaryDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_ToSummaryDate.Location = New System.Drawing.Point(13, 22)
-        Me.Txt_ToSummaryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_ToSummaryDate.Location = New System.Drawing.Point(227, 18)
+        Me.Txt_ToSummaryDate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_ToSummaryDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_ToSummaryDate.Name = "Txt_ToSummaryDate"
         Me.Txt_ToSummaryDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_ToSummaryDate.Size = New System.Drawing.Size(233, 39)
+        Me.Txt_ToSummaryDate.Size = New System.Drawing.Size(166, 33)
         Me.Txt_ToSummaryDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_ToSummaryDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.Txt_ToSummaryDate.TabIndex = 556
@@ -812,13 +814,15 @@ Partial Class Frm_Additional_A
         '
         'Label17
         '
+        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label17.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label17.Location = New System.Drawing.Point(253, 26)
+        Me.Label17.Location = New System.Drawing.Point(399, 21)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(80, 32)
+        Me.Label17.Size = New System.Drawing.Size(66, 27)
         Me.Label17.TabIndex = 557
         Me.Label17.Text = "الى تاريخ"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -827,10 +831,10 @@ Partial Class Frm_Additional_A
         '
         Me.UltraTabPageControl2.Controls.Add(Me.Txt_Employees)
         Me.UltraTabPageControl2.Controls.Add(Me.GRD_Additions)
-        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-8334, -10000)
+        Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl2.Name = "UltraTabPageControl2"
-        Me.UltraTabPageControl2.Size = New System.Drawing.Size(1468, 533)
+        Me.UltraTabPageControl2.Size = New System.Drawing.Size(920, 430)
         '
         'GRD_Additions
         '
@@ -891,14 +895,14 @@ Partial Class Frm_Additional_A
         UltraGridColumn19.Header.Caption = "ملاحظات" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Remarks"
         UltraGridColumn19.Header.VisiblePosition = 8
         UltraGridColumn19.MinWidth = 170
-        UltraGridColumn19.Width = 388
+        UltraGridColumn19.Width = 170
         UltraGridColumn20.Header.VisiblePosition = 1
         UltraGridColumn20.Hidden = True
         UltraGridColumn20.Width = 57
         UltraGridColumn21.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always
         Appearance32.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Appearance32.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        Appearance32.FontData.SizeInPoints = 0.1!
+        Appearance32.FontData.SizeInPoints = 0.09999999!
         Appearance32.Image = CType(resources.GetObject("Appearance32.Image"), Object)
         Appearance32.ImageHAlign = Infragistics.Win.HAlign.Center
         UltraGridColumn21.CellButtonAppearance = Appearance32
@@ -933,9 +937,6 @@ Partial Class Frm_Additional_A
         UltraGridBand2.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.[False]
         UltraGridBand2.SummaryFooterCaption = ""
         Me.GRD_Additions.DisplayLayout.BandsSerializer.Add(UltraGridBand2)
-        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion117)
-        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion118)
-        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion119)
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion120)
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion121)
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion122)
@@ -1048,6 +1049,12 @@ Partial Class Frm_Additional_A
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion229)
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion230)
         Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion231)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion232)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion233)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion234)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion235)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion236)
+        Me.GRD_Additions.DisplayLayout.ColScrollRegions.Add(ColScrollRegion237)
         Appearance36.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.GRD_Additions.DisplayLayout.Override.AddRowAppearance = Appearance36
         Me.GRD_Additions.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
@@ -1109,10 +1116,10 @@ Partial Class Frm_Additional_A
         Appearance49.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.GRD_Additions.DisplayLayout.SplitterBarVerticalAppearance = Appearance49
         Me.GRD_Additions.Location = New System.Drawing.Point(-1, 2)
-        Me.GRD_Additions.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GRD_Additions.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GRD_Additions.Name = "GRD_Additions"
         Me.GRD_Additions.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GRD_Additions.Size = New System.Drawing.Size(1459, 523)
+        Me.GRD_Additions.Size = New System.Drawing.Size(914, 425)
         Me.GRD_Additions.TabIndex = 269
         Me.GRD_Additions.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
@@ -1125,98 +1132,115 @@ Partial Class Frm_Additional_A
         UltraDataColumn20.DataType = GetType(Integer)
         Me.DTS_Addition.Band.Columns.AddRange(New Object() {UltraDataColumn12, UltraDataColumn13, UltraDataColumn14, UltraDataColumn15, UltraDataColumn16, UltraDataColumn17, UltraDataColumn18, UltraDataColumn19, UltraDataColumn20, UltraDataColumn21})
         '
-        'Txt_Back
-        '
-        Appearance50.Image = CType(resources.GetObject("Appearance50.Image"), Object)
-        Me.Txt_Back.Appearance = Appearance50
-        Me.Txt_Back.ImageSize = New System.Drawing.Size(70, 70)
-        Me.Txt_Back.Location = New System.Drawing.Point(17, 43)
-        Me.Txt_Back.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Txt_Back.Name = "Txt_Back"
-        Me.Txt_Back.Size = New System.Drawing.Size(91, 90)
-        Me.Txt_Back.TabIndex = 558
-        '
         'Txt_Code
         '
         Me.Txt_Code.AlwaysInEditMode = True
         Me.Txt_Code.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance51.BackColor = System.Drawing.SystemColors.Control
-        Appearance51.BackColor2 = System.Drawing.SystemColors.ControlLight
-        Appearance51.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance51.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance51.TextHAlignAsString = "Right"
-        Me.Txt_Code.Appearance = Appearance51
+        Appearance50.BackColor = System.Drawing.SystemColors.Control
+        Appearance50.BackColor2 = System.Drawing.SystemColors.ControlLight
+        Appearance50.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance50.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance50.TextHAlignAsString = "Right"
+        Me.Txt_Code.Appearance = Appearance50
         Me.Txt_Code.BackColor = System.Drawing.SystemColors.Control
         Me.Txt_Code.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_Code.Location = New System.Drawing.Point(1259, 78)
-        Me.Txt_Code.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Code.Location = New System.Drawing.Point(771, 63)
+        Me.Txt_Code.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Code.Name = "Txt_Code"
         Me.Txt_Code.ReadOnly = True
         Me.Txt_Code.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Code.Size = New System.Drawing.Size(65, 23)
+        Me.Txt_Code.Size = New System.Drawing.Size(46, 20)
         Me.Txt_Code.TabIndex = 270
         Me.Txt_Code.TabStop = False
         Me.Txt_Code.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Code.Visible = False
         '
-        'ToolBar_Main
-        '
-        Me.ToolBar_Main.DesignerFlags = 1
-        Me.ToolBar_Main.DockWithinContainer = Me.Panel1
-        Me.ToolBar_Main.MultiMonitorDropDownBehavior = Infragistics.Win.UltraWinToolbars.MultiMonitorDropDownBehavior.ShiftToMonitorWithExclusionRect
-        Me.ToolBar_Main.RightAlignedMenus = Infragistics.Win.DefaultableBoolean.[False]
-        Me.ToolBar_Main.RuntimeCustomizationOptions = Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.None
-        Me.ToolBar_Main.ShowFullMenusDelay = 500
-        Me.ToolBar_Main.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.OfficeXP
-        UltraToolbar1.DockedColumn = 0
-        UltraToolbar1.DockedRow = 0
-        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool1, LabelTool2})
-        Appearance53.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance53.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance53.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        UltraToolbar1.Settings.Appearance = Appearance53
-        UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
-        UltraToolbar1.Text = "ToolBar1"
-        Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
-        Appearance54.FontData.BoldAsString = "True"
-        Appearance54.FontData.Name = "Tahoma"
-        Appearance54.TextHAlignAsString = "Right"
-        LabelTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance54
-        LabelTool4.SharedPropsInternal.Spring = True
-        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, LabelTool4})
-        '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Btn_Close)
+        Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Tab_Main)
-        Me.Panel1.Controls.Add(Me.Txt_Back)
-        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Txt_Code)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Left)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Right)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Bottom)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Top)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1463, 709)
+        Me.Panel1.Size = New System.Drawing.Size(917, 576)
         Me.Panel1.TabIndex = 274
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 416.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Back, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Close, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 1, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(917, 96)
+        Me.TableLayoutPanel2.TabIndex = 623
+        '
+        'Btn_Back
+        '
+        Appearance51.BackColor = System.Drawing.Color.Transparent
+        Appearance51.BorderColor = System.Drawing.Color.Transparent
+        Appearance51.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance51.Image = CType(resources.GetObject("Appearance51.Image"), Object)
+        Me.Btn_Back.Appearance = Appearance51
+        Me.Btn_Back.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Back.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Btn_Back.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Back.Location = New System.Drawing.Point(10, 19)
+        Me.Btn_Back.Margin = New System.Windows.Forms.Padding(10, 4, 2, 4)
+        Me.Btn_Back.Name = "Btn_Back"
+        Me.Btn_Back.ShowFocusRect = False
+        Me.Btn_Back.ShowOutline = False
+        Me.Btn_Back.Size = New System.Drawing.Size(93, 73)
+        Me.Btn_Back.TabIndex = 603
+        Me.Btn_Back.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Btn_Close
         '
-        Me.Btn_Close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance52.BackColor = System.Drawing.Color.White
+        Appearance52.BackColor = System.Drawing.Color.Transparent
+        Appearance52.BorderColor = System.Drawing.Color.Transparent
+        Appearance52.Cursor = System.Windows.Forms.Cursors.Hand
         Appearance52.Image = CType(resources.GetObject("Appearance52.Image"), Object)
         Appearance52.ImageHAlign = Infragistics.Win.HAlign.Center
         Me.Btn_Close.Appearance = Appearance52
-        Me.Btn_Close.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Btn_Close.Location = New System.Drawing.Point(1363, 34)
-        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Close.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Btn_Close.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Close.Location = New System.Drawing.Point(821, 17)
+        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(2, 2, 10, 2)
         Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.Size = New System.Drawing.Size(83, 87)
-        Me.Btn_Close.TabIndex = 561
+        Me.Btn_Close.ShowFocusRect = False
+        Me.Btn_Close.ShowOutline = False
+        Me.Btn_Close.Size = New System.Drawing.Size(86, 77)
+        Me.Btn_Close.TabIndex = 602
         Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.DarkOliveGreen
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Droid Arabic Kufi", 17.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(252, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(412, 81)
+        Me.Label1.TabIndex = 560
+        Me.Label1.Text = "ادخال الأضافي"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Tab_Main
         '
@@ -1226,11 +1250,11 @@ Partial Class Frm_Additional_A
         Me.Tab_Main.Controls.Add(Me.UltraTabPageControl2)
         Me.Tab_Main.Controls.Add(Me.UltraTabSharedControlsPage1)
         Me.Tab_Main.Controls.Add(Me.UltraTabPageControl1)
-        Me.Tab_Main.Location = New System.Drawing.Point(0, 148)
-        Me.Tab_Main.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tab_Main.Location = New System.Drawing.Point(0, 120)
+        Me.Tab_Main.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Tab_Main.Name = "Tab_Main"
         Me.Tab_Main.SharedControlsPage = Me.UltraTabSharedControlsPage1
-        Me.Tab_Main.Size = New System.Drawing.Size(1472, 561)
+        Me.Tab_Main.Size = New System.Drawing.Size(924, 456)
         Me.Tab_Main.TabIndex = 511
         Me.Tab_Main.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.BottomRight
         UltraTab1.Key = "Tab_Summary"
@@ -1244,80 +1268,17 @@ Partial Class Frm_Additional_A
         'UltraTabSharedControlsPage1
         '
         Me.UltraTabSharedControlsPage1.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabSharedControlsPage1.Name = "UltraTabSharedControlsPage1"
-        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(1468, 533)
-        '
-        'Label10
-        '
-        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label10.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label10.Font = New System.Drawing.Font("Droid Arabic Kufi", 21.0!)
-        Me.Label10.Location = New System.Drawing.Point(416, 44)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(630, 86)
-        Me.Label10.TabIndex = 560
-        Me.Label10.Text = "ادخال الأضافي"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        '_Panel1_Toolbars_Dock_Area_Left
-        '
-        Me._Panel1_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Left.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
-        Me._Panel1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 23)
-        Me._Panel1_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Left.Name = "_Panel1_Toolbars_Dock_Area_Left"
-        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 686)
-        Me._Panel1_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Right
-        '
-        Me._Panel1_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
-        Me._Panel1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1463, 23)
-        Me._Panel1_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Right.Name = "_Panel1_Toolbars_Dock_Area_Right"
-        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 686)
-        Me._Panel1_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Bottom
-        '
-        Me._Panel1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 709)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1463, 0)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Top
-        '
-        Me._Panel1_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Top.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
-        Me._Panel1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._Panel1_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Top.Name = "_Panel1_Toolbars_Dock_Area_Top"
-        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1463, 23)
-        Me._Panel1_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
+        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(920, 430)
         '
         'Frm_Additional_A
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1463, 709)
+        Me.ClientSize = New System.Drawing.Size(917, 576)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Frm_Additional_A"
         Me.Text = "ادخال الأضافي"
         CType(Me.Txt_Employees, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1332,9 +1293,9 @@ Partial Class Frm_Additional_A
         CType(Me.GRD_Additions, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DTS_Addition, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_Code, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_Main.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -1343,19 +1304,11 @@ Partial Class Frm_Additional_A
 
     Friend WithEvents DTS_Addition As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents GRD_Additions As Infragistics.Win.UltraWinGrid.UltraGrid
-    Friend WithEvents ToolBar_Main As Infragistics.Win.UltraWinToolbars.UltraToolbarsManager
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Left As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents Tab_Main As Infragistics.Win.UltraWinTabControl.UltraTabControl
     Friend WithEvents UltraTabSharedControlsPage1 As Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage
     Friend WithEvents UltraTabPageControl2 As Infragistics.Win.UltraWinTabControl.UltraTabPageControl
     Friend WithEvents Txt_Code As Infragistics.Win.UltraWinEditors.UltraTextEditor
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Txt_Back As Infragistics.Win.Misc.UltraButton
-    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
     Friend WithEvents Txt_Employees As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents DTS_Summary As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents UltraTabPageControl1 As Infragistics.Win.UltraWinTabControl.UltraTabPageControl
@@ -1364,4 +1317,8 @@ Partial Class Frm_Additional_A
     Friend WithEvents Label16 As Label
     Friend WithEvents Txt_ToSummaryDate As Infragistics.Win.UltraWinEditors.UltraDateTimeEditor
     Friend WithEvents Label17 As Label
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Btn_Back As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Label1 As Label
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_Add_Category
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Frm_Add_PackUnit
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class Frm_Add_Category
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Add_Category))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Add_PackUnit))
         Dim Appearance2 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.Btn_Cancel = New Infragistics.Win.Misc.UltraButton()
         Me.Btn_Ok = New Infragistics.Win.Misc.UltraButton()
@@ -70,27 +70,24 @@ Partial Class Frm_Add_Category
         Me.Txt_Desc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Txt_Desc.Multiline = True
         Me.Txt_Desc.Name = "Txt_Desc"
-        Me.Txt_Desc.Size = New System.Drawing.Size(434, 24)
+        Me.Txt_Desc.Size = New System.Drawing.Size(438, 24)
         Me.Txt_Desc.TabIndex = 626
         Me.Txt_Desc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'Frm_Add_Category
+        'Frm_Add_PackUnit
         '
         Me.AcceptButton = Me.Btn_Ok
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Btn_Cancel
         Me.ClientSize = New System.Drawing.Size(467, 126)
-        Me.ControlBox = False
         Me.Controls.Add(Me.Btn_Cancel)
         Me.Controls.Add(Me.Btn_Ok)
         Me.Controls.Add(Me.Txt_Desc)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.MaximumSize = New System.Drawing.Size(485, 173)
-        Me.MinimumSize = New System.Drawing.Size(485, 173)
-        Me.Name = "Frm_Add_Category"
+        Me.Name = "Frm_Add_PackUnit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "أضافة تصنيف"
+        Me.Text = "أضافة وحدة التعبئة"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

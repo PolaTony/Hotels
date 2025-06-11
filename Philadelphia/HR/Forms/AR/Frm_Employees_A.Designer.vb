@@ -237,13 +237,6 @@ Partial Class Frm_Employees_A
         Dim UltraTab1 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab5 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab2 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
-        Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
-        Dim LabelTool1 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim LabelTool2 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance121 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance122 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
         Me.UltraTabPageControl3 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
         Me.Chk_StopDeal = New Infragistics.Win.UltraWinEditors.UltraCheckEditor()
         Me.Chk_IsSalesMan = New Infragistics.Win.UltraWinEditors.UltraCheckEditor()
@@ -371,17 +364,13 @@ Partial Class Frm_Employees_A
         Me.Opt_E = New System.Windows.Forms.RadioButton()
         Me.UltraTabControl1 = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage2 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
-        Me.Txt_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Btn_Back = New Infragistics.Win.Misc.UltraButton()
         Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
         Me.Tab_Main = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
-        Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
-        Me._Panel1_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me.EntityServerModeSource1 = New DevExpress.Data.Linq.EntityServerModeSource()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
@@ -457,9 +446,9 @@ Partial Class Frm_Employees_A
         CType(Me.UltraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabControl1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_Main.SuspendLayout()
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EntityServerModeSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -469,10 +458,10 @@ Partial Class Frm_Employees_A
         Me.UltraTabPageControl3.Controls.Add(Me.Chk_StopDeal)
         Me.UltraTabPageControl3.Controls.Add(Me.Chk_IsSalesMan)
         Me.UltraTabPageControl3.Controls.Add(Me.Grd_Details)
-        Me.UltraTabPageControl3.Location = New System.Drawing.Point(1, 6)
-        Me.UltraTabPageControl3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl3.Location = New System.Drawing.Point(1, -1)
+        Me.UltraTabPageControl3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl3.Name = "UltraTabPageControl3"
-        Me.UltraTabPageControl3.Size = New System.Drawing.Size(1359, 0)
+        Me.UltraTabPageControl3.Size = New System.Drawing.Size(893, 0)
         '
         'Chk_StopDeal
         '
@@ -484,10 +473,10 @@ Partial Class Frm_Employees_A
         Appearance1.TextHAlignAsString = "Center"
         Me.Chk_StopDeal.Appearance = Appearance1
         Me.Chk_StopDeal.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
-        Me.Chk_StopDeal.Location = New System.Drawing.Point(266, 79)
-        Me.Chk_StopDeal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_StopDeal.Location = New System.Drawing.Point(189, 64)
+        Me.Chk_StopDeal.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Chk_StopDeal.Name = "Chk_StopDeal"
-        Me.Chk_StopDeal.Size = New System.Drawing.Size(465, 25)
+        Me.Chk_StopDeal.Size = New System.Drawing.Size(255, 20)
         Me.Chk_StopDeal.Style = Infragistics.Win.EditCheckStyle.Button
         Me.Chk_StopDeal.TabIndex = 514
         Me.Chk_StopDeal.Tag = "N"
@@ -505,10 +494,10 @@ Partial Class Frm_Employees_A
         Appearance2.TextHAlignAsString = "Center"
         Me.Chk_IsSalesMan.Appearance = Appearance2
         Me.Chk_IsSalesMan.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
-        Me.Chk_IsSalesMan.Location = New System.Drawing.Point(266, 47)
-        Me.Chk_IsSalesMan.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_IsSalesMan.Location = New System.Drawing.Point(189, 38)
+        Me.Chk_IsSalesMan.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Chk_IsSalesMan.Name = "Chk_IsSalesMan"
-        Me.Chk_IsSalesMan.Size = New System.Drawing.Size(465, 25)
+        Me.Chk_IsSalesMan.Size = New System.Drawing.Size(255, 20)
         Me.Chk_IsSalesMan.Style = Infragistics.Win.EditCheckStyle.Button
         Me.Chk_IsSalesMan.TabIndex = 538
         Me.Chk_IsSalesMan.Tag = "N"
@@ -610,10 +599,10 @@ Partial Class Frm_Employees_A
         Me.Grd_Details.DisplayLayout.SplitterBarVerticalAppearance = Appearance18
         Me.Grd_Details.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Grd_Details.Location = New System.Drawing.Point(0, 0)
-        Me.Grd_Details.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_Details.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Grd_Details.Name = "Grd_Details"
         Me.Grd_Details.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_Details.Size = New System.Drawing.Size(1359, 0)
+        Me.Grd_Details.Size = New System.Drawing.Size(893, 0)
         Me.Grd_Details.TabIndex = 536
         Me.Grd_Details.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
@@ -635,10 +624,10 @@ Partial Class Frm_Employees_A
         Me.UltraTabPageControl4.Controls.Add(Me.Txt_SalesInvoice_Employees_Auth)
         Me.UltraTabPageControl4.Controls.Add(Me.Label11)
         Me.UltraTabPageControl4.Controls.Add(Me.Chk_SelectAll)
-        Me.UltraTabPageControl4.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl4.Location = New System.Drawing.Point(-8334, -10000)
+        Me.UltraTabPageControl4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl4.Name = "UltraTabPageControl4"
-        Me.UltraTabPageControl4.Size = New System.Drawing.Size(1359, 0)
+        Me.UltraTabPageControl4.Size = New System.Drawing.Size(893, 0)
         '
         'Label34
         '
@@ -646,9 +635,10 @@ Partial Class Frm_Employees_A
         Me.Label34.AutoSize = True
         Me.Label34.BackColor = System.Drawing.Color.Transparent
         Me.Label34.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label34.Location = New System.Drawing.Point(1010, 138)
+        Me.Label34.Location = New System.Drawing.Point(644, 112)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(145, 17)
+        Me.Label34.Size = New System.Drawing.Size(116, 13)
         Me.Label34.TabIndex = 669
         Me.Label34.Text = "الخصومات في نقاط البيع"
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -670,11 +660,11 @@ Partial Class Frm_Employees_A
         InactiveStateCollection1.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         InactiveStateCollection1.Text = "OFF"
         Me.Chk_POS_Deductions.InactiveState = InactiveStateCollection1
-        Me.Chk_POS_Deductions.Location = New System.Drawing.Point(884, 130)
-        Me.Chk_POS_Deductions.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Chk_POS_Deductions.MinimumSize = New System.Drawing.Size(61, 25)
+        Me.Chk_POS_Deductions.Location = New System.Drawing.Point(554, 106)
+        Me.Chk_POS_Deductions.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Chk_POS_Deductions.MinimumSize = New System.Drawing.Size(43, 20)
         Me.Chk_POS_Deductions.Name = "Chk_POS_Deductions"
-        Me.Chk_POS_Deductions.Size = New System.Drawing.Size(105, 34)
+        Me.Chk_POS_Deductions.Size = New System.Drawing.Size(74, 28)
         SliderCollection1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         SliderCollection1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         SliderCollection1.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -692,9 +682,10 @@ Partial Class Frm_Employees_A
         Me.Label33.AutoSize = True
         Me.Label33.BackColor = System.Drawing.Color.Transparent
         Me.Label33.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label33.Location = New System.Drawing.Point(996, 97)
+        Me.Label33.Location = New System.Drawing.Point(634, 79)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(161, 17)
+        Me.Label33.Size = New System.Drawing.Size(129, 13)
         Me.Label33.TabIndex = 667
         Me.Label33.Text = "تعديل السعر في نقاط البيع"
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -716,11 +707,11 @@ Partial Class Frm_Employees_A
         InactiveStateCollection2.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         InactiveStateCollection2.Text = "OFF"
         Me.Chk_POS_ChangePrice.InactiveState = InactiveStateCollection2
-        Me.Chk_POS_ChangePrice.Location = New System.Drawing.Point(884, 89)
-        Me.Chk_POS_ChangePrice.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Chk_POS_ChangePrice.MinimumSize = New System.Drawing.Size(61, 25)
+        Me.Chk_POS_ChangePrice.Location = New System.Drawing.Point(554, 72)
+        Me.Chk_POS_ChangePrice.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Chk_POS_ChangePrice.MinimumSize = New System.Drawing.Size(43, 20)
         Me.Chk_POS_ChangePrice.Name = "Chk_POS_ChangePrice"
-        Me.Chk_POS_ChangePrice.Size = New System.Drawing.Size(105, 34)
+        Me.Chk_POS_ChangePrice.Size = New System.Drawing.Size(74, 28)
         SliderCollection2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         SliderCollection2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         SliderCollection2.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -738,9 +729,10 @@ Partial Class Frm_Employees_A
         Me.Label32.AutoSize = True
         Me.Label32.BackColor = System.Drawing.Color.Transparent
         Me.Label32.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label32.Location = New System.Drawing.Point(1007, 55)
+        Me.Label32.Location = New System.Drawing.Point(642, 45)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(151, 17)
+        Me.Label32.Size = New System.Drawing.Size(120, 13)
         Me.Label32.TabIndex = 665
         Me.Label32.Text = "حذف صنف في نقاط البيع"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -762,11 +754,11 @@ Partial Class Frm_Employees_A
         InactiveStateCollection3.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         InactiveStateCollection3.Text = "OFF"
         Me.Chk_POS_DeleteItem.InactiveState = InactiveStateCollection3
-        Me.Chk_POS_DeleteItem.Location = New System.Drawing.Point(884, 369)
-        Me.Chk_POS_DeleteItem.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Chk_POS_DeleteItem.MinimumSize = New System.Drawing.Size(61, 25)
+        Me.Chk_POS_DeleteItem.Location = New System.Drawing.Point(554, 300)
+        Me.Chk_POS_DeleteItem.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Chk_POS_DeleteItem.MinimumSize = New System.Drawing.Size(43, 20)
         Me.Chk_POS_DeleteItem.Name = "Chk_POS_DeleteItem"
-        Me.Chk_POS_DeleteItem.Size = New System.Drawing.Size(105, 34)
+        Me.Chk_POS_DeleteItem.Size = New System.Drawing.Size(74, 28)
         SliderCollection3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         SliderCollection3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         SliderCollection3.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -799,11 +791,11 @@ Partial Class Frm_Employees_A
         ValueListItem2.DataValue = "P"
         ValueListItem2.DisplayText = "Part Time"
         Me.Txt_SalesInvoice_Employees_Auth.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem1, ValueListItem2})
-        Me.Txt_SalesInvoice_Employees_Auth.Location = New System.Drawing.Point(765, 11)
-        Me.Txt_SalesInvoice_Employees_Auth.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_SalesInvoice_Employees_Auth.Location = New System.Drawing.Point(469, 9)
+        Me.Txt_SalesInvoice_Employees_Auth.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_SalesInvoice_Employees_Auth.Name = "Txt_SalesInvoice_Employees_Auth"
         Me.Txt_SalesInvoice_Employees_Auth.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_SalesInvoice_Employees_Auth.Size = New System.Drawing.Size(224, 23)
+        Me.Txt_SalesInvoice_Employees_Auth.Size = New System.Drawing.Size(159, 20)
         Me.Txt_SalesInvoice_Employees_Auth.TabIndex = 662
         Me.Txt_SalesInvoice_Employees_Auth.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -813,9 +805,10 @@ Partial Class Frm_Employees_A
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label11.Location = New System.Drawing.Point(1032, 18)
+        Me.Label11.Location = New System.Drawing.Point(660, 15)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(121, 17)
+        Me.Label11.Size = New System.Drawing.Size(98, 13)
         Me.Label11.TabIndex = 517
         Me.Label11.Text = "صلاحيات فواتير البيع"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -825,10 +818,10 @@ Partial Class Frm_Employees_A
         Me.Chk_SelectAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Chk_SelectAll.AutoSize = True
         Me.Chk_SelectAll.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Chk_SelectAll.Location = New System.Drawing.Point(668, 14)
-        Me.Chk_SelectAll.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_SelectAll.Location = New System.Drawing.Point(388, 11)
+        Me.Chk_SelectAll.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Chk_SelectAll.Name = "Chk_SelectAll"
-        Me.Chk_SelectAll.Size = New System.Drawing.Size(89, 21)
+        Me.Chk_SelectAll.Size = New System.Drawing.Size(74, 17)
         Me.Chk_SelectAll.TabIndex = 663
         Me.Chk_SelectAll.Text = "اختيار الكل"
         Me.Chk_SelectAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -846,10 +839,10 @@ Partial Class Frm_Employees_A
         Me.UltraTabPageControl1.Controls.Add(Me.UltraPictureBox1)
         Me.UltraTabPageControl1.Controls.Add(Me.Txt_FndByCode)
         Me.UltraTabPageControl1.Controls.Add(Me.Label4)
-        Me.UltraTabPageControl1.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl1.Location = New System.Drawing.Point(1, 1)
+        Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl1.Name = "UltraTabPageControl1"
-        Me.UltraTabPageControl1.Size = New System.Drawing.Size(1385, 691)
+        Me.UltraTabPageControl1.Size = New System.Drawing.Size(913, 492)
         '
         'Txt_FndBy_IsActive
         '
@@ -871,11 +864,11 @@ Partial Class Frm_Employees_A
         ValueListItem6.DataValue = "Active"
         ValueListItem6.DisplayText = "نشط"
         Me.Txt_FndBy_IsActive.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem5, ValueListItem6})
-        Me.Txt_FndBy_IsActive.Location = New System.Drawing.Point(21, 16)
-        Me.Txt_FndBy_IsActive.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_FndBy_IsActive.Location = New System.Drawing.Point(14, 13)
+        Me.Txt_FndBy_IsActive.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_FndBy_IsActive.Name = "Txt_FndBy_IsActive"
         Me.Txt_FndBy_IsActive.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_FndBy_IsActive.Size = New System.Drawing.Size(161, 23)
+        Me.Txt_FndBy_IsActive.Size = New System.Drawing.Size(114, 20)
         Me.Txt_FndBy_IsActive.TabIndex = 583
         Me.Txt_FndBy_IsActive.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_FndBy_IsActive.Visible = False
@@ -886,9 +879,10 @@ Partial Class Frm_Employees_A
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label7.Location = New System.Drawing.Point(962, 22)
+        Me.Label7.Location = New System.Drawing.Point(611, 18)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(50, 17)
+        Me.Label7.Size = New System.Drawing.Size(40, 13)
         Me.Label7.TabIndex = 487
         Me.Label7.Text = "بالوصف"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -903,11 +897,11 @@ Partial Class Frm_Employees_A
         Appearance25.TextHAlignAsString = "Right"
         Me.Txt_FndByDesc.Appearance = Appearance25
         Me.Txt_FndByDesc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_FndByDesc.Location = New System.Drawing.Point(245, 17)
-        Me.Txt_FndByDesc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_FndByDesc.Location = New System.Drawing.Point(174, 14)
+        Me.Txt_FndByDesc.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_FndByDesc.Name = "Txt_FndByDesc"
         Me.Txt_FndByDesc.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_FndByDesc.Size = New System.Drawing.Size(768, 23)
+        Me.Txt_FndByDesc.Size = New System.Drawing.Size(472, 20)
         Me.Txt_FndByDesc.TabIndex = 486
         Me.Txt_FndByDesc.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_FndByDesc.Visible = False
@@ -918,9 +912,10 @@ Partial Class Frm_Employees_A
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label6.Location = New System.Drawing.Point(1235, 22)
+        Me.Label6.Location = New System.Drawing.Point(806, 18)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(40, 17)
+        Me.Label6.Size = New System.Drawing.Size(32, 13)
         Me.Label6.TabIndex = 485
         Me.Label6.Text = "بالكود"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -930,11 +925,11 @@ Partial Class Frm_Employees_A
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 49)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox2.Location = New System.Drawing.Point(4, 40)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox2.Size = New System.Drawing.Size(1375, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.GroupBox2.Size = New System.Drawing.Size(906, 2)
         Me.GroupBox2.TabIndex = 484
         Me.GroupBox2.TabStop = False
         '
@@ -1060,11 +1055,11 @@ Partial Class Frm_Employees_A
         Appearance43.BorderColor = System.Drawing.SystemColors.Control
         Appearance43.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_Summary.DisplayLayout.SplitterBarVerticalAppearance = Appearance43
-        Me.Grd_Summary.Location = New System.Drawing.Point(2, 59)
-        Me.Grd_Summary.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_Summary.Location = New System.Drawing.Point(1, 48)
+        Me.Grd_Summary.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Grd_Summary.Name = "Grd_Summary"
         Me.Grd_Summary.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_Summary.Size = New System.Drawing.Size(1379, 631)
+        Me.Grd_Summary.Size = New System.Drawing.Size(908, 442)
         Me.Grd_Summary.TabIndex = 483
         Me.Grd_Summary.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
@@ -1077,10 +1072,10 @@ Partial Class Frm_Employees_A
         Me.UltraPictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.UltraPictureBox1.BorderShadowColor = System.Drawing.Color.Empty
         Me.UltraPictureBox1.Image = CType(resources.GetObject("UltraPictureBox1.Image"), Object)
-        Me.UltraPictureBox1.Location = New System.Drawing.Point(1289, 11)
-        Me.UltraPictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraPictureBox1.Location = New System.Drawing.Point(844, 9)
+        Me.UltraPictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraPictureBox1.Name = "UltraPictureBox1"
-        Me.UltraPictureBox1.Size = New System.Drawing.Size(37, 34)
+        Me.UltraPictureBox1.Size = New System.Drawing.Size(26, 28)
         Me.UltraPictureBox1.TabIndex = 482
         '
         'Txt_FndByCode
@@ -1091,11 +1086,11 @@ Partial Class Frm_Employees_A
         Appearance44.TextHAlignAsString = "Right"
         Me.Txt_FndByCode.Appearance = Appearance44
         Me.Txt_FndByCode.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_FndByCode.Location = New System.Drawing.Point(1037, 17)
-        Me.Txt_FndByCode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_FndByCode.Location = New System.Drawing.Point(664, 14)
+        Me.Txt_FndByCode.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_FndByCode.Name = "Txt_FndByCode"
         Me.Txt_FndByCode.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_FndByCode.Size = New System.Drawing.Size(191, 23)
+        Me.Txt_FndByCode.Size = New System.Drawing.Size(136, 20)
         Me.Txt_FndByCode.TabIndex = 481
         Me.Txt_FndByCode.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_FndByCode.Visible = False
@@ -1106,9 +1101,10 @@ Partial Class Frm_Employees_A
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label4.Location = New System.Drawing.Point(1340, 22)
+        Me.Label4.Location = New System.Drawing.Point(881, 18)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 17)
+        Me.Label4.Size = New System.Drawing.Size(27, 13)
         Me.Label4.TabIndex = 480
         Me.Label4.Text = "بحث"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1117,10 +1113,10 @@ Partial Class Frm_Employees_A
         '
         Me.UltraTabPageControl5.Controls.Add(Me.Label22)
         Me.UltraTabPageControl5.Controls.Add(Me.GridControl1)
-        Me.UltraTabPageControl5.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl5.Location = New System.Drawing.Point(-8334, -10000)
+        Me.UltraTabPageControl5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl5.Name = "UltraTabPageControl5"
-        Me.UltraTabPageControl5.Size = New System.Drawing.Size(1385, 691)
+        Me.UltraTabPageControl5.Size = New System.Drawing.Size(913, 492)
         '
         'Label22
         '
@@ -1129,10 +1125,11 @@ Partial Class Frm_Employees_A
         Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label22.Font = New System.Drawing.Font("Tahoma", 14.0!)
-        Me.Label22.Location = New System.Drawing.Point(957, 124)
+        Me.Label22.Location = New System.Drawing.Point(607, 101)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label22.Size = New System.Drawing.Size(225, 29)
+        Me.Label22.Size = New System.Drawing.Size(177, 23)
         Me.Label22.TabIndex = 660
         Me.Label22.Text = "أضغط Ctrl + F للبحث"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1142,13 +1139,13 @@ Partial Class Frm_Employees_A
         Me.GridControl1.DataMember = "Employees"
         Me.GridControl1.DataSource = Me.SqlDataSource1
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.LayoutView1
-        Me.GridControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GridControl1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GridControl1.Size = New System.Drawing.Size(1385, 691)
+        Me.GridControl1.Size = New System.Drawing.Size(913, 492)
         Me.GridControl1.TabIndex = 585
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutView1, Me.GridView1})
         '
@@ -1227,9 +1224,8 @@ Partial Class Frm_Employees_A
         Me.LayoutView1.Appearance.FocusedCardCaption.BackColor2 = System.Drawing.Color.White
         Me.LayoutView1.Appearance.FocusedCardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.LayoutView1.Appearance.FocusedCardCaption.Options.UseBackColor = True
-        Me.LayoutView1.CardMinSize = New System.Drawing.Size(122, 305)
+        Me.LayoutView1.CardMinSize = New System.Drawing.Size(87, 248)
         Me.LayoutView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.LayoutViewColumn() {Me.colالأسم, Me.colالصورة, Me.colالموبايل, Me.colالايميل, Me.colالصلاحيات, Me.colالوظيفة})
-        Me.LayoutView1.DetailHeight = 431
         Me.LayoutView1.GridControl = Me.GridControl1
         Me.LayoutView1.Name = "LayoutView1"
         Me.LayoutView1.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.Carousel
@@ -1239,111 +1235,111 @@ Partial Class Frm_Employees_A
         '
         Me.colالأسم.FieldName = "الأسم"
         Me.colالأسم.LayoutViewField = Me.layoutViewField_colالأسم
-        Me.colالأسم.MinWidth = 23
+        Me.colالأسم.MinWidth = 17
         Me.colالأسم.Name = "colالأسم"
-        Me.colالأسم.Width = 87
+        Me.colالأسم.Width = 62
         '
         'layoutViewField_colالأسم
         '
-        Me.layoutViewField_colالأسم.EditorPreferredWidth = 196
+        Me.layoutViewField_colالأسم.EditorPreferredWidth = 140
         Me.layoutViewField_colالأسم.Location = New System.Drawing.Point(0, 36)
         Me.layoutViewField_colالأسم.Name = "layoutViewField_colالأسم"
-        Me.layoutViewField_colالأسم.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالأسم.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالأسم.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالأسم.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.layoutViewField_colالأسم.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالأسم.TextSize = New System.Drawing.Size(50, 13)
         '
         'colالصورة
         '
         Me.colالصورة.CustomizationCaption = "الصورة"
         Me.colالصورة.FieldName = "الصورة"
         Me.colالصورة.LayoutViewField = Me.layoutViewField_colالصورة
-        Me.colالصورة.MinWidth = 23
+        Me.colالصورة.MinWidth = 17
         Me.colالصورة.Name = "colالصورة"
-        Me.colالصورة.Width = 87
+        Me.colالصورة.Width = 62
         '
         'layoutViewField_colالصورة
         '
-        Me.layoutViewField_colالصورة.EditorPreferredWidth = 196
+        Me.layoutViewField_colالصورة.EditorPreferredWidth = 140
         Me.layoutViewField_colالصورة.Location = New System.Drawing.Point(0, 0)
         Me.layoutViewField_colالصورة.Name = "layoutViewField_colالصورة"
-        Me.layoutViewField_colالصورة.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالصورة.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالصورة.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالصورة.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.layoutViewField_colالصورة.StartNewLine = True
-        Me.layoutViewField_colالصورة.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالصورة.TextSize = New System.Drawing.Size(50, 13)
         '
         'colالموبايل
         '
         Me.colالموبايل.FieldName = "الموبايل"
         Me.colالموبايل.LayoutViewField = Me.layoutViewField_colالموبايل
-        Me.colالموبايل.MinWidth = 23
+        Me.colالموبايل.MinWidth = 17
         Me.colالموبايل.Name = "colالموبايل"
-        Me.colالموبايل.Width = 87
+        Me.colالموبايل.Width = 62
         '
         'layoutViewField_colالموبايل
         '
-        Me.layoutViewField_colالموبايل.EditorPreferredWidth = 196
+        Me.layoutViewField_colالموبايل.EditorPreferredWidth = 140
         Me.layoutViewField_colالموبايل.Location = New System.Drawing.Point(0, 72)
         Me.layoutViewField_colالموبايل.Name = "layoutViewField_colالموبايل"
-        Me.layoutViewField_colالموبايل.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالموبايل.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالموبايل.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالموبايل.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.layoutViewField_colالموبايل.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالموبايل.TextSize = New System.Drawing.Size(50, 13)
         '
         'colالايميل
         '
         Me.colالايميل.FieldName = "الايميل"
         Me.colالايميل.LayoutViewField = Me.layoutViewField_colالايميل
-        Me.colالايميل.MinWidth = 23
+        Me.colالايميل.MinWidth = 17
         Me.colالايميل.Name = "colالايميل"
-        Me.colالايميل.Width = 87
+        Me.colالايميل.Width = 62
         '
         'layoutViewField_colالايميل
         '
-        Me.layoutViewField_colالايميل.EditorPreferredWidth = 196
+        Me.layoutViewField_colالايميل.EditorPreferredWidth = 140
         Me.layoutViewField_colالايميل.Location = New System.Drawing.Point(0, 108)
         Me.layoutViewField_colالايميل.Name = "layoutViewField_colالايميل"
-        Me.layoutViewField_colالايميل.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالايميل.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالايميل.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالايميل.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.layoutViewField_colالايميل.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالايميل.TextSize = New System.Drawing.Size(50, 13)
         '
         'colالصلاحيات
         '
         Me.colالصلاحيات.FieldName = "الصلاحيات"
         Me.colالصلاحيات.LayoutViewField = Me.layoutViewField_colالصلاحيات
-        Me.colالصلاحيات.MinWidth = 23
+        Me.colالصلاحيات.MinWidth = 17
         Me.colالصلاحيات.Name = "colالصلاحيات"
-        Me.colالصلاحيات.Width = 87
+        Me.colالصلاحيات.Width = 62
         '
         'layoutViewField_colالصلاحيات
         '
-        Me.layoutViewField_colالصلاحيات.EditorPreferredWidth = 196
+        Me.layoutViewField_colالصلاحيات.EditorPreferredWidth = 140
         Me.layoutViewField_colالصلاحيات.Location = New System.Drawing.Point(0, 144)
         Me.layoutViewField_colالصلاحيات.Name = "layoutViewField_colالصلاحيات"
-        Me.layoutViewField_colالصلاحيات.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالصلاحيات.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالصلاحيات.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالصلاحيات.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.layoutViewField_colالصلاحيات.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالصلاحيات.TextSize = New System.Drawing.Size(50, 13)
         '
         'colالوظيفة
         '
         Me.colالوظيفة.FieldName = "الوظيفة"
         Me.colالوظيفة.LayoutViewField = Me.layoutViewField_colالوظيفة
-        Me.colالوظيفة.MinWidth = 23
+        Me.colالوظيفة.MinWidth = 17
         Me.colالوظيفة.Name = "colالوظيفة"
-        Me.colالوظيفة.Width = 87
+        Me.colالوظيفة.Width = 62
         '
         'layoutViewField_colالوظيفة
         '
-        Me.layoutViewField_colالوظيفة.EditorPreferredWidth = 196
+        Me.layoutViewField_colالوظيفة.EditorPreferredWidth = 140
         Me.layoutViewField_colالوظيفة.Location = New System.Drawing.Point(0, 180)
         Me.layoutViewField_colالوظيفة.Name = "layoutViewField_colالوظيفة"
-        Me.layoutViewField_colالوظيفة.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.layoutViewField_colالوظيفة.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.layoutViewField_colالوظيفة.Size = New System.Drawing.Size(239, 36)
         Me.layoutViewField_colالوظيفة.Spacing = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.layoutViewField_colالوظيفة.TextSize = New System.Drawing.Size(62, 17)
+        Me.layoutViewField_colالوظيفة.TextSize = New System.Drawing.Size(50, 13)
         '
         'LayoutViewCard1
         '
@@ -1352,12 +1348,11 @@ Partial Class Frm_Employees_A
         Me.LayoutViewCard1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colالموبايل, Me.layoutViewField_colالايميل, Me.layoutViewField_colالصلاحيات, Me.layoutViewField_colالوظيفة, Me.layoutViewField_colالصورة, Me.layoutViewField_colالأسم})
         Me.LayoutViewCard1.Name = "layoutViewTemplateCard"
         Me.LayoutViewCard1.OptionsItemText.TextToControlDistance = 5
-        Me.LayoutViewCard1.Padding = New DevExpress.XtraLayout.Utils.Padding(7, 7, 7, 7)
+        Me.LayoutViewCard1.Padding = New DevExpress.XtraLayout.Utils.Padding(5, 5, 6, 6)
         Me.LayoutViewCard1.Text = "TemplateCard"
         '
         'GridView1
         '
-        Me.GridView1.DetailHeight = 431
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         '
@@ -1366,10 +1361,10 @@ Partial Class Frm_Employees_A
         Me.UltraTabPageControl2.Controls.Add(Me.Panel3)
         Me.UltraTabPageControl2.Controls.Add(Me.Panel2)
         Me.UltraTabPageControl2.Controls.Add(Me.UltraTabControl1)
-        Me.UltraTabPageControl2.Location = New System.Drawing.Point(1, 1)
-        Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-8334, -10000)
+        Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabPageControl2.Name = "UltraTabPageControl2"
-        Me.UltraTabPageControl2.Size = New System.Drawing.Size(1385, 691)
+        Me.UltraTabPageControl2.Size = New System.Drawing.Size(913, 492)
         '
         'Panel3
         '
@@ -1450,9 +1445,9 @@ Partial Class Frm_Employees_A
         Me.Panel3.Controls.Add(Me.Txt_Desc)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1385, 691)
+        Me.Panel3.Size = New System.Drawing.Size(913, 492)
         Me.Panel3.TabIndex = 710
         '
         'Label9
@@ -1462,9 +1457,10 @@ Partial Class Frm_Employees_A
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label9.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label9.Location = New System.Drawing.Point(390, 501)
+        Me.Label9.Location = New System.Drawing.Point(202, 407)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(64, 32)
+        Me.Label9.Size = New System.Drawing.Size(52, 27)
         Me.Label9.TabIndex = 714
         Me.Label9.Text = "مشرف"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1486,11 +1482,11 @@ Partial Class Frm_Employees_A
         InactiveStateCollection4.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         InactiveStateCollection4.Text = "OFF"
         Me.Chk_IsSupervisor.InactiveState = InactiveStateCollection4
-        Me.Chk_IsSupervisor.Location = New System.Drawing.Point(274, 502)
-        Me.Chk_IsSupervisor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Chk_IsSupervisor.MinimumSize = New System.Drawing.Size(61, 25)
+        Me.Chk_IsSupervisor.Location = New System.Drawing.Point(119, 408)
+        Me.Chk_IsSupervisor.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Chk_IsSupervisor.MinimumSize = New System.Drawing.Size(43, 20)
         Me.Chk_IsSupervisor.Name = "Chk_IsSupervisor"
-        Me.Chk_IsSupervisor.Size = New System.Drawing.Size(105, 34)
+        Me.Chk_IsSupervisor.Size = New System.Drawing.Size(74, 28)
         SliderCollection4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         SliderCollection4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         SliderCollection4.HoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -1511,12 +1507,12 @@ Partial Class Frm_Employees_A
         Me.Txt_Code.Appearance = Appearance45
         Me.Txt_Code.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Code.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Code.Location = New System.Drawing.Point(903, 15)
-        Me.Txt_Code.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Code.Location = New System.Drawing.Point(568, 12)
+        Me.Txt_Code.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Code.Name = "Txt_Code"
         Me.Txt_Code.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Code.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Code.Size = New System.Drawing.Size(58, 32)
+        Me.Txt_Code.Size = New System.Drawing.Size(41, 27)
         Me.Txt_Code.TabIndex = 712
         Me.Txt_Code.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Code.Visible = False
@@ -1548,11 +1544,11 @@ Partial Class Frm_Employees_A
         ValueListItem26.DataValue = "W"
         ValueListItem26.DisplayText = "أرمل"
         Me.Txt_HR_Systems.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem22, ValueListItem23, ValueListItem24, ValueListItem25, ValueListItem26})
-        Me.Txt_HR_Systems.Location = New System.Drawing.Point(491, 612)
-        Me.Txt_HR_Systems.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_HR_Systems.Location = New System.Drawing.Point(274, 497)
+        Me.Txt_HR_Systems.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_HR_Systems.Name = "Txt_HR_Systems"
         Me.Txt_HR_Systems.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_HR_Systems.Size = New System.Drawing.Size(192, 32)
+        Me.Txt_HR_Systems.Size = New System.Drawing.Size(137, 27)
         Me.Txt_HR_Systems.TabIndex = 710
         Me.Txt_HR_Systems.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1563,9 +1559,10 @@ Partial Class Frm_Employees_A
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label8.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(721, 612)
+        Me.Label8.Location = New System.Drawing.Point(438, 497)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(107, 32)
+        Me.Label8.Size = New System.Drawing.Size(87, 27)
         Me.Label8.TabIndex = 711
         Me.Label8.Text = "نظام الرواتب"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1577,9 +1574,10 @@ Partial Class Frm_Employees_A
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label27.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label27.Location = New System.Drawing.Point(1280, 138)
+        Me.Label27.Location = New System.Drawing.Point(838, 112)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(74, 32)
+        Me.Label27.Size = New System.Drawing.Size(59, 27)
         Me.Label27.TabIndex = 675
         Me.Label27.Text = "الجنسية"
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1592,12 +1590,12 @@ Partial Class Frm_Employees_A
         Me.Txt_Qualification.Appearance = Appearance49
         Me.Txt_Qualification.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Qualification.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Qualification.Location = New System.Drawing.Point(488, 357)
-        Me.Txt_Qualification.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Qualification.Location = New System.Drawing.Point(272, 290)
+        Me.Txt_Qualification.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Qualification.Name = "Txt_Qualification"
         Me.Txt_Qualification.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Qualification.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Qualification.Size = New System.Drawing.Size(195, 32)
+        Me.Txt_Qualification.Size = New System.Drawing.Size(139, 27)
         Me.Txt_Qualification.TabIndex = 14
         Me.Txt_Qualification.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1608,9 +1606,10 @@ Partial Class Frm_Employees_A
         Me.Label28.BackColor = System.Drawing.Color.Transparent
         Me.Label28.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label28.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label28.Location = New System.Drawing.Point(756, 357)
+        Me.Label28.Location = New System.Drawing.Point(463, 290)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(69, 32)
+        Me.Label28.Size = New System.Drawing.Size(57, 27)
         Me.Label28.TabIndex = 677
         Me.Label28.Text = "المؤهل"
         Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1623,12 +1622,12 @@ Partial Class Frm_Employees_A
         Me.Txt_Title.Appearance = Appearance50
         Me.Txt_Title.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Title.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Title.Location = New System.Drawing.Point(871, 526)
-        Me.Txt_Title.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Title.Location = New System.Drawing.Point(546, 427)
+        Me.Txt_Title.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Title.Name = "Txt_Title"
         Me.Txt_Title.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Title.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Title.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Title.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Title.TabIndex = 21
         Me.Txt_Title.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1639,9 +1638,10 @@ Partial Class Frm_Employees_A
         Me.Label29.BackColor = System.Drawing.Color.Transparent
         Me.Label29.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label29.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label29.Location = New System.Drawing.Point(1288, 273)
+        Me.Label29.Location = New System.Drawing.Point(843, 222)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(70, 32)
+        Me.Label29.Size = New System.Drawing.Size(53, 27)
         Me.Label29.TabIndex = 679
         Me.Label29.Text = "IPAN"
         Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1652,12 +1652,12 @@ Partial Class Frm_Employees_A
         Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.Txt_Remarks)
         Me.GroupBox4.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.GroupBox4.Location = New System.Drawing.Point(490, 692)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox4.Location = New System.Drawing.Point(273, 562)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupBox4.Size = New System.Drawing.Size(857, 73)
+        Me.GroupBox4.Size = New System.Drawing.Size(612, 59)
         Me.GroupBox4.TabIndex = 498
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "ملاحظات"
@@ -1670,13 +1670,13 @@ Partial Class Frm_Employees_A
         Me.Txt_Remarks.Appearance = Appearance51
         Me.Txt_Remarks.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Remarks.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Remarks.Location = New System.Drawing.Point(7, 17)
-        Me.Txt_Remarks.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Remarks.Location = New System.Drawing.Point(4, 14)
+        Me.Txt_Remarks.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Remarks.Multiline = True
         Me.Txt_Remarks.Name = "Txt_Remarks"
         Me.Txt_Remarks.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Remarks.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Remarks.Size = New System.Drawing.Size(624, 48)
+        Me.Txt_Remarks.Size = New System.Drawing.Size(445, 39)
         Me.Txt_Remarks.TabIndex = 0
         Me.Txt_Remarks.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1703,11 +1703,11 @@ Partial Class Frm_Employees_A
         ValueListItem17.DataValue = "M"
         ValueListItem17.DisplayText = "شهري"
         Me.Txt_BankCode.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem15, ValueListItem16, ValueListItem17})
-        Me.Txt_BankCode.Location = New System.Drawing.Point(871, 314)
-        Me.Txt_BankCode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_BankCode.Location = New System.Drawing.Point(546, 255)
+        Me.Txt_BankCode.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_BankCode.Name = "Txt_BankCode"
         Me.Txt_BankCode.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_BankCode.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_BankCode.Size = New System.Drawing.Size(179, 27)
         Me.Txt_BankCode.TabIndex = 11
         Me.Txt_BankCode.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1735,10 +1735,10 @@ Partial Class Frm_Employees_A
         ValueListItem12.DataValue = "B"
         ValueListItem12.DisplayText = "Products and Services"
         Me.Txt_Nationality.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem9, ValueListItem10, ValueListItem12})
-        Me.Txt_Nationality.Location = New System.Drawing.Point(871, 137)
-        Me.Txt_Nationality.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Nationality.Location = New System.Drawing.Point(546, 111)
+        Me.Txt_Nationality.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Nationality.Name = "Txt_Nationality"
-        Me.Txt_Nationality.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Nationality.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Nationality.TabIndex = 3
         Me.Txt_Nationality.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1749,9 +1749,10 @@ Partial Class Frm_Employees_A
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label12.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(1296, 487)
+        Me.Label12.Location = New System.Drawing.Point(849, 396)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(56, 32)
+        Me.Label12.Size = New System.Drawing.Size(45, 27)
         Me.Label12.TabIndex = 682
         Me.Label12.Text = "الراتب"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1763,13 +1764,13 @@ Partial Class Frm_Employees_A
         Me.Txt_Salary.Appearance = Appearance58
         Me.Txt_Salary.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Salary.Font = New System.Drawing.Font("Tahoma", 10.0!)
-        Me.Txt_Salary.Location = New System.Drawing.Point(871, 485)
-        Me.Txt_Salary.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Salary.Location = New System.Drawing.Point(546, 394)
+        Me.Txt_Salary.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Salary.Name = "Txt_Salary"
         Me.Txt_Salary.Nullable = True
         Me.Txt_Salary.NumericType = Infragistics.Win.UltraWinEditors.NumericType.[Double]
         Me.Txt_Salary.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
-        Me.Txt_Salary.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Salary.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Salary.TabIndex = 19
         Me.Txt_Salary.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1780,9 +1781,10 @@ Partial Class Frm_Employees_A
         Me.Label30.BackColor = System.Drawing.Color.Transparent
         Me.Label30.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label30.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label30.Location = New System.Drawing.Point(1269, 315)
+        Me.Label30.Location = New System.Drawing.Point(830, 256)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(85, 32)
+        Me.Label30.Size = New System.Drawing.Size(69, 27)
         Me.Label30.TabIndex = 684
         Me.Label30.Text = "كود البنك"
         Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1795,12 +1797,12 @@ Partial Class Frm_Employees_A
         Me.Txt_UserCode.Appearance = Appearance59
         Me.Txt_UserCode.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_UserCode.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_UserCode.Location = New System.Drawing.Point(980, 15)
-        Me.Txt_UserCode.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_UserCode.Location = New System.Drawing.Point(623, 12)
+        Me.Txt_UserCode.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_UserCode.Name = "Txt_UserCode"
         Me.Txt_UserCode.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_UserCode.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_UserCode.Size = New System.Drawing.Size(142, 32)
+        Me.Txt_UserCode.Size = New System.Drawing.Size(101, 27)
         Me.Txt_UserCode.TabIndex = 0
         Me.Txt_UserCode.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1825,11 +1827,11 @@ Partial Class Frm_Employees_A
         ValueListItem8.DataValue = "F"
         ValueListItem8.DisplayText = "أنثى"
         Me.Txt_Gender.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem7, ValueListItem8})
-        Me.Txt_Gender.Location = New System.Drawing.Point(486, 137)
-        Me.Txt_Gender.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Gender.Location = New System.Drawing.Point(271, 111)
+        Me.Txt_Gender.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Gender.Name = "Txt_Gender"
         Me.Txt_Gender.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Gender.Size = New System.Drawing.Size(196, 32)
+        Me.Txt_Gender.Size = New System.Drawing.Size(139, 27)
         Me.Txt_Gender.TabIndex = 4
         Me.Txt_Gender.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1841,13 +1843,13 @@ Partial Class Frm_Employees_A
         Me.Txt_MTel.Appearance = Appearance63
         Me.Txt_MTel.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_MTel.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_MTel.Location = New System.Drawing.Point(486, 314)
-        Me.Txt_MTel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_MTel.Location = New System.Drawing.Point(271, 255)
+        Me.Txt_MTel.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_MTel.MaxLength = 10
         Me.Txt_MTel.Name = "Txt_MTel"
         Me.Txt_MTel.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_MTel.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_MTel.Size = New System.Drawing.Size(196, 32)
+        Me.Txt_MTel.Size = New System.Drawing.Size(139, 27)
         Me.Txt_MTel.TabIndex = 12
         Me.Txt_MTel.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1858,9 +1860,10 @@ Partial Class Frm_Employees_A
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label5.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(776, 138)
+        Me.Label5.Location = New System.Drawing.Point(478, 112)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 32)
+        Me.Label5.Size = New System.Drawing.Size(40, 27)
         Me.Label5.TabIndex = 687
         Me.Label5.Text = "النوع"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1872,9 +1875,10 @@ Partial Class Frm_Employees_A
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label19.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label19.Location = New System.Drawing.Point(731, 314)
+        Me.Label19.Location = New System.Drawing.Point(446, 255)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(95, 32)
+        Me.Label19.Size = New System.Drawing.Size(78, 27)
         Me.Label19.TabIndex = 688
         Me.Label19.Text = "رقم الجوال"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1906,11 +1910,11 @@ Partial Class Frm_Employees_A
         ValueListItem36.DataValue = "W"
         ValueListItem36.DisplayText = "أرمل"
         Me.Txt_MaritalStatus.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem32, ValueListItem33, ValueListItem34, ValueListItem35, ValueListItem36})
-        Me.Txt_MaritalStatus.Location = New System.Drawing.Point(871, 399)
-        Me.Txt_MaritalStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_MaritalStatus.Location = New System.Drawing.Point(546, 324)
+        Me.Txt_MaritalStatus.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_MaritalStatus.Name = "Txt_MaritalStatus"
         Me.Txt_MaritalStatus.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_MaritalStatus.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_MaritalStatus.Size = New System.Drawing.Size(179, 27)
         Me.Txt_MaritalStatus.TabIndex = 15
         Me.Txt_MaritalStatus.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1921,9 +1925,10 @@ Partial Class Frm_Employees_A
         Me.Label35.BackColor = System.Drawing.Color.Transparent
         Me.Label35.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label35.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label35.Location = New System.Drawing.Point(1225, 399)
+        Me.Label35.Location = New System.Drawing.Point(798, 324)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(135, 32)
+        Me.Label35.Size = New System.Drawing.Size(107, 27)
         Me.Label35.TabIndex = 690
         Me.Label35.Text = "الحالة الاجتماعية"
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1955,11 +1960,11 @@ Partial Class Frm_Employees_A
         ValueListItem31.DataValue = "W"
         ValueListItem31.DisplayText = "أرمل"
         Me.Txt_ContractType.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem27, ValueListItem28, ValueListItem29, ValueListItem30, ValueListItem31})
-        Me.Txt_ContractType.Location = New System.Drawing.Point(488, 399)
-        Me.Txt_ContractType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_ContractType.Location = New System.Drawing.Point(272, 324)
+        Me.Txt_ContractType.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_ContractType.Name = "Txt_ContractType"
         Me.Txt_ContractType.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_ContractType.Size = New System.Drawing.Size(195, 32)
+        Me.Txt_ContractType.Size = New System.Drawing.Size(139, 27)
         Me.Txt_ContractType.TabIndex = 16
         Me.Txt_ContractType.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -1970,9 +1975,10 @@ Partial Class Frm_Employees_A
         Me.Label36.BackColor = System.Drawing.Color.Transparent
         Me.Label36.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label36.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label36.Location = New System.Drawing.Point(743, 399)
+        Me.Label36.Location = New System.Drawing.Point(454, 324)
+        Me.Label36.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(84, 32)
+        Me.Label36.Size = New System.Drawing.Size(68, 27)
         Me.Label36.TabIndex = 692
         Me.Label36.Text = "نوع العقد"
         Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1984,9 +1990,10 @@ Partial Class Frm_Employees_A
         Me.Label37.BackColor = System.Drawing.Color.Transparent
         Me.Label37.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label37.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label37.Location = New System.Drawing.Point(1220, 442)
+        Me.Label37.Location = New System.Drawing.Point(795, 359)
+        Me.Label37.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(136, 32)
+        Me.Label37.Size = New System.Drawing.Size(111, 27)
         Me.Label37.TabIndex = 693
         Me.Label37.Text = "تاريخ بداية العقد"
         Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2008,11 +2015,11 @@ Partial Class Frm_Employees_A
         Me.Txt_ContractStartDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_ContractStartDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_ContractStartDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_ContractStartDate.Location = New System.Drawing.Point(871, 442)
-        Me.Txt_ContractStartDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_ContractStartDate.Location = New System.Drawing.Point(546, 359)
+        Me.Txt_ContractStartDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_ContractStartDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_ContractStartDate.Name = "Txt_ContractStartDate"
-        Me.Txt_ContractStartDate.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_ContractStartDate.Size = New System.Drawing.Size(179, 27)
         Me.Txt_ContractStartDate.TabIndex = 17
         Me.Txt_ContractStartDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_ContractStartDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2025,9 +2032,10 @@ Partial Class Frm_Employees_A
         Me.Label38.BackColor = System.Drawing.Color.Transparent
         Me.Label38.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label38.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label38.Location = New System.Drawing.Point(689, 441)
+        Me.Label38.Location = New System.Drawing.Point(416, 358)
+        Me.Label38.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(140, 32)
+        Me.Label38.Size = New System.Drawing.Size(114, 27)
         Me.Label38.TabIndex = 695
         Me.Label38.Text = "تاريخ نهاية العقد"
         Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2049,11 +2057,11 @@ Partial Class Frm_Employees_A
         Me.Txt_ContractEndDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_ContractEndDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_ContractEndDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_ContractEndDate.Location = New System.Drawing.Point(489, 442)
-        Me.Txt_ContractEndDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_ContractEndDate.Location = New System.Drawing.Point(273, 359)
+        Me.Txt_ContractEndDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_ContractEndDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_ContractEndDate.Name = "Txt_ContractEndDate"
-        Me.Txt_ContractEndDate.Size = New System.Drawing.Size(196, 32)
+        Me.Txt_ContractEndDate.Size = New System.Drawing.Size(139, 27)
         Me.Txt_ContractEndDate.TabIndex = 18
         Me.Txt_ContractEndDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_ContractEndDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2067,13 +2075,13 @@ Partial Class Frm_Employees_A
         Me.Txt_IPAN.Appearance = Appearance76
         Me.Txt_IPAN.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_IPAN.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_IPAN.Location = New System.Drawing.Point(871, 271)
-        Me.Txt_IPAN.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_IPAN.Location = New System.Drawing.Point(546, 220)
+        Me.Txt_IPAN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_IPAN.MaxLength = 24
         Me.Txt_IPAN.Name = "Txt_IPAN"
         Me.Txt_IPAN.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_IPAN.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_IPAN.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_IPAN.Size = New System.Drawing.Size(179, 27)
         Me.Txt_IPAN.TabIndex = 9
         Me.Txt_IPAN.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2084,9 +2092,10 @@ Partial Class Frm_Employees_A
         Me.Label39.BackColor = System.Drawing.Color.Transparent
         Me.Label39.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label39.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label39.Location = New System.Drawing.Point(1288, 528)
+        Me.Label39.Location = New System.Drawing.Point(843, 429)
+        Me.Label39.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(65, 32)
+        Me.Label39.Size = New System.Drawing.Size(52, 27)
         Me.Label39.TabIndex = 698
         Me.Label39.Text = "المهنة"
         Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2098,13 +2107,13 @@ Partial Class Frm_Employees_A
         Me.Txt_HomeAllowance.Appearance = Appearance77
         Me.Txt_HomeAllowance.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_HomeAllowance.Font = New System.Drawing.Font("Tahoma", 10.0!)
-        Me.Txt_HomeAllowance.Location = New System.Drawing.Point(490, 485)
-        Me.Txt_HomeAllowance.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_HomeAllowance.Location = New System.Drawing.Point(273, 394)
+        Me.Txt_HomeAllowance.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_HomeAllowance.Name = "Txt_HomeAllowance"
         Me.Txt_HomeAllowance.Nullable = True
         Me.Txt_HomeAllowance.NumericType = Infragistics.Win.UltraWinEditors.NumericType.[Double]
         Me.Txt_HomeAllowance.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
-        Me.Txt_HomeAllowance.Size = New System.Drawing.Size(194, 32)
+        Me.Txt_HomeAllowance.Size = New System.Drawing.Size(138, 27)
         Me.Txt_HomeAllowance.TabIndex = 20
         Me.Txt_HomeAllowance.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2115,9 +2124,10 @@ Partial Class Frm_Employees_A
         Me.Label40.BackColor = System.Drawing.Color.Transparent
         Me.Label40.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label40.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label40.Location = New System.Drawing.Point(730, 485)
+        Me.Label40.Location = New System.Drawing.Point(445, 394)
+        Me.Label40.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(97, 32)
+        Me.Label40.Size = New System.Drawing.Size(79, 27)
         Me.Label40.TabIndex = 700
         Me.Label40.Text = "بدل السكن"
         Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2149,11 +2159,11 @@ Partial Class Frm_Employees_A
         ValueListItem21.DataValue = "W"
         ValueListItem21.DisplayText = "أرمل"
         Me.Txt_Department.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem18, ValueListItem19, ValueListItem14, ValueListItem20, ValueListItem21})
-        Me.Txt_Department.Location = New System.Drawing.Point(491, 527)
-        Me.Txt_Department.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Department.Location = New System.Drawing.Point(274, 428)
+        Me.Txt_Department.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Department.Name = "Txt_Department"
         Me.Txt_Department.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Department.Size = New System.Drawing.Size(194, 32)
+        Me.Txt_Department.Size = New System.Drawing.Size(138, 27)
         Me.Txt_Department.TabIndex = 22
         Me.Txt_Department.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2164,9 +2174,10 @@ Partial Class Frm_Employees_A
         Me.Label41.BackColor = System.Drawing.Color.Transparent
         Me.Label41.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label41.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label41.Location = New System.Drawing.Point(763, 527)
+        Me.Label41.Location = New System.Drawing.Point(468, 428)
+        Me.Label41.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(63, 32)
+        Me.Label41.Size = New System.Drawing.Size(51, 27)
         Me.Label41.TabIndex = 702
         Me.Label41.Text = "القسم"
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2178,9 +2189,10 @@ Partial Class Frm_Employees_A
         Me.Label43.BackColor = System.Drawing.Color.Transparent
         Me.Label43.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label43.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label43.Location = New System.Drawing.Point(1136, 569)
+        Me.Label43.Location = New System.Drawing.Point(735, 462)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(225, 32)
+        Me.Label43.Size = New System.Drawing.Size(182, 27)
         Me.Label43.TabIndex = 703
         Me.Label43.Text = "تاريخ انتهاء الشهادة الصحية"
         Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2202,11 +2214,11 @@ Partial Class Frm_Employees_A
         Me.Txt_HealthExpiredDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_HealthExpiredDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_HealthExpiredDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_HealthExpiredDate.Location = New System.Drawing.Point(871, 569)
-        Me.Txt_HealthExpiredDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_HealthExpiredDate.Location = New System.Drawing.Point(546, 462)
+        Me.Txt_HealthExpiredDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_HealthExpiredDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_HealthExpiredDate.Name = "Txt_HealthExpiredDate"
-        Me.Txt_HealthExpiredDate.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_HealthExpiredDate.Size = New System.Drawing.Size(179, 27)
         Me.Txt_HealthExpiredDate.TabIndex = 23
         Me.Txt_HealthExpiredDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_HealthExpiredDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2219,9 +2231,10 @@ Partial Class Frm_Employees_A
         Me.Label42.BackColor = System.Drawing.Color.Transparent
         Me.Label42.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label42.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label42.Location = New System.Drawing.Point(726, 569)
+        Me.Label42.Location = New System.Drawing.Point(442, 462)
+        Me.Label42.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(102, 32)
+        Me.Label42.Size = New System.Drawing.Size(83, 27)
         Me.Label42.TabIndex = 705
         Me.Label42.Text = "تاريخ الميلاد"
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2243,11 +2256,11 @@ Partial Class Frm_Employees_A
         Me.Txt_BirthDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_BirthDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_BirthDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_BirthDate.Location = New System.Drawing.Point(491, 569)
-        Me.Txt_BirthDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_BirthDate.Location = New System.Drawing.Point(274, 462)
+        Me.Txt_BirthDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_BirthDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_BirthDate.Name = "Txt_BirthDate"
-        Me.Txt_BirthDate.Size = New System.Drawing.Size(194, 32)
+        Me.Txt_BirthDate.Size = New System.Drawing.Size(138, 27)
         Me.Txt_BirthDate.TabIndex = 24
         Me.Txt_BirthDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_BirthDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2261,13 +2274,13 @@ Partial Class Frm_Employees_A
         Me.Txt_Insurance.Appearance = Appearance87
         Me.Txt_Insurance.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Insurance.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Insurance.Location = New System.Drawing.Point(871, 612)
-        Me.Txt_Insurance.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Insurance.Location = New System.Drawing.Point(546, 497)
+        Me.Txt_Insurance.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Insurance.Name = "Txt_Insurance"
         Me.Txt_Insurance.ReadOnly = True
         Me.Txt_Insurance.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Insurance.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Insurance.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Insurance.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Insurance.TabIndex = 708
         Me.Txt_Insurance.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2288,11 +2301,11 @@ Partial Class Frm_Employees_A
         Me.Txt_PassportNum_ExpiredDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_PassportNum_ExpiredDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_PassportNum_ExpiredDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_PassportNum_ExpiredDate.Location = New System.Drawing.Point(488, 225)
-        Me.Txt_PassportNum_ExpiredDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_PassportNum_ExpiredDate.Location = New System.Drawing.Point(272, 183)
+        Me.Txt_PassportNum_ExpiredDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_PassportNum_ExpiredDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_PassportNum_ExpiredDate.Name = "Txt_PassportNum_ExpiredDate"
-        Me.Txt_PassportNum_ExpiredDate.Size = New System.Drawing.Size(195, 32)
+        Me.Txt_PassportNum_ExpiredDate.Size = New System.Drawing.Size(139, 27)
         Me.Txt_PassportNum_ExpiredDate.TabIndex = 8
         Me.Txt_PassportNum_ExpiredDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_PassportNum_ExpiredDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2306,12 +2319,12 @@ Partial Class Frm_Employees_A
         Me.Txt_PassportNum.Appearance = Appearance91
         Me.Txt_PassportNum.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_PassportNum.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_PassportNum.Location = New System.Drawing.Point(871, 225)
-        Me.Txt_PassportNum.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_PassportNum.Location = New System.Drawing.Point(546, 183)
+        Me.Txt_PassportNum.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_PassportNum.Name = "Txt_PassportNum"
         Me.Txt_PassportNum.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_PassportNum.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_PassportNum.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_PassportNum.Size = New System.Drawing.Size(179, 27)
         Me.Txt_PassportNum.TabIndex = 7
         Me.Txt_PassportNum.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2322,9 +2335,10 @@ Partial Class Frm_Employees_A
         Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label24.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label24.Location = New System.Drawing.Point(719, 181)
+        Me.Label24.Location = New System.Drawing.Point(437, 147)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(109, 32)
+        Me.Label24.Size = New System.Drawing.Size(89, 27)
         Me.Label24.TabIndex = 668
         Me.Label24.Text = "تاريخ الانتهاء"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2336,9 +2350,10 @@ Partial Class Frm_Employees_A
         Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label26.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label26.Location = New System.Drawing.Point(1228, 225)
+        Me.Label26.Location = New System.Drawing.Point(801, 183)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(127, 32)
+        Me.Label26.Size = New System.Drawing.Size(104, 27)
         Me.Label26.TabIndex = 671
         Me.Label26.Text = "رقم جواز السفر"
         Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2360,11 +2375,11 @@ Partial Class Frm_Employees_A
         Me.Txt_Id_ExpiredDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_Id_ExpiredDate.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_Id_ExpiredDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_Id_ExpiredDate.Location = New System.Drawing.Point(488, 180)
-        Me.Txt_Id_ExpiredDate.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_Id_ExpiredDate.Location = New System.Drawing.Point(272, 146)
+        Me.Txt_Id_ExpiredDate.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_Id_ExpiredDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_Id_ExpiredDate.Name = "Txt_Id_ExpiredDate"
-        Me.Txt_Id_ExpiredDate.Size = New System.Drawing.Size(195, 32)
+        Me.Txt_Id_ExpiredDate.Size = New System.Drawing.Size(139, 27)
         Me.Txt_Id_ExpiredDate.TabIndex = 6
         Me.Txt_Id_ExpiredDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_Id_ExpiredDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2377,9 +2392,10 @@ Partial Class Frm_Employees_A
         Me.Label25.BackColor = System.Drawing.Color.Transparent
         Me.Label25.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label25.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label25.Location = New System.Drawing.Point(719, 226)
+        Me.Label25.Location = New System.Drawing.Point(437, 184)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(109, 32)
+        Me.Label25.Size = New System.Drawing.Size(89, 27)
         Me.Label25.TabIndex = 672
         Me.Label25.Text = "تاريخ الانتهاء"
         Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2391,9 +2407,10 @@ Partial Class Frm_Employees_A
         Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label21.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label21.Location = New System.Drawing.Point(1190, 181)
+        Me.Label21.Location = New System.Drawing.Point(773, 147)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(168, 32)
+        Me.Label21.Size = New System.Drawing.Size(136, 27)
         Me.Label21.TabIndex = 667
         Me.Label21.Text = "رقم الهوية / الاقامة"
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2405,9 +2422,10 @@ Partial Class Frm_Employees_A
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label2.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(1204, 613)
+        Me.Label2.Location = New System.Drawing.Point(783, 498)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(158, 32)
+        Me.Label2.Size = New System.Drawing.Size(125, 27)
         Me.Label2.TabIndex = 709
         Me.Label2.Text = "التأمينات الاجتماعية"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2419,9 +2437,10 @@ Partial Class Frm_Employees_A
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label15.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label15.Location = New System.Drawing.Point(1226, 98)
+        Me.Label15.Location = New System.Drawing.Point(799, 80)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(131, 32)
+        Me.Label15.Size = New System.Drawing.Size(106, 27)
         Me.Label15.TabIndex = 665
         Me.Label15.Text = "الأسم - انجليزي"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2435,21 +2454,21 @@ Partial Class Frm_Employees_A
         Me.Txt_DescL.Appearance = Appearance95
         Me.Txt_DescL.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_DescL.Font = New System.Drawing.Font("Tahoma", 10.0!)
-        Me.Txt_DescL.Location = New System.Drawing.Point(486, 96)
-        Me.Txt_DescL.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_DescL.Location = New System.Drawing.Point(271, 78)
+        Me.Txt_DescL.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_DescL.Name = "Txt_DescL"
         Me.Txt_DescL.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_DescL.Size = New System.Drawing.Size(636, 32)
+        Me.Txt_DescL.Size = New System.Drawing.Size(454, 27)
         Me.Txt_DescL.TabIndex = 2
         Me.Txt_DescL.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Btn_SelectPicture
         '
         Me.Btn_SelectPicture.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_SelectPicture.Location = New System.Drawing.Point(192, 382)
-        Me.Btn_SelectPicture.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Btn_SelectPicture.Location = New System.Drawing.Point(61, 310)
+        Me.Btn_SelectPicture.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Btn_SelectPicture.Name = "Btn_SelectPicture"
-        Me.Btn_SelectPicture.Size = New System.Drawing.Size(258, 41)
+        Me.Btn_SelectPicture.Size = New System.Drawing.Size(184, 33)
         Me.Btn_SelectPicture.TabIndex = 661
         Me.Btn_SelectPicture.Text = "أختار الصورة"
         Me.Btn_SelectPicture.UseVisualStyleBackColor = True
@@ -2462,13 +2481,13 @@ Partial Class Frm_Employees_A
         Me.Txt_Id.Appearance = Appearance96
         Me.Txt_Id.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Id.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Id.Location = New System.Drawing.Point(871, 181)
-        Me.Txt_Id.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Id.Location = New System.Drawing.Point(546, 147)
+        Me.Txt_Id.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Id.MaxLength = 10
         Me.Txt_Id.Name = "Txt_Id"
         Me.Txt_Id.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Id.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Id.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Id.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Id.TabIndex = 5
         Me.Txt_Id.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2484,10 +2503,10 @@ Partial Class Frm_Employees_A
         Me.Chk_IsActive.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Chk_IsActive.Checked = True
         Me.Chk_IsActive.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Chk_IsActive.Location = New System.Drawing.Point(192, 442)
-        Me.Chk_IsActive.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_IsActive.Location = New System.Drawing.Point(61, 359)
+        Me.Chk_IsActive.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Chk_IsActive.Name = "Chk_IsActive"
-        Me.Chk_IsActive.Size = New System.Drawing.Size(258, 32)
+        Me.Chk_IsActive.Size = New System.Drawing.Size(184, 26)
         Me.Chk_IsActive.Style = Infragistics.Win.EditCheckStyle.Button
         Me.Chk_IsActive.TabIndex = 584
         Me.Chk_IsActive.Tag = "Y"
@@ -2500,9 +2519,10 @@ Partial Class Frm_Employees_A
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.Color.Transparent
         Me.Label20.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label20.Location = New System.Drawing.Point(401, 695)
+        Me.Label20.Location = New System.Drawing.Point(210, 565)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(36, 17)
+        Me.Label20.Size = New System.Drawing.Size(31, 13)
         Me.Label20.TabIndex = 583
         Me.Label20.Text = "الفرع"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2523,11 +2543,11 @@ Partial Class Frm_Employees_A
         Me.Txt_Branch.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance100.TextHAlignAsString = "Right"
         Me.Txt_Branch.ItemAppearance = Appearance100
-        Me.Txt_Branch.Location = New System.Drawing.Point(302, 690)
-        Me.Txt_Branch.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Branch.Location = New System.Drawing.Point(139, 561)
+        Me.Txt_Branch.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Branch.Name = "Txt_Branch"
         Me.Txt_Branch.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Branch.Size = New System.Drawing.Size(92, 23)
+        Me.Txt_Branch.Size = New System.Drawing.Size(65, 20)
         Me.Txt_Branch.TabIndex = 582
         Me.Txt_Branch.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Branch.Visible = False
@@ -2538,9 +2558,10 @@ Partial Class Frm_Employees_A
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label13.Location = New System.Drawing.Point(513, 14)
+        Me.Label13.Location = New System.Drawing.Point(290, 11)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(71, 17)
+        Me.Label13.Size = New System.Drawing.Size(57, 13)
         Me.Label13.TabIndex = 579
         Me.Label13.Text = "أنظمة البيع"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2561,11 +2582,11 @@ Partial Class Frm_Employees_A
         Me.Txt_SalesType.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance103.TextHAlignAsString = "Right"
         Me.Txt_SalesType.ItemAppearance = Appearance103
-        Me.Txt_SalesType.Location = New System.Drawing.Point(771, 15)
-        Me.Txt_SalesType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_SalesType.Location = New System.Drawing.Point(474, 12)
+        Me.Txt_SalesType.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_SalesType.Name = "Txt_SalesType"
         Me.Txt_SalesType.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_SalesType.Size = New System.Drawing.Size(42, 23)
+        Me.Txt_SalesType.Size = New System.Drawing.Size(29, 20)
         Me.Txt_SalesType.TabIndex = 578
         Me.Txt_SalesType.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_SalesType.Visible = False
@@ -2576,9 +2597,10 @@ Partial Class Frm_Employees_A
         Me.Label31.AutoSize = True
         Me.Label31.BackColor = System.Drawing.Color.Transparent
         Me.Label31.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label31.Location = New System.Drawing.Point(705, 16)
+        Me.Label31.Location = New System.Drawing.Point(427, 13)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(43, 17)
+        Me.Label31.Size = New System.Drawing.Size(34, 13)
         Me.Label31.TabIndex = 575
         Me.Label31.Text = "الخزنة"
         Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2599,11 +2621,11 @@ Partial Class Frm_Employees_A
         Me.Txt_Box.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance106.TextHAlignAsString = "Right"
         Me.Txt_Box.ItemAppearance = Appearance106
-        Me.Txt_Box.Location = New System.Drawing.Point(621, 10)
-        Me.Txt_Box.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Box.Location = New System.Drawing.Point(367, 8)
+        Me.Txt_Box.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Box.Name = "Txt_Box"
         Me.Txt_Box.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Box.Size = New System.Drawing.Size(76, 23)
+        Me.Txt_Box.Size = New System.Drawing.Size(54, 20)
         Me.Txt_Box.TabIndex = 574
         Me.Txt_Box.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Box.Visible = False
@@ -2628,11 +2650,11 @@ Partial Class Frm_Employees_A
         ValueListItem13.DataValue = "P"
         ValueListItem13.DisplayText = "Part Time"
         Me.Txt_Profiles.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem11, ValueListItem13})
-        Me.Txt_Profiles.Location = New System.Drawing.Point(230, 734)
-        Me.Txt_Profiles.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Profiles.Location = New System.Drawing.Point(88, 596)
+        Me.Txt_Profiles.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Profiles.Name = "Txt_Profiles"
         Me.Txt_Profiles.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Profiles.Size = New System.Drawing.Size(164, 23)
+        Me.Txt_Profiles.Size = New System.Drawing.Size(117, 20)
         Me.Txt_Profiles.TabIndex = 537
         Me.Txt_Profiles.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Profiles.Visible = False
@@ -2643,9 +2665,10 @@ Partial Class Frm_Employees_A
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label23.Location = New System.Drawing.Point(722, 270)
+        Me.Label23.Location = New System.Drawing.Point(439, 219)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(107, 32)
+        Me.Label23.Size = New System.Drawing.Size(86, 27)
         Me.Label23.TabIndex = 526
         Me.Label23.Text = "تاريخ التعيين"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2667,11 +2690,11 @@ Partial Class Frm_Employees_A
         Me.Txt_FirstTimeDeal.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_FirstTimeDeal.Font = New System.Drawing.Font("Tahoma", 10.0!)
         Me.Txt_FirstTimeDeal.FormatString = "dd-MM-yyyy"
-        Me.Txt_FirstTimeDeal.Location = New System.Drawing.Point(488, 271)
-        Me.Txt_FirstTimeDeal.Margin = New System.Windows.Forms.Padding(6)
+        Me.Txt_FirstTimeDeal.Location = New System.Drawing.Point(272, 220)
+        Me.Txt_FirstTimeDeal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txt_FirstTimeDeal.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_FirstTimeDeal.Name = "Txt_FirstTimeDeal"
-        Me.Txt_FirstTimeDeal.Size = New System.Drawing.Size(195, 32)
+        Me.Txt_FirstTimeDeal.Size = New System.Drawing.Size(139, 27)
         Me.Txt_FirstTimeDeal.TabIndex = 10
         Me.Txt_FirstTimeDeal.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_FirstTimeDeal.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -2681,10 +2704,10 @@ Partial Class Frm_Employees_A
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(192, 52)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(61, 42)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(258, 313)
+        Me.PictureBox1.Size = New System.Drawing.Size(184, 254)
         Me.PictureBox1.TabIndex = 524
         Me.PictureBox1.TabStop = False
         '
@@ -2694,9 +2717,10 @@ Partial Class Frm_Employees_A
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label18.Location = New System.Drawing.Point(412, 737)
+        Me.Label18.Location = New System.Drawing.Point(218, 599)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(65, 17)
+        Me.Label18.Size = New System.Drawing.Size(53, 13)
         Me.Label18.TabIndex = 521
         Me.Label18.Text = "الصلاحيات"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2708,9 +2732,10 @@ Partial Class Frm_Employees_A
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label10.Location = New System.Drawing.Point(820, 18)
+        Me.Label10.Location = New System.Drawing.Point(509, 15)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(70, 17)
+        Me.Label10.Size = New System.Drawing.Size(58, 13)
         Me.Label10.TabIndex = 510
         Me.Label10.Text = "نوع التعامل"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2736,11 +2761,11 @@ Partial Class Frm_Employees_A
         ValueListItem4.DataValue = "P"
         ValueListItem4.DisplayText = "Part Time"
         Me.Txt_SalesTypes.Items.AddRange(New Infragistics.Win.ValueListItem() {ValueListItem3, ValueListItem4})
-        Me.Txt_SalesTypes.Location = New System.Drawing.Point(442, 10)
-        Me.Txt_SalesTypes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_SalesTypes.Location = New System.Drawing.Point(239, 8)
+        Me.Txt_SalesTypes.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_SalesTypes.Name = "Txt_SalesTypes"
         Me.Txt_SalesTypes.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_SalesTypes.Size = New System.Drawing.Size(58, 23)
+        Me.Txt_SalesTypes.Size = New System.Drawing.Size(41, 20)
         Me.Txt_SalesTypes.TabIndex = 3
         Me.Txt_SalesTypes.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_SalesTypes.Visible = False
@@ -2752,9 +2777,10 @@ Partial Class Frm_Employees_A
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label3.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(1283, 357)
+        Me.Label3.Location = New System.Drawing.Point(840, 290)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 32)
+        Me.Label3.Size = New System.Drawing.Size(56, 27)
         Me.Label3.TabIndex = 499
         Me.Label3.Text = "Email"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2767,12 +2793,12 @@ Partial Class Frm_Employees_A
         Me.Txt_Email.Appearance = Appearance116
         Me.Txt_Email.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Email.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_Email.Location = New System.Drawing.Point(871, 357)
-        Me.Txt_Email.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Email.Location = New System.Drawing.Point(546, 290)
+        Me.Txt_Email.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Email.Name = "Txt_Email"
         Me.Txt_Email.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_Email.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_Email.Size = New System.Drawing.Size(251, 32)
+        Me.Txt_Email.Size = New System.Drawing.Size(179, 27)
         Me.Txt_Email.TabIndex = 13
         Me.Txt_Email.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2783,9 +2809,10 @@ Partial Class Frm_Employees_A
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label14.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label14.Location = New System.Drawing.Point(1286, 654)
+        Me.Label14.Location = New System.Drawing.Point(842, 531)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(66, 32)
+        Me.Label14.Size = New System.Drawing.Size(54, 27)
         Me.Label14.TabIndex = 31
         Me.Label14.Text = "العنوان"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2798,12 +2825,12 @@ Partial Class Frm_Employees_A
         Me.Txt_address.Appearance = Appearance117
         Me.Txt_address.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_address.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
-        Me.Txt_address.Location = New System.Drawing.Point(491, 656)
-        Me.Txt_address.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_address.Location = New System.Drawing.Point(274, 533)
+        Me.Txt_address.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_address.Name = "Txt_address"
         Me.Txt_address.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_address.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_address.Size = New System.Drawing.Size(631, 32)
+        Me.Txt_address.Size = New System.Drawing.Size(450, 27)
         Me.Txt_address.TabIndex = 25
         Me.Txt_address.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2814,9 +2841,10 @@ Partial Class Frm_Employees_A
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label16.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(1242, 54)
+        Me.Label16.Location = New System.Drawing.Point(811, 44)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(114, 32)
+        Me.Label16.Size = New System.Drawing.Size(92, 27)
         Me.Label16.TabIndex = 30
         Me.Label16.Text = "الأسم - عربي"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2828,9 +2856,10 @@ Partial Class Frm_Employees_A
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label17.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label17.Location = New System.Drawing.Point(1233, 12)
+        Me.Label17.Location = New System.Drawing.Point(804, 10)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(124, 32)
+        Me.Label17.Size = New System.Drawing.Size(101, 27)
         Me.Label17.TabIndex = 27
         Me.Label17.Text = "الرقم الوظيفي"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2844,11 +2873,11 @@ Partial Class Frm_Employees_A
         Me.Txt_Desc.Appearance = Appearance118
         Me.Txt_Desc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded4Thick
         Me.Txt_Desc.Font = New System.Drawing.Font("Tahoma", 10.0!)
-        Me.Txt_Desc.Location = New System.Drawing.Point(486, 55)
-        Me.Txt_Desc.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Desc.Location = New System.Drawing.Point(271, 45)
+        Me.Txt_Desc.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_Desc.Name = "Txt_Desc"
         Me.Txt_Desc.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Desc.Size = New System.Drawing.Size(636, 32)
+        Me.Txt_Desc.Size = New System.Drawing.Size(454, 27)
         Me.Txt_Desc.TabIndex = 1
         Me.Txt_Desc.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -2860,10 +2889,10 @@ Partial Class Frm_Employees_A
         Me.Panel2.Controls.Add(Me.Opt_C)
         Me.Panel2.Controls.Add(Me.Opt_S)
         Me.Panel2.Controls.Add(Me.Opt_E)
-        Me.Panel2.Location = New System.Drawing.Point(349, 512)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel2.Location = New System.Drawing.Point(173, 416)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(70, 75)
+        Me.Panel2.Size = New System.Drawing.Size(50, 61)
         Me.Panel2.TabIndex = 648
         Me.Panel2.Visible = False
         '
@@ -2872,10 +2901,10 @@ Partial Class Frm_Employees_A
         Me.Opt_C.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Opt_C.AutoSize = True
         Me.Opt_C.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Opt_C.Location = New System.Drawing.Point(-8, 37)
-        Me.Opt_C.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Opt_C.Location = New System.Drawing.Point(-14, 30)
+        Me.Opt_C.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Opt_C.Name = "Opt_C"
-        Me.Opt_C.Size = New System.Drawing.Size(65, 21)
+        Me.Opt_C.Size = New System.Drawing.Size(53, 17)
         Me.Opt_C.TabIndex = 646
         Me.Opt_C.Text = "كاشير"
         Me.Opt_C.UseVisualStyleBackColor = True
@@ -2885,10 +2914,10 @@ Partial Class Frm_Employees_A
         Me.Opt_S.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Opt_S.AutoSize = True
         Me.Opt_S.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Opt_S.Location = New System.Drawing.Point(-9, 65)
-        Me.Opt_S.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Opt_S.Location = New System.Drawing.Point(-15, 53)
+        Me.Opt_S.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Opt_S.Name = "Opt_S"
-        Me.Opt_S.Size = New System.Drawing.Size(66, 21)
+        Me.Opt_S.Size = New System.Drawing.Size(55, 17)
         Me.Opt_S.TabIndex = 645
         Me.Opt_S.Text = "مندوب"
         Me.Opt_S.UseVisualStyleBackColor = True
@@ -2899,10 +2928,10 @@ Partial Class Frm_Employees_A
         Me.Opt_E.AutoSize = True
         Me.Opt_E.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Opt_E.Checked = True
-        Me.Opt_E.Location = New System.Drawing.Point(-2, 9)
-        Me.Opt_E.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Opt_E.Location = New System.Drawing.Point(-10, 7)
+        Me.Opt_E.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Opt_E.Name = "Opt_E"
-        Me.Opt_E.Size = New System.Drawing.Size(59, 21)
+        Me.Opt_E.Size = New System.Drawing.Size(50, 17)
         Me.Opt_E.TabIndex = 644
         Me.Opt_E.TabStop = True
         Me.Opt_E.Text = "اداري"
@@ -2916,11 +2945,11 @@ Partial Class Frm_Employees_A
         Me.UltraTabControl1.Controls.Add(Me.UltraTabSharedControlsPage2)
         Me.UltraTabControl1.Controls.Add(Me.UltraTabPageControl3)
         Me.UltraTabControl1.Controls.Add(Me.UltraTabPageControl4)
-        Me.UltraTabControl1.Location = New System.Drawing.Point(13, 874)
-        Me.UltraTabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabControl1.Location = New System.Drawing.Point(9, 710)
+        Me.UltraTabControl1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabControl1.Name = "UltraTabControl1"
         Me.UltraTabControl1.SharedControlsPage = Me.UltraTabSharedControlsPage2
-        Me.UltraTabControl1.Size = New System.Drawing.Size(1363, 7)
+        Me.UltraTabControl1.Size = New System.Drawing.Size(897, 0)
         Me.UltraTabControl1.TabIndex = 585
         Me.UltraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopRight
         UltraTab3.TabPage = Me.UltraTabPageControl3
@@ -2934,67 +2963,95 @@ Partial Class Frm_Employees_A
         'UltraTabSharedControlsPage2
         '
         Me.UltraTabSharedControlsPage2.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabSharedControlsPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabSharedControlsPage2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabSharedControlsPage2.Name = "UltraTabSharedControlsPage2"
-        Me.UltraTabSharedControlsPage2.Size = New System.Drawing.Size(1359, 0)
-        '
-        'Txt_Back
-        '
-        Me.Txt_Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance119.Image = CType(resources.GetObject("Appearance119.Image"), Object)
-        Me.Txt_Back.Appearance = Appearance119
-        Me.Txt_Back.ImageSize = New System.Drawing.Size(70, 70)
-        Me.Txt_Back.Location = New System.Drawing.Point(266, 41)
-        Me.Txt_Back.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Txt_Back.Name = "Txt_Back"
-        Me.Txt_Back.Size = New System.Drawing.Size(91, 90)
-        Me.Txt_Back.TabIndex = 707
+        Me.UltraTabSharedControlsPage2.Size = New System.Drawing.Size(893, 0)
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Btn_Close)
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Tab_Main)
-        Me.Panel1.Controls.Add(Me.Txt_Back)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Left)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Right)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Bottom)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Top)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1389, 863)
+        Me.Panel1.Size = New System.Drawing.Size(917, 635)
         Me.Panel1.TabIndex = 525
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 416.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Back, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Close, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label44, 1, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(917, 96)
+        Me.TableLayoutPanel2.TabIndex = 624
+        '
+        'Btn_Back
+        '
+        Appearance119.BackColor = System.Drawing.Color.Transparent
+        Appearance119.BorderColor = System.Drawing.Color.Transparent
+        Appearance119.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance119.Image = CType(resources.GetObject("Appearance119.Image"), Object)
+        Me.Btn_Back.Appearance = Appearance119
+        Me.Btn_Back.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Back.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Btn_Back.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Back.Location = New System.Drawing.Point(10, 19)
+        Me.Btn_Back.Margin = New System.Windows.Forms.Padding(10, 4, 2, 4)
+        Me.Btn_Back.Name = "Btn_Back"
+        Me.Btn_Back.ShowFocusRect = False
+        Me.Btn_Back.ShowOutline = False
+        Me.Btn_Back.Size = New System.Drawing.Size(81, 73)
+        Me.Btn_Back.TabIndex = 603
+        Me.Btn_Back.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Btn_Close
         '
-        Me.Btn_Close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance120.BackColor = System.Drawing.Color.White
+        Appearance120.BackColor = System.Drawing.Color.Transparent
+        Appearance120.BorderColor = System.Drawing.Color.Transparent
+        Appearance120.Cursor = System.Windows.Forms.Cursors.Hand
         Appearance120.Image = CType(resources.GetObject("Appearance120.Image"), Object)
         Appearance120.ImageHAlign = Infragistics.Win.HAlign.Center
         Me.Btn_Close.Appearance = Appearance120
-        Me.Btn_Close.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Btn_Close.Location = New System.Drawing.Point(1272, 43)
-        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Close.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Btn_Close.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Close.Location = New System.Drawing.Point(821, 17)
+        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(2, 2, 10, 2)
         Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.Size = New System.Drawing.Size(83, 87)
-        Me.Btn_Close.TabIndex = 562
+        Me.Btn_Close.ShowFocusRect = False
+        Me.Btn_Close.ShowOutline = False
+        Me.Btn_Close.Size = New System.Drawing.Size(86, 77)
+        Me.Btn_Close.TabIndex = 602
         Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
-        'Label1
+        'Label44
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label1.Font = New System.Drawing.Font("Droid Arabic Kufi", 21.0!)
-        Me.Label1.Location = New System.Drawing.Point(484, 42)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(638, 87)
-        Me.Label1.TabIndex = 561
-        Me.Label1.Text = "تعريف الموظفين"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label44.BackColor = System.Drawing.Color.DarkOliveGreen
+        Me.Label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label44.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label44.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label44.Font = New System.Drawing.Font("Droid Arabic Kufi", 17.0!)
+        Me.Label44.ForeColor = System.Drawing.Color.White
+        Me.Label44.Location = New System.Drawing.Point(252, 15)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(412, 81)
+        Me.Label44.TabIndex = 560
+        Me.Label44.Text = "تعريف الموظفين"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Tab_Main
         '
@@ -3005,11 +3062,11 @@ Partial Class Frm_Employees_A
         Me.Tab_Main.Controls.Add(Me.UltraTabPageControl1)
         Me.Tab_Main.Controls.Add(Me.UltraTabPageControl2)
         Me.Tab_Main.Controls.Add(Me.UltraTabPageControl5)
-        Me.Tab_Main.Location = New System.Drawing.Point(0, 144)
-        Me.Tab_Main.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tab_Main.Location = New System.Drawing.Point(0, 117)
+        Me.Tab_Main.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Tab_Main.Name = "Tab_Main"
         Me.Tab_Main.SharedControlsPage = Me.UltraTabSharedControlsPage1
-        Me.Tab_Main.Size = New System.Drawing.Size(1389, 719)
+        Me.Tab_Main.Size = New System.Drawing.Size(917, 518)
         Me.Tab_Main.TabIndex = 510
         Me.Tab_Main.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.BottomRight
         UltraTab1.Key = "Tab_Summary"
@@ -3026,83 +3083,9 @@ Partial Class Frm_Employees_A
         'UltraTabSharedControlsPage1
         '
         Me.UltraTabSharedControlsPage1.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.UltraTabSharedControlsPage1.Name = "UltraTabSharedControlsPage1"
-        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(1385, 691)
-        '
-        '_Panel1_Toolbars_Dock_Area_Left
-        '
-        Me._Panel1_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Left.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
-        Me._Panel1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 23)
-        Me._Panel1_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Left.Name = "_Panel1_Toolbars_Dock_Area_Left"
-        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 840)
-        Me._Panel1_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
-        '
-        'ToolBar_Main
-        '
-        Me.ToolBar_Main.DesignerFlags = 1
-        Me.ToolBar_Main.DockWithinContainer = Me.Panel1
-        Me.ToolBar_Main.RightAlignedMenus = Infragistics.Win.DefaultableBoolean.[False]
-        Me.ToolBar_Main.RuntimeCustomizationOptions = Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.None
-        Me.ToolBar_Main.ShowFullMenusDelay = 500
-        Me.ToolBar_Main.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.OfficeXP
-        UltraToolbar1.DockedColumn = 0
-        UltraToolbar1.DockedRow = 0
-        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool1, LabelTool2})
-        Appearance121.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance121.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance121.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        UltraToolbar1.Settings.Appearance = Appearance121
-        UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
-        UltraToolbar1.Text = "ToolBar1"
-        Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
-        Appearance122.FontData.BoldAsString = "True"
-        Appearance122.FontData.Name = "Tahoma"
-        Appearance122.TextHAlignAsString = "Right"
-        LabelTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance122
-        LabelTool3.SharedPropsInternal.Caption = "تعريف الموظفين"
-        LabelTool4.SharedPropsInternal.Spring = True
-        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, LabelTool4})
-        '
-        '_Panel1_Toolbars_Dock_Area_Right
-        '
-        Me._Panel1_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
-        Me._Panel1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1389, 23)
-        Me._Panel1_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Right.Name = "_Panel1_Toolbars_Dock_Area_Right"
-        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 840)
-        Me._Panel1_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Bottom
-        '
-        Me._Panel1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 863)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1389, 0)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_Panel1_Toolbars_Dock_Area_Top
-        '
-        Me._Panel1_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Top.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
-        Me._Panel1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._Panel1_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._Panel1_Toolbars_Dock_Area_Top.Name = "_Panel1_Toolbars_Dock_Area_Top"
-        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1389, 23)
-        Me._Panel1_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
+        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(913, 492)
         '
         'EntityServerModeSource1
         '
@@ -3120,11 +3103,11 @@ Partial Class Frm_Employees_A
         '
         'Frm_Employees_A
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1389, 863)
+        Me.ClientSize = New System.Drawing.Size(917, 635)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Frm_Employees_A"
         Me.Text = "تعريف الموظفين"
         Me.UltraTabPageControl3.ResumeLayout(False)
@@ -3205,9 +3188,9 @@ Partial Class Frm_Employees_A
         CType(Me.UltraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraTabControl1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_Main.ResumeLayout(False)
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EntityServerModeSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -3216,11 +3199,6 @@ Partial Class Frm_Employees_A
     Friend WithEvents DTS_Summary As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents DTS_Experience As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents ToolBar_Main As Infragistics.Win.UltraWinToolbars.UltraToolbarsManager
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Left As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
     Friend WithEvents EntityServerModeSource1 As DevExpress.Data.Linq.EntityServerModeSource
     Friend WithEvents Tab_Main As Infragistics.Win.UltraWinTabControl.UltraTabControl
@@ -3341,9 +3319,6 @@ Partial Class Frm_Employees_A
     Friend WithEvents Label42 As Label
     Friend WithEvents Txt_HealthExpiredDate As Infragistics.Win.UltraWinEditors.UltraDateTimeEditor
     Friend WithEvents Label43 As Label
-    Friend WithEvents Txt_Back As Infragistics.Win.Misc.UltraButton
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Label2 As Label
     Friend WithEvents Txt_Insurance As Infragistics.Win.UltraWinEditors.UltraTextEditor
@@ -3354,4 +3329,8 @@ Partial Class Frm_Employees_A
     Friend WithEvents Txt_Code As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents Label9 As Label
     Friend WithEvents Chk_IsSupervisor As Syncfusion.Windows.Forms.Tools.ToggleButton
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Btn_Back As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Label44 As Label
 End Class

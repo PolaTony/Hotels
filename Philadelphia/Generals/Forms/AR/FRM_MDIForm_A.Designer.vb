@@ -304,7 +304,7 @@ Partial Class MDIForm
         Me.Exp_Main.Appearance = Appearance2
         Me.Exp_Main.ColumnSpacing = 7
         Me.Exp_Main.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Exp_Main.Font = New System.Drawing.Font("Droid Arabic Kufi", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exp_Main.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         UltraExplorerBarGroup1.Expanded = False
         Appearance3.BackColor = System.Drawing.Color.White
         Appearance3.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(160, Byte), Integer))
@@ -347,6 +347,7 @@ Partial Class MDIForm
         Me.Exp_Main.ItemSettings.HotTrackStyle = Infragistics.Win.UltraWinExplorerBar.ItemHotTrackStyle.HighlightEntireItem
         Me.Exp_Main.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Label
         Me.Exp_Main.Location = New System.Drawing.Point(963, 57)
+        Me.Exp_Main.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Exp_Main.Name = "Exp_Main"
         Me.Exp_Main.Size = New System.Drawing.Size(314, 584)
         Me.Exp_Main.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.Listbar
@@ -474,10 +475,10 @@ Partial Class MDIForm
         Me.Txt_Message.Appearance = Appearance9
         Me.Txt_Message.AutoSize = True
         Me.Txt_Message.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Etched
-        Me.Txt_Message.Location = New System.Drawing.Point(44, 507)
+        Me.Txt_Message.Location = New System.Drawing.Point(44, 498)
         Me.Txt_Message.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Txt_Message.Name = "Txt_Message"
-        Me.Txt_Message.Size = New System.Drawing.Size(194, 44)
+        Me.Txt_Message.Size = New System.Drawing.Size(226, 54)
         Me.Txt_Message.TabIndex = 262
         Me.Txt_Message.Text = "UltraLabel1"
         Me.Txt_Message.Visible = False

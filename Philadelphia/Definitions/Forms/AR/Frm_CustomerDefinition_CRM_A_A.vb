@@ -1887,7 +1887,7 @@ Public Class Frm_CustomerDefinition_CRM_A_A
                         'Dim vNewFrm As New Frm_Customers_Calender_L(Trim(Txt_Code.Text), Grd_Details.ActiveRow.Cells("Ser").Text)
                         'vNewFrm.ShowDialog()
                     Else
-                        Dim vNewFrm As New Frm_Public_Holidays_A()
+                        Dim vNewFrm As New Frm_Public_Holiday_A()
                         vNewFrm.ShowDialog()
                     End If
 

@@ -579,14 +579,11 @@ Public Class Frm_Users_A
         If Tab_Main.Tabs("Tab_Summary").Selected = True Then
             vcFrmLevel.vParentFrm = Me.ParentForm
             vcFrmLevel.vParentFrm.sEnableTools(True, False, False, False, False, False, False, False, "", False, False, "التفاصيل")
+            Txt_Back.Visible = False
             sQuerySummary()
         ElseIf Tab_Main.Tabs("Tab_Details").Selected = True Then
             vcFrmLevel.vParentFrm.sEnableTools(True, True, True, True, True, True, True, True, "", False, False, "بحث")
-            'If Grd_Summary.Selected.Rows.Count > 0 Then
-            '    sQuery(pItemCode:=Grd_Summary.ActiveRow.Cells("Code").Value)
-            'Else
-            '    sNewRecord()
-            'End If
+            Txt_Back.Visible = True
         End If
     End Sub
     Public Sub sChangeTab()
@@ -1362,7 +1359,7 @@ Public Class Frm_Users_A
     End Sub
 
 #End Region
-    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+    Private Sub Btn_Close_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 

@@ -6,7 +6,7 @@ Imports Infragistics.Win.UltraWinDataSource
 Imports System.IO
 Imports System.Drawing.Printing
 
-Public Class FRM_HK_ItemDefinition_A
+Public Class FRM_HK_ItemsDefinition_A
     Private Declare Function ShellEx Lib "shell32.dll" Alias "ShellExecuteA" (
     ByVal hWnd As Integer, ByVal lpOperation As String,
     ByVal lpFile As String, ByVal lpParameters As String,
@@ -94,7 +94,7 @@ Public Class FRM_HK_ItemDefinition_A
             TXT_ItemCategoryDesc.ValueChanged, Txt_PackUnitDesc.ValueChanged, Txt_BarCode.ValueChanged, Txt_DemandPoint.ValueChanged,
             Chk_IsActive.CheckedChanged, Txt_Commission.ValueChanged,
             Txt_Desc.TextChanged, Txt_AccountDesc.TextChanged,
-            Txt_Store.ValueChanged
+            Txt_Store.ValueChanged, Txt_FirstBalance.ValueChanged
 
         If vMasterBlock = "NI" Then
             vMasterBlock = "I"
@@ -155,10 +155,8 @@ Public Class FRM_HK_ItemDefinition_A
             'cException.sHandleException(ex.Message, Me.Name, "sLoadPackUnits")
         End Try
     End Sub
-    Private Sub ToolBar_Main_ToolClick(ByVal sender As System.Object, ByVal e As Infragistics.Win.UltraWinToolbars.ToolClickEventArgs) Handles ToolBar_Main.ToolClick
+    Private Sub ToolBar_Main_ToolClick(ByVal sender As System.Object, ByVal e As Infragistics.Win.UltraWinToolbars.ToolClickEventArgs)
         Select Case e.Tool.Key
-            Case "Btn_CopyItems"
-                sCopyItems()
             Case "Btn_ItemMovement"
                 sItemMovement()
             Case "Btn_ExportToExcel"
@@ -312,7 +310,9 @@ Public Class FRM_HK_ItemDefinition_A
                     vFetchRec = 1
                 Else
                     vFetchRec = vcFrmLevel.vRecPos + pRecPos
-                    If vFetchRec > cControls.fCount_Rec(" From Items Where Company_Code = " & vCompanyCode) Then
+                    If vFetchRec > cControls.fCount_Rec(" From  HK_Items " &
+                                                        " Where Company_Code = " & vCompanyCode) Then
+
                         vcFrmLevel.vParentFrm.sForwardMessage("33", Me)
                         Return
                     End If
@@ -325,7 +325,8 @@ Public Class FRM_HK_ItemDefinition_A
             End If
         End If
         If pRecPos = -2 Then
-            vFetchRec = cControls.fCount_Rec(" From Items Where Company_Code = " & vCompanyCode)
+            vFetchRec = cControls.fCount_Rec(" From  HK_Items " &
+                                             " Where Company_Code = " & vCompanyCode)
         End If
 
         Dim vFetchCondition As String
@@ -343,26 +344,27 @@ Public Class FRM_HK_ItemDefinition_A
             Dim vSQlcommand As New SqlCommand
             vSQlcommand.CommandText =
             " With MyItems as " &
-            "( Select Items.Code, " &
-            "         Items.DescA as Item_Desc,                           " &
-            "         Items.Remarks,                                     " &
-            "         Items.Price,                                       " &
-            "         Items.BarCode,                                     " &
+            "( Select HK_Items.Code, " &
+            "         HK_Items.DescA as Item_Desc,                           " &
+            "         HK_Items.Remarks,                                     " &
+            "         HK_Items.Price,                                       " &
+            "         HK_Items.BarCode,                                     " &
             "         Cat_Ser,                                           " &
             "         Categories.DescA as Cat_DescA,                     " &
             "         PU_Code,                                           " &
             "         Pack_Unit.DescA as PU_DescA,                       " &
             "         DemandPoint,                                       " &
             "         IsActive,                                          " &
-            "         Items.Picture,                                     " &
-            "         ROW_Number() Over (Order By Items.Code) as  RecPos " &
-            " From Items LEFT JOIN Categories                            " &
-            " On Items.Cat_Ser = Categories.Ser                          " &
+            "         HK_Items.Picture,                                     " &
+            "         HK_Items.Balance,                               " &
+            "         ROW_Number() Over (Order By HK_Items.Code) as  RecPos " &
+            " From HK_Items LEFT JOIN Categories                            " &
+            " On HK_Items.Cat_Ser = Categories.Ser                          " &
             "                                                            " &
             " Inner Join Pack_Unit                                       " &
-            " On Items.PU_Code = Pack_Unit.Code                          " &
+            " On HK_Items.PU_Code = Pack_Unit.Code                          " &
             "                                                            " &
-            " Where Items.Company_Code = " & vCompanyCode & "   )        " &
+            " Where HK_Items.Company_Code = " & vCompanyCode & "   )        " &
             " Select * From MyItems                                      " &
             " Where 1 = 1                                                " &
             vFetchCondition
@@ -378,7 +380,7 @@ Public Class FRM_HK_ItemDefinition_A
                 vcFrmLevel.vParentFrm.sPrintRec(vSqlReader("RecPos"))
 
                 'Code
-                Txt_Code.Text = Trim(vSqlReader("Code"))
+                Txt_Code.Text = Trim(vSqlReader("Code")).PadLeft(4, "0")
 
                 'Desc
                 Txt_Desc.Text = Trim(vSqlReader("Item_Desc"))
@@ -439,6 +441,13 @@ Public Class FRM_HK_ItemDefinition_A
                     Txt_DemandPoint.Text = ""
                 End If
 
+                'Balance
+                If IsDBNull(vSqlReader("Balance")) = False Then
+                    Txt_FirstBalance.Value = Trim(vSqlReader("Balance"))
+                Else
+                    Txt_FirstBalance.Text = ""
+                End If
+
                 'IsActive
                 If IsDBNull(vSqlReader("IsActive")) = False Then
                     If vSqlReader("IsActive") = "N" Then
@@ -481,7 +490,7 @@ Public Class FRM_HK_ItemDefinition_A
     '        Dim vRowCounter As Integer
     '        Dim vsqlCommand As New SqlCommand
     '        vsqlCommand.CommandText = _
-    '        " Select DescA  From Items " & _
+    '        " Select DescA  From HK_Items " & _
     '        " Order By DescA "
 
     '        vsqlCommand.Connection = cControls.vSqlConn
@@ -503,7 +512,7 @@ Public Class FRM_HK_ItemDefinition_A
             Dim vRowCounter As Integer
             Dim vsqlCommand As New SqlCommand
             vsqlCommand.CommandText =
-            " Select Top 5 DescA  From Items Where Company_Code = " & vCompanyCode &
+            " Select Top 5 DescA  From HK_Items Where Company_Code = " & vCompanyCode &
             " Where DescA Like '%" & pDesc & "%' " &
             " Order By DescA "
 
@@ -598,11 +607,7 @@ Public Class FRM_HK_ItemDefinition_A
                     End If
                 ElseIf vFocus = "Master" Then
                     vSqlstring =
-                    " Delete From Item_Details Where Item_Code = '" & Txt_Code.Text & "'" &
-                    " Delete From Product_Formula Where Item_Code = '" & Txt_Code.Text & "'" &
-                    " Delete From Items_BarCode Where Item_Code = '" & Txt_Code.Text & "'" &
-                    " Delete From Items_Images Where Item_Code = '" & Txt_Code.Text & "'" &
-                    " Delete From Items Where Code = '" & Txt_Code.Text & "'" &
+                    " Delete From HK_Items Where Code = '" & Txt_Code.Text & "'" &
                     " Insert Into Items_Log (           Item_Code,                        DescA,            Type,        Emp_Code,      TDate,             ComputerName,                                                        IPAddress  ) " &
                     "               Values  ('" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_Desc.Text) & "',   'D',  '" & vUsrCode & "',  GetDate(),  '" & My.Computer.Name & "', '" & System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList(0).ToString & "') "
                 End If
@@ -654,6 +659,7 @@ Public Class FRM_HK_ItemDefinition_A
         Txt_AccountSer.Text = ""
         Txt_AccountDesc.Text = ""
         Txt_BarCode.Text = ""
+        Txt_FirstBalance.Text = ""
         Txt_Store.SelectedIndex = -1
 
         PictureBox1.Image = PictureBox1.InitialImage
@@ -677,32 +683,17 @@ Public Class FRM_HK_ItemDefinition_A
         'Here I load the Auto Add Pack Units
         'sLoad_Auto_PackUnits()
 
-        Dim x As String = cControls.fReturnValue("Select IsNull(AutomaticallyGenerateCode, 'Y') From Controls ", Me.Name)
-        If x = "Y" Then
-            sNewCode()
-        End If
+        'Dim x As String = cControls.fReturnValue("Select IsNull(AutomaticallyGenerateCode, 'Y') From Controls ", Me.Name)
+        'If x = "Y" Then
+        sNewCode()
+        'End If
     End Sub
     Private Sub sNewCode()
 
         Dim vSqlString As String
-        Dim vNumberOfDigits_InItemCode As Int16
 
-        If cControls.fReturnValue(" Select IsNull(UseDepartmentsInItemCode, 'N') From Controls ", Me.Name) = "Y" Then
-            Exit Sub
-        End If
-
-        If cControls.fReturnValue(" Select IsNull(UseCategoriesInItemCode, 'N') From Controls ", Me.Name) = "Y" Then
-            vSqlString = " Select Count (*) + 1 From Items Where Cat_Ser = " & Trim(TXT_ItemCategoryCode.Text)
-
-            vNumberOfDigits_InItemCode = cControls.fReturnValue(" Select IsNull(NumberOfDigitsInItemCode, 6) From Controls ", Me.Name)
-            Txt_Code.Text = cControls.fReturnValue(vSqlString, Me.Name).PadLeft(vNumberOfDigits_InItemCode, "0") & "-" & vLovReturn3
-            Exit Sub
-        End If
-
-        vNumberOfDigits_InItemCode = cControls.fReturnValue(" Select IsNull(NumberOfDigitsInItemCode, 6) From Controls ", Me.Name)
-
-        vSqlString = " Select IsNull(Max(Convert(Int, Code)), 0) + 1 From Items "
-        Txt_Code.Text = cControls.fReturnValue(vSqlString, Me.Name).PadLeft(vNumberOfDigits_InItemCode, "0")
+        vSqlString = " Select IsNull(Max(Convert(Int, Code)), 0) + 1 From HK_Items "
+        Txt_Code.Text = cControls.fReturnValue(vSqlString, Me.Name).PadLeft(4, "0")
     End Sub
     Private Sub sLoad_Auto_PackUnits()
         Try
@@ -845,59 +836,7 @@ Public Class FRM_HK_ItemDefinition_A
     End Sub
 #End Region
 #Region " Print                                                                          "
-    Public Sub sPrint()
-        'If vMasterBlock = "NI" Then
-        '    Return
-        'End If
 
-        vClear = False
-        If fSaveAll(True) = False Then
-            Return
-        End If
-        vClear = True
-
-        vSortedList.Clear()
-        Dim vCompany As String = cControls.fReturnValue(" Select DescA From Company ", Me.Name)
-        Dim vSqlString As String
-        vSqlString =
-        "  Select Items.Code as Item_Code,                                    " &
-        "         Items.DescA as Item_Desc,                                   " &
-        "         Items.Provider_Code,                                        " &
-        "         Providers.DescA as Provider_Desc,                           " &
-        "         Items.Cat_Ser as Cat_Code,                                  " &
-        "         Categories.DescA as Cat_Desc,                               " &
-        "         Items.Price,                                                " &
-        "         Items.SPrice,                                               " &
-        "         Cost_Center.DescA as Department_Desc,                       " &
-        "'" & vCompany & "' as Company                                        " &
-        " From Items LEft Join Categories                                     " &
-        " On Categories.Ser = Items.Cat_Ser                                   " &
-        " Left Join Providers                                                 " &
-        " On Providers.Code = Items.Provider_Code                             " &
-        " LEFT JOIN Cost_Center                                               " &
-        " ON Cost_Center.Code = Items.CostCenter_Code                         " &
-        " Where 1 = 1                                                         " &
-        sFndByItems("Items")
-
-        vSortedList.Add("DT_ItemDetails", vSqlString)
-
-        vSqlString =
-       " Select DescA as CompanyName, Picture From Company "
-
-        vSortedList.Add("DT_Header", vSqlString)
-
-        'If vLang = "A" Then
-        '    Dim vRep_Preview As New FRM_ReportPreviewL("ﬁ«∆„… «·√’‰«›", vSortedList, New DS_ItemsDetails, New Rep_ItemsDetails)
-        '    vRep_Preview.MdiParent = Me.MdiParent
-        '    vRep_Preview.Show()
-        'Else
-        '    Dim vRep_Preview As New FRM_ReportPreviewL("Items List", vSortedList, New DS_ItemsDetails, New Rep_ItemsDetails_L)
-        '    vRep_Preview.MdiParent = Me.MdiParent
-        '    vRep_Preview.Show()
-        'End If
-
-        vMasterBlock = "N"
-    End Sub
     Private Function sFndByItems(ByVal pTableName As String) As String
         Dim vLstItem As Object
         Dim vItemValues As String = ""
@@ -1036,14 +975,12 @@ Public Class FRM_HK_ItemDefinition_A
             Return False
         End If
 
-        If cControls.fReturnValue("Select IsNull(AutomaticallyGenerateCode, 'Y') From Controls ", Me.Name) <> "Y" Then
-            If vMasterBlock = "I" Then
-                If cControls.fCount_Rec(" From Items Where Code = '" & Txt_Code.Text & "'") > 0 Then
-                    vcFrmLevel.vParentFrm.sForwardMessage("12", Me)
-                    Txt_Code.Select()
-                    Txt_Code.SelectAll()
-                    Return False
-                End If
+        If vMasterBlock = "I" Then
+            If cControls.fCount_Rec(" From HK_Items Where Code = '" & Txt_Code.Text & "'") > 0 Then
+                vcFrmLevel.vParentFrm.sForwardMessage("12", Me)
+                Txt_Code.Select()
+                Txt_Code.SelectAll()
+                Return False
             End If
         End If
 
@@ -1053,7 +990,7 @@ Public Class FRM_HK_ItemDefinition_A
             Return False
         End If
 
-        If cControls.fCount_Rec(" From Items Where DescA = '" & Trim(Txt_Desc.Text) & "' And Code <> '" & Trim(Txt_Code.Text) & "'") > 0 Then
+        If cControls.fCount_Rec(" From HK_Items Where DescA = '" & Trim(Txt_Desc.Text) & "' And Code <> '" & Trim(Txt_Code.Text) & "'") > 0 Then
             vcFrmLevel.vParentFrm.sForwardMessage("82", Me)
             Txt_Desc.Select()
             Return False
@@ -1079,7 +1016,7 @@ Public Class FRM_HK_ItemDefinition_A
 
         If vMasterBlock = "I" Then
             If Trim(Txt_BarCode.Text).Length > 0 Then
-                If cControls.fIsExist(" From Items Where BarCode = '" & Trim(Txt_BarCode.Text) & "'", Me.Name) = True Then
+                If cControls.fIsExist(" From HK_Items Where BarCode = '" & Trim(Txt_BarCode.Text) & "'", Me.Name) = True Then
                     vcFrmLevel.vParentFrm.sForwardMessage("16", Me)
                     Txt_BarCode.SelectAll()
                     Return False
@@ -1128,19 +1065,13 @@ Public Class FRM_HK_ItemDefinition_A
 
             sNewCode()
 
-            vSqlCommand = " Insert Into Items  (              Code,                          DescA,                             Cat_Ser,                                   PU_Code,                           Remarks,                 Price,               BarCode,                DemandPoint,              IsActive,               Company_Code  )" &
-                                      " Values ('" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_Desc.Text) & "', '" & Trim(TXT_ItemCategoryCode.Text) & "', '" & Trim(Txt_PackUnitCode.Text) & "', '" & Trim(Txt_Remarks.Text) & "', " & vPrice & ", '" & Txt_BarCode.Text & "', " & vDemandPoint & ", '" & Chk_IsActive.Tag & "',  " & vCompanyCode & " )"
+            vSqlCommand = " Insert Into HK_Items  (              Code,                          DescA,                             Cat_Ser,                                   PU_Code,                           Remarks,                 Price,               BarCode,                DemandPoint,              IsActive,            Company_Code )" &
+                                      " Values ('" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_Desc.Text) & "', '" & Trim(TXT_ItemCategoryCode.Text) & "', '" & Trim(Txt_PackUnitCode.Text) & "', '" & Trim(Txt_Remarks.Text) & "', " & vPrice & ", '" & Txt_BarCode.Text & "', " & vDemandPoint & ", '" & Chk_IsActive.Tag & "', " & vCompanyCode & " )"
 
             sFillSqlStatmentArray(vSqlCommand)
 
-            'Here I will Create the Log File
-            'vSqlCommand = " Insert Into Items_Log  (          Item_Code,                          DescA,                             Cat_Ser,                                   PU_Code,                  Provider_Code,         Account_Ser,                   Remarks,                Price,               BarCode,                DemandPoint,              IsActive,                Deduction,          Commission,           Company_Code,       Store_Code,    CostCenter_Code,   Type,        Emp_Code,         TDate,             ComputerName,                                                        IPAddress    )" &
-            '                          "     Values ('" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_Desc.Text) & "', '" & Trim(TXT_ItemCategoryCode.Text) & "', '" & Trim(Txt_PackUnitCode.Text) & "', " & vCustomer_Code & ", " & vAccount_Ser & ", '" & Trim(Txt_Remarks.Text) & "'," & vPrice & ", '" & Txt_BarCode.Text & "', " & vDemandPoint & ", '" & Chk_IsActive.Tag & "',  '" & vDeduction & ", " & vCommission & ", " & vCompanyCode & ", " & vStore & ", " & vColor & ",      'C',   '" & vUsrCode & "',    GetDate(),  '" & My.Computer.Name & "', '" & System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList(0).ToString & "') "
-
-            'sFillSqlStatmentArray(vSqlCommand)
-
         ElseIf vMasterBlock = "U" Then
-            vSqlCommand = " Update   Items " &
+            vSqlCommand = " Update   HK_Items " &
                           " Set   DescA         = '" & Trim(Txt_Desc.Text) & "', " &
                           "       Cat_Ser       = '" & Trim(TXT_ItemCategoryCode.Text) & "', " &
                           "       PU_Code       = '" & Trim(Txt_PackUnitCode.Text) & "', " &
@@ -1148,16 +1079,13 @@ Public Class FRM_HK_ItemDefinition_A
                           "       Price         =  " & vPrice & ", " &
                           "       BarCode       = '" & Txt_BarCode.Text & "', " &
                           "       DemandPoint   =  " & vDemandPoint & ", " &
+                          "       Balance       =  " & Txt_FirstBalance.Text & ", " &
                           "       IsActive      = '" & Chk_IsActive.Tag & "' " &
                           "                                            " &
                           " Where Code          = '" & Txt_Code.Text & "' "
 
             sFillSqlStatmentArray(vSqlCommand)
 
-            'vSqlCommand = " Insert Into Items_Log  (              Item_Code,                     DescA,                             Cat_Ser,                                   PU_Code,                          Remarks,                Price,               BarCode,                DemandPoint,              IsActive,              Company_Code,                 Emp_Code,           TDate,             ComputerName,                                                        IPAddress )" &
-            '                          "     Values ('" & Trim(Txt_Code.Text) & "', '" & Trim(Txt_Desc.Text) & "', '" & Trim(TXT_ItemCategoryCode.Text) & "', '" & Trim(Txt_PackUnitCode.Text) & "', " & Trim(Txt_Remarks.Text) & "'," & vPrice & ", '" & Txt_BarCode.Text & "', " & vDemandPoint & ", '" & Chk_IsActive.Tag & "',  '" & vCompanyCode & ", " & ", '" & vUsrCode & "',    GetDate(),  '" & My.Computer.Name & "', '" & System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList(0).ToString & "')"
-
-            'sFillSqlStatmentArray(vSqlCommand)
         End If
     End Sub
 #End Region
@@ -1291,20 +1219,7 @@ Public Class FRM_HK_ItemDefinition_A
             Txt_AccountDesc.Text = ""
         End If
     End Sub
-    Private Sub Txt_BarCode_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles Txt_BarCode.Validating
-        If vMasterBlock = "I" Then
-            If Trim(Txt_BarCode.Text).Length > 0 Then
-                If cControls.fCount_Rec(" From Items Where BarCode = '" &
-                    Trim(Txt_BarCode.Text) & "'") > 0 Then
-                    vcFrmLevel.vParentFrm.sForwardMessage("16", Me)
-                    Txt_BarCode.SelectAll()
-                    e.Cancel = True
-                Else
-                    e.Cancel = False
-                End If
-            End If
-        End If
-    End Sub
+
     Private Sub Txt_All_Enter(ByVal sender As Object, ByVal e As System.EventArgs) _
     Handles Txt_Code.Enter, Txt_Remarks.Enter, Txt_Price.Enter,
         TXT_ItemCategoryCode.Enter, TXT_ItemCategoryDesc.Enter, Txt_PackUnitCode.Enter,
@@ -2543,21 +2458,21 @@ Public Class FRM_HK_ItemDefinition_A
             Dim vsqlCommand As New SqlClient.SqlCommand
             Dim vRowCounter As Integer
             vsqlCommand.CommandText =
-            "  Select Items.Code, " &
-            "         Items.DescA as DescA,                             " &
-            "         Items.Price,                                      " &
+            "  Select HK_Items.Code, " &
+            "         HK_Items.DescA as DescA,                             " &
+            "         HK_Items.Price,                                      " &
             "         Categories.DescA as Cat_Desc,                     " &
             "         Pack_Unit.DescA as PU_Desc,                       " &
             "         IsNull(IsActive, 'Y') as Status                   " &
             "                                                           " &
-            " From Items LEFT Join Categories                           " &
-            " On Items.Cat_Ser = Categories.Ser                         " &
+            " From HK_Items LEFT Join Categories                           " &
+            " On HK_Items.Cat_Ser = Categories.Ser                         " &
             "                                                           " &
             " INNER Join Pack_Unit                                      " &
-            " On Items.PU_Code = Pack_Unit.Code                         " &
+            " On HK_Items.PU_Code = Pack_Unit.Code                         " &
             "                                                           " &
             " Where 1 = 1                                               " &
-            " And Items.Company_Code = " & vCompanyCode &
+            " And HK_Items.Company_Code = " & vCompanyCode &
             sFndByCategories() &
             fReturnSplitValues(vFullText)
 
@@ -2612,7 +2527,7 @@ Public Class FRM_HK_ItemDefinition_A
             'Dim vRow As UltraDataRow
             'Dim vChildBand As UltraDataBand = DTS_Summary.Band.ChildBands(0)
             'For Each vRow In DTS_Summary.Rows
-            '    If cBase.fCount_Rec(" From Items Where Code = '" & vRow("Code") & "' And Ser <> '00'") > 0 Then
+            '    If cBase.fCount_Rec(" From HK_Items Where Code = '" & vRow("Code") & "' And Ser <> '00'") > 0 Then
             '        sQuerySummaryDetails(vRow, vChildBand)
             '    End If
             'Next
@@ -2628,7 +2543,7 @@ Public Class FRM_HK_ItemDefinition_A
             Dim vsqlCommand As New SqlClient.SqlCommand
             Dim vRowCounter As Integer
             vsqlCommand.CommandText = " Select Ser, DescA, Price, Remarks " &
-                                      " From Items " &
+                                      " From HK_Items " &
                                       " Where Code = '" & pRow("Code") & "'" &
                                       " Order By Ser       "
 
@@ -2706,10 +2621,10 @@ Public Class FRM_HK_ItemDefinition_A
                 Return vReturnedValue
             End If
 
-            'Return "And Contains (Items.DescA, 'FormsOf (THESAURUS, John)' )"
+            'Return "And Contains (HK_Items.DescA, 'FormsOf (THESAURUS, John)' )"
 
             'If pFullText.Length = 1 Then
-            '    Return " And Items.DescA Like '%" & pFullText(0) & "%' "
+            '    Return " And HK_Items.DescA Like '%" & pFullText(0) & "%' "
             'End If
 
             For vCount = 0 To pFullText.Length - 1
@@ -2720,7 +2635,7 @@ Public Class FRM_HK_ItemDefinition_A
                 End If
             Next
 
-            vReturnedValue = " And Contains (Items.DescA, '" & vItems & "' ) "
+            vReturnedValue = " And Contains (HK_Items.DescA, '" & vItems & "' ) "
 
             Return vReturnedValue
         Catch ex As Exception
@@ -2739,7 +2654,7 @@ Public Class FRM_HK_ItemDefinition_A
                 End If
                 vItemValues += " '" & vLstItem.DataValue & "' "
             Next
-            sFndByCategories = " And Items.Cat_Ser In  (" & vItemValues & ")"
+            sFndByCategories = " And HK_Items.Cat_Ser In  (" & vItemValues & ")"
         Else
             sFndByCategories = ""
         End If
@@ -2755,7 +2670,7 @@ Public Class FRM_HK_ItemDefinition_A
                     Dim ms As New System.IO.MemoryStream
                     Dim arrPicture() As Byte
 
-                    vSqlString = " Update Items Set Picture = (@image) Where Code = '" & Trim(Txt_Code.Text) & "'"
+                    vSqlString = " Update HK_Items Set Picture = (@image) Where Code = '" & Trim(Txt_Code.Text) & "'"
 
                     Dim vMyCommand As New SqlCommand(vSqlString, cControls.vSqlConn)
 
@@ -2777,170 +2692,6 @@ Public Class FRM_HK_ItemDefinition_A
             cControls.vSqlConn.Close()
         End Try
     End Function
-
-    Private Sub sCopyItems()
-        Try
-            vLovReturn1 = ""
-            VLovReturn2 = ""
-            Dim Frm_Items As New Frm_ItemsLov
-            Frm_Items.ShowDialog()
-            If vLovReturn1.Length > 0 And VLovReturn2.Length > 0 Then
-                sNewRecord()
-
-                Dim vsqlCommand As New SqlClient.SqlCommand
-                Dim vRowCounter As Integer
-                vsqlCommand.CommandText =
-                " Select  Items.Code,                                        " &
-                "         Items.DescA,                                       " &
-                "         Items.Remarks,                                     " &
-                "         Items.Price,                                       " &
-                "         BarCode,                                           " &
-                "         Categories.Code as Cat_Code,                       " &
-                "         Cat_Ser,                                           " &
-                "         Categories.DescA as Cat_DescA,                     " &
-                "         PU_Code,                                           " &
-                "         Pack_Unit.DescA as PU_DescA,                       " &
-                "         Provider_Code,                                     " &
-                "         Providers.DescA as Provider_DescA,                 " &
-                "         Financial_Definitions_Tree.Code as Account_Code,   " &
-                "         Financial_Definitions_Tree.DescA,                  " &
-                "         Items.Account_Ser,                                 " &
-                "         DemandPoint,                                       " &
-                "         IsActive,                                          " &
-                "         IsRaw,                                             " &
-                "         SPrice,                                            " &
-                "         CPrice,                                            " &
-                "         Items.Deduction,                                   " &
-                "         Items.Commission,                                  " &
-                "         Items.Picture,                                     " &
-                "         ROW_Number() Over (Order By Items.Code) as  RecPos " &
-                " From Items Inner Join Categories                           " &
-                " On Items.Cat_Ser = Categories.Ser                          " &
-                " Inner Join Pack_Unit                                       " &
-                " On Items.PU_Code = Pack_Unit.Code                          " &
-                " LEFT Join Providers                                       " &
-                " On Items.Provider_Code = Providers.Code                    " &
-                " Left Join Financial_Definitions_Tree                       " &
-                " On Items.Account_Ser = Financial_Definitions_Tree.Ser      " &
-                " Where 1 = 1                                                " &
-                " And Items.Company_Code = " & vCompanyCode &
-                " And Items.Code = '" & vLovReturn1 & "' "
-
-                vsqlCommand.Connection = cControls.vSqlConn
-                cControls.vSqlConn.Open()
-                Dim vSqlReader As SqlClient.SqlDataReader = vsqlCommand.ExecuteReader
-                vRowCounter = 0
-                DTS_Summary.Rows.Clear()
-
-                Do While vSqlReader.Read
-                    DTS_Summary.Rows.SetCount(vRowCounter + 1)
-                    'DTS_Summary.Rows(vRowCounter)("Code") = Trim(vSqlReader(0))
-
-                    'Desc
-                    Txt_Desc.Text = Trim(vSqlReader(1))
-
-                    'Remarks
-                    If vSqlReader.IsDBNull(2) = False Then
-                        Txt_Remarks.Text = Trim(vSqlReader(2))
-                    Else
-                        Txt_Remarks.Text = ""
-                    End If
-
-                    'Price
-                    If vSqlReader.IsDBNull(3) = False Then
-                        Txt_Price.Value = Trim(vSqlReader(3))
-                    Else
-                        Txt_Price.Value = Nothing
-                    End If
-
-                    'BarCode()
-                    If vSqlReader.IsDBNull(4) = False Then
-                        Txt_BarCode.Value = vSqlReader(4)
-                    Else
-                        Txt_BarCode.Text = ""
-                    End If
-
-                    'Cat_Code
-                    If vSqlReader.IsDBNull(5) = False Then
-                        TXT_ItemCategoryCode.Text = Trim(vSqlReader(5))
-                    Else
-                        TXT_ItemCategoryCode.Text = ""
-                    End If
-
-                    'Cat_Ser
-                    If vSqlReader.IsDBNull(6) = False Then
-                        TXT_ItemCategoryCode.Tag = Trim(vSqlReader(6))
-                    Else
-                        TXT_ItemCategoryCode.Tag = ""
-                    End If
-
-                    'Cat_Desc
-                    If vSqlReader.IsDBNull(7) = False Then
-                        TXT_ItemCategoryDesc.Text = Trim(vSqlReader(7))
-                    Else
-                        TXT_ItemCategoryDesc.Text = ""
-                    End If
-
-                    'PackUnit_Code
-                    If vSqlReader.IsDBNull(8) = False Then
-                        Txt_PackUnitCode.Text = Trim(vSqlReader(8))
-                    Else
-                        Txt_PackUnitCode.Text = ""
-                    End If
-
-                    'PackUnit_Desc
-                    If vSqlReader.IsDBNull(9) = False Then
-                        Txt_PackUnitDesc.Text = Trim(vSqlReader(9))
-                    Else
-                        Txt_PackUnitDesc.Text = ""
-                    End If
-
-                    'DemandPoint
-                    If vSqlReader.IsDBNull(15) = False Then
-                        Txt_DemandPoint.Value = Trim(vSqlReader(15))
-                    Else
-                        Txt_DemandPoint.Text = ""
-                    End If
-
-                    'IsActive
-                    If vSqlReader.IsDBNull(16) = False Then
-                        If vSqlReader(16) = "N" Then
-                            Chk_IsActive.Checked = False
-                        Else
-                            Chk_IsActive.Checked = True
-                        End If
-                    End If
-
-                    'CPrice
-                    If vSqlReader.IsDBNull(19) = False Then
-                        Txt_LowerSalesPrice.Value = Trim(vSqlReader(19))
-                    Else
-                        Txt_LowerSalesPrice.Value = Nothing
-                    End If
-
-                    'Deduction
-                    If vSqlReader.IsDBNull(20) = False Then
-                        Txt_Deduction.Value = Trim(vSqlReader(20))
-                    Else
-                        Txt_Deduction.Value = Nothing
-                    End If
-
-                    'Commission
-                    If vSqlReader.IsDBNull(21) = False Then
-                        Txt_Commission.Value = Trim(vSqlReader(21))
-                    Else
-                        Txt_Commission.Value = Nothing
-                    End If
-
-                    vRowCounter += 1
-                Loop
-                cControls.vSqlConn.Close()
-                vSqlReader.Close()
-            End If
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
 
     Private Sub sItemMovement()
         If Grd_Summary.Selected.Rows.Count = 0 Then
@@ -2972,5 +2723,18 @@ Public Class FRM_HK_ItemDefinition_A
 
     Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Btn_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
+    End Sub
+
+    Private Sub Btn_Add_PackUnit_Click(sender As Object, e As EventArgs) Handles Btn_Add_PackUnit.Click
+        vLovReturn1 = ""
+        VLovReturn2 = ""
+
+        Dim vNewPackUnit As New Frm_Add_PackUnit
+        vNewPackUnit.ShowDialog()
+
+        If vLovReturn1 <> "" Then
+            Txt_PackUnitCode.Text = vLovReturn1
+            Txt_PackUnitDesc.Text = VLovReturn2
+        End If
     End Sub
 End Class

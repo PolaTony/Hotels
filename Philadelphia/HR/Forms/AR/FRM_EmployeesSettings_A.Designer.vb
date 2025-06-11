@@ -299,7 +299,6 @@ Partial Class FRM_EmployeesSettings_A
         Dim UltraDataColumn61 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Item")
         Dim UltraDataColumn62 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Remarks")
         Dim UltraDataColumn63 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML")
-        Dim Appearance159 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance160 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance161 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance162 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -317,13 +316,7 @@ Partial Class FRM_EmployeesSettings_A
         Dim UltraTab12 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab13 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab14 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
-        Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
-        Dim LabelTool1 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim LabelTool2 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance169 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance170 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
+        Dim Appearance159 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.UltraTabPageControl14 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
         Me.Grd_Nationality = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.DTS_Nationality = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
@@ -365,19 +358,15 @@ Partial Class FRM_EmployeesSettings_A
         Me.DTS_ProvidersTypes = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
         Me.ImgLst = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
         Me.Tab_Main = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage8 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
         Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._Panel1_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._Panel1_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
+        Me.Label44 = New System.Windows.Forms.Label()
         Me.UltraTabPageControl14.SuspendLayout()
         CType(Me.Grd_Nationality, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTS_Nationality, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -413,17 +402,16 @@ Partial Class FRM_EmployeesSettings_A
         Me.Panel1.SuspendLayout()
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_Main.SuspendLayout()
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'UltraTabPageControl14
         '
         Me.UltraTabPageControl14.Controls.Add(Me.Grd_Nationality)
         Me.UltraTabPageControl14.Location = New System.Drawing.Point(1, 1)
-        Me.UltraTabPageControl14.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraTabPageControl14.Name = "UltraTabPageControl14"
-        Me.UltraTabPageControl14.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UltraTabPageControl14.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl14.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.UltraTabPageControl14.Size = New System.Drawing.Size(801, 520)
         '
         'Grd_Nationality
         '
@@ -444,10 +432,10 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn51.Width = 53
         UltraGridColumn52.Header.Caption = "الوصف"
         UltraGridColumn52.Header.VisiblePosition = 3
-        UltraGridColumn52.Width = 231
+        UltraGridColumn52.Width = 182
         UltraGridColumn53.Header.Caption = "ملاحظات"
         UltraGridColumn53.Header.VisiblePosition = 1
-        UltraGridColumn53.Width = 433
+        UltraGridColumn53.Width = 341
         UltraGridColumn54.Header.VisiblePosition = 5
         UltraGridColumn54.Hidden = True
         UltraGridColumn54.Width = 93
@@ -468,7 +456,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn10.Header.Caption = "حذف"
         UltraGridColumn10.Header.VisiblePosition = 0
         UltraGridColumn10.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn10.Width = 103
+        UltraGridColumn10.Width = 81
         UltraGridBand1.Columns.AddRange(New Object() {UltraGridColumn51, UltraGridColumn52, UltraGridColumn53, UltraGridColumn54, UltraGridColumn9, UltraGridColumn10})
         Appearance4.FontData.Name = "Tahoma"
         Appearance4.FontData.SizeInPoints = 8.0!
@@ -535,11 +523,10 @@ Partial Class FRM_EmployeesSettings_A
         Appearance18.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_Nationality.DisplayLayout.SplitterBarVerticalAppearance = Appearance18
         Me.Grd_Nationality.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Grd_Nationality.Location = New System.Drawing.Point(3, 4)
-        Me.Grd_Nationality.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_Nationality.Location = New System.Drawing.Point(3, 3)
         Me.Grd_Nationality.Name = "Grd_Nationality"
         Me.Grd_Nationality.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_Nationality.Size = New System.Drawing.Size(958, 720)
+        Me.Grd_Nationality.Size = New System.Drawing.Size(795, 514)
         Me.Grd_Nationality.TabIndex = 539
         Me.Grd_Nationality.Text = "الجنسية"
         Me.Grd_Nationality.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -554,11 +541,10 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl17
         '
         Me.UltraTabPageControl17.Controls.Add(Me.Grd_ContractTypes)
-        Me.UltraTabPageControl17.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl17.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl17.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl17.Name = "UltraTabPageControl17"
-        Me.UltraTabPageControl17.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UltraTabPageControl17.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl17.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.UltraTabPageControl17.Size = New System.Drawing.Size(801, 521)
         '
         'Grd_ContractTypes
         '
@@ -596,12 +582,12 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn56.CellAppearance = Appearance23
         UltraGridColumn56.Header.Caption = "الوصف"
         UltraGridColumn56.Header.VisiblePosition = 2
-        UltraGridColumn56.Width = 355
+        UltraGridColumn56.Width = 294
         Appearance24.TextHAlignAsString = "Right"
         UltraGridColumn57.CellAppearance = Appearance24
         UltraGridColumn57.Header.Caption = "ملاحظات"
         UltraGridColumn57.Header.VisiblePosition = 1
-        UltraGridColumn57.Width = 463
+        UltraGridColumn57.Width = 383
         UltraGridColumn58.Header.VisiblePosition = 3
         UltraGridColumn58.Hidden = True
         UltraGridColumn58.Width = 93
@@ -614,7 +600,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn8.Header.Caption = "حذف"
         UltraGridColumn8.Header.VisiblePosition = 0
         UltraGridColumn8.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn8.Width = 119
+        UltraGridColumn8.Width = 97
         UltraGridBand2.Columns.AddRange(New Object() {UltraGridColumn55, UltraGridColumn56, UltraGridColumn57, UltraGridColumn58, UltraGridColumn8})
         Appearance26.FontData.Name = "Tahoma"
         Appearance26.FontData.SizeInPoints = 8.0!
@@ -681,11 +667,10 @@ Partial Class FRM_EmployeesSettings_A
         Appearance40.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_ContractTypes.DisplayLayout.SplitterBarVerticalAppearance = Appearance40
         Me.Grd_ContractTypes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Grd_ContractTypes.Location = New System.Drawing.Point(3, 4)
-        Me.Grd_ContractTypes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_ContractTypes.Location = New System.Drawing.Point(3, 3)
         Me.Grd_ContractTypes.Name = "Grd_ContractTypes"
         Me.Grd_ContractTypes.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_ContractTypes.Size = New System.Drawing.Size(958, 720)
+        Me.Grd_ContractTypes.Size = New System.Drawing.Size(795, 515)
         Me.Grd_ContractTypes.TabIndex = 5
         Me.Grd_ContractTypes.Text = "نوع العقد"
         Me.Grd_ContractTypes.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -698,11 +683,10 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl1
         '
         Me.UltraTabPageControl1.Controls.Add(Me.Grd_Departments)
-        Me.UltraTabPageControl1.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl1.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl1.Name = "UltraTabPageControl1"
-        Me.UltraTabPageControl1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UltraTabPageControl1.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.UltraTabPageControl1.Size = New System.Drawing.Size(801, 521)
         '
         'Grd_Departments
         '
@@ -742,14 +726,14 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn28.Header.Appearance = Appearance46
         UltraGridColumn28.Header.Caption = "الوصف"
         UltraGridColumn28.Header.VisiblePosition = 2
-        UltraGridColumn28.Width = 355
+        UltraGridColumn28.Width = 294
         Appearance47.TextHAlignAsString = "Right"
         UltraGridColumn29.CellAppearance = Appearance47
         Appearance48.TextHAlignAsString = "Right"
         UltraGridColumn29.Header.Appearance = Appearance48
         UltraGridColumn29.Header.Caption = "ملاحظات"
         UltraGridColumn29.Header.VisiblePosition = 1
-        UltraGridColumn29.Width = 463
+        UltraGridColumn29.Width = 383
         UltraGridColumn30.Header.VisiblePosition = 3
         UltraGridColumn30.Hidden = True
         UltraGridColumn30.Width = 93
@@ -762,7 +746,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn31.Header.Caption = "حذف"
         UltraGridColumn31.Header.VisiblePosition = 0
         UltraGridColumn31.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn31.Width = 119
+        UltraGridColumn31.Width = 97
         UltraGridBand3.Columns.AddRange(New Object() {UltraGridColumn27, UltraGridColumn28, UltraGridColumn29, UltraGridColumn30, UltraGridColumn31})
         Appearance50.FontData.Name = "Tahoma"
         Appearance50.FontData.SizeInPoints = 8.0!
@@ -829,11 +813,10 @@ Partial Class FRM_EmployeesSettings_A
         Appearance64.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_Departments.DisplayLayout.SplitterBarVerticalAppearance = Appearance64
         Me.Grd_Departments.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Grd_Departments.Location = New System.Drawing.Point(3, 4)
-        Me.Grd_Departments.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_Departments.Location = New System.Drawing.Point(3, 3)
         Me.Grd_Departments.Name = "Grd_Departments"
         Me.Grd_Departments.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_Departments.Size = New System.Drawing.Size(958, 720)
+        Me.Grd_Departments.Size = New System.Drawing.Size(795, 515)
         Me.Grd_Departments.TabIndex = 6
         Me.Grd_Departments.Text = "الأقسام"
         Me.Grd_Departments.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -846,11 +829,10 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl4
         '
         Me.UltraTabPageControl4.Controls.Add(Me.Grd_BankCodes)
-        Me.UltraTabPageControl4.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl4.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl4.Name = "UltraTabPageControl4"
-        Me.UltraTabPageControl4.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UltraTabPageControl4.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.UltraTabPageControl4.Size = New System.Drawing.Size(801, 521)
         '
         'Grd_BankCodes
         '
@@ -890,14 +872,14 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn2.Header.Appearance = Appearance70
         UltraGridColumn2.Header.Caption = "الوصف"
         UltraGridColumn2.Header.VisiblePosition = 2
-        UltraGridColumn2.Width = 394
+        UltraGridColumn2.Width = 326
         Appearance71.TextHAlignAsString = "Right"
         UltraGridColumn3.CellAppearance = Appearance71
         Appearance72.TextHAlignAsString = "Right"
         UltraGridColumn3.Header.Appearance = Appearance72
         UltraGridColumn3.Header.Caption = "ملاحظات"
         UltraGridColumn3.Header.VisiblePosition = 1
-        UltraGridColumn3.Width = 424
+        UltraGridColumn3.Width = 351
         UltraGridColumn4.Header.VisiblePosition = 3
         UltraGridColumn4.Hidden = True
         UltraGridColumn4.Width = 93
@@ -910,7 +892,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn12.Header.Caption = "حذف"
         UltraGridColumn12.Header.VisiblePosition = 0
         UltraGridColumn12.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn12.Width = 119
+        UltraGridColumn12.Width = 97
         UltraGridBand4.Columns.AddRange(New Object() {UltraGridColumn1, UltraGridColumn2, UltraGridColumn3, UltraGridColumn4, UltraGridColumn12})
         Appearance74.FontData.Name = "Tahoma"
         Appearance74.FontData.SizeInPoints = 8.0!
@@ -977,11 +959,10 @@ Partial Class FRM_EmployeesSettings_A
         Appearance88.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_BankCodes.DisplayLayout.SplitterBarVerticalAppearance = Appearance88
         Me.Grd_BankCodes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Grd_BankCodes.Location = New System.Drawing.Point(3, 4)
-        Me.Grd_BankCodes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_BankCodes.Location = New System.Drawing.Point(3, 3)
         Me.Grd_BankCodes.Name = "Grd_BankCodes"
         Me.Grd_BankCodes.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_BankCodes.Size = New System.Drawing.Size(958, 720)
+        Me.Grd_BankCodes.Size = New System.Drawing.Size(795, 515)
         Me.Grd_BankCodes.TabIndex = 7
         Me.Grd_BankCodes.Text = "كود البنك"
         Me.Grd_BankCodes.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -998,11 +979,10 @@ Partial Class FRM_EmployeesSettings_A
         Me.UltraTabPageControl9.Controls.Add(Me.Txt_Companies_Deduction)
         Me.UltraTabPageControl9.Controls.Add(Me.Txt_Companies_Accounts)
         Me.UltraTabPageControl9.Controls.Add(Me.Txt_Companies_SalesTypes)
-        Me.UltraTabPageControl9.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl9.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl9.Name = "UltraTabPageControl9"
-        Me.UltraTabPageControl9.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.UltraTabPageControl9.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl9.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.UltraTabPageControl9.Size = New System.Drawing.Size(801, 521)
         '
         'Grd_DeductionsTypes
         '
@@ -1024,14 +1004,14 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn15.Width = 81
         UltraGridColumn16.Header.Caption = "الوصف"
         UltraGridColumn16.Header.VisiblePosition = 3
-        UltraGridColumn16.Width = 157
+        UltraGridColumn16.Width = 130
         Appearance90.TextHAlignAsString = "Right"
         UltraGridColumn17.CellAppearance = Appearance90
         Appearance91.TextHAlignAsString = "Right"
         UltraGridColumn17.Header.Appearance = Appearance91
         UltraGridColumn17.Header.Caption = "ملاحظات"
         UltraGridColumn17.Header.VisiblePosition = 2
-        UltraGridColumn17.Width = 662
+        UltraGridColumn17.Width = 547
         UltraGridColumn18.Header.VisiblePosition = 4
         UltraGridColumn18.Hidden = True
         UltraGridColumn18.Width = 93
@@ -1044,7 +1024,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn7.Header.Caption = "حذف"
         UltraGridColumn7.Header.VisiblePosition = 1
         UltraGridColumn7.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn7.Width = 118
+        UltraGridColumn7.Width = 97
         UltraGridBand5.Columns.AddRange(New Object() {UltraGridColumn15, UltraGridColumn16, UltraGridColumn17, UltraGridColumn18, UltraGridColumn7})
         Appearance93.FontData.Name = "Tahoma"
         Appearance93.FontData.SizeInPoints = 8.0!
@@ -1111,11 +1091,10 @@ Partial Class FRM_EmployeesSettings_A
         Appearance107.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
         Me.Grd_DeductionsTypes.DisplayLayout.SplitterBarVerticalAppearance = Appearance107
         Me.Grd_DeductionsTypes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Grd_DeductionsTypes.Location = New System.Drawing.Point(3, 4)
-        Me.Grd_DeductionsTypes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Grd_DeductionsTypes.Location = New System.Drawing.Point(3, 3)
         Me.Grd_DeductionsTypes.Name = "Grd_DeductionsTypes"
         Me.Grd_DeductionsTypes.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Grd_DeductionsTypes.Size = New System.Drawing.Size(958, 720)
+        Me.Grd_DeductionsTypes.Size = New System.Drawing.Size(795, 515)
         Me.Grd_DeductionsTypes.TabIndex = 543
         Me.Grd_DeductionsTypes.Text = "أنواع الخصومات"
         Me.Grd_DeductionsTypes.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -1141,11 +1120,10 @@ Partial Class FRM_EmployeesSettings_A
         Me.Txt_Companies_Addition.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance110.TextHAlignAsString = "Left"
         Me.Txt_Companies_Addition.ItemAppearance = Appearance110
-        Me.Txt_Companies_Addition.Location = New System.Drawing.Point(92, 175)
-        Me.Txt_Companies_Addition.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Companies_Addition.Location = New System.Drawing.Point(54, 142)
         Me.Txt_Companies_Addition.Name = "Txt_Companies_Addition"
         Me.Txt_Companies_Addition.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Companies_Addition.Size = New System.Drawing.Size(121, 23)
+        Me.Txt_Companies_Addition.Size = New System.Drawing.Size(104, 20)
         Me.Txt_Companies_Addition.TabIndex = 542
         Me.Txt_Companies_Addition.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Companies_Addition.Visible = False
@@ -1165,11 +1143,10 @@ Partial Class FRM_EmployeesSettings_A
         Me.Txt_Companies_Deduction.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance113.TextHAlignAsString = "Left"
         Me.Txt_Companies_Deduction.ItemAppearance = Appearance113
-        Me.Txt_Companies_Deduction.Location = New System.Drawing.Point(238, 175)
-        Me.Txt_Companies_Deduction.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Companies_Deduction.Location = New System.Drawing.Point(179, 142)
         Me.Txt_Companies_Deduction.Name = "Txt_Companies_Deduction"
         Me.Txt_Companies_Deduction.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Companies_Deduction.Size = New System.Drawing.Size(121, 23)
+        Me.Txt_Companies_Deduction.Size = New System.Drawing.Size(104, 20)
         Me.Txt_Companies_Deduction.TabIndex = 541
         Me.Txt_Companies_Deduction.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Companies_Deduction.Visible = False
@@ -1187,11 +1164,10 @@ Partial Class FRM_EmployeesSettings_A
         EditorButton1.Appearance = Appearance115
         EditorButton1.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Txt_Companies_Accounts.ButtonsRight.Add(EditorButton1)
-        Me.Txt_Companies_Accounts.Location = New System.Drawing.Point(442, 175)
-        Me.Txt_Companies_Accounts.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Companies_Accounts.Location = New System.Drawing.Point(354, 142)
         Me.Txt_Companies_Accounts.Name = "Txt_Companies_Accounts"
         Me.Txt_Companies_Accounts.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Companies_Accounts.Size = New System.Drawing.Size(120, 23)
+        Me.Txt_Companies_Accounts.Size = New System.Drawing.Size(103, 20)
         Me.Txt_Companies_Accounts.TabIndex = 540
         Me.Txt_Companies_Accounts.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Companies_Accounts.Visible = False
@@ -1211,11 +1187,10 @@ Partial Class FRM_EmployeesSettings_A
         Me.Txt_Companies_SalesTypes.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
         Appearance118.TextHAlignAsString = "Left"
         Me.Txt_Companies_SalesTypes.ItemAppearance = Appearance118
-        Me.Txt_Companies_SalesTypes.Location = New System.Drawing.Point(605, 175)
-        Me.Txt_Companies_SalesTypes.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Txt_Companies_SalesTypes.Location = New System.Drawing.Point(494, 142)
         Me.Txt_Companies_SalesTypes.Name = "Txt_Companies_SalesTypes"
         Me.Txt_Companies_SalesTypes.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Companies_SalesTypes.Size = New System.Drawing.Size(121, 23)
+        Me.Txt_Companies_SalesTypes.Size = New System.Drawing.Size(104, 20)
         Me.Txt_Companies_SalesTypes.TabIndex = 539
         Me.Txt_Companies_SalesTypes.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_Companies_SalesTypes.Visible = False
@@ -1223,10 +1198,9 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl10
         '
         Me.UltraTabPageControl10.Controls.Add(Me.GRD_HR_Systems)
-        Me.UltraTabPageControl10.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl10.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl10.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl10.Name = "UltraTabPageControl10"
-        Me.UltraTabPageControl10.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl10.Size = New System.Drawing.Size(801, 521)
         '
         'GRD_HR_Systems
         '
@@ -1361,10 +1335,9 @@ Partial Class FRM_EmployeesSettings_A
         Me.GRD_HR_Systems.DisplayLayout.SplitterBarVerticalAppearance = Appearance139
         Me.GRD_HR_Systems.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GRD_HR_Systems.Location = New System.Drawing.Point(0, 0)
-        Me.GRD_HR_Systems.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GRD_HR_Systems.Name = "GRD_HR_Systems"
         Me.GRD_HR_Systems.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GRD_HR_Systems.Size = New System.Drawing.Size(964, 728)
+        Me.GRD_HR_Systems.Size = New System.Drawing.Size(801, 521)
         Me.GRD_HR_Systems.TabIndex = 544
         Me.GRD_HR_Systems.Text = "أنظمة الرواتب"
         Me.GRD_HR_Systems.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -1381,10 +1354,9 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl11
         '
         Me.UltraTabPageControl11.Controls.Add(Me.GRD_Performance)
-        Me.UltraTabPageControl11.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl11.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl11.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl11.Name = "UltraTabPageControl11"
-        Me.UltraTabPageControl11.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl11.Size = New System.Drawing.Size(801, 521)
         '
         'GRD_Performance
         '
@@ -1405,14 +1377,14 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn11.Width = 65
         UltraGridColumn32.Header.Caption = "الوصف"
         UltraGridColumn32.Header.VisiblePosition = 3
-        UltraGridColumn32.Width = 288
+        UltraGridColumn32.Width = 239
         Appearance141.TextHAlignAsString = "Right"
         UltraGridColumn24.CellAppearance = Appearance141
         Appearance142.TextHAlignAsString = "Right"
         UltraGridColumn24.Header.Appearance = Appearance142
         UltraGridColumn24.Header.Caption = "ملاحظات"
         UltraGridColumn24.Header.VisiblePosition = 2
-        UltraGridColumn24.Width = 464
+        UltraGridColumn24.Width = 384
         UltraGridColumn26.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always
         Appearance143.FontData.SizeInPoints = 0.1!
         Appearance143.Image = CType(resources.GetObject("Appearance143.Image"), Object)
@@ -1422,7 +1394,7 @@ Partial Class FRM_EmployeesSettings_A
         UltraGridColumn26.Header.Caption = "الغاء"
         UltraGridColumn26.Header.VisiblePosition = 1
         UltraGridColumn26.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
-        UltraGridColumn26.Width = 191
+        UltraGridColumn26.Width = 157
         UltraGridColumn25.Header.VisiblePosition = 4
         UltraGridColumn25.Hidden = True
         UltraGridColumn25.Width = 93
@@ -1493,10 +1465,9 @@ Partial Class FRM_EmployeesSettings_A
         Me.GRD_Performance.DisplayLayout.SplitterBarVerticalAppearance = Appearance158
         Me.GRD_Performance.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GRD_Performance.Location = New System.Drawing.Point(0, 0)
-        Me.GRD_Performance.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GRD_Performance.Name = "GRD_Performance"
         Me.GRD_Performance.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GRD_Performance.Size = New System.Drawing.Size(964, 728)
+        Me.GRD_Performance.Size = New System.Drawing.Size(801, 521)
         Me.GRD_Performance.TabIndex = 7
         Me.GRD_Performance.Text = "تقييم الموظفين"
         Me.GRD_Performance.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
@@ -1510,11 +1481,10 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabPageControl2
         '
         Me.UltraTabPageControl2.Controls.Add(Me.GroupBox_Weekend)
-        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-8571, -8125)
         Me.UltraTabPageControl2.Name = "UltraTabPageControl2"
-        Me.UltraTabPageControl2.Padding = New System.Windows.Forms.Padding(23, 9, 23, 25)
-        Me.UltraTabPageControl2.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabPageControl2.Padding = New System.Windows.Forms.Padding(20, 7, 20, 20)
+        Me.UltraTabPageControl2.Size = New System.Drawing.Size(801, 521)
         '
         'GroupBox_Weekend
         '
@@ -1528,12 +1498,10 @@ Partial Class FRM_EmployeesSettings_A
         Me.GroupBox_Weekend.Controls.Add(Me.Chk_Saturday)
         Me.GroupBox_Weekend.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox_Weekend.Font = New System.Drawing.Font("Droid Arabic Kufi", 13.0!)
-        Me.GroupBox_Weekend.Location = New System.Drawing.Point(23, 9)
-        Me.GroupBox_Weekend.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox_Weekend.Location = New System.Drawing.Point(20, 7)
         Me.GroupBox_Weekend.Name = "GroupBox_Weekend"
-        Me.GroupBox_Weekend.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox_Weekend.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupBox_Weekend.Size = New System.Drawing.Size(918, 694)
+        Me.GroupBox_Weekend.Size = New System.Drawing.Size(761, 494)
         Me.GroupBox_Weekend.TabIndex = 499
         Me.GroupBox_Weekend.TabStop = False
         Me.GroupBox_Weekend.Text = "الاجازات الاسبوعية"
@@ -1541,10 +1509,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Thursday
         '
         Me.Chk_Thursday.AutoSize = True
-        Me.Chk_Thursday.Location = New System.Drawing.Point(754, 297)
-        Me.Chk_Thursday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Thursday.Location = New System.Drawing.Point(646, 241)
         Me.Chk_Thursday.Name = "Chk_Thursday"
-        Me.Chk_Thursday.Size = New System.Drawing.Size(116, 46)
+        Me.Chk_Thursday.Size = New System.Drawing.Size(96, 38)
         Me.Chk_Thursday.TabIndex = 6
         Me.Chk_Thursday.Tag = "Thursday"
         Me.Chk_Thursday.Text = "الخميس"
@@ -1553,10 +1520,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Sunday
         '
         Me.Chk_Sunday.AutoSize = True
-        Me.Chk_Sunday.Location = New System.Drawing.Point(783, 110)
-        Me.Chk_Sunday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Sunday.Location = New System.Drawing.Point(671, 89)
         Me.Chk_Sunday.Name = "Chk_Sunday"
-        Me.Chk_Sunday.Size = New System.Drawing.Size(87, 46)
+        Me.Chk_Sunday.Size = New System.Drawing.Size(71, 38)
         Me.Chk_Sunday.TabIndex = 5
         Me.Chk_Sunday.Tag = "Sunday"
         Me.Chk_Sunday.Text = "الاحد"
@@ -1565,10 +1531,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Tuesday
         '
         Me.Chk_Tuesday.AutoSize = True
-        Me.Chk_Tuesday.Location = New System.Drawing.Point(764, 203)
-        Me.Chk_Tuesday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Tuesday.Location = New System.Drawing.Point(655, 165)
         Me.Chk_Tuesday.Name = "Chk_Tuesday"
-        Me.Chk_Tuesday.Size = New System.Drawing.Size(104, 46)
+        Me.Chk_Tuesday.Size = New System.Drawing.Size(87, 38)
         Me.Chk_Tuesday.TabIndex = 4
         Me.Chk_Tuesday.Tag = "Tuesday"
         Me.Chk_Tuesday.Text = "الثلاثاء"
@@ -1577,10 +1542,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Wednesday
         '
         Me.Chk_Wednesday.AutoSize = True
-        Me.Chk_Wednesday.Location = New System.Drawing.Point(763, 250)
-        Me.Chk_Wednesday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Wednesday.Location = New System.Drawing.Point(654, 203)
         Me.Chk_Wednesday.Name = "Chk_Wednesday"
-        Me.Chk_Wednesday.Size = New System.Drawing.Size(106, 46)
+        Me.Chk_Wednesday.Size = New System.Drawing.Size(88, 38)
         Me.Chk_Wednesday.TabIndex = 3
         Me.Chk_Wednesday.Tag = "Wednesday"
         Me.Chk_Wednesday.Text = "الاربعاء"
@@ -1589,10 +1553,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Monday
         '
         Me.Chk_Monday.AutoSize = True
-        Me.Chk_Monday.Location = New System.Drawing.Point(769, 156)
-        Me.Chk_Monday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Monday.Location = New System.Drawing.Point(659, 127)
         Me.Chk_Monday.Name = "Chk_Monday"
-        Me.Chk_Monday.Size = New System.Drawing.Size(100, 46)
+        Me.Chk_Monday.Size = New System.Drawing.Size(83, 38)
         Me.Chk_Monday.TabIndex = 2
         Me.Chk_Monday.Tag = "Monday"
         Me.Chk_Monday.Text = "الاثنين"
@@ -1601,10 +1564,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Friday
         '
         Me.Chk_Friday.AutoSize = True
-        Me.Chk_Friday.Location = New System.Drawing.Point(763, 343)
-        Me.Chk_Friday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Friday.Location = New System.Drawing.Point(654, 279)
         Me.Chk_Friday.Name = "Chk_Friday"
-        Me.Chk_Friday.Size = New System.Drawing.Size(105, 46)
+        Me.Chk_Friday.Size = New System.Drawing.Size(88, 38)
         Me.Chk_Friday.TabIndex = 1
         Me.Chk_Friday.Tag = "Friday"
         Me.Chk_Friday.Text = "الجمعة"
@@ -1613,10 +1575,9 @@ Partial Class FRM_EmployeesSettings_A
         'Chk_Saturday
         '
         Me.Chk_Saturday.AutoSize = True
-        Me.Chk_Saturday.Location = New System.Drawing.Point(769, 63)
-        Me.Chk_Saturday.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Chk_Saturday.Location = New System.Drawing.Point(659, 51)
         Me.Chk_Saturday.Name = "Chk_Saturday"
-        Me.Chk_Saturday.Size = New System.Drawing.Size(98, 46)
+        Me.Chk_Saturday.Size = New System.Drawing.Size(83, 38)
         Me.Chk_Saturday.TabIndex = 0
         Me.Chk_Saturday.Tag = "Saturday"
         Me.Chk_Saturday.Text = "السبت"
@@ -1717,50 +1678,17 @@ Partial Class FRM_EmployeesSettings_A
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Btn_Close)
+        Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Tab_Main)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Left)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Right)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Top)
         Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Bottom)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 23)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1140, 840)
+        Me.Panel1.Size = New System.Drawing.Size(977, 635)
         Me.Panel1.TabIndex = 5
-        '
-        'Label9
-        '
-        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label9.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label9.Font = New System.Drawing.Font("Droid Arabic Kufi", 21.0!)
-        Me.Label9.Location = New System.Drawing.Point(45, 12)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(778, 87)
-        Me.Label9.TabIndex = 562
-        Me.Label9.Text = "اعدادات عامة"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Btn_Close
-        '
-        Me.Btn_Close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance159.BackColor = System.Drawing.Color.White
-        Appearance159.BorderColor = System.Drawing.Color.White
-        Appearance159.Image = CType(resources.GetObject("Appearance159.Image"), Object)
-        Appearance159.ImageHAlign = Infragistics.Win.HAlign.Center
-        Me.Btn_Close.Appearance = Appearance159
-        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button
-        Me.Btn_Close.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Btn_Close.Location = New System.Drawing.Point(1037, 12)
-        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.Size = New System.Drawing.Size(83, 90)
-        Me.Btn_Close.TabIndex = 559
-        Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Tab_Main
         '
@@ -1804,8 +1732,7 @@ Partial Class FRM_EmployeesSettings_A
         Me.Tab_Main.ImageList = Me.ImgLst
         Me.Tab_Main.ImageSize = New System.Drawing.Size(18, 18)
         Me.Tab_Main.InterTabSpacing = New Infragistics.Win.DefaultableInteger(5)
-        Me.Tab_Main.Location = New System.Drawing.Point(0, 108)
-        Me.Tab_Main.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tab_Main.Location = New System.Drawing.Point(0, 112)
         Me.Tab_Main.MinTabWidth = 0
         Me.Tab_Main.Name = "Tab_Main"
         Me.Tab_Main.ScaleImages = Infragistics.Win.ScaleImage.OnlyWhenNeeded
@@ -1816,7 +1743,7 @@ Partial Class FRM_EmployeesSettings_A
         Appearance164.BorderColor = System.Drawing.SystemColors.ControlDark
         Me.Tab_Main.SelectedTabAppearance = Appearance164
         Me.Tab_Main.SharedControlsPage = Me.UltraTabSharedControlsPage8
-        Me.Tab_Main.Size = New System.Drawing.Size(1140, 732)
+        Me.Tab_Main.Size = New System.Drawing.Size(977, 524)
         Me.Tab_Main.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Tab_Main.TabIndex = 4
         Me.Tab_Main.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.RightTop
@@ -1864,9 +1791,8 @@ Partial Class FRM_EmployeesSettings_A
         'UltraTabSharedControlsPage8
         '
         Me.UltraTabSharedControlsPage8.Location = New System.Drawing.Point(-10000, -10000)
-        Me.UltraTabSharedControlsPage8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UltraTabSharedControlsPage8.Name = "UltraTabSharedControlsPage8"
-        Me.UltraTabSharedControlsPage8.Size = New System.Drawing.Size(964, 728)
+        Me.UltraTabSharedControlsPage8.Size = New System.Drawing.Size(801, 520)
         '
         '_Panel1_Toolbars_Dock_Area_Left
         '
@@ -1875,9 +1801,8 @@ Partial Class FRM_EmployeesSettings_A
         Me._Panel1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
         Me._Panel1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
         Me._Panel1_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 0)
-        Me._Panel1_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me._Panel1_Toolbars_Dock_Area_Left.Name = "_Panel1_Toolbars_Dock_Area_Left"
-        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 840)
+        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 635)
         '
         '_Panel1_Toolbars_Dock_Area_Right
         '
@@ -1885,10 +1810,9 @@ Partial Class FRM_EmployeesSettings_A
         Me._Panel1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
         Me._Panel1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
         Me._Panel1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1140, 0)
-        Me._Panel1_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(977, 0)
         Me._Panel1_Toolbars_Dock_Area_Right.Name = "_Panel1_Toolbars_Dock_Area_Right"
-        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 840)
+        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 635)
         '
         '_Panel1_Toolbars_Dock_Area_Top
         '
@@ -1897,9 +1821,8 @@ Partial Class FRM_EmployeesSettings_A
         Me._Panel1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
         Me._Panel1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
         Me._Panel1_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._Panel1_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me._Panel1_Toolbars_Dock_Area_Top.Name = "_Panel1_Toolbars_Dock_Area_Top"
-        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1140, 0)
+        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(977, 0)
         '
         '_Panel1_Toolbars_Dock_Area_Bottom
         '
@@ -1907,96 +1830,69 @@ Partial Class FRM_EmployeesSettings_A
         Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
         Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
         Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 840)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 635)
         Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1140, 0)
+        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(977, 0)
         '
-        '_FRM_Settings_A_Toolbars_Dock_Area_Left
+        'TableLayoutPanel2
         '
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.BackColor = System.Drawing.SystemColors.Control
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 23)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.Name = "_FRM_Settings_A_Toolbars_Dock_Area_Left"
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 840)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 500.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Close, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label44, 1, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(977, 96)
+        Me.TableLayoutPanel2.TabIndex = 625
         '
-        'ToolBar_Main
+        'Btn_Close
         '
-        Me.ToolBar_Main.DesignerFlags = 1
-        Me.ToolBar_Main.DockWithinContainer = Me
-        Me.ToolBar_Main.DockWithinContainerBaseType = GetType(System.Windows.Forms.Form)
-        Me.ToolBar_Main.RightAlignedMenus = Infragistics.Win.DefaultableBoolean.[False]
-        Me.ToolBar_Main.RuntimeCustomizationOptions = Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.None
-        Me.ToolBar_Main.ShowFullMenusDelay = 500
-        UltraToolbar1.DockedColumn = 0
-        UltraToolbar1.DockedRow = 0
-        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool1, LabelTool2})
-        Appearance169.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance169.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance169.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        UltraToolbar1.Settings.Appearance = Appearance169
-        UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
-        UltraToolbar1.Text = "ToolBar1"
-        Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
-        Appearance170.FontData.BoldAsString = "True"
-        Appearance170.FontData.Name = "Tahoma"
-        Appearance170.TextHAlignAsString = "Right"
-        LabelTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance170
-        LabelTool3.SharedPropsInternal.Caption = "أعدادات"
-        LabelTool4.SharedPropsInternal.Spring = True
-        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, LabelTool4})
+        Appearance159.BackColor = System.Drawing.Color.Transparent
+        Appearance159.BorderColor = System.Drawing.Color.Transparent
+        Appearance159.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance159.Image = CType(resources.GetObject("Appearance159.Image"), Object)
+        Appearance159.ImageHAlign = Infragistics.Win.HAlign.Center
+        Me.Btn_Close.Appearance = Appearance159
+        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Close.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Btn_Close.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Close.Location = New System.Drawing.Point(891, 17)
+        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 2, 13, 2)
+        Me.Btn_Close.Name = "Btn_Close"
+        Me.Btn_Close.ShowFocusRect = False
+        Me.Btn_Close.ShowOutline = False
+        Me.Btn_Close.Size = New System.Drawing.Size(73, 77)
+        Me.Btn_Close.TabIndex = 602
+        Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
-        '_FRM_Settings_A_Toolbars_Dock_Area_Right
+        'Label44
         '
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1140, 23)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.Name = "_FRM_Settings_A_Toolbars_Dock_Area_Right"
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 840)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_FRM_Settings_A_Toolbars_Dock_Area_Top
-        '
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.BackColor = System.Drawing.SystemColors.Control
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.Name = "_FRM_Settings_A_Toolbars_Dock_Area_Top"
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1140, 23)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
-        '
-        '_FRM_Settings_A_Toolbars_Dock_Area_Bottom
-        '
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 863)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.Name = "_FRM_Settings_A_Toolbars_Dock_Area_Bottom"
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1140, 0)
-        Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
+        Me.Label44.BackColor = System.Drawing.Color.DarkOliveGreen
+        Me.Label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label44.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label44.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label44.Font = New System.Drawing.Font("Droid Arabic Kufi", 17.0!)
+        Me.Label44.ForeColor = System.Drawing.Color.White
+        Me.Label44.Location = New System.Drawing.Point(241, 15)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(494, 81)
+        Me.Label44.TabIndex = 560
+        Me.Label44.Text = "اعدادات عامة"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FRM_EmployeesSettings_A
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1140, 863)
+        Me.ClientSize = New System.Drawing.Size(977, 635)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me._FRM_Settings_A_Toolbars_Dock_Area_Left)
-        Me.Controls.Add(Me._FRM_Settings_A_Toolbars_Dock_Area_Right)
-        Me.Controls.Add(Me._FRM_Settings_A_Toolbars_Dock_Area_Bottom)
-        Me.Controls.Add(Me._FRM_Settings_A_Toolbars_Dock_Area_Top)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FRM_EmployeesSettings_A"
         Me.Text = "اعدادات عامة"
         Me.UltraTabPageControl14.ResumeLayout(False)
@@ -2036,7 +1932,7 @@ Partial Class FRM_EmployeesSettings_A
         Me.Panel1.ResumeLayout(False)
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_Main.ResumeLayout(False)
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2063,11 +1959,6 @@ Partial Class FRM_EmployeesSettings_A
     Friend WithEvents _Panel1_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents _Panel1_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents _Panel1_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents ToolBar_Main As Infragistics.Win.UltraWinToolbars.UltraToolbarsManager
-    Friend WithEvents _FRM_Settings_A_Toolbars_Dock_Area_Left As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _FRM_Settings_A_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _FRM_Settings_A_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _FRM_Settings_A_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents DTS_ProvidersTypes As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents UltraTabPageControl9 As Infragistics.Win.UltraWinTabControl.UltraTabPageControl
     Friend WithEvents DTS_DeductionsTypes As Infragistics.Win.UltraWinDataSource.UltraDataSource
@@ -2076,8 +1967,6 @@ Partial Class FRM_EmployeesSettings_A
     Friend WithEvents Txt_Companies_SalesTypes As Infragistics.Win.UltraWinEditors.UltraComboEditor
     Friend WithEvents Txt_Companies_Deduction As Infragistics.Win.UltraWinEditors.UltraComboEditor
     Friend WithEvents Txt_Companies_Addition As Infragistics.Win.UltraWinEditors.UltraComboEditor
-    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
-    Friend WithEvents Label9 As Label
     Friend WithEvents Grd_DeductionsTypes As Infragistics.Win.UltraWinGrid.UltraGrid
     Friend WithEvents UltraTabPageControl10 As Infragistics.Win.UltraWinTabControl.UltraTabPageControl
     Friend WithEvents DTS_HR_Systems As Infragistics.Win.UltraWinDataSource.UltraDataSource
@@ -2094,4 +1983,7 @@ Partial Class FRM_EmployeesSettings_A
     Friend WithEvents Chk_Monday As CheckBox
     Friend WithEvents Chk_Friday As CheckBox
     Friend WithEvents Chk_Saturday As CheckBox
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Label44 As Label
 End Class

@@ -2,7 +2,7 @@
 Imports System.Text.RegularExpressions
 Imports Infragistics.Win.UltraWinGrid
 
-Public Class Frm_Cleaning_Monthly_Report_A
+Public Class Frm_HK_Cleaning_Points_Report_A
 
 #Region "Declaration"
 
@@ -168,7 +168,7 @@ Public Class Frm_Cleaning_Monthly_Report_A
         vcFrmLevel.vParentFrm.ToolBar_Main.Tools("Themes").SharedProps.Visible = False
     End Sub
 
-    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) 
         Me.Close()
     End Sub
 

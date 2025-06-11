@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_RoomCleaning_A
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Frm_HK_Cleaning_Public_A
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,29 +17,29 @@ Partial Class Frm_RoomCleaning_A
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim EditorButton1 As Infragistics.Win.UltraWinEditors.EditorButton = New Infragistics.Win.UltraWinEditors.EditorButton()
         Dim Appearance1 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_RoomCleaning_A))
-        Dim Appearance2 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance3 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance4 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance5 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance6 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance7 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_HK_Cleaning_Public_A))
+        Dim Appearance52 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance53 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance54 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance55 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance56 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance57 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance8 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand1 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
         Dim UltraGridColumn8 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Code")
-        Dim UltraGridColumn9 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Room_Num")
+        Dim UltraGridColumn9 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Public_Place")
         Dim UltraGridColumn10 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Cleaning_Type")
         Dim UltraGridColumn11 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Supervisor")
         Dim UltraGridColumn1 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Cleaning_Date")
         Dim UltraGridColumn12 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Delete")
         Dim Appearance9 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridColumn13 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("DML")
-        Dim UltraGridColumn2 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Room_Remarks")
+        Dim UltraGridColumn2 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Public_Remarks")
         Dim Appearance10 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance11 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance12 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -57,33 +57,32 @@ Partial Class Frm_RoomCleaning_A
         Dim Appearance23 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance24 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance25 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim UltraDataColumn1 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Code")
-        Dim UltraDataColumn2 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Room_Num")
-        Dim UltraDataColumn3 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Cleaning_Type")
-        Dim UltraDataColumn4 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Supervisor")
-        Dim UltraDataColumn5 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Cleaning_Date")
-        Dim UltraDataColumn6 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Delete")
-        Dim UltraDataColumn7 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML")
-        Dim UltraDataColumn8 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Room_Remarks")
-        Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim EditorButton2 As Infragistics.Win.UltraWinEditors.EditorButton = New Infragistics.Win.UltraWinEditors.EditorButton()
-        Dim Appearance27 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance28 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraDataColumn15 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Code")
+        Dim UltraDataColumn16 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Public_Place")
+        Dim UltraDataColumn17 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Cleaning_Type")
+        Dim UltraDataColumn18 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Supervisor")
+        Dim UltraDataColumn19 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Cleaning_Date")
+        Dim UltraDataColumn20 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Delete")
+        Dim UltraDataColumn21 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML")
+        Dim UltraDataColumn22 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Public_Remarks")
+        Dim Appearance58 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance59 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance60 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance29 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance30 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance31 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance32 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance33 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim UltraGridBand2 As Infragistics.Win.UltraWinGrid.UltraGridBand = New Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1)
         Dim UltraGridColumn14 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Ser")
         Dim UltraGridColumn15 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Emp_Code")
         Dim UltraGridColumn16 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Emp_Desc")
         Dim UltraGridColumn17 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Remarks")
         Dim UltraGridColumn18 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("Delete")
+        Dim Appearance33 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance34 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraGridColumn7 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("DML")
         Dim Appearance35 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance36 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim UltraGridColumn7 As Infragistics.Win.UltraWinGrid.UltraGridColumn = New Infragistics.Win.UltraWinGrid.UltraGridColumn("DML")
         Dim Appearance37 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance38 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance39 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
@@ -91,48 +90,23 @@ Partial Class Frm_RoomCleaning_A
         Dim Appearance41 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance42 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance43 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim ScrollBarLook2 As Infragistics.Win.UltraWinScrollBar.ScrollBarLook = New Infragistics.Win.UltraWinScrollBar.ScrollBarLook()
         Dim Appearance44 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance45 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim ScrollBarLook2 As Infragistics.Win.UltraWinScrollBar.ScrollBarLook = New Infragistics.Win.UltraWinScrollBar.ScrollBarLook()
         Dim Appearance46 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance47 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance48 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim Appearance49 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance50 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance51 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim UltraDataColumn9 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Ser")
-        Dim UltraDataColumn10 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Emp_Code")
-        Dim UltraDataColumn11 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Emp_Desc")
-        Dim UltraDataColumn12 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Remarks")
-        Dim UltraDataColumn13 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Delete")
-        Dim UltraDataColumn14 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML")
-        Dim Appearance52 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim Appearance53 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim UltraDataColumn23 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Ser")
+        Dim UltraDataColumn24 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Emp_Code")
+        Dim UltraDataColumn25 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Emp_Desc")
+        Dim UltraDataColumn26 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Remarks")
+        Dim UltraDataColumn27 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("Delete")
+        Dim UltraDataColumn28 As Infragistics.Win.UltraWinDataSource.UltraDataColumn = New Infragistics.Win.UltraWinDataSource.UltraDataColumn("DML")
         Dim UltraTab1 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
         Dim UltraTab2 As Infragistics.Win.UltraWinTabControl.UltraTab = New Infragistics.Win.UltraWinTabControl.UltraTab()
-        Dim UltraToolbar1 As Infragistics.Win.UltraWinToolbars.UltraToolbar = New Infragistics.Win.UltraWinToolbars.UltraToolbar("UltraToolbar1")
-        Dim LabelTool1 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim LabelTool2 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance54 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool3 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool1")
-        Dim Appearance55 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim LabelTool4 As Infragistics.Win.UltraWinToolbars.LabelTool = New Infragistics.Win.UltraWinToolbars.LabelTool("LabelTool2")
-        Dim PopupMenuTool2 As Infragistics.Win.UltraWinToolbars.PopupMenuTool = New Infragistics.Win.UltraWinToolbars.PopupMenuTool("Tools")
-        Dim Appearance56 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim ButtonTool1 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Submit")
-        Dim ButtonTool4 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("RollBack")
-        Dim ButtonTool6 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ExportToExcel")
-        Dim ButtonTool9 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Printer1")
-        Dim ButtonTool10 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Printer2")
-        Dim StateButtonTool2 As Infragistics.Win.UltraWinToolbars.StateButtonTool = New Infragistics.Win.UltraWinToolbars.StateButtonTool("FilterByProcessed", "")
-        Dim ButtonTool2 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Submit")
-        Dim Appearance57 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
-        Dim StateButtonTool3 As Infragistics.Win.UltraWinToolbars.StateButtonTool = New Infragistics.Win.UltraWinToolbars.StateButtonTool("FilterByDate", "")
-        Dim StateButtonTool4 As Infragistics.Win.UltraWinToolbars.StateButtonTool = New Infragistics.Win.UltraWinToolbars.StateButtonTool("FilterByProcessed", "")
-        Dim ButtonTool3 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("RollBack")
-        Dim ButtonTool5 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Btn_ExportToExcel")
-        Dim ButtonTool7 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Printer1")
-        Dim ButtonTool8 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("Printer2")
+        Dim Appearance61 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim Appearance62 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.Txt_LovEmployee = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.UltraTabPageControl1 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
         Me.TXT_FromSummaryDate = New Infragistics.Win.UltraWinEditors.UltraDateTimeEditor()
@@ -142,10 +116,9 @@ Partial Class Frm_RoomCleaning_A
         Me.Grd_Summary = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.DTS_Summary = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
         Me.UltraTabPageControl2 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
+        Me.Txt_PublicCleaning = New Infragistics.Win.UltraWinEditors.UltraComboEditor()
         Me.Txt_CleaningType = New Infragistics.Win.UltraWinEditors.UltraComboEditor()
         Me.Txt_Supervisor = New Infragistics.Win.UltraWinEditors.UltraComboEditor()
-        Me.Txt_RoomType = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.Txt_RoomNum = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -159,17 +132,13 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_Code = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.Grd_Details = New Infragistics.Win.UltraWinGrid.UltraGrid()
         Me.DTS_Details = New Infragistics.Win.UltraWinDataSource.UltraDataSource(Me.components)
-        Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
-        Me.Btn_Back = New Infragistics.Win.Misc.UltraButton()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Tab_Main = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me._Panel1_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me.ToolBar_Main = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
-        Me._Panel1_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me._Panel1_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Btn_Back = New Infragistics.Win.Misc.UltraButton()
+        Me.Btn_Close = New Infragistics.Win.Misc.UltraButton()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.Txt_LovEmployee, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabPageControl1.SuspendLayout()
         CType(Me.TXT_FromSummaryDate, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -177,10 +146,9 @@ Partial Class Frm_RoomCleaning_A
         CType(Me.Grd_Summary, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTS_Summary, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabPageControl2.SuspendLayout()
+        CType(Me.Txt_PublicCleaning, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_CleaningType, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_Supervisor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Txt_RoomType, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Txt_RoomNum, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_CleaningDate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_EmpDesc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txt_Remarks, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -190,7 +158,7 @@ Partial Class Frm_RoomCleaning_A
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_Main.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Txt_LovEmployee
@@ -206,7 +174,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_LovEmployee.Location = New System.Drawing.Point(784, 400)
         Me.Txt_LovEmployee.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Txt_LovEmployee.Name = "Txt_LovEmployee"
-        Me.Txt_LovEmployee.Size = New System.Drawing.Size(173, 36)
+        Me.Txt_LovEmployee.Size = New System.Drawing.Size(173, 30)
         Me.Txt_LovEmployee.TabIndex = 608
         Me.Txt_LovEmployee.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         Me.Txt_LovEmployee.Visible = False
@@ -218,24 +186,24 @@ Partial Class Frm_RoomCleaning_A
         Me.UltraTabPageControl1.Controls.Add(Me.Txt_ToSummaryDate)
         Me.UltraTabPageControl1.Controls.Add(Me.Label17)
         Me.UltraTabPageControl1.Controls.Add(Me.Grd_Summary)
-        Me.UltraTabPageControl1.Location = New System.Drawing.Point(-10000, -10000)
+        Me.UltraTabPageControl1.Location = New System.Drawing.Point(1, 1)
         Me.UltraTabPageControl1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.UltraTabPageControl1.Name = "UltraTabPageControl1"
-        Me.UltraTabPageControl1.Size = New System.Drawing.Size(1370, 533)
+        Me.UltraTabPageControl1.Size = New System.Drawing.Size(1280, 539)
         '
         'TXT_FromSummaryDate
         '
-        Appearance2.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance2.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance2.TextHAlignAsString = "Right"
-        Me.TXT_FromSummaryDate.Appearance = Appearance2
+        Appearance52.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance52.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance52.TextHAlignAsString = "Right"
+        Me.TXT_FromSummaryDate.Appearance = Appearance52
         Me.TXT_FromSummaryDate.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Appearance3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.TXT_FromSummaryDate.ButtonAppearance = Appearance3
+        Appearance53.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.TXT_FromSummaryDate.ButtonAppearance = Appearance53
         Me.TXT_FromSummaryDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.TXT_FromSummaryDate.DateTime = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Appearance4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.TXT_FromSummaryDate.DropDownAppearance = Appearance4
+        Appearance54.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.TXT_FromSummaryDate.DropDownAppearance = Appearance54
         Me.TXT_FromSummaryDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.TXT_FromSummaryDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.TXT_FromSummaryDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
@@ -245,7 +213,7 @@ Partial Class Frm_RoomCleaning_A
         Me.TXT_FromSummaryDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.TXT_FromSummaryDate.Name = "TXT_FromSummaryDate"
         Me.TXT_FromSummaryDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TXT_FromSummaryDate.Size = New System.Drawing.Size(229, 39)
+        Me.TXT_FromSummaryDate.Size = New System.Drawing.Size(229, 33)
         Me.TXT_FromSummaryDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.TXT_FromSummaryDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.TXT_FromSummaryDate.TabIndex = 558
@@ -261,24 +229,24 @@ Partial Class Frm_RoomCleaning_A
         Me.Label16.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Label16.Location = New System.Drawing.Point(581, 16)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(76, 32)
+        Me.Label16.Size = New System.Drawing.Size(63, 27)
         Me.Label16.TabIndex = 559
         Me.Label16.Text = "„‰  «—ÌŒ"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Txt_ToSummaryDate
         '
-        Appearance5.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance5.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance5.TextHAlignAsString = "Right"
-        Me.Txt_ToSummaryDate.Appearance = Appearance5
+        Appearance55.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance55.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance55.TextHAlignAsString = "Right"
+        Me.Txt_ToSummaryDate.Appearance = Appearance55
         Me.Txt_ToSummaryDate.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Appearance6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Txt_ToSummaryDate.ButtonAppearance = Appearance6
+        Appearance56.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Txt_ToSummaryDate.ButtonAppearance = Appearance56
         Me.Txt_ToSummaryDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Txt_ToSummaryDate.DateTime = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Appearance7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Txt_ToSummaryDate.DropDownAppearance = Appearance7
+        Appearance57.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Txt_ToSummaryDate.DropDownAppearance = Appearance57
         Me.Txt_ToSummaryDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_ToSummaryDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.Txt_ToSummaryDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
@@ -288,7 +256,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_ToSummaryDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_ToSummaryDate.Name = "Txt_ToSummaryDate"
         Me.Txt_ToSummaryDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_ToSummaryDate.Size = New System.Drawing.Size(233, 39)
+        Me.Txt_ToSummaryDate.Size = New System.Drawing.Size(233, 33)
         Me.Txt_ToSummaryDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_ToSummaryDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.Txt_ToSummaryDate.TabIndex = 560
@@ -304,7 +272,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label17.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Label17.Location = New System.Drawing.Point(251, 16)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(80, 32)
+        Me.Label17.Size = New System.Drawing.Size(66, 27)
         Me.Label17.TabIndex = 561
         Me.Label17.Text = "«·Ï  «—ÌŒ"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -330,7 +298,7 @@ Partial Class Frm_RoomCleaning_A
         UltraGridColumn8.RowLayoutColumnInfo.OriginY = 0
         UltraGridColumn8.RowLayoutColumnInfo.SpanX = 2
         UltraGridColumn8.RowLayoutColumnInfo.SpanY = 2
-        UltraGridColumn9.Header.Caption = "—ﬁ„ «·€—›…"
+        UltraGridColumn9.Header.Caption = "«·„ﬂ«‰"
         UltraGridColumn9.Header.VisiblePosition = 1
         UltraGridColumn9.MaxWidth = 100
         UltraGridColumn9.MinWidth = 100
@@ -366,7 +334,7 @@ Partial Class Frm_RoomCleaning_A
         UltraGridColumn1.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DateTimeWithoutDropDown
         UltraGridColumn12.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always
         Appearance9.BackColor = System.Drawing.Color.White
-        Appearance9.FontData.SizeInPoints = 0.1!
+        Appearance9.FontData.SizeInPoints = 0.09999999!
         Appearance9.Image = CType(resources.GetObject("Appearance9.Image"), Object)
         Appearance9.ImageHAlign = Infragistics.Win.HAlign.Center
         Appearance9.ImageVAlign = Infragistics.Win.VAlign.Middle
@@ -472,24 +440,22 @@ Partial Class Frm_RoomCleaning_A
         Me.Grd_Summary.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Grd_Summary.Name = "Grd_Summary"
         Me.Grd_Summary.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Grd_Summary.Size = New System.Drawing.Size(1350, 466)
+        Me.Grd_Summary.Size = New System.Drawing.Size(1260, 466)
         Me.Grd_Summary.TabIndex = 484
         Me.Grd_Summary.UseFlatMode = Infragistics.Win.DefaultableBoolean.[True]
         '
         'DTS_Summary
         '
-        UltraDataColumn2.DataType = GetType(Short)
-        UltraDataColumn5.DataType = GetType(Date)
-        UltraDataColumn7.DefaultValue = "NI"
-        Me.DTS_Summary.Band.Columns.AddRange(New Object() {UltraDataColumn1, UltraDataColumn2, UltraDataColumn3, UltraDataColumn4, UltraDataColumn5, UltraDataColumn6, UltraDataColumn7, UltraDataColumn8})
+        UltraDataColumn19.DataType = GetType(Date)
+        UltraDataColumn21.DefaultValue = "NI"
+        Me.DTS_Summary.Band.Columns.AddRange(New Object() {UltraDataColumn15, UltraDataColumn16, UltraDataColumn17, UltraDataColumn18, UltraDataColumn19, UltraDataColumn20, UltraDataColumn21, UltraDataColumn22})
         '
         'UltraTabPageControl2
         '
+        Me.UltraTabPageControl2.Controls.Add(Me.Txt_PublicCleaning)
         Me.UltraTabPageControl2.Controls.Add(Me.Txt_LovEmployee)
         Me.UltraTabPageControl2.Controls.Add(Me.Txt_CleaningType)
         Me.UltraTabPageControl2.Controls.Add(Me.Txt_Supervisor)
-        Me.UltraTabPageControl2.Controls.Add(Me.Txt_RoomType)
-        Me.UltraTabPageControl2.Controls.Add(Me.Txt_RoomNum)
         Me.UltraTabPageControl2.Controls.Add(Me.Label10)
         Me.UltraTabPageControl2.Controls.Add(Me.Label1)
         Me.UltraTabPageControl2.Controls.Add(Me.Label3)
@@ -502,10 +468,21 @@ Partial Class Frm_RoomCleaning_A
         Me.UltraTabPageControl2.Controls.Add(Me.Label15)
         Me.UltraTabPageControl2.Controls.Add(Me.Txt_Code)
         Me.UltraTabPageControl2.Controls.Add(Me.Grd_Details)
-        Me.UltraTabPageControl2.Location = New System.Drawing.Point(1, 1)
+        Me.UltraTabPageControl2.Location = New System.Drawing.Point(-10000, -10000)
         Me.UltraTabPageControl2.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.UltraTabPageControl2.Name = "UltraTabPageControl2"
-        Me.UltraTabPageControl2.Size = New System.Drawing.Size(1370, 533)
+        Me.UltraTabPageControl2.Size = New System.Drawing.Size(1280, 539)
+        '
+        'Txt_PublicCleaning
+        '
+        Me.Txt_PublicCleaning.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Txt_PublicCleaning.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList
+        Me.Txt_PublicCleaning.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!)
+        Me.Txt_PublicCleaning.Location = New System.Drawing.Point(784, 19)
+        Me.Txt_PublicCleaning.Name = "Txt_PublicCleaning"
+        Me.Txt_PublicCleaning.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Txt_PublicCleaning.Size = New System.Drawing.Size(420, 30)
+        Me.Txt_PublicCleaning.TabIndex = 609
         '
         'Txt_CleaningType
         '
@@ -515,7 +492,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_CleaningType.Location = New System.Drawing.Point(784, 67)
         Me.Txt_CleaningType.Name = "Txt_CleaningType"
         Me.Txt_CleaningType.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Txt_CleaningType.Size = New System.Drawing.Size(420, 36)
+        Me.Txt_CleaningType.Size = New System.Drawing.Size(420, 30)
         Me.Txt_CleaningType.TabIndex = 607
         '
         'Txt_Supervisor
@@ -526,52 +503,8 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_Supervisor.Location = New System.Drawing.Point(784, 110)
         Me.Txt_Supervisor.Name = "Txt_Supervisor"
         Me.Txt_Supervisor.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Txt_Supervisor.Size = New System.Drawing.Size(420, 36)
+        Me.Txt_Supervisor.Size = New System.Drawing.Size(420, 30)
         Me.Txt_Supervisor.TabIndex = 606
-        '
-        'Txt_RoomType
-        '
-        Me.Txt_RoomType.AlwaysInEditMode = True
-        Me.Txt_RoomType.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance26.BackColor = System.Drawing.SystemColors.Control
-        Appearance26.BackColor2 = System.Drawing.SystemColors.ControlLight
-        Appearance26.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance26.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance26.TextHAlignAsString = "Right"
-        Me.Txt_RoomType.Appearance = Appearance26
-        Me.Txt_RoomType.BackColor = System.Drawing.SystemColors.Control
-        Me.Txt_RoomType.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Me.Txt_RoomType.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txt_RoomType.Location = New System.Drawing.Point(784, 19)
-        Me.Txt_RoomType.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.Txt_RoomType.Name = "Txt_RoomType"
-        Me.Txt_RoomType.ReadOnly = True
-        Me.Txt_RoomType.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_RoomType.Size = New System.Drawing.Size(321, 36)
-        Me.Txt_RoomType.TabIndex = 604
-        Me.Txt_RoomType.TabStop = False
-        Me.Txt_RoomType.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
-        '
-        'Txt_RoomNum
-        '
-        Me.Txt_RoomNum.AcceptsReturn = True
-        Me.Txt_RoomNum.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Txt_RoomNum.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Appearance27.BackColor = System.Drawing.SystemColors.ButtonFace
-        Appearance27.BorderColor = System.Drawing.Color.Transparent
-        Appearance27.Image = CType(resources.GetObject("Appearance27.Image"), Object)
-        EditorButton2.Appearance = Appearance27
-        EditorButton2.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
-        EditorButton2.Width = 25
-        Me.Txt_RoomNum.ButtonsLeft.Add(EditorButton2)
-        Me.Txt_RoomNum.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!)
-        Me.Txt_RoomNum.Location = New System.Drawing.Point(1112, 20)
-        Me.Txt_RoomNum.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Txt_RoomNum.Name = "Txt_RoomNum"
-        Me.Txt_RoomNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Txt_RoomNum.Size = New System.Drawing.Size(92, 34)
-        Me.Txt_RoomNum.TabIndex = 601
-        Me.Txt_RoomNum.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Label10
         '
@@ -583,7 +516,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label10.Location = New System.Drawing.Point(1241, 114)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(112, 32)
+        Me.Label10.Size = New System.Drawing.Size(91, 27)
         Me.Label10.TabIndex = 571
         Me.Label10.Text = "«”„ «·„‘—›"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -598,7 +531,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label1.Location = New System.Drawing.Point(1254, 71)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(99, 32)
+        Me.Label1.Size = New System.Drawing.Size(81, 27)
         Me.Label1.TabIndex = 568
         Me.Label1.Text = "‰Ê⁄ «·‰Ÿ«›…"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -613,7 +546,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label3.Location = New System.Drawing.Point(1237, 158)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(116, 32)
+        Me.Label3.Size = New System.Drawing.Size(94, 27)
         Me.Label3.TabIndex = 557
         Me.Label3.Text = " «—ÌŒ «· ‰ŸÌ›"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -621,17 +554,17 @@ Partial Class Frm_RoomCleaning_A
         'Txt_CleaningDate
         '
         Me.Txt_CleaningDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance28.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance28.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance28.TextHAlignAsString = "Right"
-        Me.Txt_CleaningDate.Appearance = Appearance28
+        Appearance58.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance58.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance58.TextHAlignAsString = "Right"
+        Me.Txt_CleaningDate.Appearance = Appearance58
         Me.Txt_CleaningDate.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
-        Appearance29.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Txt_CleaningDate.ButtonAppearance = Appearance29
+        Appearance59.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Txt_CleaningDate.ButtonAppearance = Appearance59
         Me.Txt_CleaningDate.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2003ToolbarButton
         Me.Txt_CleaningDate.DateTime = New Date(2012, 1, 20, 0, 0, 0, 0)
-        Appearance30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Txt_CleaningDate.DropDownAppearance = Appearance30
+        Appearance60.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Txt_CleaningDate.DropDownAppearance = Appearance60
         Me.Txt_CleaningDate.DropDownButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_CleaningDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_CleaningDate.FormatString = "dd-MM-yyyy hh:mm"
@@ -639,7 +572,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_CleaningDate.Margin = New System.Windows.Forms.Padding(9)
         Me.Txt_CleaningDate.MaskInput = "{LOC}dd/mm/yyyy hh:mm"
         Me.Txt_CleaningDate.Name = "Txt_CleaningDate"
-        Me.Txt_CleaningDate.Size = New System.Drawing.Size(420, 36)
+        Me.Txt_CleaningDate.Size = New System.Drawing.Size(420, 30)
         Me.Txt_CleaningDate.TabIndex = 9
         Me.Txt_CleaningDate.TabNavigation = Infragistics.Win.UltraWinMaskedEdit.MaskedEditTabNavigation.NextSection
         Me.Txt_CleaningDate.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -648,9 +581,9 @@ Partial Class Frm_RoomCleaning_A
         'Txt_EmpDesc
         '
         Me.Txt_EmpDesc.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance31.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance31.TextHAlignAsString = "Right"
-        Me.Txt_EmpDesc.Appearance = Appearance31
+        Appearance29.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance29.TextHAlignAsString = "Right"
+        Me.Txt_EmpDesc.Appearance = Appearance29
         Me.Txt_EmpDesc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
         Me.Txt_EmpDesc.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_EmpDesc.Location = New System.Drawing.Point(263, 66)
@@ -659,7 +592,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_EmpDesc.ReadOnly = True
         Me.Txt_EmpDesc.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Txt_EmpDesc.Scrollbars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txt_EmpDesc.Size = New System.Drawing.Size(338, 36)
+        Me.Txt_EmpDesc.Size = New System.Drawing.Size(338, 30)
         Me.Txt_EmpDesc.TabIndex = 554
         Me.Txt_EmpDesc.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -670,12 +603,12 @@ Partial Class Frm_RoomCleaning_A
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label5.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(1258, 25)
+        Me.Label5.Location = New System.Drawing.Point(1291, 25)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(95, 32)
+        Me.Label5.Size = New System.Drawing.Size(50, 27)
         Me.Label5.TabIndex = 553
-        Me.Label5.Text = "—ﬁ„ «·€—›…"
+        Me.Label5.Text = "«·„ﬂ«‰"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label8
@@ -688,7 +621,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label8.Location = New System.Drawing.Point(621, 67)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(89, 32)
+        Me.Label8.Size = New System.Drawing.Size(71, 27)
         Me.Label8.TabIndex = 551
         Me.Label8.Text = "«·„” Œœ„"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -703,7 +636,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label12.Location = New System.Drawing.Point(631, 113)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(79, 32)
+        Me.Label12.Size = New System.Drawing.Size(65, 27)
         Me.Label12.TabIndex = 550
         Me.Label12.Text = "„·«ÕŸ« "
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -711,9 +644,9 @@ Partial Class Frm_RoomCleaning_A
         'Txt_Remarks
         '
         Me.Txt_Remarks.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance32.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance32.TextHAlignAsString = "Right"
-        Me.Txt_Remarks.Appearance = Appearance32
+        Appearance30.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance30.TextHAlignAsString = "Right"
+        Me.Txt_Remarks.Appearance = Appearance30
         Me.Txt_Remarks.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
         Me.Txt_Remarks.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txt_Remarks.Location = New System.Drawing.Point(263, 111)
@@ -736,7 +669,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Label15.Location = New System.Drawing.Point(656, 24)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(54, 32)
+        Me.Label15.Size = New System.Drawing.Size(44, 27)
         Me.Label15.TabIndex = 547
         Me.Label15.Text = "«·ﬂÊœ"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -745,12 +678,12 @@ Partial Class Frm_RoomCleaning_A
         '
         Me.Txt_Code.AlwaysInEditMode = True
         Me.Txt_Code.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance33.BackColor = System.Drawing.SystemColors.Control
-        Appearance33.BackColor2 = System.Drawing.SystemColors.ControlLight
-        Appearance33.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance33.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance33.TextHAlignAsString = "Right"
-        Me.Txt_Code.Appearance = Appearance33
+        Appearance31.BackColor = System.Drawing.SystemColors.Control
+        Appearance31.BackColor2 = System.Drawing.SystemColors.ControlLight
+        Appearance31.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance31.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance31.TextHAlignAsString = "Right"
+        Me.Txt_Code.Appearance = Appearance31
         Me.Txt_Code.BackColor = System.Drawing.SystemColors.Control
         Me.Txt_Code.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
         Me.Txt_Code.Font = New System.Drawing.Font("Droid Arabic Kufi", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -759,7 +692,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Txt_Code.Name = "Txt_Code"
         Me.Txt_Code.ReadOnly = True
         Me.Txt_Code.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_Code.Size = New System.Drawing.Size(338, 36)
+        Me.Txt_Code.Size = New System.Drawing.Size(338, 30)
         Me.Txt_Code.TabIndex = 548
         Me.Txt_Code.TabStop = False
         Me.Txt_Code.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -771,12 +704,12 @@ Partial Class Frm_RoomCleaning_A
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Grd_Details.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Grd_Details.DataSource = Me.DTS_Details
-        Appearance34.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance34.BackColor2 = System.Drawing.SystemColors.ControlLightLight
-        Appearance34.BackGradientStyle = Infragistics.Win.GradientStyle.None
-        Appearance34.BorderColor = System.Drawing.SystemColors.ControlDark
-        Appearance34.TextHAlignAsString = "Right"
-        Me.Grd_Details.DisplayLayout.Appearance = Appearance34
+        Appearance32.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Appearance32.BackColor2 = System.Drawing.SystemColors.ControlLightLight
+        Appearance32.BackGradientStyle = Infragistics.Win.GradientStyle.None
+        Appearance32.BorderColor = System.Drawing.SystemColors.ControlDark
+        Appearance32.TextHAlignAsString = "Right"
+        Me.Grd_Details.DisplayLayout.Appearance = Appearance32
         Me.Grd_Details.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns
         UltraGridColumn14.Header.VisiblePosition = 2
         UltraGridColumn14.Hidden = True
@@ -799,17 +732,17 @@ Partial Class Frm_RoomCleaning_A
         UltraGridColumn17.MinWidth = 350
         UltraGridColumn17.Width = 711
         UltraGridColumn18.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always
-        Appearance35.BackColor = System.Drawing.Color.White
-        Appearance35.BorderColor = System.Drawing.Color.Transparent
-        Appearance35.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance35.FontData.SizeInPoints = 0.1!
-        Appearance35.Image = CType(resources.GetObject("Appearance35.Image"), Object)
-        Appearance35.ImageHAlign = Infragistics.Win.HAlign.Center
-        Appearance35.ImageVAlign = Infragistics.Win.VAlign.Middle
-        Appearance35.TextHAlignAsString = "Center"
-        UltraGridColumn18.CellButtonAppearance = Appearance35
-        Appearance36.TextHAlignAsString = "Center"
-        UltraGridColumn18.Header.Appearance = Appearance36
+        Appearance33.BackColor = System.Drawing.Color.White
+        Appearance33.BorderColor = System.Drawing.Color.Transparent
+        Appearance33.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance33.FontData.SizeInPoints = 0.09999999!
+        Appearance33.Image = CType(resources.GetObject("Appearance33.Image"), Object)
+        Appearance33.ImageHAlign = Infragistics.Win.HAlign.Center
+        Appearance33.ImageVAlign = Infragistics.Win.VAlign.Middle
+        Appearance33.TextHAlignAsString = "Center"
+        UltraGridColumn18.CellButtonAppearance = Appearance33
+        Appearance34.TextHAlignAsString = "Center"
+        UltraGridColumn18.Header.Appearance = Appearance34
         UltraGridColumn18.Header.Caption = "Õ–›"
         UltraGridColumn18.Header.VisiblePosition = 0
         UltraGridColumn18.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button
@@ -818,71 +751,71 @@ Partial Class Frm_RoomCleaning_A
         UltraGridColumn7.Hidden = True
         UltraGridColumn7.Width = 40
         UltraGridBand2.Columns.AddRange(New Object() {UltraGridColumn14, UltraGridColumn15, UltraGridColumn16, UltraGridColumn17, UltraGridColumn18, UltraGridColumn7})
-        Appearance37.FontData.Name = "Tahoma"
-        Appearance37.FontData.SizeInPoints = 8.0!
-        UltraGridBand2.Header.Appearance = Appearance37
+        Appearance35.FontData.Name = "Tahoma"
+        Appearance35.FontData.SizeInPoints = 8.0!
+        UltraGridBand2.Header.Appearance = Appearance35
         UltraGridBand2.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.[False]
         UltraGridBand2.SummaryFooterCaption = ""
         Me.Grd_Details.DisplayLayout.BandsSerializer.Add(UltraGridBand2)
-        Appearance38.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Grd_Details.DisplayLayout.Override.AddRowAppearance = Appearance38
+        Appearance36.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Grd_Details.DisplayLayout.Override.AddRowAppearance = Appearance36
         Me.Grd_Details.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.TemplateOnBottom
+        Appearance37.BorderColor = System.Drawing.SystemColors.Control
+        Me.Grd_Details.DisplayLayout.Override.CellAppearance = Appearance37
+        Appearance38.BorderColor = System.Drawing.SystemColors.Control
+        Appearance38.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Grd_Details.DisplayLayout.Override.CellButtonAppearance = Appearance38
+        Appearance39.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Appearance39.BackColor2 = System.Drawing.SystemColors.Control
+        Appearance39.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
         Appearance39.BorderColor = System.Drawing.SystemColors.Control
-        Me.Grd_Details.DisplayLayout.Override.CellAppearance = Appearance39
+        Appearance39.BorderColor3DBase = System.Drawing.SystemColors.Control
+        Me.Grd_Details.DisplayLayout.Override.HeaderAppearance = Appearance39
+        Me.Grd_Details.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.Standard
         Appearance40.BorderColor = System.Drawing.SystemColors.Control
-        Appearance40.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Grd_Details.DisplayLayout.Override.CellButtonAppearance = Appearance40
+        Me.Grd_Details.DisplayLayout.Override.RowAppearance = Appearance40
         Appearance41.BackColor = System.Drawing.SystemColors.ControlLightLight
         Appearance41.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance41.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
+        Appearance41.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
         Appearance41.BorderColor = System.Drawing.SystemColors.Control
-        Appearance41.BorderColor3DBase = System.Drawing.SystemColors.Control
-        Me.Grd_Details.DisplayLayout.Override.HeaderAppearance = Appearance41
-        Me.Grd_Details.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.Standard
-        Appearance42.BorderColor = System.Drawing.SystemColors.Control
-        Me.Grd_Details.DisplayLayout.Override.RowAppearance = Appearance42
-        Appearance43.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance43.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance43.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance43.BorderColor = System.Drawing.SystemColors.Control
-        Appearance43.BorderColor3DBase = System.Drawing.SystemColors.ControlLightLight
-        Appearance43.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Grd_Details.DisplayLayout.Override.RowSelectorAppearance = Appearance43
+        Appearance41.BorderColor3DBase = System.Drawing.SystemColors.ControlLightLight
+        Appearance41.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Grd_Details.DisplayLayout.Override.RowSelectorAppearance = Appearance41
         Me.Grd_Details.DisplayLayout.Override.RowSelectorHeaderStyle = Infragistics.Win.UltraWinGrid.RowSelectorHeaderStyle.SeparateElement
         Me.Grd_Details.DisplayLayout.Override.SummaryDisplayArea = Infragistics.Win.UltraWinGrid.SummaryDisplayAreas.BottomFixed
+        Appearance42.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Grd_Details.DisplayLayout.Override.TemplateAddRowAppearance = Appearance42
+        Appearance43.BorderColor = System.Drawing.SystemColors.ControlLight
+        Me.Grd_Details.DisplayLayout.Override.TemplateAddRowCellAppearance = Appearance43
         Appearance44.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Grd_Details.DisplayLayout.Override.TemplateAddRowAppearance = Appearance44
-        Appearance45.BorderColor = System.Drawing.SystemColors.ControlLight
-        Me.Grd_Details.DisplayLayout.Override.TemplateAddRowCellAppearance = Appearance45
-        Appearance46.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance46.BackColor2 = System.Drawing.SystemColors.ControlLight
-        Appearance46.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance46.BorderColor = System.Drawing.SystemColors.Control
-        ScrollBarLook2.Appearance = Appearance46
-        Appearance47.BackColor = System.Drawing.SystemColors.Control
+        Appearance44.BackColor2 = System.Drawing.SystemColors.ControlLight
+        Appearance44.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance44.BorderColor = System.Drawing.SystemColors.Control
+        ScrollBarLook2.Appearance = Appearance44
+        Appearance45.BackColor = System.Drawing.SystemColors.Control
+        Appearance45.BackColor2 = System.Drawing.SystemColors.ControlLightLight
+        Appearance45.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump
+        Appearance45.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance45.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        ScrollBarLook2.ButtonAppearance = Appearance45
+        Appearance46.BackGradientStyle = Infragistics.Win.GradientStyle.HorizontalBump
+        ScrollBarLook2.ThumbAppearance = Appearance46
+        Appearance47.BackColor = System.Drawing.SystemColors.ControlLight
         Appearance47.BackColor2 = System.Drawing.SystemColors.ControlLightLight
-        Appearance47.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump
-        Appearance47.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance47.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        ScrollBarLook2.ButtonAppearance = Appearance47
-        Appearance48.BackGradientStyle = Infragistics.Win.GradientStyle.HorizontalBump
-        ScrollBarLook2.ThumbAppearance = Appearance48
-        Appearance49.BackColor = System.Drawing.SystemColors.ControlLight
-        Appearance49.BackColor2 = System.Drawing.SystemColors.ControlLightLight
-        Appearance49.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
-        Appearance49.BorderColor = System.Drawing.SystemColors.Control
-        Appearance49.BorderColor3DBase = System.Drawing.SystemColors.Control
-        ScrollBarLook2.TrackAppearance = Appearance49
+        Appearance47.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal
+        Appearance47.BorderColor = System.Drawing.SystemColors.Control
+        Appearance47.BorderColor3DBase = System.Drawing.SystemColors.Control
+        ScrollBarLook2.TrackAppearance = Appearance47
         Me.Grd_Details.DisplayLayout.ScrollBarLook = ScrollBarLook2
         Me.Grd_Details.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill
         Me.Grd_Details.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate
-        Appearance50.BackColor = System.Drawing.SystemColors.ControlLight
-        Appearance50.BorderColor = System.Drawing.SystemColors.ControlLight
-        Me.Grd_Details.DisplayLayout.SplitterBarHorizontalAppearance = Appearance50
-        Appearance51.BackColor = System.Drawing.SystemColors.Control
-        Appearance51.BorderColor = System.Drawing.SystemColors.Control
-        Appearance51.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
-        Me.Grd_Details.DisplayLayout.SplitterBarVerticalAppearance = Appearance51
+        Appearance48.BackColor = System.Drawing.SystemColors.ControlLight
+        Appearance48.BorderColor = System.Drawing.SystemColors.ControlLight
+        Me.Grd_Details.DisplayLayout.SplitterBarHorizontalAppearance = Appearance48
+        Appearance49.BackColor = System.Drawing.SystemColors.Control
+        Appearance49.BorderColor = System.Drawing.SystemColors.Control
+        Appearance49.BorderColor3DBase = System.Drawing.SystemColors.ControlLight
+        Me.Grd_Details.DisplayLayout.SplitterBarVerticalAppearance = Appearance49
         Me.Grd_Details.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Grd_Details.Location = New System.Drawing.Point(0, 219)
         Me.Grd_Details.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
@@ -894,64 +827,10 @@ Partial Class Frm_RoomCleaning_A
         '
         'DTS_Details
         '
-        UltraDataColumn9.DataType = GetType(Short)
-        UltraDataColumn10.DataType = GetType(Short)
-        UltraDataColumn14.DefaultValue = "NI"
-        Me.DTS_Details.Band.Columns.AddRange(New Object() {UltraDataColumn9, UltraDataColumn10, UltraDataColumn11, UltraDataColumn12, UltraDataColumn13, UltraDataColumn14})
-        '
-        'Btn_Close
-        '
-        Me.Btn_Close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Appearance52.BackColor = System.Drawing.Color.Transparent
-        Appearance52.BorderColor = System.Drawing.Color.Transparent
-        Appearance52.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance52.Image = CType(resources.GetObject("Appearance52.Image"), Object)
-        Appearance52.ImageHAlign = Infragistics.Win.HAlign.Center
-        Me.Btn_Close.Appearance = Appearance52
-        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
-        Me.Btn_Close.ImageSize = New System.Drawing.Size(80, 80)
-        Me.Btn_Close.Location = New System.Drawing.Point(1260, 24)
-        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Btn_Close.Name = "Btn_Close"
-        Me.Btn_Close.ShowFocusRect = False
-        Me.Btn_Close.ShowOutline = False
-        Me.Btn_Close.Size = New System.Drawing.Size(85, 88)
-        Me.Btn_Close.TabIndex = 600
-        Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
-        '
-        'Btn_Back
-        '
-        Appearance53.BackColor = System.Drawing.Color.Transparent
-        Appearance53.BorderColor = System.Drawing.Color.Transparent
-        Appearance53.Cursor = System.Windows.Forms.Cursors.Hand
-        Appearance53.Image = CType(resources.GetObject("Appearance53.Image"), Object)
-        Me.Btn_Back.Appearance = Appearance53
-        Me.Btn_Back.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
-        Me.Btn_Back.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Btn_Back.ImageSize = New System.Drawing.Size(70, 70)
-        Me.Btn_Back.Location = New System.Drawing.Point(25, 33)
-        Me.Btn_Back.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Btn_Back.Name = "Btn_Back"
-        Me.Btn_Back.ShowFocusRect = False
-        Me.Btn_Back.ShowOutline = False
-        Me.Btn_Back.Size = New System.Drawing.Size(76, 71)
-        Me.Btn_Back.TabIndex = 598
-        Me.Btn_Back.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(75, Byte), Integer))
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label2.Font = New System.Drawing.Font("Droid Arabic Kufi", 21.0!)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(417, 25)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(541, 86)
-        Me.Label2.TabIndex = 599
-        Me.Label2.Text = " ‰ŸÌ› «·€—›"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        UltraDataColumn23.DataType = GetType(Short)
+        UltraDataColumn24.DataType = GetType(Short)
+        UltraDataColumn28.DefaultValue = "NI"
+        Me.DTS_Details.Band.Columns.AddRange(New Object() {UltraDataColumn23, UltraDataColumn24, UltraDataColumn25, UltraDataColumn26, UltraDataColumn27, UltraDataColumn28})
         '
         'Tab_Main
         '
@@ -965,7 +844,7 @@ Partial Class Frm_RoomCleaning_A
         Me.Tab_Main.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Tab_Main.Name = "Tab_Main"
         Me.Tab_Main.SharedControlsPage = Me.UltraTabSharedControlsPage1
-        Me.Tab_Main.Size = New System.Drawing.Size(1374, 571)
+        Me.Tab_Main.Size = New System.Drawing.Size(1284, 571)
         Me.Tab_Main.TabIndex = 549
         Me.Tab_Main.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.BottomRight
         UltraTab1.Key = "Tab_Summary"
@@ -982,134 +861,104 @@ Partial Class Frm_RoomCleaning_A
         Me.UltraTabSharedControlsPage1.Location = New System.Drawing.Point(-10000, -10000)
         Me.UltraTabSharedControlsPage1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.UltraTabSharedControlsPage1.Name = "UltraTabSharedControlsPage1"
-        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(1370, 533)
+        Me.UltraTabSharedControlsPage1.Size = New System.Drawing.Size(1280, 539)
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Tab_Main)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Btn_Close)
-        Me.Panel1.Controls.Add(Me.Btn_Back)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Left)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Right)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Bottom)
-        Me.Panel1.Controls.Add(Me._Panel1_Toolbars_Dock_Area_Top)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1374, 709)
+        Me.Panel1.Size = New System.Drawing.Size(1284, 709)
         Me.Panel1.TabIndex = 506
         '
-        '_Panel1_Toolbars_Dock_Area_Left
+        'TableLayoutPanel2
         '
-        Me._Panel1_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Left.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
-        Me._Panel1_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 23)
-        Me._Panel1_Toolbars_Dock_Area_Left.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me._Panel1_Toolbars_Dock_Area_Left.Name = "_Panel1_Toolbars_Dock_Area_Left"
-        Me._Panel1_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(0, 686)
-        Me._Panel1_Toolbars_Dock_Area_Left.ToolbarsManager = Me.ToolBar_Main
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 416.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Back, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Btn_Close, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1284, 96)
+        Me.TableLayoutPanel2.TabIndex = 623
         '
-        'ToolBar_Main
+        'Btn_Back
         '
-        Me.ToolBar_Main.DesignerFlags = 1
-        Me.ToolBar_Main.DockWithinContainer = Me.Panel1
-        Me.ToolBar_Main.RightAlignedMenus = Infragistics.Win.DefaultableBoolean.[False]
-        Me.ToolBar_Main.RuntimeCustomizationOptions = Infragistics.Win.UltraWinToolbars.RuntimeCustomizationOptions.None
-        Me.ToolBar_Main.ShowFullMenusDelay = 500
-        Me.ToolBar_Main.Style = Infragistics.Win.UltraWinToolbars.ToolbarStyle.OfficeXP
-        UltraToolbar1.DockedColumn = 0
-        UltraToolbar1.DockedRow = 0
-        UltraToolbar1.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool1, LabelTool2})
-        Appearance54.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Appearance54.BackColor2 = System.Drawing.SystemColors.Control
-        Appearance54.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical
-        UltraToolbar1.Settings.Appearance = Appearance54
-        UltraToolbar1.Settings.CaptionPlacement = Infragistics.Win.TextPlacement.LeftOfImage
-        UltraToolbar1.Settings.FillEntireRow = Infragistics.Win.DefaultableBoolean.[True]
-        UltraToolbar1.Text = "ToolBar1"
-        Me.ToolBar_Main.Toolbars.AddRange(New Infragistics.Win.UltraWinToolbars.UltraToolbar() {UltraToolbar1})
-        Appearance55.FontData.BoldAsString = "True"
-        Appearance55.FontData.Name = "Tahoma"
-        Appearance55.TextHAlignAsString = "Right"
-        LabelTool3.SharedPropsInternal.AppearancesSmall.Appearance = Appearance55
-        LabelTool3.SharedPropsInternal.Caption = "›« Ê—… ‘—«¡"
-        LabelTool3.SharedPropsInternal.Visible = False
-        LabelTool4.SharedPropsInternal.Spring = True
-        LabelTool4.SharedPropsInternal.Visible = False
-        Appearance56.FontData.BoldAsString = "True"
-        Appearance56.FontData.Name = "Tahoma"
-        Appearance56.FontData.SizeInPoints = 12.0!
-        PopupMenuTool2.SharedPropsInternal.AppearancesSmall.Appearance = Appearance56
-        PopupMenuTool2.SharedPropsInternal.Caption = "√œÊ« "
-        PopupMenuTool2.SharedPropsInternal.DisplayStyle = Infragistics.Win.UltraWinToolbars.ToolDisplayStyle.ImageAndText
-        StateButtonTool2.MenuDisplayStyle = Infragistics.Win.UltraWinToolbars.StateButtonMenuDisplayStyle.DisplayCheckmark
-        PopupMenuTool2.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool1, ButtonTool4, ButtonTool6, ButtonTool9, ButtonTool10, StateButtonTool2})
-        Appearance57.FontData.BoldAsString = "True"
-        Appearance57.FontData.Name = "Tahoma"
-        Appearance57.Image = CType(resources.GetObject("Appearance57.Image"), Object)
-        ButtonTool2.SharedPropsInternal.AppearancesSmall.Appearance = Appearance57
-        ButtonTool2.SharedPropsInternal.Caption = " —ÕÌ· «·Ï «·Õ”«»« "
-        StateButtonTool3.Checked = True
-        StateButtonTool3.MenuDisplayStyle = Infragistics.Win.UltraWinToolbars.StateButtonMenuDisplayStyle.DisplayCheckmark
-        StateButtonTool3.SharedPropsInternal.Caption = " ’›Ì… »«· «—ÌŒ"
-        StateButtonTool4.MenuDisplayStyle = Infragistics.Win.UltraWinToolbars.StateButtonMenuDisplayStyle.DisplayCheckmark
-        StateButtonTool4.SharedPropsInternal.Caption = " ’›Ì… »«·›Ê« Ì— «·„› ÊÕ…"
-        ButtonTool3.SharedPropsInternal.Caption = "«·€«¡ «· —ÕÌ·"
-        ButtonTool5.SharedPropsInternal.Caption = " ’œÌ— ··√ﬂ”·"
-        ButtonTool7.SharedPropsInternal.Caption = "ÿ»«⁄… 1"
-        ButtonTool8.SharedPropsInternal.Caption = "ÿ»«⁄… 2"
-        Me.ToolBar_Main.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {LabelTool3, LabelTool4, PopupMenuTool2, ButtonTool2, StateButtonTool3, StateButtonTool4, ButtonTool3, ButtonTool5, ButtonTool7, ButtonTool8})
+        Appearance61.BackColor = System.Drawing.Color.Transparent
+        Appearance61.BorderColor = System.Drawing.Color.Transparent
+        Appearance61.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance61.Image = CType(resources.GetObject("Appearance61.Image"), Object)
+        Me.Btn_Back.Appearance = Appearance61
+        Me.Btn_Back.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Back.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Btn_Back.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Back.Location = New System.Drawing.Point(10, 19)
+        Me.Btn_Back.Margin = New System.Windows.Forms.Padding(10, 4, 2, 4)
+        Me.Btn_Back.Name = "Btn_Back"
+        Me.Btn_Back.ShowFocusRect = False
+        Me.Btn_Back.ShowOutline = False
+        Me.Btn_Back.Size = New System.Drawing.Size(92, 73)
+        Me.Btn_Back.TabIndex = 603
+        Me.Btn_Back.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
-        '_Panel1_Toolbars_Dock_Area_Right
+        'Btn_Close
         '
-        Me._Panel1_Toolbars_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Right.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
-        Me._Panel1_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(1374, 23)
-        Me._Panel1_Toolbars_Dock_Area_Right.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me._Panel1_Toolbars_Dock_Area_Right.Name = "_Panel1_Toolbars_Dock_Area_Right"
-        Me._Panel1_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(0, 686)
-        Me._Panel1_Toolbars_Dock_Area_Right.ToolbarsManager = Me.ToolBar_Main
+        Appearance62.BackColor = System.Drawing.Color.Transparent
+        Appearance62.BorderColor = System.Drawing.Color.Transparent
+        Appearance62.Cursor = System.Windows.Forms.Cursors.Hand
+        Appearance62.Image = CType(resources.GetObject("Appearance62.Image"), Object)
+        Appearance62.ImageHAlign = Infragistics.Win.HAlign.Center
+        Me.Btn_Close.Appearance = Appearance62
+        Me.Btn_Close.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
+        Me.Btn_Close.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Btn_Close.ImageSize = New System.Drawing.Size(70, 70)
+        Me.Btn_Close.Location = New System.Drawing.Point(1190, 17)
+        Me.Btn_Close.Margin = New System.Windows.Forms.Padding(2, 2, 10, 2)
+        Me.Btn_Close.Name = "Btn_Close"
+        Me.Btn_Close.ShowFocusRect = False
+        Me.Btn_Close.ShowOutline = False
+        Me.Btn_Close.Size = New System.Drawing.Size(84, 77)
+        Me.Btn_Close.TabIndex = 602
+        Me.Btn_Close.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
-        '_Panel1_Toolbars_Dock_Area_Bottom
+        'Label4
         '
-        Me._Panel1_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 709)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Name = "_Panel1_Toolbars_Dock_Area_Bottom"
-        Me._Panel1_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(1374, 0)
-        Me._Panel1_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.ToolBar_Main
+        Me.Label4.BackColor = System.Drawing.Color.SlateGray
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label4.Font = New System.Drawing.Font("Droid Arabic Kufi", 17.0!)
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(436, 15)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(412, 81)
+        Me.Label4.TabIndex = 560
+        Me.Label4.Text = " ‰ŸÌ› «·«„«ﬂ‰ «·⁄«„…"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        '_Panel1_Toolbars_Dock_Area_Top
+        'Frm_HK_Cleaning_Public_A
         '
-        Me._Panel1_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._Panel1_Toolbars_Dock_Area_Top.BackColor = System.Drawing.SystemColors.Control
-        Me._Panel1_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
-        Me._Panel1_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._Panel1_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._Panel1_Toolbars_Dock_Area_Top.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me._Panel1_Toolbars_Dock_Area_Top.Name = "_Panel1_Toolbars_Dock_Area_Top"
-        Me._Panel1_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(1374, 23)
-        Me._Panel1_Toolbars_Dock_Area_Top.ToolbarsManager = Me.ToolBar_Main
-        '
-        'Frm_RoomCleaning_A
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1374, 709)
+        Me.ClientSize = New System.Drawing.Size(1284, 709)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Droid Arabic Kufi", 8.0!)
         Me.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.Name = "Frm_RoomCleaning_A"
-        Me.Text = " ‰ŸÌ› «·€—›"
+        Me.Name = "Frm_HK_Cleaning_Public_A"
+        Me.Text = " ‰ŸÌ› «·«„«ﬂ‰ «·⁄«„…"
         CType(Me.Txt_LovEmployee, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraTabPageControl1.ResumeLayout(False)
         Me.UltraTabPageControl1.PerformLayout()
@@ -1119,10 +968,9 @@ Partial Class Frm_RoomCleaning_A
         CType(Me.DTS_Summary, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraTabPageControl2.ResumeLayout(False)
         Me.UltraTabPageControl2.PerformLayout()
+        CType(Me.Txt_PublicCleaning, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_CleaningType, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_Supervisor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Txt_RoomType, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Txt_RoomNum, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_CleaningDate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_EmpDesc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Txt_Remarks, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1132,7 +980,7 @@ Partial Class Frm_RoomCleaning_A
         CType(Me.Tab_Main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_Main.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        CType(Me.ToolBar_Main, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1150,27 +998,22 @@ Partial Class Frm_RoomCleaning_A
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Txt_Code As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents ToolBar_Main As Infragistics.Win.UltraWinToolbars.UltraToolbarsManager
     Friend WithEvents DTS_Details As Infragistics.Win.UltraWinDataSource.UltraDataSource
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Left As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Right As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Top As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
-    Friend WithEvents _Panel1_Toolbars_Dock_Area_Bottom As Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents UltraTabPageControl1 As Infragistics.Win.UltraWinTabControl.UltraTabPageControl
-    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
-    Friend WithEvents Btn_Back As Infragistics.Win.Misc.UltraButton
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Txt_RoomNum As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents DTS_Summary As Infragistics.Win.UltraWinDataSource.UltraDataSource
     Friend WithEvents Grd_Summary As Infragistics.Win.UltraWinGrid.UltraGrid
     Friend WithEvents TXT_FromSummaryDate As Infragistics.Win.UltraWinEditors.UltraDateTimeEditor
     Friend WithEvents Label16 As Label
     Friend WithEvents Txt_ToSummaryDate As Infragistics.Win.UltraWinEditors.UltraDateTimeEditor
     Friend WithEvents Label17 As Label
-    Friend WithEvents Txt_RoomType As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents Txt_Supervisor As Infragistics.Win.UltraWinEditors.UltraComboEditor
     Friend WithEvents Txt_CleaningType As Infragistics.Win.UltraWinEditors.UltraComboEditor
     Friend WithEvents Txt_LovEmployee As Infragistics.Win.UltraWinEditors.UltraTextEditor
+    Friend WithEvents Txt_PublicCleaning As Infragistics.Win.UltraWinEditors.UltraComboEditor
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Btn_Back As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Btn_Close As Infragistics.Win.Misc.UltraButton
+    Friend WithEvents Label4 As Label
 End Class

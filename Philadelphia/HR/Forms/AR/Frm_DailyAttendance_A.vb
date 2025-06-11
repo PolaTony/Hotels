@@ -238,14 +238,14 @@ Public Class Frm_DailyAttendance_A
         If Tab_Main.Tabs("Tab_Summary").Selected = True Then
             vcFrmLevel.vParentFrm = Me.ParentForm
             vcFrmLevel.vParentFrm.sEnableTools(True, False, False, True, False, False, False, False, "", False, False, "التفاصيل")
+            Btn_Back.Visible = False
+            Btn_ImportFromExcel.Visible = False
             sQuerySummary()
         ElseIf Tab_Main.Tabs("Tab_Details").Selected = True Then
             vcFrmLevel.vParentFrm.sEnableTools(True, True, True, True, True, True, True, True, "", False, False, "بحث")
-            'If Grd_Summary.Selected.Rows.Count > 0 Then
-            '    sQuery(pItemCode:=Grd_Summary.ActiveRow.Cells("Code").Value)
-            'Else
-            '    sNewRecord()
-            'End If
+            Btn_Back.Visible = True
+            Btn_ImportFromExcel.Visible = True
+
         End If
     End Sub
 #End Region
@@ -976,7 +976,7 @@ Public Class Frm_DailyAttendance_A
         sImportFromExcel()
     End Sub
 
-    Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Txt_Back.Click
+    Private Sub Btn_Back_Click(sender As Object, e As EventArgs) Handles Btn_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
     End Sub
 
@@ -995,4 +995,5 @@ Public Class Frm_DailyAttendance_A
 
         End Try
     End Sub
+
 End Class

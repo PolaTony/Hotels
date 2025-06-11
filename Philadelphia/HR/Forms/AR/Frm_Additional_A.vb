@@ -69,7 +69,6 @@ Public Class Frm_Additional_A
         If Tab_Main.Tabs("Tab_Details").Selected = True Then
             If pASkMe Then
                 If vcFrmLevel.vParentFrm.sForwardMessage("6", Me) = MsgBoxResult.Yes Then
-                    sSaveMaster()
 
                     If fValidateDetails() Then
                         sSaveDetails()
@@ -81,7 +80,6 @@ Public Class Frm_Additional_A
                     Return True
                 End If
             Else
-                sSaveMaster()
 
                 If fValidateDetails() Then
                     sSaveDetails()
@@ -223,16 +221,10 @@ Public Class Frm_Additional_A
             vcFrmLevel.vParentFrm = Me.ParentForm
             vcFrmLevel.vParentFrm.sEnableTools(True, False, False, True, False, False, False, False, "", False, False, "التفاصيل")
             sQuerySummary()
-            Txt_Back.Visible = False
-
+            Btn_Back.Visible = False
         ElseIf Tab_Main.Tabs("Tab_Details").Selected = True Then
             vcFrmLevel.vParentFrm.sEnableTools(True, True, True, True, False, False, False, False, "", False, False, "بحث")            'If Grd_Summary.Selected.Rows.Count > 0 Then
-            Txt_Back.Visible = True
-
-            '    sQuery(pItemCode:=Grd_Summary.ActiveRow.Cells("Code").Value)
-            'Else
-            '    sNewRecord()
-            'End If
+            Btn_Back.Visible = True
         End If
     End Sub
 #End Region
@@ -268,18 +260,6 @@ Public Class Frm_Additional_A
 #End Region
 
 #Region " Master                                                                                "
-    Private Sub sSaveMaster()
-        Dim vSqlString As String
-
-        'If vMasterBlock = "I" Then
-        'sNewCode()
-
-        'vSqlString = " Insert Into Attendance (         Code,           TDate,        Emp_Code,          Company_Code ) " &
-        '                 " Values                 ( " & Txt_Code.Text & ", GetDate(), " & vUsrCode & ", " & vCompanyCode & ") "
-
-        '    sFillSqlStatmentArray(vSqlString)
-        'End If
-    End Sub
     Private Sub TXT_All_EditorButtonClick(ByVal sender As Object, ByVal e As Infragistics.Win.UltraWinEditors.EditorButtonEventArgs) _
         Handles Txt_Employees.EditorButtonClick
 
@@ -1033,7 +1013,7 @@ Public Class Frm_Additional_A
         sImportFromExcel()
     End Sub
 
-    Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Txt_Back.Click
+    Private Sub Btn_Back_Click(sender As Object, e As EventArgs) Handles Btn_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
     End Sub
     Private Sub Grd_Summary_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Grd_Summary.KeyPress

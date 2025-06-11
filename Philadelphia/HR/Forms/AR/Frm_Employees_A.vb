@@ -819,10 +819,10 @@ Public Class Frm_Employees_A
             vcFrmLevel.vParentFrm = Me.ParentForm
             vcFrmLevel.vParentFrm.sEnableTools(True, False, False, False, False, False, False, False, "", False, False, "التفاصيل")
             sQuerySummary()
-            Txt_Back.Visible = False
+            Btn_Back.Visible = False
         ElseIf Tab_Main.Tabs("Tab_Details").Selected = True Then
             vcFrmLevel.vParentFrm.sEnableTools(True, True, True, True, True, True, True, True, "", False, False, "بحث")
-            Txt_Back.Visible = True
+            Btn_Back.Visible = True
 
             'If Grd_Summary.Selected.Rows.Count > 0 Then
             '    sQuery(pItemCode:=Grd_Summary.ActiveRow.Cells("Code").Value)
@@ -1318,7 +1318,7 @@ Public Class Frm_Employees_A
         vcFrmLevel.vParentFrm.ToolBar_Main.Tools("Themes").SharedProps.Visible = True
     End Sub
 
-    Private Sub Txt_Back_Click(sender As Object, e As EventArgs) Handles Txt_Back.Click
+    Private Sub Btn_Back_Click(sender As Object, e As EventArgs) Handles Btn_Back.Click
         Tab_Main.Tabs("Tab_Summary").Selected = True
     End Sub
 

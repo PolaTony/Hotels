@@ -2,7 +2,7 @@
 Imports System.Text.RegularExpressions
 Imports Infragistics.Win.UltraWinGrid
 
-Public Class Frm_Cleaning_Room_Monthly_Report_A
+Public Class Frm_HK_Cleaning_Public_Report_A
 
 #Region "Declaration"
 
@@ -26,45 +26,40 @@ Public Class Frm_Cleaning_Room_Monthly_Report_A
             Dim vSqlCommand As New SqlClient.SqlCommand
 
             vSqlCommand.CommandText =
-                " SELECT " &
-                "     HK_Cleaning_Rooms_Details.Emp_Code AS Emp_Code, " &
-                "     Employees.DescA AS Emp_Desc, " &
-                "     Rooms.DescA As Clean_Place, " &
-                "     Rooms_Types.DescA AS Room_Type, " &
-                "     HK_Cleaning_Types.DescA AS Clean_Type, " &
-                "     Supervisor_Employees.DescA AS Supervisor, " &
-                "     CL.TDate AS TDate, " &
-                "     CL.Points / ( Select Count(*) From HK_Cleaning_Rooms_Details  " &
-                " 	              Where Cl_Code = CL.Code) as Points  " &
-                "  " &
-                " FROM HK_Cleaning_Rooms_Details " &
-                "  " &
-                " LEFT JOIN Employees " &
-                " ON HK_Cleaning_Rooms_Details.Emp_Code = Employees.Code " &
-                " AND HK_Cleaning_Rooms_Details.Company_Code = Employees.Company_Code " &
-                "  " &
-                " LEFT JOIN HK_Cleaning_Rooms as CL " &
-                " ON HK_Cleaning_Rooms_Details.Cl_Code = CL.Code " &
-                " AND HK_Cleaning_Rooms_Details.Company_Code = CL.Company_Code " &
-                "  " &
-                " LEFT JOIN Rooms " &
-                " ON CL.Room_Code = Rooms.Code " &
-                " AND CL.Company_Code = Rooms.Company_Code " &
-                "  " &
-                " LEFT JOIN Rooms_Types " &
-                " ON Rooms.Room_Type = Rooms_Types.Code " &
-                " AND Rooms.Company_Code = Rooms_Types.Company_Code " &
-                "  " &
-                " LEFT JOIN HK_Cleaning_Types " &
-                " ON CL.CleanType_Code = HK_Cleaning_Types.Code " &
-                " AND CL.Company_Code = HK_Cleaning_Types.Company_Code " &
-                "  " &
-                " INNER JOIN Employees AS Supervisor_Employees " &
-                " ON CL.Supervisor_Code = Supervisor_Employees.Code " &
-                " AND CL.Company_Code = Supervisor_Employees.Company_Code " &
-                "  " &
-                $" WHERE Employees.Company_Code = {vCompanyCode} " &
-                $" AND CL.TDate BETWEEN '{vMonth_StartDay}' AND EOMONTH('{vMonth_StartDay}') "
+                " 	SELECT " &
+                "        HK_Cleaning_Public_Details.Emp_Code AS Emp_Code, " &
+                "        Employees.DescA AS Emp_Desc, " &
+                "        HK_Public_Types.DescA As Clean_Place, " &
+                "        HK_Cleaning_Types.DescA AS Clean_Type, " &
+                "        Supervisor_Employees.DescA AS Supervisor, " &
+                "        PL.TDate AS TDate, " &
+                "        PL.Points / ( Select Count(*) From HK_Cleaning_Rooms_Details  " &
+                "	                  Where Cl_Code = PL.Code ) as Points  " &
+                " " &
+                "    FROM HK_Cleaning_Public_Details " &
+                " " &
+                "    LEFT JOIN Employees " &
+                "    ON HK_Cleaning_Public_Details.Emp_Code = Employees.Code " &
+                "    AND HK_Cleaning_Public_Details.Company_Code = Employees.Company_Code " &
+                " " &
+                "    LEFT JOIN HK_Cleaning_Public as PL " &
+                "    ON HK_Cleaning_Public_Details.Cl_Code = PL.Code " &
+                "    AND HK_Cleaning_Public_Details.Company_Code = PL.Company_Code " &
+                " " &
+                "    LEFT JOIN HK_Public_Types " &
+                "    ON PL.Public_Code = HK_Public_Types.Code " &
+                "    AND PL.Company_Code = HK_Public_Types.Company_Code " &
+                " " &
+                "    LEFT JOIN HK_Cleaning_Types " &
+                "    ON PL.CleanType_Code = HK_Cleaning_Types.Code " &
+                "    AND PL.Company_Code = HK_Cleaning_Types.Company_Code " &
+                " " &
+                "    INNER JOIN Employees AS Supervisor_Employees " &
+                "    ON PL.Supervisor_Code = Supervisor_Employees.Code " &
+                "    AND PL.Company_Code = Supervisor_Employees.Company_Code " &
+                " " &
+                $"    WHERE Employees.Company_Code = {vCompanyCode} " &
+                $"    AND PL.TDate BETWEEN '{vMonth_StartDay}' AND EOMONTH('{vMonth_StartDay}') "
 
             Dim vRowCounter As Integer = 0
 
@@ -95,13 +90,6 @@ Public Class Frm_Cleaning_Room_Monthly_Report_A
                     DTS_Summary.Rows(vRowCounter)("Clean_Place") = vSqlReader("Clean_Place")
                 Else
                     DTS_Summary.Rows(vRowCounter)("Clean_Place") = Nothing
-                End If
-
-                'Room_Type
-                If IsDBNull(vSqlReader("Room_Type")) = False Then
-                    DTS_Summary.Rows(vRowCounter)("Room_Type") = vSqlReader("Room_Type")
-                Else
-                    DTS_Summary.Rows(vRowCounter)("Room_Type") = Nothing
                 End If
 
                 'Clean_Type

@@ -1,8 +1,6 @@
 ﻿Imports Infragistics.Win.UltraWinSchedule
-Imports Retex
 
-Public Class Frm_Public_Holidays_A
-
+Public Class Frm_Public_Holiday_A
 #Region " Declaration                                                                               "
     Dim vSqlStatment(0) As String
     Dim vcFrmLevel As New cFrmLevelVariables_A
@@ -211,9 +209,9 @@ Public Class Frm_Public_Holidays_A
         End If
     End Sub
 
-    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
-        Me.Close()
-    End Sub
+    'Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+    '    Me.Close()
+    'End Sub
 #End Region
 
 #Region " DataBase                                                                                  "
@@ -322,6 +320,10 @@ Public Class Frm_Public_Holidays_A
         vQuery = "N"
     End Sub
 
+    Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+        Me.Close()
+    End Sub
+
     Private Sub Frm_Public_Holidays_A_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         vcFrmLevel.vParentFrm = Me.ParentForm
         vcFrmLevel.vParentFrm.sEnableTools(False, False, False, False, False, False, False, False, "", False, False, "التفاصيل")
@@ -345,5 +347,4 @@ Public Class Frm_Public_Holidays_A
     End Sub
 
 #End Region
-
 End Class

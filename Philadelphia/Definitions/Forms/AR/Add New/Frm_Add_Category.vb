@@ -13,8 +13,9 @@
         End If
 
         Dim vSqlString, vGetCode, vGetSer As String
-        vSqlString = " Select IsNull(Max(Convert(Int, Code)), 0) + 1 From  Categories " & _
-                     " Where  Parent_Code Is NULL "
+        vSqlString = " Select IsNull(Max(Convert(Int, Code)), 0) + 1 From  Categories " &
+                     " Where  Company_Code = " & vCompanyCode
+
         vGetCode = cControls.fReturnValue(vSqlString, Me.Name)
 
         vSqlString = " Select IsNull(Max(Ser), 0) + 1 From  Categories "

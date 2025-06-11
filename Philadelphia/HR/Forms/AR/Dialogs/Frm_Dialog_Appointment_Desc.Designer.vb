@@ -62,11 +62,12 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Txt_StartDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.Txt_StartDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Txt_StartDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_StartDate.Location = New System.Drawing.Point(66, 128)
+        Me.Txt_StartDate.Location = New System.Drawing.Point(54, 128)
+        Me.Txt_StartDate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_StartDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_StartDate.Name = "Txt_StartDate"
         Me.Txt_StartDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_StartDate.Size = New System.Drawing.Size(196, 33)
+        Me.Txt_StartDate.Size = New System.Drawing.Size(163, 33)
         Me.Txt_StartDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_StartDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.Txt_StartDate.TabIndex = 1
@@ -80,7 +81,8 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label16.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(289, 131)
+        Me.Label16.Location = New System.Drawing.Point(240, 131)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(63, 27)
         Me.Label16.TabIndex = 557
@@ -104,11 +106,12 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Txt_EndDate.DropDownCalendarAlignment = Infragistics.Win.DropDownListAlignment.Left
         Me.Txt_EndDate.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
         Me.Txt_EndDate.FormatString = "dd-MM-yyyy"
-        Me.Txt_EndDate.Location = New System.Drawing.Point(66, 181)
+        Me.Txt_EndDate.Location = New System.Drawing.Point(54, 181)
+        Me.Txt_EndDate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_EndDate.MaskInput = "{LOC}dd/mm/yyyy"
         Me.Txt_EndDate.Name = "Txt_EndDate"
         Me.Txt_EndDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_EndDate.Size = New System.Drawing.Size(196, 33)
+        Me.Txt_EndDate.Size = New System.Drawing.Size(163, 33)
         Me.Txt_EndDate.SpinButtonAlignment = Infragistics.Win.ButtonAlignment.Left
         Me.Txt_EndDate.SpinButtonDisplayStyle = Infragistics.Win.ButtonDisplayStyle.Always
         Me.Txt_EndDate.TabIndex = 2
@@ -122,7 +125,8 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label1.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(286, 183)
+        Me.Label1.Location = New System.Drawing.Point(238, 183)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(66, 27)
         Me.Label1.TabIndex = 559
@@ -135,7 +139,8 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label2.Font = New System.Drawing.Font("Droid Arabic Kufi", 18.0!)
-        Me.Label2.Location = New System.Drawing.Point(132, 11)
+        Me.Label2.Location = New System.Drawing.Point(109, 11)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(141, 46)
         Me.Label2.TabIndex = 560
@@ -144,30 +149,35 @@ Partial Class Frm_Dialog_Appointment_Desc
         '
         'Btn_Save
         '
-        Appearance7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Appearance7.BackColor = System.Drawing.Color.DarkOliveGreen
+        Appearance7.BorderColor = System.Drawing.Color.Transparent
+        Appearance7.ForeColor = System.Drawing.Color.White
         Me.Btn_Save.Appearance = Appearance7
         Me.Btn_Save.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
         Me.Btn_Save.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Save.Font = New System.Drawing.Font("Droid Arabic Kufi", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Btn_Save.Location = New System.Drawing.Point(22, 245)
+        Me.Btn_Save.Location = New System.Drawing.Point(18, 245)
+        Me.Btn_Save.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Btn_Save.Name = "Btn_Save"
-        Me.Btn_Save.Size = New System.Drawing.Size(164, 35)
+        Me.Btn_Save.Size = New System.Drawing.Size(136, 35)
         Me.Btn_Save.TabIndex = 3
         Me.Btn_Save.Text = "حفظ"
         Me.Btn_Save.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
         'Btn_Exit
         '
-        Appearance8.BackColor = System.Drawing.Color.Crimson
+        Appearance8.BackColor = System.Drawing.Color.DarkRed
         Appearance8.BackColor2 = System.Drawing.Color.White
+        Appearance8.BorderColor = System.Drawing.Color.Transparent
         Appearance8.ForeColor = System.Drawing.Color.White
         Me.Btn_Exit.Appearance = Appearance8
         Me.Btn_Exit.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Flat
         Me.Btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Exit.Font = New System.Drawing.Font("Droid Arabic Kufi", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Btn_Exit.Location = New System.Drawing.Point(218, 245)
+        Me.Btn_Exit.Location = New System.Drawing.Point(181, 245)
+        Me.Btn_Exit.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Btn_Exit.Name = "Btn_Exit"
-        Me.Btn_Exit.Size = New System.Drawing.Size(164, 35)
+        Me.Btn_Exit.Size = New System.Drawing.Size(136, 35)
         Me.Btn_Exit.TabIndex = 4
         Me.Btn_Exit.Text = "إلغاء"
         Me.Btn_Exit.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
@@ -182,10 +192,11 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Txt_HolidayDesc.Appearance = Appearance9
         Me.Txt_HolidayDesc.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid
         Me.Txt_HolidayDesc.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Txt_HolidayDesc.Location = New System.Drawing.Point(66, 75)
+        Me.Txt_HolidayDesc.Location = New System.Drawing.Point(54, 75)
+        Me.Txt_HolidayDesc.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txt_HolidayDesc.Name = "Txt_HolidayDesc"
         Me.Txt_HolidayDesc.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Txt_HolidayDesc.Size = New System.Drawing.Size(196, 33)
+        Me.Txt_HolidayDesc.Size = New System.Drawing.Size(163, 33)
         Me.Txt_HolidayDesc.TabIndex = 0
         Me.Txt_HolidayDesc.UseOsThemes = Infragistics.Win.DefaultableBoolean.[False]
         '
@@ -195,7 +206,8 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Label3.Font = New System.Drawing.Font("Droid Arabic Kufi", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(271, 78)
+        Me.Label3.Location = New System.Drawing.Point(225, 78)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(81, 27)
         Me.Label3.TabIndex = 564
@@ -204,9 +216,9 @@ Partial Class Frm_Dialog_Appointment_Desc
         '
         'Frm_Dialog_Appointment_Desc
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(405, 310)
+        Me.ClientSize = New System.Drawing.Size(337, 310)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Txt_HolidayDesc)
         Me.Controls.Add(Me.Btn_Exit)
@@ -217,6 +229,7 @@ Partial Class Frm_Dialog_Appointment_Desc
         Me.Controls.Add(Me.Txt_StartDate)
         Me.Controls.Add(Me.Label16)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Frm_Dialog_Appointment_Desc"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_Dialog_Appointment"

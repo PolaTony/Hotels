@@ -154,7 +154,7 @@ Public Class MDIForm
     End Sub
 
     Private Sub MDIForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'sLoadSettings()
+
         Try
 
             Dim vEmpDesc As String = vUsrName
