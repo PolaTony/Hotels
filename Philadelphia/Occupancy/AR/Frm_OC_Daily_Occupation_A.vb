@@ -44,6 +44,9 @@ Public Class Frm_OC_Daily_Occupation_A
         Txt_ToSummaryDate.Value = Now
 
         sQuerySummary()
+        sLoad_PricingSystems()
+        sLoad_RoomTypes()
+        sLoad_ReservationTypes()
 
         vMasterBlock = "NI"
     End Sub
@@ -105,8 +108,6 @@ Public Class Frm_OC_Daily_Occupation_A
                     Return False
                 End If
             Else
-                DTS_RoomsDailyOccupation.Rows.Clear()
-                DTS_ReservationDailyOccupation.Rows.Clear()
                 Return True
             End If
         Else
@@ -243,12 +244,23 @@ Public Class Frm_OC_Daily_Occupation_A
             sQueryRooms()
             sQueryReservation()
 
-            'vQuery = "N"
         Catch ex As Exception
             cControls.vSqlConn.Close()
             MessageBox.Show(ex.Message)
-            'cException.sHandleException(ex.Message, Me.Name, "sQuery")
         End Try
+
+        Dim vRow As UltraGridRow
+        For Each vRow In Grd_RoomsDailyOccupation.Rows
+            If vRow.Cells("DML").Text = "I" Or vRow.Cells("DML").Text = "U" Then
+                vRow.Cells("DML").Value = "NI"
+            End If
+        Next
+
+        For Each vRow In Grd_ReservationDailyOccupation.Rows
+            If vRow.Cells("DML").Text = "I" Or vRow.Cells("DML").Text = "U" Then
+                vRow.Cells("DML").Value = "NI"
+            End If
+        Next
         vMasterBlock = "N"
     End Sub
 #End Region
@@ -293,14 +305,22 @@ Public Class Frm_OC_Daily_Occupation_A
 
             Txt_TDate.Value = Nothing
             Txt_Remarks.Text = ""
+            Txt_PricingSystems.SelectedIndex = -1
 
-            DTS_RoomsDailyOccupation.Rows.Clear()
-            DTS_ReservationDailyOccupation.Rows.Clear()
+            Dim vRow As UltraGridRow
+            For Each vRow In Grd_RoomsDailyOccupation.Rows
+                vRow.Cells("Count").Value = DBNull.Value
+                vRow.Cells("Remarks").Value = DBNull.Value
+                vRow.Cells("DML").Value = "NI"
+            Next
 
-            sLoad_RoomTypes()
-            sLoad_ReservationTypes()
-            sLoad_PricingSystems()
+            For Each vRow In Grd_ReservationDailyOccupation.Rows
+                vRow.Cells("Count").Value = DBNull.Value
+                vRow.Cells("Remarks").Value = DBNull.Value
+                vRow.Cells("DML").Value = "NI"
+            Next
 
+            vTCode = Nothing
             vMasterBlock = "NI"
 
         Catch ex As Exception
@@ -330,7 +350,15 @@ Public Class Frm_OC_Daily_Occupation_A
             Return False
         End If
 
-        If Grd_RoomsDailyOccupation.Rows.Count = 0 Then
+        Dim vRow As UltraGridRow
+        Dim vCount As Int16
+        For Each vRow In Grd_RoomsDailyOccupation.Rows
+            If vRow.Cells("Count").Text <> "" Then
+                vCount += 1
+            End If
+        Next
+
+        If vCount = 0 Then
             vcFrmLevel.vParentFrm.sForwardMessage("52", Me)
             Return False
         End If
@@ -380,8 +408,8 @@ Public Class Frm_OC_Daily_Occupation_A
 
                 If vRow.Cells("DML").Text = "I" Then
 
-                    vSqlString = " Insert Into OC_Rooms_Daily_Occ_Details (  RM_Code,   Company_Code,          Room_Type_Code,                       Room_Count,                             Remarks,                                               Price                                                                                                   ) " &
-                                $"                                 Values (  {vTCode},  {vCompanyCode}, {vRow.Cells("Room_Code").Value}, {vRow.Cells("Room_Count").Value}, '{Trim(vRow.Cells("Remarks").Text)}',      dbo.fn_Get_Room_Price({vRow.Cells("Room_Code").Value}, {Txt_PricingSystems.Value}, {vCompanyCode}) * {fIsNull(vRow.Cells("Room_Count").Value, 0)} ) "
+                    vSqlString = " Insert Into OC_Rooms_Daily_Occ_Details (  RM_Code,   Company_Code,          Room_Type_Code,                       Count,                             Remarks,                                               Price                                                                                                   ) " &
+                                $"                                 Values (  {vTCode},  {vCompanyCode}, {vRow.Cells("Room_Code").Value}, {vRow.Cells("Count").Value}, '{Trim(vRow.Cells("Remarks").Text)}',      dbo.fn_Get_Room_Price({vRow.Cells("Room_Code").Value}, {Txt_PricingSystems.Value}, {vCompanyCode}) * {fIsNull(vRow.Cells("Count").Value, 0)} ) "
 
                     sFillSqlStatmentArray(vSqlString)
 
@@ -389,9 +417,9 @@ Public Class Frm_OC_Daily_Occupation_A
 
                     vSqlString = "
                         Update OC_Rooms_Daily_Occ_Details
-                        Set Room_Count = " & fIsNull(vRow.Cells("Room_Count").Value, "NULL") & ", " &
+                        Set Count = " & fIsNull(vRow.Cells("Count").Value, "NULL") & ", " &
                           " Remarks = '" & vRow.Cells("Remarks").Text & "', " &
-                         $" Price = dbo.fn_Get_Room_Price({vRow.Cells("Room_Code").Value}, {Txt_PricingSystems.Value}, {vCompanyCode}) * {fIsNull(vRow.Cells("Room_Count").Value, 0)}" &
+                         $" Price = dbo.fn_Get_Room_Price({vRow.Cells("Room_Code").Value}, {Txt_PricingSystems.Value}, {vCompanyCode}) * {fIsNull(vRow.Cells("Count").Value, 0)}" &
                          "                         " &
                          $" Where RM_Code = {vTCode}" &
                          $" And Company_Code = {vCompanyCode}" &
@@ -404,15 +432,15 @@ Public Class Frm_OC_Daily_Occupation_A
 
             For Each vRow In Grd_ReservationDailyOccupation.Rows
                 If vRow.Cells("DML").Text = "I" Then
-                    vSqlString = " Insert Into OC_Reservation_Daily_Details (  RM_Code,   Company_Code,               Reservation_Type_Code,                  Reservation_Count,                             Remarks            ) " &
-                                $"                                   Values (  {vTCode},  {vCompanyCode}, {vRow.Cells("Reservation_Code").Value}, {vRow.Cells("Reservation_Count").Value}, '{fIsNull(vRow.Cells("Remarks").Value, "")}' ) "
+                    vSqlString = " Insert Into OC_Rooms_Daily_Reservation_Details (  RM_Code,   Company_Code,               Reservation_Type_Code,                  Count,                             Remarks            ) " &
+                                $"                                   Values (  {vTCode},  {vCompanyCode}, {vRow.Cells("Reservation_Code").Value}, {vRow.Cells("Count").Value}, '{fIsNull(vRow.Cells("Remarks").Value, "")}' ) "
 
                     sFillSqlStatmentArray(vSqlString)
                 ElseIf vRow.Cells("DML").Text = "U" Then
 
                     vSqlString = "
-                        Update OC_Reservation_Daily_Details
-                        Set Reservation_Count = " & fIsNull(vRow.Cells("Reservation_Count").Value, "NULL") & ", " &
+                        Update OC_Rooms_Daily_Reservation_Details
+                        Set Count = " & fIsNull(vRow.Cells("Count").Value, "NULL") & ", " &
                           " Remarks = '" & vRow.Cells("Remarks").Text & "' " &
                          $" Where RM_Code = {vTCode }" &
                          $" And Company_Code = {vCompanyCode}" &
@@ -444,7 +472,7 @@ Public Class Frm_OC_Daily_Occupation_A
                 'Here I Insert Into Delete Log Table..
 
                 vSqlstring =
-                " Delete From OC_Reservation_Daily_Details " &
+                " Delete From OC_Rooms_Daily_Reservation_Details " &
                 " Where  RM_Code = " & vTCode &
                 " And    Company_Code = " & vCompanyCode &
                 "                                           " &
@@ -478,6 +506,7 @@ Public Class Frm_OC_Daily_Occupation_A
 #End Region
 
 #Region " Details                                                              "
+
 #Region " DataBase                                                             "
 
 #Region " Save                                                                 "
@@ -485,85 +514,161 @@ Public Class Frm_OC_Daily_Occupation_A
 
 #End Region
 #Region " Query                                                                "
-    Private Sub sQueryRooms()
+
+    Private Sub sQueryReservation()
         Try
             Dim vSqlCommand As New SqlClient.SqlCommand
             vSqlCommand.CommandText =
-            " Select Room_Type_Code,                                 " & vbCrLf &
-            "        Room_Count,                                     " & vbCrLf &
-            "        Remarks                                         " & vbCrLf &
-            "                                                        " & vbCrLf &
-            "        From OC_Rooms_Daily_Occ_Details                 " & vbCrLf &
-            "                                                        " & vbCrLf &
-            "        Where 1 = 1                                     " & vbCrLf &
-            "        And   RM_Code = " & vTCode & vbCrLf &
-            "        And   Company_Code = " & vCompanyCode
+              " SELECT 
+
+	                OC_Reservation_Types.Code AS Reservation_Code,
+	                OC_Reservation_Types.DescA AS Reservation_Type,
+	                OC_Rooms_Daily_Reservation_Details.Count,
+	                OC_Rooms_Daily_Reservation_Details.Remarks,
+                    CASE 
+		                WHEN OC_Reservation_Types.Code = OC_Rooms_Daily_Reservation_Details.Reservation_Type_Code 
+		                THEN 'y'
+		                ELSE 'n'
+	                END AS Is_Inserted
+
+                FROM OC_Reservation_Types
+
+                LEFT JOIN OC_Rooms_Daily_Reservation_Details
+                ON OC_Reservation_Types.Code = OC_Rooms_Daily_Reservation_Details.Reservation_Type_Code
+                AND OC_Reservation_Types.Company_Code = OC_Rooms_Daily_Reservation_Details.Company_Code
+                AND OC_Rooms_Daily_Reservation_Details.RM_Code = " & vTCode & "
+
+                WHERE OC_Reservation_Types.Company_Code = " & vCompanyCode
 
             Dim vRowCounter As Integer = 0
 
             vSqlCommand.Connection = cControls.vSqlConn
             cControls.vSqlConn.Open()
             Dim vSqlReader As SqlClient.SqlDataReader = vSqlCommand.ExecuteReader
-
-            Dim vRow As UltraGridRow
+            DTS_ReservationDailyOccupation.Rows.Clear()
 
             Do While vSqlReader.Read
-                'DTS_RoomsDailyOccupation.Rows.SetCount(vRowCounter + 1)
 
-                'vRow = Grd_RoomsDailyOccupation.Rows(vRowCounter)
+                DTS_ReservationDailyOccupation.Rows.SetCount(vRowCounter + 1)
 
-                For Each vRow In Grd_RoomsDailyOccupation.Rows
-                    If vRow.Cells("Room_Code").Text = vSqlReader("Room_Type_Code") Then
-                        vRow.Cells("Room_Count").Value = vSqlReader("Room_Count")
-                        vRow.Cells("Remarks").Value = vSqlReader("Remarks")
-                        vRow.Cells("DML").Value = "N"
-                    End If
-                Next
+                'Reservation_Code
+                DTS_ReservationDailyOccupation.Rows(vRowCounter)("Reservation_Code") = vSqlReader("Reservation_Code")
+
+                'Reservation_Type
+                If IsDBNull(vSqlReader("Reservation_Type")) = False Then
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Reservation_Type") = vSqlReader("Reservation_Type")
+                Else
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Reservation_Type") = Nothing
+                End If
+
+                'Count
+                If IsDBNull(vSqlReader("Count")) = False Then
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Count") = vSqlReader("Count")
+                Else
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Count") = Nothing
+                End If
+
+                'Remarks
+                If IsDBNull(vSqlReader("Remarks")) = False Then
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Remarks") = vSqlReader("Remarks")
+                Else
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("Remarks") = Nothing
+                End If
+
+                'Is_Inserted
+                If vSqlReader("Is_Inserted") = "y" Then
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("DML") = "N"
+                Else
+                    DTS_ReservationDailyOccupation.Rows(vRowCounter)("DML") = "NI"
+                End If
+
+                vRowCounter += 1
             Loop
+
 
             cControls.vSqlConn.Close()
             vSqlReader.Close()
-            Grd_RoomsDailyOccupation.UpdateData()
+            Grd_ReservationDailyOccupation.UpdateData()
         Catch ex As Exception
             cControls.vSqlConn.Close()
             MessageBox.Show(ex.Message)
         End Try
     End Sub
-    Private Sub sQueryReservation()
+    Private Sub sQueryRooms()
         Try
             Dim vSqlCommand As New SqlClient.SqlCommand
             vSqlCommand.CommandText =
-            " Select Reservation_Type_Code,                          " & vbCrLf &
-            "        Reservation_Count,                              " & vbCrLf &
-            "        Remarks                                         " & vbCrLf &
-            "                                                        " & vbCrLf &
-            "        From OC_Reservation_Daily_Details               " & vbCrLf &
-            "                                                        " & vbCrLf &
-            "        Where 1 = 1                                     " & vbCrLf &
-            "        And   RM_Code = " & vTCode & vbCrLf &
-            "        And   Company_Code = " & vCompanyCode
+              " SELECT 
+
+	                Rooms_Types.Code AS Room_Code,
+	                Rooms_Types.DescA AS Room_Type,
+	                OC_Rooms_Daily_Occ_Details.Count,
+	                OC_Rooms_Daily_Occ_Details.Remarks,
+                    CASE 
+                        WHEN Rooms_Types.Code = OC_Rooms_Daily_Occ_Details.Room_Type_Code 
+                        THEN 'y'
+                        ELSE 'n'
+                    END AS Is_Inserted
+
+                FROM Rooms_Types
+
+                LEFT JOIN OC_Rooms_Daily_Occ_Details
+                ON Rooms_Types.Code = OC_Rooms_Daily_Occ_Details.Room_Type_Code
+                AND Rooms_Types.Company_Code = OC_Rooms_Daily_Occ_Details.Company_Code
+                AND OC_Rooms_Daily_Occ_Details.RM_Code = " & vTCode & "
+
+                WHERE Rooms_Types.Company_Code = " & vCompanyCode
 
             Dim vRowCounter As Integer = 0
 
             vSqlCommand.Connection = cControls.vSqlConn
             cControls.vSqlConn.Open()
             Dim vSqlReader As SqlClient.SqlDataReader = vSqlCommand.ExecuteReader
-
-            Dim vRow As UltraGridRow
+            DTS_RoomsDailyOccupation.Rows.Clear()
 
             Do While vSqlReader.Read
-                For Each vRow In Grd_ReservationDailyOccupation.Rows
-                    If vRow.Cells("Reservation_Code").Text = vSqlReader("Reservation_Type_Code") Then
-                        vRow.Cells("Reservation_Count").Value = vSqlReader("Reservation_Count")
-                        vRow.Cells("Remarks").Value = vSqlReader("Remarks")
-                        vRow.Cells("DML").Value = "N"
-                    End If
-                Next
+
+                DTS_RoomsDailyOccupation.Rows.SetCount(vRowCounter + 1)
+
+                'Room_Code
+                DTS_RoomsDailyOccupation.Rows(vRowCounter)("Room_Code") = vSqlReader("Room_Code")
+
+                'Room_Type
+                If IsDBNull(vSqlReader("Room_Type")) = False Then
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Room_Type") = vSqlReader("Room_Type")
+                Else
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Room_Type") = Nothing
+                End If
+
+                'Count
+                If IsDBNull(vSqlReader("Count")) = False Then
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Count") = vSqlReader("Count")
+                Else
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Count") = Nothing
+                End If
+
+                'Remarks
+                If IsDBNull(vSqlReader("Remarks")) = False Then
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Remarks") = vSqlReader("Remarks")
+                Else
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("Remarks") = Nothing
+                End If
+
+                'Is_Inserted
+                If vSqlReader("Is_Inserted") = "y" Then
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("DML") = "N"
+                Else
+                    DTS_RoomsDailyOccupation.Rows(vRowCounter)("DML") = "NI"
+                End If
+
+                vRowCounter += 1
             Loop
+
 
             cControls.vSqlConn.Close()
             vSqlReader.Close()
-            Grd_ReservationDailyOccupation.UpdateData()
+            Grd_RoomsDailyOccupation.UpdateData()
+
         Catch ex As Exception
             cControls.vSqlConn.Close()
             MessageBox.Show(ex.Message)
@@ -577,7 +682,7 @@ Public Class Frm_OC_Daily_Occupation_A
 
         If Grd_RoomsDailyOccupation.ActiveCell IsNot Nothing Then
 
-            If Grd_RoomsDailyOccupation.ActiveCell.Column.Key = "Room_Count" Then
+            If Grd_RoomsDailyOccupation.ActiveCell.Column.Key = "Count" Then
 
                 If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
                     e.Handled = True ' Cancel the keypress
@@ -590,7 +695,7 @@ Public Class Frm_OC_Daily_Occupation_A
 
         If Grd_ReservationDailyOccupation.ActiveCell IsNot Nothing Then
 
-            If Grd_ReservationDailyOccupation.ActiveCell.Column.Key = "Reservation_Count" Then
+            If Grd_ReservationDailyOccupation.ActiveCell.Column.Key = "Count" Then
 
                 If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
                     e.Handled = True ' Cancel the keypress
@@ -712,7 +817,7 @@ Public Class Frm_OC_Daily_Occupation_A
 
             cControls.vSqlConn.Close()
             vSqlReader.Close()
-            Grd_ReservationDailyOccupation.UpdateData()
+            Grd_RoomsDailyOccupation.UpdateData()
         Catch ex As Exception
             cControls.vSqlConn.Close()
             MessageBox.Show(ex.Message)
@@ -741,6 +846,7 @@ Public Class Frm_OC_Daily_Occupation_A
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
 #End Region
 
 #Region " Summary                  "
@@ -842,7 +948,6 @@ Public Class Frm_OC_Daily_Occupation_A
 
     Private Sub Grd_Summary_DoubleClick(sender As Object, e As EventArgs) Handles Grd_Summary.DoubleClick
         If Grd_Summary.Selected.Rows.Count > 0 Then
-            sNewRecord()
             sQuery(pItemCode:=Grd_Summary.ActiveRow.Cells("Code").Value)
         Else
             sNewRecord()
